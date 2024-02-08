@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9ec58ef539be49f6813355abf742125f" Name="Diagram1" ZoomLevel="71" ShowGrid="true">
+        <EntityTypeShape EntityType="db_hrmsModel.log_evaluate" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.sysdiagram" Width="1.5" PointX="10.75" PointY="8.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_additionalDeduction" Width="1.5" PointX="8.75" PointY="11.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_additionalPay" Width="1.5" PointX="10.75" PointY="11.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_adv_bonus" Width="1.5" PointX="12.75" PointY="8.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_advpay" Width="1.5" PointX="7.5" PointY="199.625" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_allowanceType" Width="1.5" PointX="8.25" PointY="120.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_app_permission" Width="1.5" PointX="11.25" PointY="113" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_app_role" Width="1.5" PointX="5.25" PointY="100.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_app_role_permission" Width="1.5" PointX="13.5" PointY="100.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_approvalSetting" Width="1.5" PointX="13.5" PointY="82.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_appType" Width="1.5" PointX="11.25" PointY="78.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_bank" Width="1.5" PointX="11.25" PointY="108.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_bonus_book" Width="1.5" PointX="13.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_bonus_summary" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_company" Width="1.5" PointX="9" PointY="70.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_costCenter" Width="1.5" PointX="8.25" PointY="102.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_deduct_loan" Width="1.5" PointX="14.75" PointY="11.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_deduct_sldrt" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_deductionType" Width="1.5" PointX="14.25" PointY="78.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_delagate" Width="1.5" PointX="10.5" PointY="89.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_delegate_request" Width="1.5" PointX="10.5" PointY="97.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_department" Width="1.5" PointX="11.25" PointY="71" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_deptGroup" Width="1.5" PointX="2.75" PointY="12.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_district" Width="1.5" PointX="3" PointY="90" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_educationType" Width="1.5" PointX="5.25" PointY="78.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_email_send" Width="1.5" PointX="12.75" PointY="15.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_emp_approve" Width="1.5" PointX="14.75" PointY="15.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_emp_question" Width="1.5" PointX="7.5" PointY="61.125" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empAllowance" Width="1.5" PointX="10.5" PointY="93.625" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empBankAccount" Width="1.5" PointX="13.5" PointY="95.625" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empDeduction" Width="1.5" PointX="16.5" PointY="89.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empEducation" Width="1.5" PointX="7.5" PointY="84.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empFamily" Width="1.5" PointX="7.5" PointY="186.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empGroup" Width="1.5" PointX="8.25" PointY="112.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empIncome" Width="1.5" PointX="7.5" PointY="94.625" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empInfo" Width="1.5" PointX="10.5" PointY="81.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empLevel" Width="1.5" PointX="8.25" PointY="106.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_employees" Width="1.5" PointX="5.25" PointY="82.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empSalary" Width="1.5" PointX="16.75" PointY="4.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empSSO" Width="1.5" PointX="7.5" PointY="98.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_empType" Width="1.5" PointX="16.75" PointY="8.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_ethnic" Width="1.5" PointX="3" PointY="99.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_evaluate_emp" Width="1.5" PointX="6" PointY="8.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_evaluate_reject" Width="1.5" PointX="8.75" PointY="16.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_fhf" Width="1.5" PointX="7.5" PointY="52" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_fstatus" Width="1.5" PointX="3" PointY="93.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_gender" Width="1.5" PointX="3" PointY="84" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_getHistoryLeave" Width="1.5" PointX="16.75" PointY="11.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_groupCostCenter" Width="1.5" PointX="16.75" PointY="15.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_incentive" Width="1.5" PointX="7.5" PointY="47.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_incomType" Width="1.5" PointX="5.25" PointY="104.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_languages" Width="1.5" PointX="17.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leave_approve_group" Width="1.5" PointX="18.75" PointY="3.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leaveApprove" Width="1.5" PointX="15.75" PointY="99.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leaveRequest" Width="1.5" PointX="13.5" PointY="87.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leaveRequestDetail" Width="1.5" PointX="15.75" PointY="93.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leaverequestdetailx" Width="1.5" PointX="15.75" PointY="96.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leaveSetting" Width="1.5" PointX="13.5" PointY="107.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leaveTranType" Width="1.5" PointX="11.25" PointY="105.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_leaveType" Width="1.5" PointX="11.25" PointY="102.125" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_loan" Width="1.5" PointX="7.5" PointY="171.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_loanApprove" Width="1.5" PointX="9.75" PointY="170.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_loanDetail" Width="1.5" PointX="9.75" PointY="174" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_log" Width="1.5" PointX="5.75" PointY="18.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_menu" Width="1.5" PointX="18.75" PointY="6.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_month" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_nationality" Width="1.5" PointX="3" PointY="96.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_noti" Width="1.5" PointX="18.75" PointY="10.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_noti_send" Width="1.5" PointX="18.75" PointY="13.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_noti_status" Width="1.5" PointX="14.75" PointY="18.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_ot_setting" Width="1.5" PointX="10.5" PointY="121.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_otApprove" Width="1.5" PointX="12.75" PointY="120.125" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_otRequest" Width="1.5" PointX="10.5" PointY="116" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_otRequestDetail" Width="1.5" PointX="12.75" PointY="116.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_otType" Width="1.5" PointX="19.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_pass_history" Width="1.5" PointX="7.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_payFHF" Width="1.5" PointX="9.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_paymentRecord" Width="1.5" PointX="7.5" PointY="143.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_paymentRecordApprove" Width="1.5" PointX="11.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_pension_summary" Width="1.5" PointX="16.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_permission" Width="1.5" PointX="18.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_positionTitle" Width="1.5" PointX="20.75" PointY="3.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_pr_approve" Width="1.5" PointX="20.75" PointY="6.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_process_status" Width="1.5" PointX="20.75" PointY="10.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_province" Width="1.5" PointX="0.75" PointY="90.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_publicHoliday" Width="1.5" PointX="20.75" PointY="13.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_race" Width="1.5" PointX="20.75" PointY="17.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_religion" Width="1.5" PointX="3" PointY="86.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_report_list" Width="1.5" PointX="13.75" PointY="21.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_request_upload" Width="1.5" PointX="15.75" PointY="85.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_role" Width="1.5" PointX="20.75" PointY="21.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_role_permission" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_rpt_evaluate_d" Width="1.5" PointX="11" PointY="3.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_rpt_evaluate_h" Width="1.5" PointX="8.75" PointY="1.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_salary_approve" Width="1.5" PointX="22.75" PointY="3.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_salary_list" Width="1.5" PointX="5.75" PointY="22.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_secure_setting" Width="1.5" PointX="22.75" PointY="7.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_setting_doc" Width="1.5" PointX="22.75" PointY="11.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_severance" Width="1.5" PointX="7.5" PointY="55.125" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_shift" Width="1.5" PointX="22.75" PointY="14.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_shiftWorking" Width="1.5" PointX="22.75" PointY="17.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_sldrt" Width="1.5" PointX="24.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_SLDRT_loan" Width="1.5" PointX="7.5" PointY="40.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_SLDRT_loanApprove" Width="1.5" PointX="9.75" PointY="39.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_SLDRT_loanDetail" Width="1.5" PointX="9.75" PointY="42.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_spouse" Width="1.5" PointX="7.5" PointY="178.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_SPRetirement" Width="1.5" PointX="7.5" PointY="182.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_sso" Width="1.5" PointX="5.25" PointY="108.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_ssoType" Width="1.5" PointX="3" PointY="109" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_status" Width="1.5" PointX="8.25" PointY="117.125" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_summary_bonus" Width="1.5" PointX="24.75" PointY="4.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_summary_pension" Width="1.5" PointX="7.75" PointY="24.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_taxs" Width="1.5" PointX="9.75" PointY="24.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_TaxType" Width="1.5" PointX="8.25" PointY="110.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_threshing" Width="1.5" PointX="24.75" PointY="10.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_unit" Width="1.5" PointX="8.25" PointY="66.625" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_upload_bonus" Width="1.5" PointX="24.75" PointY="15.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_users" Width="1.5" PointX="7.5" PointY="88.625" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_workingDay" Width="1.5" PointX="7.5" PointY="75.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_workingStatus" Width="1.5" PointX="15.75" PointY="24.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_commentquestionpartbyDirector" Width="1.5" PointX="17.75" PointY="24.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_commentUpdateIncome" Width="1.5" PointX="24.75" PointY="20.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_employeeHeaderquestion" Width="1.5" PointX="3" PointY="23.25" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_P_employeeLevel_GroupLevels" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_P_GroupLevels" Width="1.5" PointX="0.75" PointY="4.375" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_grouppermission" Width="1.5" PointX="6" PointY="4.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_grouppermissionLoginbyLevels" Width="1.5" PointX="11.75" PointY="25.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_headerquestion" Width="1.5" PointX="0.75" PointY="8.875" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_HeaderquestionEmployeeComments" Width="1.5" PointX="19.75" PointY="25.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_headerquestionEmployeeScoreSummary" Width="1.5" PointX="24.75" PointY="25.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_HeaderquestionGrouplevel" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_listquestionemp" Width="1.5" PointX="3" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_listquestionempdetails" Width="1.5" PointX="7.5" PointY="134.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_permission" Width="1.5" PointX="3.75" PointY="9.125" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_questionpart" Width="1.5" PointX="3.75" PointY="26.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_questlistdetails" Width="1.5" PointX="3" PointY="16.125" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_reportperformancereview" Width="1.5" PointX="26.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_score" Width="1.5" PointX="0.75" PointY="26.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_typequestion" Width="1.5" PointX="26.75" PointY="6.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_p_UserAdmin" Width="1.5" PointX="26.75" PointY="9.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tbl_P_Userlevels" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_checkworkday" Width="1.5" PointX="7.5" PointY="190.5" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_emp" Width="1.5" PointX="26.75" PointY="12.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_empMgr" Width="1.5" PointX="26.75" PointY="16.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_fhf" Width="1.5" PointX="26.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_loan" Width="1.5" PointX="21.75" PointY="26.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_notiMenu" Width="1.5" PointX="26.75" PointY="23.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_pass" Width="1.5" PointX="13.75" PointY="27.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_ppp" Width="1.5" PointX="26.75" PointY="27.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_reset_pass" Width="1.5" PointX="28.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_rpt1006" Width="1.5" PointX="28.75" PointY="3.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_rpt1011" Width="1.5" PointX="9.75" PointY="28.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_rpt1012" Width="1.5" PointX="28.75" PointY="10.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_salary_month" Width="1.5" PointX="15.75" PointY="28.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_shiftWorkingDay" Width="1.5" PointX="28.75" PointY="18.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_sum_working" Width="1.5" PointX="28.75" PointY="22.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_tax" Width="1.5" PointX="28.75" PointY="26.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_view_upload" Width="1.5" PointX="17.75" PointY="29.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_viewSumLeave" Width="1.5" PointX="19.75" PointY="29.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_checkInOut" Width="1.5" PointX="21.75" PointY="29.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_lang" Width="1.5" PointX="30.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_news" Width="1.5" PointX="0.75" PointY="30.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_next_noti" Width="1.5" PointX="2.75" PointY="30.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tb_tasks" Width="1.5" PointX="30.75" PointY="3.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.tmp_log_command" Width="1.5" PointX="30.75" PointY="7.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.test" Width="1.5" PointX="30.75" PointY="10.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_advBonus" Width="1.5" PointX="11.75" PointY="30.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_app_noti" Width="1.5" PointX="30.75" PointY="21.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_app_permission" Width="1.5" PointX="26.75" PointY="30.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_approved" Width="1.5" PointX="30.75" PointY="28.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_DashbordSumOT" Width="1.5" PointX="4.75" PointY="31.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_dateSalaryLastMonth" Width="1.5" PointX="6.75" PointY="31.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_dept_unit_employee" Width="1.5" PointX="23.75" PointY="31.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_email_noti" Width="1.5" PointX="32.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_emp_leave" Width="1.5" PointX="32.75" PointY="5.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_emp_ot" Width="1.5" PointX="32.75" PointY="9.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_emp_question_by_group" Width="1.5" PointX="32.75" PointY="15.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empdept" Width="1.5" PointX="32.75" PointY="18.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empDob" Width="1.5" PointX="32.75" PointY="24.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empIncome" Width="1.5" PointX="32.75" PointY="30.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empInfo" Width="1.5" PointX="28.75" PointY="33.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empleaverequestall" Width="1.5" PointX="8.75" PointY="33.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empleaverequestallbymgrid" Width="1.5" PointX="34.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_employeeleave_thisyear" Width="1.5" PointX="0.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_employeeLeavedetails" Width="1.5" PointX="2.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_employess" Width="1.5" PointX="13.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_employess2" Width="1.5" PointX="19.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empOT" Width="1.5" PointX="34.75" PointY="22.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empOT_request" Width="1.5" PointX="34.75" PointY="29.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_empPaymentRecord" Width="1.5" PointX="30.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_evaluate_header" Width="1.5" PointX="32.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_evaluate_header_1" Width="1.5" PointX="34.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_evaluate_header_2" Width="1.5" PointX="4.75" PointY="35.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_evaluate_header_3" Width="1.5" PointX="25.75" PointY="35.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_fingerCheck" Width="1.5" PointX="36.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_iBankName" Width="1.5" PointX="36.75" PointY="6.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_leaveBalace" Width="1.5" PointX="36.75" PointY="9.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_leaveBalanceAll" Width="1.5" PointX="36.75" PointY="13.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_leaveNotApproved" Width="1.5" PointX="15.75" PointY="36.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_leaverequest" Width="1.5" PointX="36.75" PointY="17.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_leaverequestalldetails" Width="1.5" PointX="36.75" PointY="24.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_leaverequestalldetails_2" Width="1.5" PointX="36.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_loan" Width="1.5" PointX="21.75" PointY="37.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_Log" Width="1.5" PointX="38.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_mgr_emp" Width="1.5" PointX="38.75" PointY="4.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_mobile_paymentrecord" Width="1.5" PointX="4.75" PointY="38.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_myRequest" Width="1.5" PointX="38.75" PointY="9.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_noti" Width="1.5" PointX="38.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_p_headerquestion" Width="1.5" PointX="38.75" PointY="22.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_p_headerquestion_1" Width="1.5" PointX="38.75" PointY="26.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_paymentReccordDetail" Width="1.5" PointX="38.75" PointY="30.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_paymentRecord" Width="1.5" PointX="38.75" PointY="38.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_paymentYearmonth" Width="1.5" PointX="10.75" PointY="36.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_publicHoliday" Width="1.5" PointX="23.75" PointY="39.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_reportOTDetailsbyEmp" Width="1.5" PointX="25.75" PointY="39.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_request_all" Width="1.5" PointX="40.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_rpt1013_only2person" Width="1.5" PointX="40.75" PointY="6.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_salary_list" Width="1.5" PointX="40.75" PointY="10.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_selEmpHeader" Width="1.5" PointX="15.75" PointY="40.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_SLDRT_loan" Width="1.5" PointX="40.75" PointY="20.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_sumEmpLeave" Width="1.5" PointX="40.75" PointY="26.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_sumEmpLeaveName" Width="1.5" PointX="40.75" PointY="29.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_terminate" Width="1.5" PointX="40.75" PointY="33.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_unit" Width="1.5" PointX="4.75" PointY="41.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_upload_finger" Width="1.5" PointX="32.75" PointY="41.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_user_permission" Width="1.5" PointX="42.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.v_users" Width="1.5" PointX="42.75" PointY="5.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.View_1" Width="1.5" PointX="42.75" PointY="17.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_EmployeeDetails_All" Width="1.5" PointX="42.75" PointY="21.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_EmployeeDetailsWorkStatus" Width="1.5" PointX="27.75" PointY="42.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_EmployeeDetailsWorkStatus_1" Width="1.5" PointX="29.75" PointY="42.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_commentquestionpartbyDirector" Width="1.5" PointX="42.75" PointY="35.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_displayHeaderquestionGrouplevelbyEmployeee" Width="1.5" PointX="42.75" PointY="40.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_displayUserOnlyHR" Width="1.5" PointX="0.75" PointY="43.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_employee_in_HeaderquestionGroupLevels" Width="1.5" PointX="21.75" PointY="43.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_employeeheaderquestion" Width="1.5" PointX="44.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_employeelevel_grouplevels" Width="1.5" PointX="44.75" PointY="8.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_grouppermissionloginbylevels" Width="1.5" PointX="44.75" PointY="14.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_headerquestionemployeecomments" Width="1.5" PointX="44.75" PointY="18.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_headerquestionemployeefinishedgroup" Width="1.5" PointX="23.75" PointY="44.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_headerquestionemployeescoresummary" Width="1.5" PointX="44.75" PointY="24.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_headerquestiongrouplevel" Width="1.5" PointX="44.75" PointY="31.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_listemployeeinHeaderquestion" Width="1.5" PointX="34.75" PointY="44.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_listquestionbyemployee" Width="1.5" PointX="44.75" PointY="35.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_listquestionbyemployeegenerate" Width="1.5" PointX="44.75" PointY="42.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_listquestionempdetails" Width="1.5" PointX="17.75" PointY="45.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_listquestionempdetailsbyowner" Width="1.5" PointX="46.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_quesitondetailslistemployeeall" Width="1.5" PointX="0.75" PointY="46.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_questionlistdetails" Width="1.5" PointX="2.75" PointY="46.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_questionlistdetailsUpdate" Width="1.5" PointX="4.75" PointY="46.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_questionlistheaderquestionUpdate" Width="1.5" PointX="46.75" PointY="7.75" />
+        <EntityTypeShape EntityType="db_hrmsModel.vm_p_questionpart" Width="1.5" PointX="46.75" PointY="11.75" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_advpay_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empAllowance_tb_allowanceType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_app_role_permission_tb_app_permission" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_app_role_permission_tb_app_role" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_users_tb_app_role" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_approvalSetting_tb_appType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_approvalSetting_tb_department" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_approvalSetting_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empBankAccount_tb_bank" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_department_tb_company" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empInfo_tb_costCenter" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empDeduction_tb_deductionType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_delagate_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_delagate_tb_status" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_delegate_request_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_delegate_request_tb_status" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_unit_tb_department" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_district_tb_province" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_employees_tb_district" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empEducation_tb_educationType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_emp_question_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empAllowance_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empBankAccount_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empDeduction_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empEducation_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empFamily_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empInfo_tb_empGroup" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveSetting_tb_empGroup" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empIncome_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empIncome_tb_incomType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empInfo_tb_empLevel" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empInfo_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empInfo_tb_TaxType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empInfo_tb_unit" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_lis__Emp_i__08411774" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_employees_tb_ethnic" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empployees_tb_fstatus" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empployees_tb_gender" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empployees_tb_nationality" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empployees_tb_religion" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empSSO_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_fhf_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_incentive_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveRequest_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_load_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_paymentRecord_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_severance_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_SLDRT_loan_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_spouse_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_SPRetirement_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_users_tb_empployees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_workingDay_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tmp_checkworkday_tb_employees" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_empSSO_tb_sso" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_evaluate_emp_tb_evaluate_emp" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_evaluate_emp_tbl_p_headerquestion" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveApprove_tb_leaveRequest" />
+        <AssociationConnector Association="db_hrmsModel.FK__tb_leaver__leave__524F1B17" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveRequest_tb_leaveRequest" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveRequest_tb_leaveTranType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveRequest_tb_leaveType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveRequestDetail_tb_leaveRequest" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_request_upload_tb_leaveRequest" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_leaveSetting_tb_leaveType" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_loadDetail_tb_load" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_loanApprove_tb_loan" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_otRequestDetail_tb_ot_setting" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_otApprove_tb_otRequest" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_otRequest_tb_status" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_otRequestDetail_tb_otRequest" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_paymentRecord_tb_paymentRecord" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_rpt_evaluate_d_tb_rpt_evaluate_h" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_SLDRT_loanApprove_tb_SLDRT_loan" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_SLDRT_loanDetail_tb_SLDRT_loan" />
+        <AssociationConnector Association="db_hrmsModel.FK_tb_sso_tb_ssoType" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_emp__HDQID__54C1736E" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_P_emp__GLUID__66E023A9" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_P_emp__GLUID__69BC9054" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_P_emp__GLUID__6E814571" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_P_emp__PUSLI__6F7569AA" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_gro__GLUID__7345FA8E" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_gro__GLUID__780AAFAB" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_Hea__GLUID__7FABD173" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_gro__PMSID__78FED3E4" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_Hea__HDQID__009FF5AC" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_lis__HDQID__037C6257" />
+        <AssociationConnector Association="db_hrmsModel.FK__tbl_p_que__HDQID__11CA81AE" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

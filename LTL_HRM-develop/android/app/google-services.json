@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1008700136631",
+    "project_id": "hrm-ltl",
+    "storage_bucket": "hrm-ltl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008700136631:android:84f8919b63290e8a654132",
+        "android_client_info": {
+          "package_name": "com.tk.group.HRM.LTL"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008700136631-d5f3bhn3s6g561f3s09genorupgprodh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHPyCx3WZq6awT1e21aEob8p-twNPY-1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008700136631-d5f3bhn3s6g561f3s09genorupgprodh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1008700136631-rem3sul104o8okqb8pg0eqj82ke0kck4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tk.group.HRM.LTL"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008700136631:android:2702558a1a94e89c654132",
+        "android_client_info": {
+          "package_name": "com.tkgroup.ltl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008700136631-d5f3bhn3s6g561f3s09genorupgprodh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHPyCx3WZq6awT1e21aEob8p-twNPY-1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008700136631-d5f3bhn3s6g561f3s09genorupgprodh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1008700136631-rem3sul104o8okqb8pg0eqj82ke0kck4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tk.group.HRM.LTL"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

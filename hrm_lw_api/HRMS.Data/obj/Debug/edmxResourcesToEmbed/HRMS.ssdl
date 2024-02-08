@@ -1,0 +1,1272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HRMXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_allowanceType">
+    <Key>
+      <PropertyRef Name="allowanceTypeID" />
+    </Key>
+    <Property Name="allowanceTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="allowanceTypeCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="allowanceTypeName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="allowanceTypeName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_app_permission">
+    <Key>
+      <PropertyRef Name="app_permissionId" />
+    </Key>
+    <Property Name="app_permissionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="app_permissionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_app_role">
+    <Key>
+      <PropertyRef Name="roleId" />
+    </Key>
+    <Property Name="roleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="roleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_app_role_permission">
+    <Key>
+      <PropertyRef Name="appId" />
+    </Key>
+    <Property Name="appId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="roleId" Type="int" />
+    <Property Name="app_permissionId" Type="int" />
+    <Property Name="app_view" Type="int" />
+    <Property Name="app_add" Type="int" />
+    <Property Name="app_edit" Type="int" />
+    <Property Name="app_action" Type="int" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_bank">
+    <Key>
+      <PropertyRef Name="bankID" />
+    </Key>
+    <Property Name="bankID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankShortName" Type="nvarchar" MaxLength="50" />
+    <Property Name="BankLongName" Type="float" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db_hrms.dbo.tb_checkInOut' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_checkInOut">
+    <Key>
+      <PropertyRef Name="chechID" />
+    </Key>
+    <Property Name="chechID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="checkTime" Type="datetime" />
+    <Property Name="longitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="latitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="checkInOut" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="picture" Type="image" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_company">
+    <Key>
+      <PropertyRef Name="companyID" />
+    </Key>
+    <Property Name="companyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="companyCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="companyName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="companyName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_deductionType">
+    <Key>
+      <PropertyRef Name="deductionTypeID" />
+    </Key>
+    <Property Name="deductionTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="deductionTypeCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="deductionTypeName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="deductionTypeName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_department">
+    <Key>
+      <PropertyRef Name="deptID" />
+    </Key>
+    <Property Name="deptID" Type="int" Nullable="false" />
+    <Property Name="companyID" Type="int" />
+    <Property Name="deptCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="deptName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="deptName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_district">
+    <Key>
+      <PropertyRef Name="district_id" />
+    </Key>
+    <Property Name="district_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Pro_ID" Type="int" />
+    <Property Name="district_name" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="tb_educationType">
+    <Key>
+      <PropertyRef Name="educationTypeID" />
+    </Key>
+    <Property Name="educationTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="educationTypeCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="educationTypeName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="educationTypeName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empAllowance">
+    <Key>
+      <PropertyRef Name="empAllowanceID" />
+    </Key>
+    <Property Name="empAllowanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empID" Type="int" />
+    <Property Name="allowanceTypeID" Type="int" Nullable="false" />
+    <Property Name="amount" Type="float" />
+    <Property Name="taxsCal" Type="bit" />
+    <Property Name="remark" Type="nvarchar" MaxLength="250" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empBankAccount">
+    <Key>
+      <PropertyRef Name="empBankAccountID" />
+    </Key>
+    <Property Name="empBankAccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bankID" Type="int" Nullable="false" />
+    <Property Name="empID" Type="int" Nullable="false" />
+    <Property Name="bankAccountName" Type="nvarchar" MaxLength="150" />
+    <Property Name="bankAccountNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empDeduction">
+    <Key>
+      <PropertyRef Name="empDeduction" />
+    </Key>
+    <Property Name="empDeduction" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empID" Type="int" />
+    <Property Name="deductionTypeID" Type="int" Nullable="false" />
+    <Property Name="amount" Type="float" />
+    <Property Name="taxsCal" Type="bit" />
+    <Property Name="remark" Type="nvarchar" MaxLength="250" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empEducation">
+    <Key>
+      <PropertyRef Name="empEducationID" />
+    </Key>
+    <Property Name="empEducationID" Type="int" Nullable="false" />
+    <Property Name="empID" Type="int" Nullable="false" />
+    <Property Name="educationTypeID" Type="int" Nullable="false" />
+    <Property Name="schoolName" Type="nvarchar" MaxLength="150" />
+    <Property Name="levelReceive" Type="nvarchar" MaxLength="50" />
+    <Property Name="acdamyYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="remark" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empFamily">
+    <Key>
+      <PropertyRef Name="empFamilyID" />
+    </Key>
+    <Property Name="empFamilyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empID" Type="int" />
+    <Property Name="empFamilyRelationships" Type="nvarchar" MaxLength="50" />
+    <Property Name="empFamilyFullName" Type="nvarchar" MaxLength="150" />
+    <Property Name="empFamilyJob" Type="nvarchar" MaxLength="50" />
+    <Property Name="empFamilyJobAddr" Type="nvarchar" MaxLength="50" />
+    <Property Name="empFamilyAddr" Type="nvarchar" MaxLength="250" />
+    <Property Name="empFamilyTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="empFamilyEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empGroup">
+    <Key>
+      <PropertyRef Name="empGroupID" />
+    </Key>
+    <Property Name="empGroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empGroupCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="empGroupName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="empGroupName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empIncome">
+    <Key>
+      <PropertyRef Name="empIncome" />
+    </Key>
+    <Property Name="empIncome" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empID" Type="int" />
+    <Property Name="incomTypeID" Type="int" Nullable="false" />
+    <Property Name="amount" Type="float" />
+    <Property Name="taxsCal" Type="bit" />
+    <Property Name="remark" Type="nvarchar" MaxLength="250" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empInfo">
+    <Key>
+      <PropertyRef Name="empInfoID" />
+    </Key>
+    <Property Name="empInfoID" Type="int" Nullable="false" />
+    <Property Name="empID" Type="int" />
+    <Property Name="unitID" Type="int" />
+    <Property Name="empLevelID" Type="int" />
+    <Property Name="hireDay" Type="date" />
+    <Property Name="empGroupID" Type="int" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empLevel">
+    <Key>
+      <PropertyRef Name="empLevelID" />
+    </Key>
+    <Property Name="empLevelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empLevelCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="empLevelName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="empLevelName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_empployees">
+    <Key>
+      <PropertyRef Name="empID" />
+    </Key>
+    <Property Name="empID" Type="int" Nullable="false" />
+    <Property Name="firstName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="lastName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="nickName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="firstName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="lastName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="nickName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="genderID" Type="int" />
+    <Property Name="dob" Type="date" />
+    <Property Name="fstatusID" Type="int" />
+    <Property Name="nationalityID" Type="int" />
+    <Property Name="raceID" Type="int" />
+    <Property Name="religionID" Type="int" />
+    <Property Name="IDCrad" Type="nvarchar" MaxLength="50" />
+    <Property Name="passport" Type="nvarchar" MaxLength="50" />
+    <Property Name="address1" Type="nvarchar" MaxLength="250" />
+    <Property Name="district_id1" Type="int" />
+    <Property Name="address2" Type="nvarchar" MaxLength="250" />
+    <Property Name="district_id2" Type="int" />
+    <Property Name="empMobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="empEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_fstatus">
+    <Key>
+      <PropertyRef Name="fstatusID" />
+    </Key>
+    <Property Name="fstatusID" Type="int" Nullable="false" />
+    <Property Name="fstatusName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="fstatusName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_gender">
+    <Key>
+      <PropertyRef Name="genderID" />
+    </Key>
+    <Property Name="genderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="langID" Type="int" />
+    <Property Name="genderText" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_incomType">
+    <Key>
+      <PropertyRef Name="incomTypeID" />
+    </Key>
+    <Property Name="incomTypeID" Type="int" Nullable="false" />
+    <Property Name="incomTypeCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="incomTypeName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="incomTypeName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db_hrms.dbo.tb_lang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_lang">
+    <Key>
+      <PropertyRef Name="langID" />
+    </Key>
+    <Property Name="langID" Type="int" Nullable="false" />
+    <Property Name="langName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_languages">
+    <Key>
+      <PropertyRef Name="langID" />
+    </Key>
+    <Property Name="langID" Type="int" Nullable="false" />
+    <Property Name="langShort" Type="nvarchar" MaxLength="50" />
+    <Property Name="langName" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_leaveSetting">
+    <Key>
+      <PropertyRef Name="leaveSettingID" />
+    </Key>
+    <Property Name="leaveSettingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="leaveTypeID" Type="int" Nullable="false" />
+    <Property Name="empGroupID" Type="int" Nullable="false" />
+    <Property Name="amountDay" Type="int" />
+    <Property Name="remark" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_leaveType">
+    <Key>
+      <PropertyRef Name="leaveTypeID" />
+    </Key>
+    <Property Name="leaveTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="leaveTypeCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="leaveTypeName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="leaveTypeName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_menu">
+    <Key>
+      <PropertyRef Name="menuID" />
+      <PropertyRef Name="menuNo" />
+    </Key>
+    <Property Name="menuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="menuNo" Type="int" Nullable="false" />
+    <Property Name="langID" Type="int" />
+    <Property Name="menuText" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_nationality">
+    <Key>
+      <PropertyRef Name="nationalityID" />
+    </Key>
+    <Property Name="nationalityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nationalityCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="nationalityName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="nationalityName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db_hrms.dbo.tb_news' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_news">
+    <Key>
+      <PropertyRef Name="newsID" />
+    </Key>
+    <Property Name="newsID" Type="int" Nullable="false" />
+    <Property Name="newsTitle" Type="nvarchar" MaxLength="250" />
+    <Property Name="newsContrent" Type="nvarchar(max)" />
+    <Property Name="attachec_file" Type="nvarchar" MaxLength="250" />
+    <Property Name="pubish_date" Type="datetime" />
+    <Property Name="exp_date" Type="datetime" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db_hrms.dbo.tb_noti' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_noti">
+    <Key>
+      <PropertyRef Name="notiID" />
+    </Key>
+    <Property Name="notiID" Type="int" Nullable="false" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="app_permissionId" Type="int" />
+    <Property Name="CountItem" Type="int" />
+    <Property Name="userView" Type="int" />
+    <Property Name="OldValues" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_permission">
+    <Key>
+      <PropertyRef Name="permissionID" />
+    </Key>
+    <Property Name="permissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="langID" Type="int" />
+    <Property Name="permissionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="staus_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_province">
+    <Key>
+      <PropertyRef Name="Pro_ID" />
+    </Key>
+    <Property Name="Pro_ID" Type="int" Nullable="false" />
+    <Property Name="Pronamenen" Type="nvarchar" MaxLength="50" />
+    <Property Name="pronameln" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_publicHoliday">
+    <Key>
+      <PropertyRef Name="publicHolidayID" />
+    </Key>
+    <Property Name="publicHolidayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="publicHoliday" Type="date" />
+    <Property Name="publicHolidayName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="publicHolidayName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_race">
+    <Key>
+      <PropertyRef Name="raceID" />
+    </Key>
+    <Property Name="raceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="raceCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="raceName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="raceName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_religion">
+    <Key>
+      <PropertyRef Name="religionID" />
+    </Key>
+    <Property Name="religionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="religionCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="religionName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="religionName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_role">
+    <Key>
+      <PropertyRef Name="roleID" />
+      <PropertyRef Name="roleNo" />
+    </Key>
+    <Property Name="roleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="roleNo" Type="int" Nullable="false" />
+    <Property Name="roleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="langID" Type="int" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_role_permission">
+    <Key>
+      <PropertyRef Name="role_per" />
+    </Key>
+    <Property Name="role_per" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="roleID" Type="int" />
+    <Property Name="permissionID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_spouse">
+    <Key>
+      <PropertyRef Name="spouseID" />
+    </Key>
+    <Property Name="spouseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="empID" Type="int" />
+    <Property Name="sName" Type="nvarchar" MaxLength="50" />
+    <Property Name="sMobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="sEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="sAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="sJob" Type="nvarchar" MaxLength="50" />
+    <Property Name="jobAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="remark" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_sso">
+    <Key>
+      <PropertyRef Name="ssoID" />
+    </Key>
+    <Property Name="ssoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ssoTypeID" Type="int" />
+    <Property Name="minBase" Type="float" />
+    <Property Name="maxBase" Type="float" />
+    <Property Name="employeeRate" Type="float" />
+    <Property Name="employerRate" Type="float" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ssoType">
+    <Key>
+      <PropertyRef Name="ssoTypeID" />
+    </Key>
+    <Property Name="ssoTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ssoName" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db_hrms.dbo.tb_tasks' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_tasks">
+    <Key>
+      <PropertyRef Name="taskID" />
+    </Key>
+    <Property Name="taskID" Type="int" Nullable="false" />
+    <Property Name="taskName" Type="nvarchar" MaxLength="250" />
+    <Property Name="taskDetail" Type="nvarchar" MaxLength="250" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="attachec_file" Type="varbinary(max)" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="status_com" Type="bit" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_taxs">
+    <Key>
+      <PropertyRef Name="taxsID" />
+    </Key>
+    <Property Name="taxsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="minBase" Type="float" />
+    <Property Name="maxBase" Type="float" />
+    <Property Name="taxsRate" Type="float" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_unit">
+    <Key>
+      <PropertyRef Name="unitID" />
+    </Key>
+    <Property Name="unitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="deptID" Type="int" Nullable="false" />
+    <Property Name="parentID" Type="int" />
+    <Property Name="unitName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="unitName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_ID" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_user_role">
+    <Key>
+      <PropertyRef Name="user_per" />
+    </Key>
+    <Property Name="user_per" Type="int" Nullable="false" />
+    <Property Name="userID" Type="int" />
+    <Property Name="roleID" Type="int" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_users">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="pwd" Type="nvarchar" MaxLength="250" />
+    <Property Name="empID" Type="int" />
+    <Property Name="roleID" Type="int" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="expDate" Type="datetime" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'db_hrms.dbo.v_users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="v_users">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="pwd" Type="nvarchar" MaxLength="250" />
+    <Property Name="empID" Type="int" />
+    <Property Name="roleID" Type="int" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="expDate" Type="datetime" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+    <Property Name="firstName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="lastName1" Type="nvarchar" MaxLength="50" />
+    <Property Name="firstName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="lastName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="genderNo" Type="int" />
+  </EntityType>
+  <Association Name="FK_tb_app_role_permission_tb_app_permission">
+    <End Role="tb_app_permission" Type="Self.tb_app_permission" Multiplicity="0..1" />
+    <End Role="tb_app_role_permission" Type="Self.tb_app_role_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_app_permission">
+        <PropertyRef Name="app_permissionId" />
+      </Principal>
+      <Dependent Role="tb_app_role_permission">
+        <PropertyRef Name="app_permissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_app_role_permission_tb_app_role">
+    <End Role="tb_app_role" Type="Self.tb_app_role" Multiplicity="0..1" />
+    <End Role="tb_app_role_permission" Type="Self.tb_app_role_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_app_role">
+        <PropertyRef Name="roleId" />
+      </Principal>
+      <Dependent Role="tb_app_role_permission">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_department_tb_company">
+    <End Role="tb_company" Type="Self.tb_company" Multiplicity="0..1" />
+    <End Role="tb_department" Type="Self.tb_department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_company">
+        <PropertyRef Name="companyID" />
+      </Principal>
+      <Dependent Role="tb_department">
+        <PropertyRef Name="companyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_district_tb_province">
+    <End Role="tb_province" Type="Self.tb_province" Multiplicity="0..1" />
+    <End Role="tb_district" Type="Self.tb_district" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_province">
+        <PropertyRef Name="Pro_ID" />
+      </Principal>
+      <Dependent Role="tb_district">
+        <PropertyRef Name="Pro_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empAllowance_tb_allowanceType">
+    <End Role="tb_allowanceType" Type="Self.tb_allowanceType" Multiplicity="1" />
+    <End Role="tb_empAllowance" Type="Self.tb_empAllowance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_allowanceType">
+        <PropertyRef Name="allowanceTypeID" />
+      </Principal>
+      <Dependent Role="tb_empAllowance">
+        <PropertyRef Name="allowanceTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empAllowance_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="0..1" />
+    <End Role="tb_empAllowance" Type="Self.tb_empAllowance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empAllowance">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empBankAccount_tb_bank">
+    <End Role="tb_bank" Type="Self.tb_bank" Multiplicity="1" />
+    <End Role="tb_empBankAccount" Type="Self.tb_empBankAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_bank">
+        <PropertyRef Name="bankID" />
+      </Principal>
+      <Dependent Role="tb_empBankAccount">
+        <PropertyRef Name="bankID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empBankAccount_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="1" />
+    <End Role="tb_empBankAccount" Type="Self.tb_empBankAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empBankAccount">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empDeduction_tb_deductionType">
+    <End Role="tb_deductionType" Type="Self.tb_deductionType" Multiplicity="1" />
+    <End Role="tb_empDeduction" Type="Self.tb_empDeduction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_deductionType">
+        <PropertyRef Name="deductionTypeID" />
+      </Principal>
+      <Dependent Role="tb_empDeduction">
+        <PropertyRef Name="deductionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empDeduction_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="0..1" />
+    <End Role="tb_empDeduction" Type="Self.tb_empDeduction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empDeduction">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empEducation_tb_educationType">
+    <End Role="tb_educationType" Type="Self.tb_educationType" Multiplicity="1" />
+    <End Role="tb_empEducation" Type="Self.tb_empEducation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_educationType">
+        <PropertyRef Name="educationTypeID" />
+      </Principal>
+      <Dependent Role="tb_empEducation">
+        <PropertyRef Name="educationTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empEducation_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="1" />
+    <End Role="tb_empEducation" Type="Self.tb_empEducation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empEducation">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empFamily_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="0..1" />
+    <End Role="tb_empFamily" Type="Self.tb_empFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empFamily">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empIncome_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="0..1" />
+    <End Role="tb_empIncome" Type="Self.tb_empIncome" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empIncome">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empIncome_tb_incomType">
+    <End Role="tb_incomType" Type="Self.tb_incomType" Multiplicity="1" />
+    <End Role="tb_empIncome" Type="Self.tb_empIncome" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_incomType">
+        <PropertyRef Name="incomTypeID" />
+      </Principal>
+      <Dependent Role="tb_empIncome">
+        <PropertyRef Name="incomTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_empGroup">
+    <End Role="tb_empGroup" Type="Self.tb_empGroup" Multiplicity="0..1" />
+    <End Role="tb_empInfo" Type="Self.tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empGroup">
+        <PropertyRef Name="empGroupID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="empGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_empLevel">
+    <End Role="tb_empLevel" Type="Self.tb_empLevel" Multiplicity="0..1" />
+    <End Role="tb_empInfo" Type="Self.tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empLevel">
+        <PropertyRef Name="empLevelID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="empLevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="0..1" />
+    <End Role="tb_empInfo" Type="Self.tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_unit">
+    <End Role="tb_unit" Type="Self.tb_unit" Multiplicity="0..1" />
+    <End Role="tb_empInfo" Type="Self.tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_unit">
+        <PropertyRef Name="unitID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="unitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_district">
+    <End Role="tb_district" Type="Self.tb_district" Multiplicity="0..1" />
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_district">
+        <PropertyRef Name="district_id" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="district_id2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_fstatus">
+    <End Role="tb_fstatus" Type="Self.tb_fstatus" Multiplicity="0..1" />
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_fstatus">
+        <PropertyRef Name="fstatusID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="fstatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_gender">
+    <End Role="tb_gender" Type="Self.tb_gender" Multiplicity="0..1" />
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_gender">
+        <PropertyRef Name="genderID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="genderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_nationality">
+    <End Role="tb_nationality" Type="Self.tb_nationality" Multiplicity="0..1" />
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_nationality">
+        <PropertyRef Name="nationalityID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="nationalityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_race">
+    <End Role="tb_race" Type="Self.tb_race" Multiplicity="0..1" />
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_race">
+        <PropertyRef Name="raceID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="raceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_religion">
+    <End Role="tb_religion" Type="Self.tb_religion" Multiplicity="0..1" />
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_religion">
+        <PropertyRef Name="religionID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="religionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_leaveSetting_tb_empGroup">
+    <End Role="tb_empGroup" Type="Self.tb_empGroup" Multiplicity="1" />
+    <End Role="tb_leaveSetting" Type="Self.tb_leaveSetting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empGroup">
+        <PropertyRef Name="empGroupID" />
+      </Principal>
+      <Dependent Role="tb_leaveSetting">
+        <PropertyRef Name="empGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_leaveSetting_tb_leaveType">
+    <End Role="tb_leaveType" Type="Self.tb_leaveType" Multiplicity="1" />
+    <End Role="tb_leaveSetting" Type="Self.tb_leaveSetting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_leaveType">
+        <PropertyRef Name="leaveTypeID" />
+      </Principal>
+      <Dependent Role="tb_leaveSetting">
+        <PropertyRef Name="leaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_leaveType_tb_leaveType">
+    <End Role="tb_leaveType" Type="Self.tb_leaveType" Multiplicity="1" />
+    <End Role="tb_leaveType1" Type="Self.tb_leaveType" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tb_leaveType">
+        <PropertyRef Name="leaveTypeID" />
+      </Principal>
+      <Dependent Role="tb_leaveType1">
+        <PropertyRef Name="leaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_spouse_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="0..1" />
+    <End Role="tb_spouse" Type="Self.tb_spouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_spouse">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_sso_tb_ssoType">
+    <End Role="tb_ssoType" Type="Self.tb_ssoType" Multiplicity="0..1" />
+    <End Role="tb_sso" Type="Self.tb_sso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ssoType">
+        <PropertyRef Name="ssoTypeID" />
+      </Principal>
+      <Dependent Role="tb_sso">
+        <PropertyRef Name="ssoTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_unit_tb_department">
+    <End Role="tb_department" Type="Self.tb_department" Multiplicity="1" />
+    <End Role="tb_unit" Type="Self.tb_unit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_department">
+        <PropertyRef Name="deptID" />
+      </Principal>
+      <Dependent Role="tb_unit">
+        <PropertyRef Name="deptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_users_tb_app_role">
+    <End Role="tb_app_role" Type="Self.tb_app_role" Multiplicity="0..1" />
+    <End Role="tb_users" Type="Self.tb_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_app_role">
+        <PropertyRef Name="roleId" />
+      </Principal>
+      <Dependent Role="tb_users">
+        <PropertyRef Name="roleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_users_tb_empployees">
+    <End Role="tb_empployees" Type="Self.tb_empployees" Multiplicity="0..1" />
+    <End Role="tb_users" Type="Self.tb_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_users">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HRMXModelStoreContainer">
+    <EntitySet Name="tb_allowanceType" EntityType="Self.tb_allowanceType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_app_permission" EntityType="Self.tb_app_permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_app_role" EntityType="Self.tb_app_role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_app_role_permission" EntityType="Self.tb_app_role_permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_bank" EntityType="Self.tb_bank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_company" EntityType="Self.tb_company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_deductionType" EntityType="Self.tb_deductionType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_department" EntityType="Self.tb_department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_district" EntityType="Self.tb_district" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_educationType" EntityType="Self.tb_educationType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empAllowance" EntityType="Self.tb_empAllowance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empBankAccount" EntityType="Self.tb_empBankAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empDeduction" EntityType="Self.tb_empDeduction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empEducation" EntityType="Self.tb_empEducation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empFamily" EntityType="Self.tb_empFamily" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empGroup" EntityType="Self.tb_empGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empIncome" EntityType="Self.tb_empIncome" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empInfo" EntityType="Self.tb_empInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empLevel" EntityType="Self.tb_empLevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_empployees" EntityType="Self.tb_empployees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_fstatus" EntityType="Self.tb_fstatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_gender" EntityType="Self.tb_gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_incomType" EntityType="Self.tb_incomType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_languages" EntityType="Self.tb_languages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_leaveSetting" EntityType="Self.tb_leaveSetting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_leaveType" EntityType="Self.tb_leaveType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_menu" EntityType="Self.tb_menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_nationality" EntityType="Self.tb_nationality" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_permission" EntityType="Self.tb_permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_province" EntityType="Self.tb_province" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_publicHoliday" EntityType="Self.tb_publicHoliday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_race" EntityType="Self.tb_race" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_religion" EntityType="Self.tb_religion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_role" EntityType="Self.tb_role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_role_permission" EntityType="Self.tb_role_permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_spouse" EntityType="Self.tb_spouse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_sso" EntityType="Self.tb_sso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ssoType" EntityType="Self.tb_ssoType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_taxs" EntityType="Self.tb_taxs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_unit" EntityType="Self.tb_unit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_user_role" EntityType="Self.tb_user_role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_users" EntityType="Self.tb_users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_checkInOut" EntityType="Self.tb_checkInOut" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tb_checkInOut].[chechID] AS [chechID], 
+    [tb_checkInOut].[emp_id] AS [emp_id], 
+    [tb_checkInOut].[checkTime] AS [checkTime], 
+    [tb_checkInOut].[longitude] AS [longitude], 
+    [tb_checkInOut].[latitude] AS [latitude], 
+    [tb_checkInOut].[checkInOut] AS [checkInOut], 
+    [tb_checkInOut].[status_id] AS [status_id], 
+    [tb_checkInOut].[picture] AS [picture], 
+    [tb_checkInOut].[date_add] AS [date_add]
+    FROM [dbo].[tb_checkInOut] AS [tb_checkInOut]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_lang" EntityType="Self.tb_lang" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tb_lang].[langID] AS [langID], 
+    [tb_lang].[langName] AS [langName]
+    FROM [dbo].[tb_lang] AS [tb_lang]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_news" EntityType="Self.tb_news" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tb_news].[newsID] AS [newsID], 
+    [tb_news].[newsTitle] AS [newsTitle], 
+    [tb_news].[newsContrent] AS [newsContrent], 
+    [tb_news].[attachec_file] AS [attachec_file], 
+    [tb_news].[pubish_date] AS [pubish_date], 
+    [tb_news].[exp_date] AS [exp_date], 
+    [tb_news].[status_id] AS [status_id], 
+    [tb_news].[user_add] AS [user_add], 
+    [tb_news].[date_add] AS [date_add]
+    FROM [dbo].[tb_news] AS [tb_news]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_noti" EntityType="Self.tb_noti" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tb_noti].[notiID] AS [notiID], 
+    [tb_noti].[Emp_id] AS [Emp_id], 
+    [tb_noti].[app_permissionId] AS [app_permissionId], 
+    [tb_noti].[CountItem] AS [CountItem], 
+    [tb_noti].[userView] AS [userView], 
+    [tb_noti].[OldValues] AS [OldValues]
+    FROM [dbo].[tb_noti] AS [tb_noti]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_tasks" EntityType="Self.tb_tasks" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tb_tasks].[taskID] AS [taskID], 
+    [tb_tasks].[taskName] AS [taskName], 
+    [tb_tasks].[taskDetail] AS [taskDetail], 
+    [tb_tasks].[emp_id] AS [emp_id], 
+    [tb_tasks].[attachec_file] AS [attachec_file], 
+    [tb_tasks].[status_id] AS [status_id], 
+    [tb_tasks].[status_com] AS [status_com], 
+    [tb_tasks].[user_add] AS [user_add], 
+    [tb_tasks].[date_add] AS [date_add]
+    FROM [dbo].[tb_tasks] AS [tb_tasks]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="v_users" EntityType="Self.v_users" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [v_users].[userID] AS [userID], 
+    [v_users].[username] AS [username], 
+    [v_users].[pwd] AS [pwd], 
+    [v_users].[empID] AS [empID], 
+    [v_users].[roleID] AS [roleID], 
+    [v_users].[status_id] AS [status_id], 
+    [v_users].[expDate] AS [expDate], 
+    [v_users].[user_add] AS [user_add], 
+    [v_users].[date_add] AS [date_add], 
+    [v_users].[firstName1] AS [firstName1], 
+    [v_users].[lastName1] AS [lastName1], 
+    [v_users].[firstName2] AS [firstName2], 
+    [v_users].[lastName2] AS [lastName2], 
+    [v_users].[genderNo] AS [genderNo]
+    FROM [dbo].[v_users] AS [v_users]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_tb_app_role_permission_tb_app_permission" Association="Self.FK_tb_app_role_permission_tb_app_permission">
+      <End Role="tb_app_permission" EntitySet="tb_app_permission" />
+      <End Role="tb_app_role_permission" EntitySet="tb_app_role_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_app_role_permission_tb_app_role" Association="Self.FK_tb_app_role_permission_tb_app_role">
+      <End Role="tb_app_role" EntitySet="tb_app_role" />
+      <End Role="tb_app_role_permission" EntitySet="tb_app_role_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_department_tb_company" Association="Self.FK_tb_department_tb_company">
+      <End Role="tb_company" EntitySet="tb_company" />
+      <End Role="tb_department" EntitySet="tb_department" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_district_tb_province" Association="Self.FK_tb_district_tb_province">
+      <End Role="tb_province" EntitySet="tb_province" />
+      <End Role="tb_district" EntitySet="tb_district" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empAllowance_tb_allowanceType" Association="Self.FK_tb_empAllowance_tb_allowanceType">
+      <End Role="tb_allowanceType" EntitySet="tb_allowanceType" />
+      <End Role="tb_empAllowance" EntitySet="tb_empAllowance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empAllowance_tb_empployees" Association="Self.FK_tb_empAllowance_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empAllowance" EntitySet="tb_empAllowance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empBankAccount_tb_bank" Association="Self.FK_tb_empBankAccount_tb_bank">
+      <End Role="tb_bank" EntitySet="tb_bank" />
+      <End Role="tb_empBankAccount" EntitySet="tb_empBankAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empBankAccount_tb_empployees" Association="Self.FK_tb_empBankAccount_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empBankAccount" EntitySet="tb_empBankAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empDeduction_tb_deductionType" Association="Self.FK_tb_empDeduction_tb_deductionType">
+      <End Role="tb_deductionType" EntitySet="tb_deductionType" />
+      <End Role="tb_empDeduction" EntitySet="tb_empDeduction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empDeduction_tb_empployees" Association="Self.FK_tb_empDeduction_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empDeduction" EntitySet="tb_empDeduction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empEducation_tb_educationType" Association="Self.FK_tb_empEducation_tb_educationType">
+      <End Role="tb_educationType" EntitySet="tb_educationType" />
+      <End Role="tb_empEducation" EntitySet="tb_empEducation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empEducation_tb_empployees" Association="Self.FK_tb_empEducation_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empEducation" EntitySet="tb_empEducation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empFamily_tb_empployees" Association="Self.FK_tb_empFamily_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empFamily" EntitySet="tb_empFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empIncome_tb_empployees" Association="Self.FK_tb_empIncome_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empIncome" EntitySet="tb_empIncome" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empIncome_tb_incomType" Association="Self.FK_tb_empIncome_tb_incomType">
+      <End Role="tb_incomType" EntitySet="tb_incomType" />
+      <End Role="tb_empIncome" EntitySet="tb_empIncome" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_empGroup" Association="Self.FK_tb_empInfo_tb_empGroup">
+      <End Role="tb_empGroup" EntitySet="tb_empGroup" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_empLevel" Association="Self.FK_tb_empInfo_tb_empLevel">
+      <End Role="tb_empLevel" EntitySet="tb_empLevel" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_empployees" Association="Self.FK_tb_empInfo_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_unit" Association="Self.FK_tb_empInfo_tb_unit">
+      <End Role="tb_unit" EntitySet="tb_unit" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_district" Association="Self.FK_tb_empployees_tb_district">
+      <End Role="tb_district" EntitySet="tb_district" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_fstatus" Association="Self.FK_tb_empployees_tb_fstatus">
+      <End Role="tb_fstatus" EntitySet="tb_fstatus" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_gender" Association="Self.FK_tb_empployees_tb_gender">
+      <End Role="tb_gender" EntitySet="tb_gender" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_nationality" Association="Self.FK_tb_empployees_tb_nationality">
+      <End Role="tb_nationality" EntitySet="tb_nationality" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_race" Association="Self.FK_tb_empployees_tb_race">
+      <End Role="tb_race" EntitySet="tb_race" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_religion" Association="Self.FK_tb_empployees_tb_religion">
+      <End Role="tb_religion" EntitySet="tb_religion" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_leaveSetting_tb_empGroup" Association="Self.FK_tb_leaveSetting_tb_empGroup">
+      <End Role="tb_empGroup" EntitySet="tb_empGroup" />
+      <End Role="tb_leaveSetting" EntitySet="tb_leaveSetting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_leaveSetting_tb_leaveType" Association="Self.FK_tb_leaveSetting_tb_leaveType">
+      <End Role="tb_leaveType" EntitySet="tb_leaveType" />
+      <End Role="tb_leaveSetting" EntitySet="tb_leaveSetting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_leaveType_tb_leaveType" Association="Self.FK_tb_leaveType_tb_leaveType">
+      <End Role="tb_leaveType" EntitySet="tb_leaveType" />
+      <End Role="tb_leaveType1" EntitySet="tb_leaveType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_spouse_tb_empployees" Association="Self.FK_tb_spouse_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_spouse" EntitySet="tb_spouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_sso_tb_ssoType" Association="Self.FK_tb_sso_tb_ssoType">
+      <End Role="tb_ssoType" EntitySet="tb_ssoType" />
+      <End Role="tb_sso" EntitySet="tb_sso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_unit_tb_department" Association="Self.FK_tb_unit_tb_department">
+      <End Role="tb_department" EntitySet="tb_department" />
+      <End Role="tb_unit" EntitySet="tb_unit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_users_tb_app_role" Association="Self.FK_tb_users_tb_app_role">
+      <End Role="tb_app_role" EntitySet="tb_app_role" />
+      <End Role="tb_users" EntitySet="tb_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_users_tb_empployees" Association="Self.FK_tb_users_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_users" EntitySet="tb_users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

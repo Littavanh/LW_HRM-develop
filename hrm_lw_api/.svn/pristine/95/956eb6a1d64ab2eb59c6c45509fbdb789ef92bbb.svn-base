@@ -1,0 +1,1918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__EFMigrationsHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'HRM.dbo.Sheet1$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Sheet1$">
+          <Property Name="Emp_ID" Type="nvarchar" MaxLength="255" />
+          <Property Name="EMP_Nbr" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="F_name_L1" Type="nvarchar" MaxLength="255" />
+          <Property Name="F_name_L2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Emp_DOB" Type="datetime" />
+          <Property Name="Emp_StartDate" Type="datetime" />
+          <Property Name="Emp_EndDate" Type="datetime" />
+          <Property Name="Gen_ID" Type="float" />
+          <Property Name="Depart_ID" Type="float" />
+          <Property Name="etid" Type="float" />
+          <Property Name="natid" Type="float" />
+          <Property Name="relid" Type="float" />
+          <Property Name="wtsid" Type="float" />
+          <Property Name="wuid" Type="float" />
+          <Property Name="titleid" Type="float" />
+          <Property Name="ESID" Type="float" />
+          <Property Name="Emp_Phone1" Type="nvarchar" MaxLength="255" />
+          <Property Name="Emp_Phone2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Emp_FBook" Type="nvarchar" MaxLength="255" />
+          <Property Name="Emp_IDCard" Type="nvarchar" MaxLength="255" />
+          <Property Name="Emp_photo" Type="nvarchar" MaxLength="255" />
+          <Property Name="intypeid" Type="float" />
+          <Property Name="intypenumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="Cal_payRoll" Type="float" />
+          <Property Name="emp_office" Type="float" />
+          <Property Name="Consult" Type="float" />
+          <Property Name="PassportNo" Type="nvarchar" MaxLength="255" />
+          <Property Name="Idcard" Type="float" />
+          <Property Name="GroupBlood" Type="nvarchar" MaxLength="255" />
+          <Property Name="Heigh" Type="float" />
+          <Property Name="empWeight" Type="float" />
+          <Property Name="StandardTax" Type="float" />
+          <Property Name="Mgr_ID" Type="float" />
+          <Property Name="SuperVisor" Type="float" />
+          <Property Name="empBorn" Type="nvarchar" MaxLength="255" />
+          <Property Name="NickName" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="tb_app_notification">
+    <Key>
+      <PropertyRef Name="notificationId" />
+    </Key>
+    <Property Name="notificationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="notifyNews" Type="int" />
+    <Property Name="notifyTask" Type="int" />
+    <Property Name="notifyEmpRequest" Type="int" />
+    <Property Name="notifyMyRequest" Type="int" />
+    <Property Name="notifyDelegates" Type="int" />
+    <Property Name="notifyUser" Type="int" />
+    <Property Name="lastUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_app_permission">
+    <Key>
+      <PropertyRef Name="app_permissionId" />
+    </Key>
+    <Property Name="app_permissionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="app_permissionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_app_role">
+    <Key>
+      <PropertyRef Name="roleId" />
+    </Key>
+    <Property Name="roleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="roleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_news">
+    <Key>
+      <PropertyRef Name="newsID" />
+    </Key>
+    <Property Name="newsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="newsTitle" Type="nvarchar" MaxLength="250" />
+    <Property Name="newsContrent" Type="nvarchar(max)" />
+    <Property Name="attachec_file" Type="nvarchar(max)" />
+    <Property Name="pubish_date" Type="datetime" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_role_permission">
+    <Key>
+      <PropertyRef Name="appId" />
+    </Key>
+    <Property Name="appId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="roleId" Type="int" />
+    <Property Name="app_permissionId" Type="int" />
+    <Property Name="app_view" Type="int" />
+    <Property Name="app_add" Type="int" />
+    <Property Name="app_edit" Type="int" />
+    <Property Name="app_action" Type="int" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_task">
+    <Key>
+      <PropertyRef Name="taskID" />
+    </Key>
+    <Property Name="taskID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="taskTitle" Type="nvarchar" MaxLength="250" />
+    <Property Name="taskDetail" Type="nvarchar" MaxLength="300" />
+    <Property Name="attachedfile" Type="nvarchar(max)" />
+    <Property Name="empid" Type="int" />
+    <Property Name="status_id" Type="int" />
+    <Property Name="user_add" Type="int" />
+    <Property Name="date_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Absent_Category">
+    <Key>
+      <PropertyRef Name="CAbsentID" />
+    </Key>
+    <Property Name="CAbsentID" Type="int" Nullable="false" />
+    <Property Name="AbsentName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AbsentSource" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="tbl_AddNewAbsent">
+    <Key>
+      <PropertyRef Name="AddAbsentID" />
+    </Key>
+    <Property Name="AddAbsentID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="CAbsentID" Type="int" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="EndDate" Type="date" />
+    <Property Name="ReturnDate" Type="date" />
+    <Property Name="Absent_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="AbsentDescription" Type="nvarchar(max)" />
+    <Property Name="Mgr_allow" Type="bit" />
+    <Property Name="Mgr_date" Type="date" />
+    <Property Name="HR_allow" Type="bit" />
+    <Property Name="HR_Date" Type="date" />
+    <Property Name="ApproveMGRID" Type="int" />
+    <Property Name="ApproveHR" Type="int" />
+    <Property Name="ToEmpid" Type="int" />
+    <Property Name="REID" Type="int" />
+    <Property Name="EmpKeyin" Type="int" />
+    <Property Name="Checkin" Type="bit" />
+    <Property Name="LevelMGSign" Type="int" />
+    <Property Name="actionnow" Type="date" />
+    <Property Name="saveby" Type="int" />
+    <Property Name="approvefinished" Type="bit" />
+    <Property Name="HRCal" Type="bit" />
+    <Property Name="HRCalDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tbl_AddNewAbsentImage">
+    <Key>
+      <PropertyRef Name="ANIID" />
+    </Key>
+    <Property Name="ANIID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="Reid" Type="int" />
+    <Property Name="reno" Type="nvarchar(max)" />
+    <Property Name="AnDate" Type="date" />
+    <Property Name="Img" Type="varbinary(max)" />
+    <Property Name="uploaded" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_ApprovePayroll">
+    <Key>
+      <PropertyRef Name="APLID" />
+    </Key>
+    <Property Name="APLID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="levelsapprove" Type="int" />
+    <Property Name="Createby" Type="int" />
+    <Property Name="Createdate" Type="date" />
+  </EntityType>
+  <EntityType Name="tbl_Banking">
+    <Key>
+      <PropertyRef Name="BANKID" />
+    </Key>
+    <Property Name="BANKID" Type="int" Nullable="false" />
+    <Property Name="BankName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="BankInfo" Type="nvarchar" MaxLength="255" />
+    <Property Name="BankUsing" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_CheckQuestion">
+    <Key>
+      <PropertyRef Name="CQID" />
+    </Key>
+    <Property Name="CQID" Type="int" Nullable="false" />
+    <Property Name="CheckQuestion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CheckQ" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Company">
+    <Key>
+      <PropertyRef Name="CMID" />
+    </Key>
+    <Property Name="CMID" Type="int" Nullable="false" />
+    <Property Name="CMName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Parent" Type="int" />
+    <Property Name="Cmphone1" Type="nvarchar" MaxLength="30" />
+    <Property Name="Cmphone2" Type="nvarchar" MaxLength="30" />
+    <Property Name="Cmfax" Type="nvarchar" MaxLength="30" />
+    <Property Name="CmWebsite" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cmfacebook" Type="nvarchar" MaxLength="100" />
+    <Property Name="CMimg" Type="varbinary(max)" />
+    <Property Name="Cmstatus" Type="bit" />
+    <Property Name="Createby" Type="nvarchar" MaxLength="100" />
+    <Property Name="Createdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Delegation">
+    <Key>
+      <PropertyRef Name="DLID" />
+    </Key>
+    <Property Name="DLID" Type="int" Nullable="false" />
+    <Property Name="Createby" Type="int" />
+    <Property Name="ToEmployee" Type="int" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="Startdate" Type="date" />
+    <Property Name="Enddate" Type="date" />
+    <Property Name="DelegationUsing" Type="bit" />
+    <Property Name="DelegationDelete" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Department">
+    <Key>
+      <PropertyRef Name="DEPID" />
+    </Key>
+    <Property Name="DEPID" Type="int" Nullable="false" />
+    <Property Name="Departname" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CMID" Type="int" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="DepartInfo" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_DriverCard">
+    <Key>
+      <PropertyRef Name="DCID" />
+    </Key>
+    <Property Name="DCID" Type="int" Nullable="false" />
+    <Property Name="DriverCard" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Education">
+    <Key>
+      <PropertyRef Name="EDID" />
+    </Key>
+    <Property Name="EDID" Type="int" Nullable="false" />
+    <Property Name="Education" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="EducationInfo" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_EmpAbsentDetails">
+    <Key>
+      <PropertyRef Name="EADID" />
+    </Key>
+    <Property Name="EADID" Type="int" Nullable="false" />
+    <Property Name="Emp_ID" Type="int" />
+    <Property Name="Cabsentid" Type="int" />
+    <Property Name="QtyDay" Type="float" Nullable="false" />
+    <Property Name="QtyHour" Type="float" />
+    <Property Name="QtyUsingDay" Type="float" />
+    <Property Name="QtyUsingHour" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_EmpBanking">
+    <Key>
+      <PropertyRef Name="EBID" />
+    </Key>
+    <Property Name="EBID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="Bankid" Type="int" />
+    <Property Name="BankCard" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PaySalary" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_EmpEducation">
+    <Key>
+      <PropertyRef Name="EEID" />
+    </Key>
+    <Property Name="EEID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="edid" Type="int" />
+    <Property Name="startdate" Type="date" />
+    <Property Name="enddate" Type="date" />
+    <Property Name="educationinfo" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_EmpLeave">
+    <Key>
+      <PropertyRef Name="ELID" />
+    </Key>
+    <Property Name="ELID" Type="int" Nullable="false" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="CabsentID" Type="int" />
+    <Property Name="Amount_Day" Type="float" />
+    <Property Name="Amount_Hour" Type="float" />
+    <Property Name="Total_use" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_Employee">
+    <Key>
+      <PropertyRef Name="Emp_ID" />
+    </Key>
+    <Property Name="Emp_ID" Type="int" Nullable="false" />
+    <Property Name="Emp_nbr" Type="nvarchar" MaxLength="60" />
+    <Property Name="User_email" Type="nvarchar" MaxLength="100" />
+    <Property Name="F_name_l1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Surname_L1" Type="nvarchar" MaxLength="100" />
+    <Property Name="F_name_l2" Type="nvarchar" MaxLength="100" />
+    <Property Name="Surname_L2" Type="nvarchar" MaxLength="100" />
+    <Property Name="Emp_DOB" Type="date" />
+    <Property Name="Emp_startdate" Type="date" />
+    <Property Name="Emp_enddate" Type="date" />
+    <Property Name="Genid" Type="int" />
+    <Property Name="depid" Type="int" />
+    <Property Name="etid" Type="int" />
+    <Property Name="natid" Type="int" />
+    <Property Name="relid" Type="int" />
+    <Property Name="wtsid" Type="int" />
+    <Property Name="wuid" Type="int" />
+    <Property Name="titleid" Type="int" />
+    <Property Name="ESID" Type="int" />
+    <Property Name="emp_phone1" Type="nvarchar" MaxLength="50" />
+    <Property Name="emp_phone2" Type="nvarchar" MaxLength="50" />
+    <Property Name="emp_fbook" Type="nvarchar" MaxLength="100" />
+    <Property Name="emp_idcard" Type="nvarchar" MaxLength="30" />
+    <Property Name="emp_photo" Type="varbinary(max)" />
+    <Property Name="intypeid" Type="int" />
+    <Property Name="intypenumber" Type="nvarchar" MaxLength="40" />
+    <Property Name="Cal_payroll" Type="bit" />
+    <Property Name="emp_office" Type="bit" />
+    <Property Name="consult" Type="bit" />
+    <Property Name="Passportno" Type="nvarchar" MaxLength="30" />
+    <Property Name="IDcard" Type="nvarchar" MaxLength="30" />
+    <Property Name="groupblood" Type="varchar" MaxLength="10" />
+    <Property Name="heigh" Type="float" />
+    <Property Name="empWeight" Type="float" />
+    <Property Name="standardTax" Type="bit" />
+    <Property Name="mgrid" Type="int" />
+    <Property Name="suppervisor" Type="int" />
+    <Property Name="empBorn" Type="nvarchar(max)" />
+    <Property Name="Nickname" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_EmpRelationship">
+    <Key>
+      <PropertyRef Name="ERID" />
+    </Key>
+    <Property Name="ERID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="RLID" Type="int" />
+    <Property Name="Rname" Type="nvarchar" MaxLength="100" />
+    <Property Name="Rmobile1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rmobile2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remail" Type="nvarchar" MaxLength="200" />
+    <Property Name="RWorking" Type="nvarchar(max)" />
+    <Property Name="RAddress" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_EmpSalary">
+    <Key>
+      <PropertyRef Name="EMPSID" />
+    </Key>
+    <Property Name="EMPSID" Type="int" Nullable="false" />
+    <Property Name="Emp_ID" Type="int" />
+    <Property Name="INDID" Type="int" />
+    <Property Name="EmpIncome" Type="float" />
+    <Property Name="Tax" Type="bit" />
+    <Property Name="Income" Type="bit" />
+    <Property Name="sddid" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_EmpStatus">
+    <Key>
+      <PropertyRef Name="ESID" />
+    </Key>
+    <Property Name="ESID" Type="int" Nullable="false" />
+    <Property Name="EmpStatus" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_EmpTax">
+    <Key>
+      <PropertyRef Name="ETaxid" />
+    </Key>
+    <Property Name="ETaxid" Type="int" Nullable="false" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="Taxid" Type="int" />
+    <Property Name="Createdate" Type="date" />
+  </EntityType>
+  <EntityType Name="tbl_Ethnic">
+    <Key>
+      <PropertyRef Name="ETID" />
+    </Key>
+    <Property Name="ETID" Type="int" Nullable="false" />
+    <Property Name="Ethnic" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Gender">
+    <Key>
+      <PropertyRef Name="GENID" />
+    </Key>
+    <Property Name="GENID" Type="int" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_GroupPermission">
+    <Key>
+      <PropertyRef Name="GPID" />
+    </Key>
+    <Property Name="GPID" Type="int" Nullable="false" />
+    <Property Name="PMID" Type="int" />
+    <Property Name="GRUID" Type="int" />
+    <Property Name="GRead" Type="bit" />
+    <Property Name="GWrite" Type="bit" />
+    <Property Name="Createdate" Type="datetime" />
+    <Property Name="Createby" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_GroupUser">
+    <Key>
+      <PropertyRef Name="GRUID" />
+    </Key>
+    <Property Name="GRUID" Type="int" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Createby" Type="nvarchar" MaxLength="100" />
+    <Property Name="Createdate" Type="date" />
+    <Property Name="GroupStatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_IncomeDeduction">
+    <Key>
+      <PropertyRef Name="INDID" />
+    </Key>
+    <Property Name="INDID" Type="int" Nullable="false" />
+    <Property Name="In_Deduction" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Info" Type="nvarchar(max)" />
+    <Property Name="Deduction" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Insurance_Type">
+    <Key>
+      <PropertyRef Name="INTYPEID" />
+    </Key>
+    <Property Name="INTYPEID" Type="int" Nullable="false" />
+    <Property Name="Insurance" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="InPercent" Type="float" />
+    <Property Name="EmpUsing" Type="bit" />
+    <Property Name="ComPercent" Type="float" />
+    <Property Name="MaxMoney" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_Nationality">
+    <Key>
+      <PropertyRef Name="NATID" />
+    </Key>
+    <Property Name="NATID" Type="int" Nullable="false" />
+    <Property Name="NationName" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Languages" Type="nvarchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="tbl_OTCalculate">
+    <Key>
+      <PropertyRef Name="OTCLID" />
+    </Key>
+    <Property Name="OTCLID" Type="int" Nullable="false" />
+    <Property Name="OTRID" Type="int" />
+    <Property Name="OTCID" Type="int" />
+    <Property Name="OTStart" Type="nvarchar" MaxLength="50" />
+    <Property Name="OTEnd" Type="nvarchar" MaxLength="50" />
+    <Property Name="Qtyhour" Type="float" />
+    <Property Name="Latemoney" Type="float" />
+    <Property Name="HRfinished" Type="bit" />
+    <Property Name="createby" Type="int" />
+    <Property Name="createdate" Type="date" />
+  </EntityType>
+  <EntityType Name="tbl_OTCategory">
+    <Key>
+      <PropertyRef Name="OTCID" />
+    </Key>
+    <Property Name="OTCID" Type="int" Nullable="false" />
+    <Property Name="OTName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="OTValue" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_OTRequest">
+    <Key>
+      <PropertyRef Name="OTRID" />
+    </Key>
+    <Property Name="OTRID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="otcid" Type="int" />
+    <Property Name="reid" Type="int" />
+    <Property Name="otstart" Type="date" />
+    <Property Name="endDate" Type="date" />
+    <Property Name="starttime" Type="nvarchar" MaxLength="50" />
+    <Property Name="enddtime" Type="nvarchar" MaxLength="50" />
+    <Property Name="title" Type="nvarchar" MaxLength="200" />
+    <Property Name="OTDescription" Type="nvarchar(max)" />
+    <Property Name="OTStatus" Type="bit" />
+    <Property Name="HRStatus" Type="bit" />
+    <Property Name="TimeSave" Type="date" />
+    <Property Name="empkeyin" Type="int" />
+    <Property Name="mgrid" Type="int" />
+    <Property Name="saveby" Type="int" />
+    <Property Name="MgrApprove" Type="bit" />
+    <Property Name="FinishedApprove" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_PayrollApprove">
+    <Key>
+      <PropertyRef Name="PAPID" />
+    </Key>
+    <Property Name="PAPID" Type="int" Nullable="false" />
+    <Property Name="payrollstartdate" Type="date" />
+    <Property Name="payrollenddate" Type="date" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="createdate" Type="datetime" />
+    <Property Name="hightempid" Type="int" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_PayrollFinaldetails">
+    <Key>
+      <PropertyRef Name="PFLTDID" />
+    </Key>
+    <Property Name="PFLTDID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="Startdatepayroll" Type="date" />
+    <Property Name="Enddatepayroll" Type="date" />
+    <Property Name="percenttax" Type="float" />
+    <Property Name="totalmoney" Type="float" />
+    <Property Name="rec_type" Type="varchar" MaxLength="20" />
+    <Property Name="finished" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_PayrollFinally">
+    <Key>
+      <PropertyRef Name="PFLTID" />
+    </Key>
+    <Property Name="PFLTID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="user_email" Type="nvarchar" MaxLength="255" />
+    <Property Name="emp_nbr" Type="nvarchar" MaxLength="100" />
+    <Property Name="laoname" Type="nvarchar" MaxLength="200" />
+    <Property Name="englishname" Type="nvarchar" MaxLength="200" />
+    <Property Name="f_name_l1" Type="nvarchar" MaxLength="100" />
+    <Property Name="surname_l1" Type="nvarchar" MaxLength="100" />
+    <Property Name="f_name_l2" Type="nvarchar" MaxLength="100" />
+    <Property Name="surname_l2" Type="nvarchar" MaxLength="100" />
+    <Property Name="titlename" Type="nvarchar" MaxLength="200" />
+    <Property Name="unitname" Type="nvarchar" MaxLength="200" />
+    <Property Name="departname" Type="nvarchar" MaxLength="200" />
+    <Property Name="ethnic" Type="nvarchar" MaxLength="100" />
+    <Property Name="nationname" Type="nvarchar" MaxLength="100" />
+    <Property Name="languages" Type="nvarchar" MaxLength="100" />
+    <Property Name="religion" Type="nvarchar" MaxLength="100" />
+    <Property Name="workstatus" Type="nvarchar" MaxLength="200" />
+    <Property Name="startdatepayroll" Type="date" />
+    <Property Name="enddatepayroll" Type="date" />
+    <Property Name="PayrollName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="payrollmoney" Type="float" />
+    <Property Name="rec_type" Type="varchar" MaxLength="100" />
+    <Property Name="calculated" Type="bit" />
+    <Property Name="caltax" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_PayrollSucess">
+    <Key>
+      <PropertyRef Name="PSID" />
+    </Key>
+    <Property Name="PSID" Type="int" Nullable="false" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="startdatepayroll" Type="date" />
+    <Property Name="enddatepayroll" Type="date" />
+    <Property Name="SucessDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_PayrollTesting">
+    <Key>
+      <PropertyRef Name="PLTID" />
+    </Key>
+    <Property Name="PLTID" Type="int" Nullable="false" />
+    <Property Name="emp_id" Type="int" />
+    <Property Name="user_email" Type="nvarchar" MaxLength="255" />
+    <Property Name="emp_nbr" Type="nvarchar" MaxLength="100" />
+    <Property Name="laoname" Type="nvarchar" MaxLength="200" />
+    <Property Name="englishname" Type="nvarchar" MaxLength="200" />
+    <Property Name="f_name_l1" Type="nvarchar" MaxLength="100" />
+    <Property Name="surname_l1" Type="nvarchar" MaxLength="100" />
+    <Property Name="f_name_l2" Type="nvarchar" MaxLength="100" />
+    <Property Name="surname_l2" Type="nvarchar" MaxLength="100" />
+    <Property Name="titlename" Type="nvarchar" MaxLength="200" />
+    <Property Name="unitname" Type="nvarchar" MaxLength="200" />
+    <Property Name="departname" Type="nvarchar" MaxLength="200" />
+    <Property Name="ethnic" Type="nvarchar" MaxLength="100" />
+    <Property Name="nationname" Type="nvarchar" MaxLength="100" />
+    <Property Name="languages" Type="nvarchar" MaxLength="100" />
+    <Property Name="religion" Type="nvarchar" MaxLength="100" />
+    <Property Name="workstatus" Type="nvarchar" MaxLength="200" />
+    <Property Name="startdatepayroll" Type="date" />
+    <Property Name="enddatepayroll" Type="date" />
+    <Property Name="PayrollName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="payrollmoney" Type="float" />
+    <Property Name="rec_type" Type="varchar" MaxLength="100" />
+    <Property Name="calculated" Type="bit" />
+    <Property Name="caltax" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Payrolltestingdetails">
+    <Key>
+      <PropertyRef Name="PLTDID" />
+    </Key>
+    <Property Name="PLTDID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="Startdatepayroll" Type="date" />
+    <Property Name="Enddatepayroll" Type="date" />
+    <Property Name="percenttax" Type="float" />
+    <Property Name="totalmoney" Type="float" />
+    <Property Name="rec_type" Type="varchar" MaxLength="20" />
+    <Property Name="finished" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Permission">
+    <Key>
+      <PropertyRef Name="PMID" />
+    </Key>
+    <Property Name="PMID" Type="int" Nullable="false" />
+    <Property Name="Labels" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PermissionName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PStatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_RectypeOT">
+    <Key>
+      <PropertyRef Name="RTOTID" />
+    </Key>
+    <Property Name="RTOTID" Type="int" Nullable="false" />
+    <Property Name="RTOTName" Type="nvarchar" MaxLength="100" />
+    <Property Name="RTStatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_RectypeOTDetails">
+    <Key>
+      <PropertyRef Name="RTOTDTID" />
+    </Key>
+    <Property Name="RTOTDTID" Type="int" Nullable="false" />
+    <Property Name="RTOTID" Type="int" />
+    <Property Name="Starttime" Type="varchar" MaxLength="50" />
+    <Property Name="Endtime" Type="varchar" MaxLength="50" />
+    <Property Name="Qty" Type="float" />
+    <Property Name="info" Type="nvarchar(max)" />
+    <Property Name="OTCID" Type="int" />
+    <Property Name="MDay" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Relationship">
+    <Key>
+      <PropertyRef Name="RLID" />
+    </Key>
+    <Property Name="RLID" Type="int" Nullable="false" />
+    <Property Name="relationship" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="relationshipinfo" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Religion">
+    <Key>
+      <PropertyRef Name="RELID" />
+    </Key>
+    <Property Name="RELID" Type="int" Nullable="false" />
+    <Property Name="Religion" Type="nvarchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Request">
+    <Key>
+      <PropertyRef Name="REID" />
+    </Key>
+    <Property Name="REID" Type="int" Nullable="false" />
+    <Property Name="Re_no" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="Createby" Type="int" />
+    <Property Name="Send_mail" Type="bit" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="attachfile" Type="varbinary(max)" />
+    <Property Name="RecType" Type="varchar" MaxLength="80" />
+    <Property Name="CountApprove" Type="int" />
+    <Property Name="OTCID" Type="int" />
+    <Property Name="OTValue" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_SalaryDevide">
+    <Key>
+      <PropertyRef Name="SDDID" />
+    </Key>
+    <Property Name="SDDID" Type="int" Nullable="false" />
+    <Property Name="DevideName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Devide_value" Type="float" />
+  </EntityType>
+  <EntityType Name="Tbl_System_Setting">
+    <Key>
+      <PropertyRef Name="Tbl_System_ID" />
+    </Key>
+    <Property Name="Tbl_System_ID" Type="int" Nullable="false" />
+    <Property Name="System_Name" Type="nvarchar" MaxLength="180" Nullable="false" />
+    <Property Name="System_values" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_SystemProfile">
+    <Key>
+      <PropertyRef Name="COPID" />
+    </Key>
+    <Property Name="COPID" Type="int" Nullable="false" />
+    <Property Name="Com_names_L1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Com_names_L2" Type="nvarchar" MaxLength="100" />
+    <Property Name="phone_1" Type="nvarchar" MaxLength="30" />
+    <Property Name="phone_2" Type="nvarchar" MaxLength="30" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="100" />
+    <Property Name="Com_address" Type="nvarchar" MaxLength="255" />
+    <Property Name="Used" Type="bit" />
+    <Property Name="Com_Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Tax">
+    <Key>
+      <PropertyRef Name="TaxID" />
+    </Key>
+    <Property Name="TaxID" Type="int" Nullable="false" />
+    <Property Name="TaxValue" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TaxPercent" Type="float" />
+    <Property Name="TaxStart" Type="float" />
+    <Property Name="TaxEnd" Type="float" />
+    <Property Name="TaxDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Title">
+    <Key>
+      <PropertyRef Name="TitleID" />
+    </Key>
+    <Property Name="TitleID" Type="int" Nullable="false" />
+    <Property Name="TitleName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="TitleInfo" Type="nvarchar(max)" />
+    <Property Name="LevelSign" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_User_Sent_Email">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="E_mail" Type="nvarchar" MaxLength="200" />
+    <Property Name="E_Pas" Type="nvarchar" MaxLength="200" />
+    <Property Name="E_check" Type="bit" />
+    <Property Name="host" Type="nvarchar" MaxLength="100" />
+    <Property Name="Start_Enable" Type="nvarchar" MaxLength="100" />
+    <Property Name="Enable_True" Type="bit" />
+    <Property Name="smtp_port" Type="nvarchar" MaxLength="100" />
+    <Property Name="port_number" Type="nvarchar" MaxLength="100" />
+    <Property Name="stmp_auth" Type="nvarchar" MaxLength="100" />
+    <Property Name="auth_true" Type="bit" />
+    <Property Name="stmp_host" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_UserLogin">
+    <Key>
+      <PropertyRef Name="ULID" />
+    </Key>
+    <Property Name="ULID" Type="int" Nullable="false" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="UPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UStatus" Type="bit" />
+    <Property Name="Createby" Type="nvarchar" MaxLength="200" />
+    <Property Name="Createdate" Type="date" />
+    <Property Name="UNew" Type="bit" />
+    <Property Name="HR_Admin" Type="bit" />
+    <Property Name="GRUID" Type="int" />
+    <Property Name="roleId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_WorkStatus">
+    <Key>
+      <PropertyRef Name="WTSID" />
+    </Key>
+    <Property Name="WTSID" Type="int" Nullable="false" />
+    <Property Name="WorkStatus" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="WorkHours" Type="float" />
+    <Property Name="workinfo" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_WorkUnit">
+    <Key>
+      <PropertyRef Name="WUID" />
+    </Key>
+    <Property Name="WUID" Type="int" Nullable="false" />
+    <Property Name="Unitname" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UnitInfo" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK__tbl_EmpBa__Banki__13F1F5EB">
+    <End Role="tbl_Banking" Type="Self.tbl_Banking" Multiplicity="0..1" />
+    <End Role="tbl_EmpBanking" Type="Self.tbl_EmpBanking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Banking">
+        <PropertyRef Name="BANKID" />
+      </Principal>
+      <Dependent Role="tbl_EmpBanking">
+        <PropertyRef Name="Bankid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_EmpEdu__edid__0C50D423">
+    <End Role="tbl_Education" Type="Self.tbl_Education" Multiplicity="0..1" />
+    <End Role="tbl_EmpEducation" Type="Self.tbl_EmpEducation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Education">
+        <PropertyRef Name="EDID" />
+      </Principal>
+      <Dependent Role="tbl_EmpEducation">
+        <PropertyRef Name="edid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_EmpRel__RLID__1D7B6025">
+    <End Role="tbl_Relationship" Type="Self.tbl_Relationship" Multiplicity="0..1" />
+    <End Role="tbl_EmpRelationship" Type="Self.tbl_EmpRelationship" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Relationship">
+        <PropertyRef Name="RLID" />
+      </Principal>
+      <Dependent Role="tbl_EmpRelationship">
+        <PropertyRef Name="RLID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_EmpSa__INDID__607251E5">
+    <End Role="tbl_IncomeDeduction" Type="Self.tbl_IncomeDeduction" Multiplicity="0..1" />
+    <End Role="tbl_EmpSalary" Type="Self.tbl_EmpSalary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_IncomeDeduction">
+        <PropertyRef Name="INDID" />
+      </Principal>
+      <Dependent Role="tbl_EmpSalary">
+        <PropertyRef Name="INDID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_EmpTa__Taxid__7A3223E8">
+    <End Role="tbl_Tax" Type="Self.tbl_Tax" Multiplicity="0..1" />
+    <End Role="tbl_EmpTax" Type="Self.tbl_EmpTax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Tax">
+        <PropertyRef Name="TaxID" />
+      </Principal>
+      <Dependent Role="tbl_EmpTax">
+        <PropertyRef Name="Taxid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Group__GRUID__4A18FC72">
+    <End Role="tbl_GroupUser" Type="Self.tbl_GroupUser" Multiplicity="0..1" />
+    <End Role="tbl_GroupPermission" Type="Self.tbl_GroupPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_GroupUser">
+        <PropertyRef Name="GRUID" />
+      </Principal>
+      <Dependent Role="tbl_GroupPermission">
+        <PropertyRef Name="GRUID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_GroupP__PMID__4924D839">
+    <End Role="tbl_Permission" Type="Self.tbl_Permission" Multiplicity="0..1" />
+    <End Role="tbl_GroupPermission" Type="Self.tbl_GroupPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Permission">
+        <PropertyRef Name="PMID" />
+      </Principal>
+      <Dependent Role="tbl_GroupPermission">
+        <PropertyRef Name="PMID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_OTCal__OTCID__23F3538A">
+    <End Role="tbl_OTCategory" Type="Self.tbl_OTCategory" Multiplicity="0..1" />
+    <End Role="tbl_OTCalculate" Type="Self.tbl_OTCalculate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_OTCategory">
+        <PropertyRef Name="OTCID" />
+      </Principal>
+      <Dependent Role="tbl_OTCalculate">
+        <PropertyRef Name="OTCID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_OTCal__OTRID__22FF2F51">
+    <End Role="tbl_OTRequest" Type="Self.tbl_OTRequest" Multiplicity="0..1" />
+    <End Role="tbl_OTCalculate" Type="Self.tbl_OTCalculate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_OTRequest">
+        <PropertyRef Name="OTRID" />
+      </Principal>
+      <Dependent Role="tbl_OTCalculate">
+        <PropertyRef Name="OTRID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_OTReq__otcid__6CA31EA0">
+    <End Role="tbl_OTCategory" Type="Self.tbl_OTCategory" Multiplicity="0..1" />
+    <End Role="tbl_OTRequest" Type="Self.tbl_OTRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_OTCategory">
+        <PropertyRef Name="OTCID" />
+      </Principal>
+      <Dependent Role="tbl_OTRequest">
+        <PropertyRef Name="otcid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_OTRequ__reid__6D9742D9">
+    <End Role="tbl_Request" Type="Self.tbl_Request" Multiplicity="0..1" />
+    <End Role="tbl_OTRequest" Type="Self.tbl_OTRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Request">
+        <PropertyRef Name="REID" />
+      </Principal>
+      <Dependent Role="tbl_OTRequest">
+        <PropertyRef Name="reid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Recty__RTOTI__1FEDB87C">
+    <End Role="tbl_RectypeOT" Type="Self.tbl_RectypeOT" Multiplicity="0..1" />
+    <End Role="tbl_RectypeOTDetails" Type="Self.tbl_RectypeOTDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_RectypeOT">
+        <PropertyRef Name="RTOTID" />
+      </Principal>
+      <Dependent Role="tbl_RectypeOTDetails">
+        <PropertyRef Name="RTOTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Employee_tbl_Employee">
+    <End Role="tbl_Employee" Type="Self.tbl_Employee" Multiplicity="1" />
+    <End Role="tbl_Employee1" Type="Self.tbl_Employee" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Employee">
+        <PropertyRef Name="Emp_ID" />
+      </Principal>
+      <Dependent Role="tbl_Employee1">
+        <PropertyRef Name="Emp_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_UserLogin_tbl_Employee">
+    <End Role="tbl_Employee" Type="Self.tbl_Employee" Multiplicity="0..1" />
+    <End Role="tbl_UserLogin" Type="Self.tbl_UserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Employee">
+        <PropertyRef Name="Emp_ID" />
+      </Principal>
+      <Dependent Role="tbl_UserLogin">
+        <PropertyRef Name="Emp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="p_LeaveType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_actionLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+    <Parameter Name="labels" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_approveLeaveAddNewAbsent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="mgr_allow" Type="bit" Mode="In" />
+    <Parameter Name="mgr_date" Type="date" Mode="In" />
+    <Parameter Name="approvefinished" Type="bit" Mode="In" />
+    <Parameter Name="hr_allow" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_approveLeaveRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="comments" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_checkEmpTaxbyStandard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_countTbl_approvePayroll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_countTbl_payrollapprove" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteEmpTax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteEtaxID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="etaxid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteGroupPermissionFirst" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pmid" Type="int" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteGroupUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Groupstatus" Type="bit" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deletePayRollTestingAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_deletePayRollTestingDetailsAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_ApprovePayroll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="aplid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_Delegation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dlid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_EmpBanking" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ebid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_empEducation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="eeid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_empLeave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="elid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_empleavebyELID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="elid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_EmpSalary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empsid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_OTCalculate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="otclid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_payrollapprove" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_PayrolltestingPLTID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PLTID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_RequestLeavebyID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="addabsentid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTbl_RequestOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="otrid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_deleteTblEMPRelationship" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="erid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayAddNewAbsentbyEMPID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayEmployeeRelationshipProfile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayIncomebyEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayLeaveDetailBoard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayLeavePaymoneyPayroll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayManager" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayOTCalculate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayPayrollTestingSPC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displaySelectEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displaySumPayrollmoneybyDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displaySumPayrollTax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayTax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTaxbyEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayTbl_AbsentCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_Banking" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_Company" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_Delegation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_DelegationEMPID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="createby" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayTbl_Education" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_EmpBankingByEMPID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayTbl_empeducation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayTbl_empleave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayTbl_EmployeeTabData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_GroupUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_IncomeDeduction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_Insurance_Type" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_Nationality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_OTCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_RectypeOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_RectypeOTDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_Relationship" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_SalaryDevide" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_systemsetting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_title" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_WorkStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTbl_WorkUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTblDepartment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_displayTblEmpRelationshipByEMPID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_displayUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_insertGroupUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="gruid" Type="int" Mode="In" />
+    <Parameter Name="groupname" Type="nvarchar" Mode="In" />
+    <Parameter Name="createby" Type="nvarchar" Mode="In" />
+    <Parameter Name="groupstatus" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_AbsentCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cabsentid" Type="int" Mode="In" />
+    <Parameter Name="Absentname" Type="nvarchar" Mode="In" />
+    <Parameter Name="absentsource" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_AddAbsentImage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="img" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_ApprovePayroll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="aplid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="levelsapprove" Type="int" Mode="In" />
+    <Parameter Name="createby" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Banking" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bankid" Type="int" Mode="In" />
+    <Parameter Name="bankname" Type="nvarchar" Mode="In" />
+    <Parameter Name="bankinfo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="bankusing" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_CompanyNoImage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cmid" Type="int" Mode="In" />
+    <Parameter Name="cmname" Type="nvarchar" Mode="In" />
+    <Parameter Name="parent" Type="int" Mode="In" />
+    <Parameter Name="cmphone1" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmphone2" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmfax" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmwebsite" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmfacebook" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmstatus" Type="bit" Mode="In" />
+    <Parameter Name="createby" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Delegation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dlid" Type="int" Mode="In" />
+    <Parameter Name="createby" Type="int" Mode="In" />
+    <Parameter Name="toemployee" Type="int" Mode="In" />
+    <Parameter Name="title" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="delegationusing" Type="bit" Mode="In" />
+    <Parameter Name="delegationdelete" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Department" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="depid" Type="int" Mode="In" />
+    <Parameter Name="departname" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmid" Type="int" Mode="In" />
+    <Parameter Name="phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="departinfo" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Education" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="edid" Type="int" Mode="In" />
+    <Parameter Name="education" Type="nvarchar" Mode="In" />
+    <Parameter Name="educationinfo" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_EmpBanking" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ebid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="bankind" Type="int" Mode="In" />
+    <Parameter Name="bankcard" Type="nvarchar" Mode="In" />
+    <Parameter Name="paysalary" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_EmpEducation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="eeid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="edid" Type="int" Mode="In" />
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="educationinfo" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_EmpLeave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="elid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="cabsentid" Type="int" Mode="In" />
+    <Parameter Name="amount_day" Type="float" Mode="In" />
+    <Parameter Name="amount_hour" Type="float" Mode="In" />
+    <Parameter Name="total_use" Type="float" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_employee_Tab1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="emp_nbr" Type="nvarchar" Mode="In" />
+    <Parameter Name="user_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="f_name_l1" Type="nvarchar" Mode="In" />
+    <Parameter Name="surname_l1" Type="nvarchar" Mode="In" />
+    <Parameter Name="f_name_l2" Type="nvarchar" Mode="In" />
+    <Parameter Name="surname_l2" Type="nvarchar" Mode="In" />
+    <Parameter Name="emp_dob" Type="date" Mode="In" />
+    <Parameter Name="genid" Type="int" Mode="In" />
+    <Parameter Name="esid" Type="int" Mode="In" />
+    <Parameter Name="cal_payroll" Type="bit" Mode="In" />
+    <Parameter Name="consult" Type="bit" Mode="In" />
+    <Parameter Name="depid" Type="int" Mode="In" />
+    <Parameter Name="wuid" Type="int" Mode="In" />
+    <Parameter Name="titleid" Type="int" Mode="In" />
+    <Parameter Name="natid" Type="int" Mode="In" />
+    <Parameter Name="relid" Type="int" Mode="In" />
+    <Parameter Name="etid" Type="int" Mode="In" />
+    <Parameter Name="wtsid" Type="int" Mode="In" />
+    <Parameter Name="mgrid" Type="int" Mode="In" />
+    <Parameter Name="suppervisor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_EmpSalary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empsid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="indid" Type="int" Mode="In" />
+    <Parameter Name="empincome" Type="float" Mode="In" />
+    <Parameter Name="tax" Type="bit" Mode="In" />
+    <Parameter Name="income" Type="bit" Mode="In" />
+    <Parameter Name="sddid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_EMPTax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="etaxid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="taxid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_GroupPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="gpid" Type="int" Mode="In" />
+    <Parameter Name="pmid" Type="int" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+    <Parameter Name="gread" Type="bit" Mode="In" />
+    <Parameter Name="gwrite" Type="bit" Mode="In" />
+    <Parameter Name="createby" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_IncomeDeduction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="indid" Type="int" Mode="In" />
+    <Parameter Name="in_deduction" Type="nvarchar" Mode="In" />
+    <Parameter Name="info" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="deduction" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Insurance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="intypeid" Type="int" Mode="In" />
+    <Parameter Name="insurance" Type="nvarchar" Mode="In" />
+    <Parameter Name="inpercent" Type="float" Mode="In" />
+    <Parameter Name="empusing" Type="bit" Mode="In" />
+    <Parameter Name="compercent" Type="float" Mode="In" />
+    <Parameter Name="maxmoney" Type="float" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Nationality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="natid" Type="int" Mode="In" />
+    <Parameter Name="nationname" Type="nvarchar" Mode="In" />
+    <Parameter Name="languages" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_OTCalculate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="otclid" Type="int" Mode="In" />
+    <Parameter Name="otrid" Type="int" Mode="In" />
+    <Parameter Name="otcid" Type="int" Mode="In" />
+    <Parameter Name="qtyhour" Type="float" Mode="In" />
+    <Parameter Name="latemoney" Type="float" Mode="In" />
+    <Parameter Name="hrfinished" Type="bit" Mode="In" />
+    <Parameter Name="createby" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_OTCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="otcid" Type="int" Mode="In" />
+    <Parameter Name="otname" Type="nvarchar" Mode="In" />
+    <Parameter Name="otvalue" Type="float" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_payrollapprove" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="papid" Type="int" Mode="In" />
+    <Parameter Name="payrollstartdate" Type="date" Mode="In" />
+    <Parameter Name="payrollenddate" Type="date" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="hightempid" Type="int" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_PayrollFinally" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_PayrollFinallyDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_payrollsucess" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="startdatepayroll" Type="date" Mode="In" />
+    <Parameter Name="enddatepayroll" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_PayrollTesting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pltid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="user_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="emp_nbr" Type="nvarchar" Mode="In" />
+    <Parameter Name="laoname" Type="nvarchar" Mode="In" />
+    <Parameter Name="englishname" Type="nvarchar" Mode="In" />
+    <Parameter Name="f_name_l1" Type="nvarchar" Mode="In" />
+    <Parameter Name="surname_l1" Type="nvarchar" Mode="In" />
+    <Parameter Name="f_name_l2" Type="nvarchar" Mode="In" />
+    <Parameter Name="surname_l2" Type="nvarchar" Mode="In" />
+    <Parameter Name="titlename" Type="nvarchar" Mode="In" />
+    <Parameter Name="unitname" Type="nvarchar" Mode="In" />
+    <Parameter Name="departname" Type="nvarchar" Mode="In" />
+    <Parameter Name="ethnic" Type="nvarchar" Mode="In" />
+    <Parameter Name="nationname" Type="nvarchar" Mode="In" />
+    <Parameter Name="languages" Type="nvarchar" Mode="In" />
+    <Parameter Name="religion" Type="nvarchar" Mode="In" />
+    <Parameter Name="workstatus" Type="nvarchar" Mode="In" />
+    <Parameter Name="startdatepayroll" Type="date" Mode="In" />
+    <Parameter Name="enddatepayroll" Type="date" Mode="In" />
+    <Parameter Name="payrollname" Type="nvarchar" Mode="In" />
+    <Parameter Name="qty" Type="float" Mode="In" />
+    <Parameter Name="payrollmoney" Type="nvarchar" Mode="In" />
+    <Parameter Name="rec_type" Type="varchar" Mode="In" />
+    <Parameter Name="calculated" Type="bit" Mode="In" />
+    <Parameter Name="caltax" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Payrolltestingdetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pltdid" Type="int" Mode="In" />
+    <Parameter Name="empid" Type="int" Mode="In" />
+    <Parameter Name="startdatepayroll" Type="date" Mode="In" />
+    <Parameter Name="enddatepayroll" Type="date" Mode="In" />
+    <Parameter Name="percenttax" Type="float" Mode="In" />
+    <Parameter Name="totalmoney" Type="float" Mode="In" />
+    <Parameter Name="rec_type" Type="varchar" Mode="In" />
+    <Parameter Name="finished" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_RectypeOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rtotid" Type="int" Mode="In" />
+    <Parameter Name="rtotname" Type="nvarchar" Mode="In" />
+    <Parameter Name="rtstatus" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_RectypeOTDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rtotdtid" Type="int" Mode="In" />
+    <Parameter Name="rtotid" Type="int" Mode="In" />
+    <Parameter Name="starttime" Type="varchar" Mode="In" />
+    <Parameter Name="endtime" Type="varchar" Mode="In" />
+    <Parameter Name="info" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="otcid" Type="int" Mode="In" />
+    <Parameter Name="days" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Relationship" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rlid" Type="int" Mode="In" />
+    <Parameter Name="relationship" Type="nvarchar" Mode="In" />
+    <Parameter Name="relationshipinfo" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_request" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="re_no" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="createby" Type="int" Mode="In" />
+    <Parameter Name="rectype" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_RequestLeave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="addabsentid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="cabsentid" Type="int" Mode="In" />
+    <Parameter Name="qty" Type="float" Mode="In" />
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="returndate" Type="date" Mode="In" />
+    <Parameter Name="absenttitle" Type="nvarchar" Mode="In" />
+    <Parameter Name="absentDescription" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="mgrallow" Type="bit" Mode="In" />
+    <Parameter Name="hrallow" Type="bit" Mode="In" />
+    <Parameter Name="approvemgrid" Type="int" Mode="In" />
+    <Parameter Name="toempid" Type="int" Mode="In" />
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="empkeyin" Type="int" Mode="In" />
+    <Parameter Name="checkin" Type="bit" Mode="In" />
+    <Parameter Name="levelmgsign" Type="int" Mode="In" />
+    <Parameter Name="saveby" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_RequestOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="otrid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="otstart" Type="date" Mode="In" />
+    <Parameter Name="starttime" Type="nvarchar" Mode="In" />
+    <Parameter Name="endtime" Type="nvarchar" Mode="In" />
+    <Parameter Name="title" Type="nvarchar" Mode="In" />
+    <Parameter Name="otdescription" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="otstatus" Type="bit" Mode="In" />
+    <Parameter Name="hrstatus" Type="bit" Mode="In" />
+    <Parameter Name="empkeyin" Type="int" Mode="In" />
+    <Parameter Name="mgrid" Type="int" Mode="In" />
+    <Parameter Name="saveby" Type="int" Mode="In" />
+    <Parameter Name="otcid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_SalaryDevide" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sddid" Type="int" Mode="In" />
+    <Parameter Name="devidename" Type="nvarchar" Mode="In" />
+    <Parameter Name="devide_value" Type="float" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Tax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="taxid" Type="int" Mode="In" />
+    <Parameter Name="taxvalue" Type="nvarchar" Mode="In" />
+    <Parameter Name="taxpercent" Type="float" Mode="In" />
+    <Parameter Name="taxstart" Type="float" Mode="In" />
+    <Parameter Name="taxend" Type="float" Mode="In" />
+    <Parameter Name="taxdefault" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_Title" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="titleid" Type="int" Mode="In" />
+    <Parameter Name="titlename" Type="nvarchar" Mode="In" />
+    <Parameter Name="titleinfo" Type="nvarchar" Mode="In" />
+    <Parameter Name="titlesign" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_userlogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ulid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="upassword" Type="varchar" Mode="In" />
+    <Parameter Name="ustatus" Type="bit" Mode="In" />
+    <Parameter Name="createby" Type="varchar" Mode="In" />
+    <Parameter Name="unew" Type="bit" Mode="In" />
+    <Parameter Name="hr_admin" Type="bit" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTbl_WorkStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="wtsid" Type="int" Mode="In" />
+    <Parameter Name="workstatus" Type="nvarchar" Mode="In" />
+    <Parameter Name="workhours" Type="float" Mode="In" />
+    <Parameter Name="workinfo" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_insertTblEMPRelationship" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="erid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="rlid" Type="int" Mode="In" />
+    <Parameter Name="rname" Type="nvarchar" Mode="In" />
+    <Parameter Name="rmobile1" Type="nvarchar" Mode="In" />
+    <Parameter Name="rmobile2" Type="nvarchar" Mode="In" />
+    <Parameter Name="remail" Type="nvarchar" Mode="In" />
+    <Parameter Name="Rworking" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Raddress" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_isnertTbl_WorkUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="wuid" Type="int" Mode="In" />
+    <Parameter Name="unitname" Type="nvarchar" Mode="In" />
+    <Parameter Name="unitinfo" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_ReportHR_EmployeeRequestLeave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="pd_reportPayRollTestingDetailsImport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rec_type" Type="varchar" Mode="In" />
+    <Parameter Name="startdate" Type="varchar" Mode="In" />
+    <Parameter Name="enddate" Type="varchar" Mode="In" />
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_reportPayRollTestingDetailsImportAddIncomesAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rec_type" Type="varchar" Mode="In" />
+    <Parameter Name="startdate" Type="varchar" Mode="In" />
+    <Parameter Name="enddate" Type="varchar" Mode="In" />
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_reportSumPayRollTestingDetailsImport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rec_type" Type="varchar" Mode="In" />
+    <Parameter Name="startdate" Type="varchar" Mode="In" />
+    <Parameter Name="enddate" Type="varchar" Mode="In" />
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_resetPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="upassword" Type="varchar" Mode="In" />
+    <Parameter Name="unew" Type="bit" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_searchCabsentID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_AbsentCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Banking" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Company" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Delegation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_DelegationEMPID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="createby" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Department" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Education" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_EmployeeTabData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_GroupUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_IncomeDeduction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Insurance_Type" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Nationality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_OTCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_RectypeOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_RectypeOTDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Relationship" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_SalaryDevide" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_Title" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_WorkStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchTbl_WorkUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_searchUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="search" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_selectgroupusername" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="gruid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_selectPMID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pmid" Type="int" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_showUserLoginHRAdmin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_udpateTbl_CheckQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cqid" Type="int" Mode="In" />
+    <Parameter Name="checkq" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_udpateTbl_CompanyNoImage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cmname" Type="nvarchar" Mode="In" />
+    <Parameter Name="parent" Type="int" Mode="In" />
+    <Parameter Name="cmphone1" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmphone2" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmfax" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmwebsite" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmfacebook" Type="nvarchar" Mode="In" />
+    <Parameter Name="createby" Type="varchar" Mode="In" />
+    <Parameter Name="cmid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_udpateTbl_SalaryDevide" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="devidename" Type="nvarchar" Mode="In" />
+    <Parameter Name="devide_value" Type="float" Mode="In" />
+    <Parameter Name="sddid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateFinishedOTCalculate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="otrid" Type="int" Mode="In" />
+    <Parameter Name="hrfinished" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateGroupUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="groupname" Type="nvarchar" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateHRApprove" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Reid" Type="int" Mode="In" />
+    <Parameter Name="approveHR" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateHRStatusOTRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateManagerID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="approvemgrid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateManagerIDTbl_OTRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="mgrid" Type="int" Mode="In" />
+    <Parameter Name="reid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateManagerOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="mgrapprove" Type="bit" Mode="In" />
+    <Parameter Name="mgrid" Type="int" Mode="In" />
+    <Parameter Name="finishedapprove" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updatePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="upassword" Type="varchar" Mode="In" />
+    <Parameter Name="empid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateStandardTax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+    <Parameter Name="standardTax" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_AbsentCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Absentname" Type="nvarchar" Mode="In" />
+    <Parameter Name="absentsource" Type="varchar" Mode="In" />
+    <Parameter Name="cabsentid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_AddnewAbsent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="checkin" Type="bit" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="actionnow" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_AddnewabsentHR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="approveHR" Type="bit" Mode="In" />
+    <Parameter Name="reid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Banking" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bankname" Type="nvarchar" Mode="In" />
+    <Parameter Name="bankinfo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="bankusing" Type="bit" Mode="In" />
+    <Parameter Name="bankid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Department" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="departname" Type="nvarchar" Mode="In" />
+    <Parameter Name="cmid" Type="int" Mode="In" />
+    <Parameter Name="phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="departinfo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="depid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Education" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="education" Type="nvarchar" Mode="In" />
+    <Parameter Name="educationinfo" Type="nvarchar" Mode="In" />
+    <Parameter Name="edid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Emp_LeaveTotaluse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+    <Parameter Name="cabsentID" Type="int" Mode="In" />
+    <Parameter Name="total_use" Type="float" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_EmpEducation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="edid" Type="int" Mode="In" />
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="educationinfo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="eeid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Employee_Tab1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_nbr" Type="nvarchar" Mode="In" />
+    <Parameter Name="user_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="f_name_l1" Type="nvarchar" Mode="In" />
+    <Parameter Name="surname_l1" Type="nvarchar" Mode="In" />
+    <Parameter Name="f_name_l2" Type="nvarchar" Mode="In" />
+    <Parameter Name="surname_l2" Type="nvarchar" Mode="In" />
+    <Parameter Name="emp_dob" Type="date" Mode="In" />
+    <Parameter Name="genid" Type="int" Mode="In" />
+    <Parameter Name="esid" Type="int" Mode="In" />
+    <Parameter Name="cal_payroll" Type="bit" Mode="In" />
+    <Parameter Name="consult" Type="bit" Mode="In" />
+    <Parameter Name="depid" Type="int" Mode="In" />
+    <Parameter Name="wuid" Type="int" Mode="In" />
+    <Parameter Name="titleid" Type="int" Mode="In" />
+    <Parameter Name="natid" Type="int" Mode="In" />
+    <Parameter Name="relid" Type="int" Mode="In" />
+    <Parameter Name="etid" Type="int" Mode="In" />
+    <Parameter Name="wtsid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_GroupPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pmid" Type="int" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+    <Parameter Name="gread" Type="bit" Mode="In" />
+    <Parameter Name="gwrite" Type="bit" Mode="In" />
+    <Parameter Name="createby" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_IncomeDeduction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="in_deduction" Type="nvarchar" Mode="In" />
+    <Parameter Name="info" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="deduction" Type="bit" Mode="In" />
+    <Parameter Name="indid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Insurance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="insurance" Type="nvarchar" Mode="In" />
+    <Parameter Name="inpercent" Type="float" Mode="In" />
+    <Parameter Name="empusing" Type="bit" Mode="In" />
+    <Parameter Name="compercent" Type="float" Mode="In" />
+    <Parameter Name="maxmoney" Type="float" Mode="In" />
+    <Parameter Name="intypeid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Nationality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nationname" Type="nvarchar" Mode="In" />
+    <Parameter Name="languages" Type="nvarchar" Mode="In" />
+    <Parameter Name="natid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_OTCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="otname" Type="nvarchar" Mode="In" />
+    <Parameter Name="otvalue" Type="float" Mode="In" />
+    <Parameter Name="otcid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_payrollapprove" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_PayrollFinallyDetailsCalculated" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="finished" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_PayrollFinallyTestingCalculated" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="calculated" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_PayrollTestingCalculated" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="calculated" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_PayrollTestingDetailsCalculated" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+    <Parameter Name="finished" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_RectypeOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rtotname" Type="nvarchar" Mode="In" />
+    <Parameter Name="rtstatus" Type="bit" Mode="In" />
+    <Parameter Name="rtotid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_RectypeOTDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="rtotid" Type="int" Mode="In" />
+    <Parameter Name="starttime" Type="varchar" Mode="In" />
+    <Parameter Name="endtime" Type="varchar" Mode="In" />
+    <Parameter Name="info" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="otcid" Type="int" Mode="In" />
+    <Parameter Name="rtotdtid" Type="int" Mode="In" />
+    <Parameter Name="days" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Relationship" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="relationship" Type="nvarchar" Mode="In" />
+    <Parameter Name="relationshipinfo" Type="nvarchar" Mode="In" />
+    <Parameter Name="rlid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_requestOTFinished" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="reid" Type="int" Mode="In" />
+    <Parameter Name="saveby" Type="int" Mode="In" />
+    <Parameter Name="timesave" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_SystemSetting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemid" Type="int" Mode="In" />
+    <Parameter Name="system_values" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Tax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="taxvalue" Type="nvarchar" Mode="In" />
+    <Parameter Name="taxpercent" Type="float" Mode="In" />
+    <Parameter Name="taxstart" Type="float" Mode="In" />
+    <Parameter Name="taxend" Type="float" Mode="In" />
+    <Parameter Name="taxdefault" Type="bit" Mode="In" />
+    <Parameter Name="taxid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Title" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="titlename" Type="nvarchar" Mode="In" />
+    <Parameter Name="titleinfo" Type="nvarchar" Mode="In" />
+    <Parameter Name="titlesign" Type="int" Mode="In" />
+    <Parameter Name="titleid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_Userlogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="upassword" Type="varchar" Mode="In" />
+    <Parameter Name="ustatus" Type="bit" Mode="In" />
+    <Parameter Name="createby" Type="varchar" Mode="In" />
+    <Parameter Name="unew" Type="bit" Mode="In" />
+    <Parameter Name="hr_admin" Type="bit" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_UserloginX" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="hr_admin" Type="bit" Mode="In" />
+    <Parameter Name="gruid" Type="int" Mode="In" />
+    <Parameter Name="ustatus" Type="bit" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_WorkStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="workstatus" Type="nvarchar" Mode="In" />
+    <Parameter Name="workhours" Type="float" Mode="In" />
+    <Parameter Name="workinfo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="wtsid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updateTbl_WorkUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="unitname" Type="nvarchar" Mode="In" />
+    <Parameter Name="unitinfo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="wuid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_updteTbl_Employee_InfoData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="mgrid" Type="int" Mode="In" />
+    <Parameter Name="suppervisor" Type="int" Mode="In" />
+    <Parameter Name="emp_fbook" Type="nvarchar" Mode="In" />
+    <Parameter Name="emp_phone1" Type="nvarchar" Mode="In" />
+    <Parameter Name="emp_phone2" Type="nvarchar" Mode="In" />
+    <Parameter Name="emp_idcard" Type="nvarchar" Mode="In" />
+    <Parameter Name="empBorn" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_valueSalary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="emp_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="pd_WebClient_RosterAbsent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtStartDate" Type="datetime" Mode="In" />
+    <Parameter Name="dtEndDate" Type="datetime" Mode="In" />
+  </Function>
+  <EntityContainer Name="HRMModelStoreContainer">
+    <EntitySet Name="__EFMigrationsHistory" EntityType="Self.__EFMigrationsHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_app_notification" EntityType="Self.tb_app_notification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_app_permission" EntityType="Self.tb_app_permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_app_role" EntityType="Self.tb_app_role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_news" EntityType="Self.tb_news" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_role_permission" EntityType="Self.tb_role_permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_task" EntityType="Self.tb_task" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Absent_Category" EntityType="Self.tbl_Absent_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_AddNewAbsent" EntityType="Self.tbl_AddNewAbsent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_AddNewAbsentImage" EntityType="Self.tbl_AddNewAbsentImage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_ApprovePayroll" EntityType="Self.tbl_ApprovePayroll" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Banking" EntityType="Self.tbl_Banking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_CheckQuestion" EntityType="Self.tbl_CheckQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Company" EntityType="Self.tbl_Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Delegation" EntityType="Self.tbl_Delegation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Department" EntityType="Self.tbl_Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_DriverCard" EntityType="Self.tbl_DriverCard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Education" EntityType="Self.tbl_Education" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpAbsentDetails" EntityType="Self.tbl_EmpAbsentDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpBanking" EntityType="Self.tbl_EmpBanking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpEducation" EntityType="Self.tbl_EmpEducation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpLeave" EntityType="Self.tbl_EmpLeave" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Employee" EntityType="Self.tbl_Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpRelationship" EntityType="Self.tbl_EmpRelationship" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpSalary" EntityType="Self.tbl_EmpSalary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpStatus" EntityType="Self.tbl_EmpStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EmpTax" EntityType="Self.tbl_EmpTax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Ethnic" EntityType="Self.tbl_Ethnic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Gender" EntityType="Self.tbl_Gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GroupPermission" EntityType="Self.tbl_GroupPermission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GroupUser" EntityType="Self.tbl_GroupUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_IncomeDeduction" EntityType="Self.tbl_IncomeDeduction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Insurance_Type" EntityType="Self.tbl_Insurance_Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Nationality" EntityType="Self.tbl_Nationality" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_OTCalculate" EntityType="Self.tbl_OTCalculate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_OTCategory" EntityType="Self.tbl_OTCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_OTRequest" EntityType="Self.tbl_OTRequest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PayrollApprove" EntityType="Self.tbl_PayrollApprove" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PayrollFinaldetails" EntityType="Self.tbl_PayrollFinaldetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PayrollFinally" EntityType="Self.tbl_PayrollFinally" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PayrollSucess" EntityType="Self.tbl_PayrollSucess" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PayrollTesting" EntityType="Self.tbl_PayrollTesting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Payrolltestingdetails" EntityType="Self.tbl_Payrolltestingdetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Permission" EntityType="Self.tbl_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_RectypeOT" EntityType="Self.tbl_RectypeOT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_RectypeOTDetails" EntityType="Self.tbl_RectypeOTDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Relationship" EntityType="Self.tbl_Relationship" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Religion" EntityType="Self.tbl_Religion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Request" EntityType="Self.tbl_Request" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_SalaryDevide" EntityType="Self.tbl_SalaryDevide" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_System_Setting" EntityType="Self.Tbl_System_Setting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_SystemProfile" EntityType="Self.tbl_SystemProfile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Tax" EntityType="Self.tbl_Tax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Title" EntityType="Self.tbl_Title" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_User_Sent_Email" EntityType="Self.tbl_User_Sent_Email" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_UserLogin" EntityType="Self.tbl_UserLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_WorkStatus" EntityType="Self.tbl_WorkStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_WorkUnit" EntityType="Self.tbl_WorkUnit" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__tbl_EmpBa__Banki__13F1F5EB" Association="Self.FK__tbl_EmpBa__Banki__13F1F5EB">
+      <End Role="tbl_Banking" EntitySet="tbl_Banking" />
+      <End Role="tbl_EmpBanking" EntitySet="tbl_EmpBanking" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_EmpEdu__edid__0C50D423" Association="Self.FK__tbl_EmpEdu__edid__0C50D423">
+      <End Role="tbl_Education" EntitySet="tbl_Education" />
+      <End Role="tbl_EmpEducation" EntitySet="tbl_EmpEducation" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_EmpRel__RLID__1D7B6025" Association="Self.FK__tbl_EmpRel__RLID__1D7B6025">
+      <End Role="tbl_Relationship" EntitySet="tbl_Relationship" />
+      <End Role="tbl_EmpRelationship" EntitySet="tbl_EmpRelationship" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_EmpSa__INDID__607251E5" Association="Self.FK__tbl_EmpSa__INDID__607251E5">
+      <End Role="tbl_IncomeDeduction" EntitySet="tbl_IncomeDeduction" />
+      <End Role="tbl_EmpSalary" EntitySet="tbl_EmpSalary" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_EmpTa__Taxid__7A3223E8" Association="Self.FK__tbl_EmpTa__Taxid__7A3223E8">
+      <End Role="tbl_Tax" EntitySet="tbl_Tax" />
+      <End Role="tbl_EmpTax" EntitySet="tbl_EmpTax" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Group__GRUID__4A18FC72" Association="Self.FK__tbl_Group__GRUID__4A18FC72">
+      <End Role="tbl_GroupUser" EntitySet="tbl_GroupUser" />
+      <End Role="tbl_GroupPermission" EntitySet="tbl_GroupPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_GroupP__PMID__4924D839" Association="Self.FK__tbl_GroupP__PMID__4924D839">
+      <End Role="tbl_Permission" EntitySet="tbl_Permission" />
+      <End Role="tbl_GroupPermission" EntitySet="tbl_GroupPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_OTCal__OTCID__23F3538A" Association="Self.FK__tbl_OTCal__OTCID__23F3538A">
+      <End Role="tbl_OTCategory" EntitySet="tbl_OTCategory" />
+      <End Role="tbl_OTCalculate" EntitySet="tbl_OTCalculate" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_OTCal__OTRID__22FF2F51" Association="Self.FK__tbl_OTCal__OTRID__22FF2F51">
+      <End Role="tbl_OTRequest" EntitySet="tbl_OTRequest" />
+      <End Role="tbl_OTCalculate" EntitySet="tbl_OTCalculate" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_OTReq__otcid__6CA31EA0" Association="Self.FK__tbl_OTReq__otcid__6CA31EA0">
+      <End Role="tbl_OTCategory" EntitySet="tbl_OTCategory" />
+      <End Role="tbl_OTRequest" EntitySet="tbl_OTRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_OTRequ__reid__6D9742D9" Association="Self.FK__tbl_OTRequ__reid__6D9742D9">
+      <End Role="tbl_Request" EntitySet="tbl_Request" />
+      <End Role="tbl_OTRequest" EntitySet="tbl_OTRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Recty__RTOTI__1FEDB87C" Association="Self.FK__tbl_Recty__RTOTI__1FEDB87C">
+      <End Role="tbl_RectypeOT" EntitySet="tbl_RectypeOT" />
+      <End Role="tbl_RectypeOTDetails" EntitySet="tbl_RectypeOTDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Employee_tbl_Employee" Association="Self.FK_tbl_Employee_tbl_Employee">
+      <End Role="tbl_Employee" EntitySet="tbl_Employee" />
+      <End Role="tbl_Employee1" EntitySet="tbl_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_UserLogin_tbl_Employee" Association="Self.FK_tbl_UserLogin_tbl_Employee">
+      <End Role="tbl_Employee" EntitySet="tbl_Employee" />
+      <End Role="tbl_UserLogin" EntitySet="tbl_UserLogin" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

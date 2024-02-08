@@ -1,0 +1,2412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HRMXModelStoreContainer" CdmEntityContainer="HRMXEntities">
+    <FunctionImportMapping FunctionImportName="p_RequestLeave_TA" FunctionName="HRMXModel.Store.p_RequestLeave_TA" />
+    <FunctionImportMapping FunctionImportName="pd_actionLogin" FunctionName="HRMXModel.Store.pd_actionLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_actionLogin_Result">
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="groupname" ColumnName="groupname" />
+          <ScalarProperty Name="labels" ColumnName="labels" />
+          <ScalarProperty Name="permissionname" ColumnName="permissionname" />
+          <ScalarProperty Name="gread" ColumnName="gread" />
+          <ScalarProperty Name="gwrite" ColumnName="gwrite" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_approveLeaveAddNewAbsent" FunctionName="HRMXModel.Store.pd_approveLeaveAddNewAbsent" />
+    <FunctionImportMapping FunctionImportName="pd_approveLeaveRequest" FunctionName="HRMXModel.Store.pd_approveLeaveRequest" />
+    <FunctionImportMapping FunctionImportName="pd_checkEmpBalancebeforeRequestLeave" FunctionName="HRMXModel.Store.pd_checkEmpBalancebeforeRequestLeave" />
+    <FunctionImportMapping FunctionImportName="pd_checkEmpTaxbyStandard" FunctionName="HRMXModel.Store.pd_checkEmpTaxbyStandard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_checkEmpTaxbyStandard_Result">
+          <ScalarProperty Name="taxpercent" ColumnName="taxpercent" />
+          <ScalarProperty Name="taxstart" ColumnName="taxstart" />
+          <ScalarProperty Name="taxend" ColumnName="taxend" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_countLevelSignApprove" FunctionName="HRMXModel.Store.pd_countLevelSignApprove" />
+    <FunctionImportMapping FunctionImportName="pd_countTbl_approvePayroll" FunctionName="HRMXModel.Store.pd_countTbl_approvePayroll" />
+    <FunctionImportMapping FunctionImportName="pd_countTbl_payrollapprove" FunctionName="HRMXModel.Store.pd_countTbl_payrollapprove" />
+    <FunctionImportMapping FunctionImportName="pd_dateAdd" FunctionName="HRMXModel.Store.pd_dateAdd" />
+    <FunctionImportMapping FunctionImportName="pd_dateDiff" FunctionName="HRMXModel.Store.pd_dateDiff" />
+    <FunctionImportMapping FunctionImportName="pd_deleteApproalOTRequest" FunctionName="HRMXModel.Store.pd_deleteApproalOTRequest" />
+    <FunctionImportMapping FunctionImportName="pd_deleteEmpTax" FunctionName="HRMXModel.Store.pd_deleteEmpTax" />
+    <FunctionImportMapping FunctionImportName="pd_deleteEtaxID" FunctionName="HRMXModel.Store.pd_deleteEtaxID" />
+    <FunctionImportMapping FunctionImportName="pd_deleteGroupPermissionFirst" FunctionName="HRMXModel.Store.pd_deleteGroupPermissionFirst" />
+    <FunctionImportMapping FunctionImportName="pd_deleteGroupUser" FunctionName="HRMXModel.Store.pd_deleteGroupUser" />
+    <FunctionImportMapping FunctionImportName="pd_deleteOTRequestAll" FunctionName="HRMXModel.Store.pd_deleteOTRequestAll" />
+    <FunctionImportMapping FunctionImportName="pd_deletePayRollTestingAll" FunctionName="HRMXModel.Store.pd_deletePayRollTestingAll" />
+    <FunctionImportMapping FunctionImportName="pd_deletePayRollTestingbyPLTID" FunctionName="HRMXModel.Store.pd_deletePayRollTestingbyPLTID" />
+    <FunctionImportMapping FunctionImportName="pd_deletePayRollTestingDetailsAll" FunctionName="HRMXModel.Store.pd_deletePayRollTestingDetailsAll" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_ApprovePayroll" FunctionName="HRMXModel.Store.pd_deleteTbl_ApprovePayroll" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_Delegation" FunctionName="HRMXModel.Store.pd_deleteTbl_Delegation" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_EmpBanking" FunctionName="HRMXModel.Store.pd_deleteTbl_EmpBanking" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_empEducation" FunctionName="HRMXModel.Store.pd_deleteTbl_empEducation" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_empLeave" FunctionName="HRMXModel.Store.pd_deleteTbl_empLeave" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_empleavebyELID" FunctionName="HRMXModel.Store.pd_deleteTbl_empleavebyELID" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_EmpSalary" FunctionName="HRMXModel.Store.pd_deleteTbl_EmpSalary" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_OTCalculate" FunctionName="HRMXModel.Store.pd_deleteTbl_OTCalculate" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_payrollapprove" FunctionName="HRMXModel.Store.pd_deleteTbl_payrollapprove" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_PayrolltestingPLTID" FunctionName="HRMXModel.Store.pd_deleteTbl_PayrolltestingPLTID" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_RequestLeavebyID" FunctionName="HRMXModel.Store.pd_deleteTbl_RequestLeavebyID" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTbl_RequestOT" FunctionName="HRMXModel.Store.pd_deleteTbl_RequestOT" />
+    <FunctionImportMapping FunctionImportName="pd_deleteTblEMPRelationship" FunctionName="HRMXModel.Store.pd_deleteTblEMPRelationship" />
+    <FunctionImportMapping FunctionImportName="pd_displayAddNewAbsentbyEMPID" FunctionName="HRMXModel.Store.pd_displayAddNewAbsentbyEMPID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayAddNewAbsentbyEMPID_Result">
+          <ScalarProperty Name="addabsentid" ColumnName="addabsentid" />
+          <ScalarProperty Name="absentname" ColumnName="absentname" />
+          <ScalarProperty Name="stdate" ColumnName="stdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="returndate" ColumnName="returndate" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate1" ColumnName="enddate1" />
+          <ScalarProperty Name="returndate1" ColumnName="returndate1" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="qtydays" ColumnName="qtydays" />
+          <ScalarProperty Name="absent_title" ColumnName="absent_title" />
+          <ScalarProperty Name="absentdescription" ColumnName="absentdescription" />
+          <ScalarProperty Name="mgr_allow" ColumnName="mgr_allow" />
+          <ScalarProperty Name="hr_approve" ColumnName="hr_approve" />
+          <ScalarProperty Name="re_no" ColumnName="re_no" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="engname" ColumnName="engname" />
+          <ScalarProperty Name="empPhone1" ColumnName="empPhone1" />
+          <ScalarProperty Name="empPhone2" ColumnName="empPhone2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayBackgroundSumLeaveEMP" FunctionName="HRMXModel.Store.pd_displayBackgroundSumLeaveEMP" />
+    <FunctionImportMapping FunctionImportName="pd_displayBackgroundSumLeaveHR" FunctionName="HRMXModel.Store.pd_displayBackgroundSumLeaveHR" />
+    <FunctionImportMapping FunctionImportName="pd_displayEmpBanking" FunctionName="HRMXModel.Store.pd_displayEmpBanking">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayEmpBanking_Result">
+          <ScalarProperty Name="bankname" ColumnName="bankname" />
+          <ScalarProperty Name="bankcard" ColumnName="bankcard" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayEmployeeRelationshipProfile" FunctionName="HRMXModel.Store.pd_displayEmployeeRelationshipProfile">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayEmployeeRelationshipProfile_Result">
+          <ScalarProperty Name="rname" ColumnName="rname" />
+          <ScalarProperty Name="rmobile1" ColumnName="rmobile1" />
+          <ScalarProperty Name="rmobile2" ColumnName="rmobile2" />
+          <ScalarProperty Name="remail" ColumnName="remail" />
+          <ScalarProperty Name="rworking" ColumnName="rworking" />
+          <ScalarProperty Name="rworking1" ColumnName="rworking1" />
+          <ScalarProperty Name="relationship" ColumnName="relationship" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayIncomebyEmployee" FunctionName="HRMXModel.Store.pd_displayIncomebyEmployee" />
+    <FunctionImportMapping FunctionImportName="pd_displayLeaveDetailBoard" FunctionName="HRMXModel.Store.pd_displayLeaveDetailBoard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayLeaveDetailBoard_Result">
+          <ScalarProperty Name="Absentname" ColumnName="Absentname" />
+          <ScalarProperty Name="amountday" ColumnName="amountday" />
+          <ScalarProperty Name="sumtotal" ColumnName="sumtotal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayLeavePaymoneyPayroll" FunctionName="HRMXModel.Store.pd_displayLeavePaymoneyPayroll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayLeavePaymoneyPayroll_Result">
+          <ScalarProperty Name="CAbsentID" ColumnName="CAbsentID" />
+          <ScalarProperty Name="Absent_title" ColumnName="Absent_title" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="AbsentDescription" ColumnName="AbsentDescription" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayLoanDetailsbyLoanid" FunctionName="HRMXModel.Store.pd_displayLoanDetailsbyLoanid">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayLoanDetailsbyLoanid_Result">
+          <ScalarProperty Name="ldid" ColumnName="ldid" />
+          <ScalarProperty Name="payingdate" ColumnName="payingdate" />
+          <ScalarProperty Name="loanstart" ColumnName="loanstart" />
+          <ScalarProperty Name="payment" ColumnName="payment" />
+          <ScalarProperty Name="paymentcost" ColumnName="paymentcost" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="paidstatus" ColumnName="paidstatus" />
+          <ScalarProperty Name="paymentx" ColumnName="paymentx" />
+          <ScalarProperty Name="paymentcostx" ColumnName="paymentcostx" />
+          <ScalarProperty Name="balancex" ColumnName="balancex" />
+          <ScalarProperty Name="loanstartx" ColumnName="loanstartx" />
+          <ScalarProperty Name="debit" ColumnName="debit" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayManager" FunctionName="HRMXModel.Store.pd_displayManager" />
+    <FunctionImportMapping FunctionImportName="pd_displayOTCalculate" FunctionName="HRMXModel.Store.pd_displayOTCalculate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayOTCalculate_Result">
+          <ScalarProperty Name="re_no" ColumnName="re_no" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="enddtime" ColumnName="enddtime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayPayrollTestingSPC" FunctionName="HRMXModel.Store.pd_displayPayrollTestingSPC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayPayrollTestingSPC_Result">
+          <ScalarProperty Name="PLTID" ColumnName="PLTID" />
+          <ScalarProperty Name="payrollname" ColumnName="payrollname" />
+          <ScalarProperty Name="payrollmoney" ColumnName="payrollmoney" />
+          <ScalarProperty Name="caltax" ColumnName="caltax" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayPermission" FunctionName="HRMXModel.Store.pd_displayPermission">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayPermission_Result">
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="labels" ColumnName="labels" />
+          <ScalarProperty Name="permissionname" ColumnName="permissionname" />
+          <ScalarProperty Name="checked" ColumnName="checked" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displaySelectEmployee" FunctionName="HRMXModel.Store.pd_displaySelectEmployee">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displaySelectEmployee_Result">
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displaySumPayrollmoneybyDate" FunctionName="HRMXModel.Store.pd_displaySumPayrollmoneybyDate" />
+    <FunctionImportMapping FunctionImportName="pd_displaySumPayrollTax" FunctionName="HRMXModel.Store.pd_displaySumPayrollTax" />
+    <FunctionImportMapping FunctionImportName="pd_displayTax" FunctionName="HRMXModel.Store.pd_displayTax">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTax_Result">
+          <ScalarProperty Name="taxid" ColumnName="taxid" />
+          <ScalarProperty Name="taxvalue" ColumnName="taxvalue" />
+          <ScalarProperty Name="Taxpercent" ColumnName="Taxpercent" />
+          <ScalarProperty Name="taxstart" ColumnName="taxstart" />
+          <ScalarProperty Name="taxend" ColumnName="taxend" />
+          <ScalarProperty Name="taxdefault" ColumnName="taxdefault" />
+          <ScalarProperty Name="TaxSelft" ColumnName="TaxSelft" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTaxbyEmployee" FunctionName="HRMXModel.Store.pd_displayTaxbyEmployee" />
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_AbsentCategory" FunctionName="HRMXModel.Store.pd_displayTbl_AbsentCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_AbsentCategory_Result">
+          <ScalarProperty Name="cabsentid" ColumnName="cabsentid" />
+          <ScalarProperty Name="absentname" ColumnName="absentname" />
+          <ScalarProperty Name="Absentsource" ColumnName="Absentsource" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_Banking" FunctionName="HRMXModel.Store.pd_displayTbl_Banking">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_Banking_Result">
+          <ScalarProperty Name="bankid" ColumnName="bankid" />
+          <ScalarProperty Name="bankname" ColumnName="bankname" />
+          <ScalarProperty Name="bankinfo" ColumnName="bankinfo" />
+          <ScalarProperty Name="bankusing" ColumnName="bankusing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_Company" FunctionName="HRMXModel.Store.pd_displayTbl_Company">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_Company_Result">
+          <ScalarProperty Name="cmid" ColumnName="cmid" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="cmphone1" ColumnName="cmphone1" />
+          <ScalarProperty Name="cmphone2" ColumnName="cmphone2" />
+          <ScalarProperty Name="cmfax" ColumnName="cmfax" />
+          <ScalarProperty Name="cmwebsite" ColumnName="cmwebsite" />
+          <ScalarProperty Name="cmfacebook" ColumnName="cmfacebook" />
+          <ScalarProperty Name="cmstatus" ColumnName="cmstatus" />
+          <ScalarProperty Name="CMimg" ColumnName="CMimg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_Delegation" FunctionName="HRMXModel.Store.pd_displayTbl_Delegation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_Delegation_Result">
+          <ScalarProperty Name="dlid" ColumnName="dlid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="ToEmployee" ColumnName="ToEmployee" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="stdate" ColumnName="stdate" />
+          <ScalarProperty Name="enDate" ColumnName="enDate" />
+          <ScalarProperty Name="CreatebyName" ColumnName="CreatebyName" />
+          <ScalarProperty Name="Toemployeenames" ColumnName="Toemployeenames" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_DelegationEMPID" FunctionName="HRMXModel.Store.pd_displayTbl_DelegationEMPID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_DelegationEMPID_Result">
+          <ScalarProperty Name="dlid" ColumnName="dlid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="ToEmployee" ColumnName="ToEmployee" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="stdate" ColumnName="stdate" />
+          <ScalarProperty Name="enDate" ColumnName="enDate" />
+          <ScalarProperty Name="CreatebyName" ColumnName="CreatebyName" />
+          <ScalarProperty Name="Toemployeenames" ColumnName="Toemployeenames" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_Education" FunctionName="HRMXModel.Store.pd_displayTbl_Education">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_Education_Result">
+          <ScalarProperty Name="edid" ColumnName="edid" />
+          <ScalarProperty Name="education" ColumnName="education" />
+          <ScalarProperty Name="educationinfo" ColumnName="educationinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_EmpBankingByEMPID" FunctionName="HRMXModel.Store.pd_displayTbl_EmpBankingByEMPID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_EmpBankingByEMPID_Result">
+          <ScalarProperty Name="ebid" ColumnName="ebid" />
+          <ScalarProperty Name="bankid" ColumnName="bankid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="bankcard" ColumnName="bankcard" />
+          <ScalarProperty Name="paysalary" ColumnName="paysalary" />
+          <ScalarProperty Name="bankname" ColumnName="bankname" />
+          <ScalarProperty Name="bankinfo" ColumnName="bankinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_empeducation" FunctionName="HRMXModel.Store.pd_displayTbl_empeducation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_empeducation_Result">
+          <ScalarProperty Name="eeid" ColumnName="eeid" />
+          <ScalarProperty Name="Education" ColumnName="Education" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="xstart" ColumnName="xstart" />
+          <ScalarProperty Name="xend" ColumnName="xend" />
+          <ScalarProperty Name="educationinfo" ColumnName="educationinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_empleave" FunctionName="HRMXModel.Store.pd_displayTbl_empleave">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_empleave_Result">
+          <ScalarProperty Name="elid" ColumnName="elid" />
+          <ScalarProperty Name="absentname" ColumnName="absentname" />
+          <ScalarProperty Name="amount_day" ColumnName="amount_day" />
+          <ScalarProperty Name="amount_hour" ColumnName="amount_hour" />
+          <ScalarProperty Name="total_use" ColumnName="total_use" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_EmployeeTabData" FunctionName="HRMXModel.Store.pd_displayTbl_EmployeeTabData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_EmployeeTabData_Result">
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="titlename" ColumnName="titlename" />
+          <ScalarProperty Name="departname" ColumnName="departname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_GroupUser" FunctionName="HRMXModel.Store.pd_displayTbl_GroupUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_GroupUser_Result">
+          <ScalarProperty Name="gruid" ColumnName="gruid" />
+          <ScalarProperty Name="groupname" ColumnName="groupname" />
+          <ScalarProperty Name="User_email" ColumnName="User_email" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_IncomeDeduction" FunctionName="HRMXModel.Store.pd_displayTbl_IncomeDeduction">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_IncomeDeduction_Result">
+          <ScalarProperty Name="indid" ColumnName="indid" />
+          <ScalarProperty Name="in_deduction" ColumnName="in_deduction" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="deduction" ColumnName="deduction" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_Insurance_Type" FunctionName="HRMXModel.Store.pd_displayTbl_Insurance_Type">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_Insurance_Type_Result">
+          <ScalarProperty Name="intypeid" ColumnName="intypeid" />
+          <ScalarProperty Name="insurance" ColumnName="insurance" />
+          <ScalarProperty Name="inpercent" ColumnName="inpercent" />
+          <ScalarProperty Name="compercent" ColumnName="compercent" />
+          <ScalarProperty Name="maxmoney" ColumnName="maxmoney" />
+          <ScalarProperty Name="empUsing" ColumnName="empUsing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_LoanEmployee" FunctionName="HRMXModel.Store.pd_displayTbl_LoanEmployee">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_LoanEmployee_Result">
+          <ScalarProperty Name="loanid" ColumnName="loanid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="Engname" ColumnName="Engname" />
+          <ScalarProperty Name="AmountLoan" ColumnName="AmountLoan" />
+          <ScalarProperty Name="loanpayment" ColumnName="loanpayment" />
+          <ScalarProperty Name="paymonthly" ColumnName="paymonthly" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_Nationality" FunctionName="HRMXModel.Store.pd_displayTbl_Nationality">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_Nationality_Result">
+          <ScalarProperty Name="natid" ColumnName="natid" />
+          <ScalarProperty Name="NationName" ColumnName="NationName" />
+          <ScalarProperty Name="languages" ColumnName="languages" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_OTCategory" FunctionName="HRMXModel.Store.pd_displayTbl_OTCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_OTCategory_Result">
+          <ScalarProperty Name="otcid" ColumnName="otcid" />
+          <ScalarProperty Name="otname" ColumnName="otname" />
+          <ScalarProperty Name="otvalue" ColumnName="otvalue" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_RectypeOT" FunctionName="HRMXModel.Store.pd_displayTbl_RectypeOT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_RectypeOT_Result">
+          <ScalarProperty Name="rtotid" ColumnName="rtotid" />
+          <ScalarProperty Name="rtotname" ColumnName="rtotname" />
+          <ScalarProperty Name="RTStatus" ColumnName="RTStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_RectypeOTDetails" FunctionName="HRMXModel.Store.pd_displayTbl_RectypeOTDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_RectypeOTDetails_Result">
+          <ScalarProperty Name="rtotdtid" ColumnName="rtotdtid" />
+          <ScalarProperty Name="rtotname" ColumnName="rtotname" />
+          <ScalarProperty Name="otname" ColumnName="otname" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="Mday" ColumnName="Mday" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_Relationship" FunctionName="HRMXModel.Store.pd_displayTbl_Relationship">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_Relationship_Result">
+          <ScalarProperty Name="rlid" ColumnName="rlid" />
+          <ScalarProperty Name="relationship" ColumnName="relationship" />
+          <ScalarProperty Name="relationshipinfo" ColumnName="relationshipinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_SalaryDevide" FunctionName="HRMXModel.Store.pd_displayTbl_SalaryDevide">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_SalaryDevide_Result">
+          <ScalarProperty Name="sddid" ColumnName="sddid" />
+          <ScalarProperty Name="devidename" ColumnName="devidename" />
+          <ScalarProperty Name="devide_value" ColumnName="devide_value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_systemsetting" FunctionName="HRMXModel.Store.pd_displayTbl_systemsetting">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_systemsetting_Result">
+          <ScalarProperty Name="tbl_system_id" ColumnName="tbl_system_id" />
+          <ScalarProperty Name="system_name" ColumnName="system_name" />
+          <ScalarProperty Name="system_values" ColumnName="system_values" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_title" FunctionName="HRMXModel.Store.pd_displayTbl_title">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_title_Result">
+          <ScalarProperty Name="titleid" ColumnName="titleid" />
+          <ScalarProperty Name="titlename" ColumnName="titlename" />
+          <ScalarProperty Name="titleinfo" ColumnName="titleinfo" />
+          <ScalarProperty Name="levelsign" ColumnName="levelsign" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_WorkStatus" FunctionName="HRMXModel.Store.pd_displayTbl_WorkStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_WorkStatus_Result">
+          <ScalarProperty Name="wtsid" ColumnName="wtsid" />
+          <ScalarProperty Name="workstatus" ColumnName="workstatus" />
+          <ScalarProperty Name="workhours" ColumnName="workhours" />
+          <ScalarProperty Name="workinfo" ColumnName="workinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTbl_WorkUnit" FunctionName="HRMXModel.Store.pd_displayTbl_WorkUnit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTbl_WorkUnit_Result">
+          <ScalarProperty Name="wuid" ColumnName="wuid" />
+          <ScalarProperty Name="unitname" ColumnName="unitname" />
+          <ScalarProperty Name="UnitInfo" ColumnName="UnitInfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTblDepartment" FunctionName="HRMXModel.Store.pd_displayTblDepartment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTblDepartment_Result">
+          <ScalarProperty Name="depid" ColumnName="depid" />
+          <ScalarProperty Name="cmid" ColumnName="cmid" />
+          <ScalarProperty Name="departname" ColumnName="departname" />
+          <ScalarProperty Name="cmname" ColumnName="cmname" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="departinfo" ColumnName="departinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayTblEmpRelationshipByEMPID" FunctionName="HRMXModel.Store.pd_displayTblEmpRelationshipByEMPID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayTblEmpRelationshipByEMPID_Result">
+          <ScalarProperty Name="erid" ColumnName="erid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="rLid" ColumnName="rLid" />
+          <ScalarProperty Name="rname" ColumnName="rname" />
+          <ScalarProperty Name="rmobile1" ColumnName="rmobile1" />
+          <ScalarProperty Name="rmobile2" ColumnName="rmobile2" />
+          <ScalarProperty Name="remail" ColumnName="remail" />
+          <ScalarProperty Name="rworking" ColumnName="rworking" />
+          <ScalarProperty Name="raddress" ColumnName="raddress" />
+          <ScalarProperty Name="relationship" ColumnName="relationship" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_displayUser" FunctionName="HRMXModel.Store.pd_displayUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayUser_Result">
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="gruid" ColumnName="gruid" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="unew" ColumnName="unew" />
+          <ScalarProperty Name="hr_admin" ColumnName="hr_admin" />
+          <ScalarProperty Name="ustatus" ColumnName="ustatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_insertGroupUser" FunctionName="HRMXModel.Store.pd_insertGroupUser" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_AbsentCategory" FunctionName="HRMXModel.Store.pd_insertTbl_AbsentCategory" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_AddAbsentImage" FunctionName="HRMXModel.Store.pd_insertTbl_AddAbsentImage" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Approval" FunctionName="HRMXModel.Store.pd_insertTbl_Approval" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_ApprovePayroll" FunctionName="HRMXModel.Store.pd_insertTbl_ApprovePayroll" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Banking" FunctionName="HRMXModel.Store.pd_insertTbl_Banking" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_CompanyNoImage" FunctionName="HRMXModel.Store.pd_insertTbl_CompanyNoImage" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Delegation" FunctionName="HRMXModel.Store.pd_insertTbl_Delegation" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Department" FunctionName="HRMXModel.Store.pd_insertTbl_Department" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Education" FunctionName="HRMXModel.Store.pd_insertTbl_Education" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_EmpBanking" FunctionName="HRMXModel.Store.pd_insertTbl_EmpBanking" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_EmpEducation" FunctionName="HRMXModel.Store.pd_insertTbl_EmpEducation" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_EmpLeave" FunctionName="HRMXModel.Store.pd_insertTbl_EmpLeave" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_employee_Tab1" FunctionName="HRMXModel.Store.pd_insertTbl_employee_Tab1" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_EmpSalary" FunctionName="HRMXModel.Store.pd_insertTbl_EmpSalary" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_EMPTax" FunctionName="HRMXModel.Store.pd_insertTbl_EMPTax" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_GroupPermission" FunctionName="HRMXModel.Store.pd_insertTbl_GroupPermission" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_IncomeDeduction" FunctionName="HRMXModel.Store.pd_insertTbl_IncomeDeduction" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Insurance" FunctionName="HRMXModel.Store.pd_insertTbl_Insurance" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_InsuranceUsing" FunctionName="HRMXModel.Store.pd_insertTbl_InsuranceUsing" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Loan" FunctionName="HRMXModel.Store.pd_insertTbl_Loan" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Loandetails" FunctionName="HRMXModel.Store.pd_insertTbl_Loandetails" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Nationality" FunctionName="HRMXModel.Store.pd_insertTbl_Nationality" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_OTCalculate" FunctionName="HRMXModel.Store.pd_insertTbl_OTCalculate" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_OTCategory" FunctionName="HRMXModel.Store.pd_insertTbl_OTCategory" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_payrollapprove" FunctionName="HRMXModel.Store.pd_insertTbl_payrollapprove" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_PayrollFinally" FunctionName="HRMXModel.Store.pd_insertTbl_PayrollFinally" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_PayrollFinallyDetails" FunctionName="HRMXModel.Store.pd_insertTbl_PayrollFinallyDetails" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_payrollsucess" FunctionName="HRMXModel.Store.pd_insertTbl_payrollsucess" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_PayrollTesting" FunctionName="HRMXModel.Store.pd_insertTbl_PayrollTesting" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_PayrollTestingDeduction" FunctionName="HRMXModel.Store.pd_insertTbl_PayrollTestingDeduction" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Payrolltestingdetails" FunctionName="HRMXModel.Store.pd_insertTbl_Payrolltestingdetails" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_RectypeOT" FunctionName="HRMXModel.Store.pd_insertTbl_RectypeOT" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_RectypeOTDetails" FunctionName="HRMXModel.Store.pd_insertTbl_RectypeOTDetails" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Relationship" FunctionName="HRMXModel.Store.pd_insertTbl_Relationship" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_request" FunctionName="HRMXModel.Store.pd_insertTbl_request" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_RequestLeave" FunctionName="HRMXModel.Store.pd_insertTbl_RequestLeave" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_RequestOT" FunctionName="HRMXModel.Store.pd_insertTbl_RequestOT" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_RequestOTApproveForm" FunctionName="HRMXModel.Store.pd_insertTbl_RequestOTApproveForm" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_SalaryDevide" FunctionName="HRMXModel.Store.pd_insertTbl_SalaryDevide" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Tax" FunctionName="HRMXModel.Store.pd_insertTbl_Tax" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_Title" FunctionName="HRMXModel.Store.pd_insertTbl_Title" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_userlogin" FunctionName="HRMXModel.Store.pd_insertTbl_userlogin" />
+    <FunctionImportMapping FunctionImportName="pd_insertTbl_WorkStatus" FunctionName="HRMXModel.Store.pd_insertTbl_WorkStatus" />
+    <FunctionImportMapping FunctionImportName="pd_insertTblEMPRelationship" FunctionName="HRMXModel.Store.pd_insertTblEMPRelationship" />
+    <FunctionImportMapping FunctionImportName="pd_isnertTbl_WorkUnit" FunctionName="HRMXModel.Store.pd_isnertTbl_WorkUnit" />
+    <FunctionImportMapping FunctionImportName="pd_ReportHR_EmployeeRequestLeave" FunctionName="HRMXModel.Store.pd_ReportHR_EmployeeRequestLeave">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_ReportHR_EmployeeRequestLeave_Result">
+          <ScalarProperty Name="addabsentID" ColumnName="addabsentID" />
+          <ScalarProperty Name="reid" ColumnName="reid" />
+          <ScalarProperty Name="re_no" ColumnName="re_no" />
+          <ScalarProperty Name="Absentname" ColumnName="Absentname" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="f_name_l1" ColumnName="f_name_l1" />
+          <ScalarProperty Name="surname_l1" ColumnName="surname_l1" />
+          <ScalarProperty Name="f_name_l2" ColumnName="f_name_l2" />
+          <ScalarProperty Name="surname_l2" ColumnName="surname_l2" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="returndate" ColumnName="returndate" />
+          <ScalarProperty Name="absent_title" ColumnName="absent_title" />
+          <ScalarProperty Name="absentdescription" ColumnName="absentdescription" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="approveNameL1" ColumnName="approveNameL1" />
+          <ScalarProperty Name="approveNameL2" ColumnName="approveNameL2" />
+          <ScalarProperty Name="approvesurnamel1" ColumnName="approvesurnamel1" />
+          <ScalarProperty Name="approvesurnamel2" ColumnName="approvesurnamel2" />
+          <ScalarProperty Name="comnamel1" ColumnName="comnamel1" />
+          <ScalarProperty Name="comnamel2" ColumnName="comnamel2" />
+          <ScalarProperty Name="comphone1" ColumnName="comphone1" />
+          <ScalarProperty Name="comphone2" ColumnName="comphone2" />
+          <ScalarProperty Name="comfax" ColumnName="comfax" />
+          <ScalarProperty Name="comaddress" ColumnName="comaddress" />
+          <ScalarProperty Name="comimg" ColumnName="comimg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_reportPayRollFinallyDetailsImport" FunctionName="HRMXModel.Store.pd_reportPayRollFinallyDetailsImport" />
+    <FunctionImportMapping FunctionImportName="pd_reportPayRollFinallyDetailsImportAddIncomesAll" FunctionName="HRMXModel.Store.pd_reportPayRollFinallyDetailsImportAddIncomesAll" />
+    <FunctionImportMapping FunctionImportName="pd_reportPayRollTestingDetailsImport" FunctionName="HRMXModel.Store.pd_reportPayRollTestingDetailsImport" />
+    <FunctionImportMapping FunctionImportName="pd_reportPayRollTestingDetailsImportAddIncomesAll" FunctionName="HRMXModel.Store.pd_reportPayRollTestingDetailsImportAddIncomesAll" />
+    <FunctionImportMapping FunctionImportName="pd_reportSumPayRollFinallyDetailsImport" FunctionName="HRMXModel.Store.pd_reportSumPayRollFinallyDetailsImport" />
+    <FunctionImportMapping FunctionImportName="pd_reportSumPayRollTestingDetailsImport" FunctionName="HRMXModel.Store.pd_reportSumPayRollTestingDetailsImport" />
+    <FunctionImportMapping FunctionImportName="pd_resetPassword" FunctionName="HRMXModel.Store.pd_resetPassword" />
+    <FunctionImportMapping FunctionImportName="pd_searchCabsentID" FunctionName="HRMXModel.Store.pd_searchCabsentID" />
+    <FunctionImportMapping FunctionImportName="pd_searchTax" FunctionName="HRMXModel.Store.pd_searchTax">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTax_Result">
+          <ScalarProperty Name="taxid" ColumnName="taxid" />
+          <ScalarProperty Name="taxvalue" ColumnName="taxvalue" />
+          <ScalarProperty Name="Taxpercent" ColumnName="Taxpercent" />
+          <ScalarProperty Name="taxstart" ColumnName="taxstart" />
+          <ScalarProperty Name="taxend" ColumnName="taxend" />
+          <ScalarProperty Name="taxdefault" ColumnName="taxdefault" />
+          <ScalarProperty Name="TaxSelft" ColumnName="TaxSelft" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_AbsentCategory" FunctionName="HRMXModel.Store.pd_searchTbl_AbsentCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_AbsentCategory_Result">
+          <ScalarProperty Name="cabsentid" ColumnName="cabsentid" />
+          <ScalarProperty Name="absentname" ColumnName="absentname" />
+          <ScalarProperty Name="Absentsource" ColumnName="Absentsource" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Banking" FunctionName="HRMXModel.Store.pd_searchTbl_Banking">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Banking_Result">
+          <ScalarProperty Name="bankid" ColumnName="bankid" />
+          <ScalarProperty Name="bankname" ColumnName="bankname" />
+          <ScalarProperty Name="bankinfo" ColumnName="bankinfo" />
+          <ScalarProperty Name="bankusing" ColumnName="bankusing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Company" FunctionName="HRMXModel.Store.pd_searchTbl_Company">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Company_Result">
+          <ScalarProperty Name="cmid" ColumnName="cmid" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="cmphone1" ColumnName="cmphone1" />
+          <ScalarProperty Name="cmphone2" ColumnName="cmphone2" />
+          <ScalarProperty Name="cmfax" ColumnName="cmfax" />
+          <ScalarProperty Name="cmwebsite" ColumnName="cmwebsite" />
+          <ScalarProperty Name="cmfacebook" ColumnName="cmfacebook" />
+          <ScalarProperty Name="cmstatus" ColumnName="cmstatus" />
+          <ScalarProperty Name="CMimg" ColumnName="CMimg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Delegation" FunctionName="HRMXModel.Store.pd_searchTbl_Delegation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Delegation_Result">
+          <ScalarProperty Name="dlid" ColumnName="dlid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="ToEmployee" ColumnName="ToEmployee" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="stdate" ColumnName="stdate" />
+          <ScalarProperty Name="enDate" ColumnName="enDate" />
+          <ScalarProperty Name="CreatebyName" ColumnName="CreatebyName" />
+          <ScalarProperty Name="Toemployeenames" ColumnName="Toemployeenames" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_DelegationEMPID" FunctionName="HRMXModel.Store.pd_searchTbl_DelegationEMPID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_DelegationEMPID_Result">
+          <ScalarProperty Name="dlid" ColumnName="dlid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="ToEmployee" ColumnName="ToEmployee" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="stdate" ColumnName="stdate" />
+          <ScalarProperty Name="enDate" ColumnName="enDate" />
+          <ScalarProperty Name="CreatebyName" ColumnName="CreatebyName" />
+          <ScalarProperty Name="Toemployeenames" ColumnName="Toemployeenames" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Department" FunctionName="HRMXModel.Store.pd_searchTbl_Department">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Department_Result">
+          <ScalarProperty Name="depid" ColumnName="depid" />
+          <ScalarProperty Name="cmid" ColumnName="cmid" />
+          <ScalarProperty Name="departname" ColumnName="departname" />
+          <ScalarProperty Name="cmname" ColumnName="cmname" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="departinfo" ColumnName="departinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Education" FunctionName="HRMXModel.Store.pd_searchTbl_Education">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Education_Result">
+          <ScalarProperty Name="edid" ColumnName="edid" />
+          <ScalarProperty Name="education" ColumnName="education" />
+          <ScalarProperty Name="educationinfo" ColumnName="educationinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_EmployeeTabData" FunctionName="HRMXModel.Store.pd_searchTbl_EmployeeTabData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_EmployeeTabData_Result">
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="titlename" ColumnName="titlename" />
+          <ScalarProperty Name="departname" ColumnName="departname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_GroupUser" FunctionName="HRMXModel.Store.pd_searchTbl_GroupUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_GroupUser_Result">
+          <ScalarProperty Name="gruid" ColumnName="gruid" />
+          <ScalarProperty Name="groupname" ColumnName="groupname" />
+          <ScalarProperty Name="User_email" ColumnName="User_email" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_IncomeDeduction" FunctionName="HRMXModel.Store.pd_searchTbl_IncomeDeduction">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_IncomeDeduction_Result">
+          <ScalarProperty Name="indid" ColumnName="indid" />
+          <ScalarProperty Name="in_deduction" ColumnName="in_deduction" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="deduction" ColumnName="deduction" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Insurance_Type" FunctionName="HRMXModel.Store.pd_searchTbl_Insurance_Type">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Insurance_Type_Result">
+          <ScalarProperty Name="intypeid" ColumnName="intypeid" />
+          <ScalarProperty Name="insurance" ColumnName="insurance" />
+          <ScalarProperty Name="inpercent" ColumnName="inpercent" />
+          <ScalarProperty Name="compercent" ColumnName="compercent" />
+          <ScalarProperty Name="maxmoney" ColumnName="maxmoney" />
+          <ScalarProperty Name="empUsing" ColumnName="empUsing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_LoanEmployee" FunctionName="HRMXModel.Store.pd_searchTbl_LoanEmployee">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_LoanEmployee_Result">
+          <ScalarProperty Name="loanid" ColumnName="loanid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="Engname" ColumnName="Engname" />
+          <ScalarProperty Name="AmountLoan" ColumnName="AmountLoan" />
+          <ScalarProperty Name="loanpayment" ColumnName="loanpayment" />
+          <ScalarProperty Name="paymonthly" ColumnName="paymonthly" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Nationality" FunctionName="HRMXModel.Store.pd_searchTbl_Nationality">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Nationality_Result">
+          <ScalarProperty Name="natid" ColumnName="natid" />
+          <ScalarProperty Name="NationName" ColumnName="NationName" />
+          <ScalarProperty Name="languages" ColumnName="languages" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_OTCategory" FunctionName="HRMXModel.Store.pd_searchTbl_OTCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_OTCategory_Result">
+          <ScalarProperty Name="otcid" ColumnName="otcid" />
+          <ScalarProperty Name="otname" ColumnName="otname" />
+          <ScalarProperty Name="otvalue" ColumnName="otvalue" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_RectypeOT" FunctionName="HRMXModel.Store.pd_searchTbl_RectypeOT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_RectypeOT_Result">
+          <ScalarProperty Name="rtotid" ColumnName="rtotid" />
+          <ScalarProperty Name="rtotname" ColumnName="rtotname" />
+          <ScalarProperty Name="RTStatus" ColumnName="RTStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_RectypeOTDetails" FunctionName="HRMXModel.Store.pd_searchTbl_RectypeOTDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_RectypeOTDetails_Result">
+          <ScalarProperty Name="rtotdtid" ColumnName="rtotdtid" />
+          <ScalarProperty Name="rtotname" ColumnName="rtotname" />
+          <ScalarProperty Name="otname" ColumnName="otname" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="Mday" ColumnName="Mday" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Relationship" FunctionName="HRMXModel.Store.pd_searchTbl_Relationship">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Relationship_Result">
+          <ScalarProperty Name="rlid" ColumnName="rlid" />
+          <ScalarProperty Name="relationship" ColumnName="relationship" />
+          <ScalarProperty Name="relationshipinfo" ColumnName="relationshipinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_SalaryDevide" FunctionName="HRMXModel.Store.pd_searchTbl_SalaryDevide">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_SalaryDevide_Result">
+          <ScalarProperty Name="sddid" ColumnName="sddid" />
+          <ScalarProperty Name="devidename" ColumnName="devidename" />
+          <ScalarProperty Name="devide_value" ColumnName="devide_value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_Title" FunctionName="HRMXModel.Store.pd_searchTbl_Title">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_Title_Result">
+          <ScalarProperty Name="titleid" ColumnName="titleid" />
+          <ScalarProperty Name="titlename" ColumnName="titlename" />
+          <ScalarProperty Name="titleinfo" ColumnName="titleinfo" />
+          <ScalarProperty Name="levelsign" ColumnName="levelsign" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_WorkStatus" FunctionName="HRMXModel.Store.pd_searchTbl_WorkStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_WorkStatus_Result">
+          <ScalarProperty Name="wtsid" ColumnName="wtsid" />
+          <ScalarProperty Name="workstatus" ColumnName="workstatus" />
+          <ScalarProperty Name="workhours" ColumnName="workhours" />
+          <ScalarProperty Name="workinfo" ColumnName="workinfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchTbl_WorkUnit" FunctionName="HRMXModel.Store.pd_searchTbl_WorkUnit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchTbl_WorkUnit_Result">
+          <ScalarProperty Name="wuid" ColumnName="wuid" />
+          <ScalarProperty Name="unitname" ColumnName="unitname" />
+          <ScalarProperty Name="UnitInfo" ColumnName="UnitInfo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_searchUser" FunctionName="HRMXModel.Store.pd_searchUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_searchUser_Result">
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="gruid" ColumnName="gruid" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="unew" ColumnName="unew" />
+          <ScalarProperty Name="hr_admin" ColumnName="hr_admin" />
+          <ScalarProperty Name="ustatus" ColumnName="ustatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_selectgroupusername" FunctionName="HRMXModel.Store.pd_selectgroupusername" />
+    <FunctionImportMapping FunctionImportName="pd_selectPMID" FunctionName="HRMXModel.Store.pd_selectPMID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_selectPMID_Result">
+          <ScalarProperty Name="gread" ColumnName="gread" />
+          <ScalarProperty Name="gwrite" ColumnName="gwrite" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_showUserLoginHRAdmin" FunctionName="HRMXModel.Store.pd_showUserLoginHRAdmin" />
+    <FunctionImportMapping FunctionImportName="pd_udpateTbl_CheckQuestion" FunctionName="HRMXModel.Store.pd_udpateTbl_CheckQuestion" />
+    <FunctionImportMapping FunctionImportName="pd_udpateTbl_CompanyNoImage" FunctionName="HRMXModel.Store.pd_udpateTbl_CompanyNoImage" />
+    <FunctionImportMapping FunctionImportName="pd_udpateTbl_SalaryDevide" FunctionName="HRMXModel.Store.pd_udpateTbl_SalaryDevide" />
+    <FunctionImportMapping FunctionImportName="pd_updateBalanceLoan" FunctionName="HRMXModel.Store.pd_updateBalanceLoan" />
+    <FunctionImportMapping FunctionImportName="pd_updateFinishedOTCalculate" FunctionName="HRMXModel.Store.pd_updateFinishedOTCalculate" />
+    <FunctionImportMapping FunctionImportName="pd_updateGroupUser" FunctionName="HRMXModel.Store.pd_updateGroupUser" />
+    <FunctionImportMapping FunctionImportName="pd_updateHRApprove" FunctionName="HRMXModel.Store.pd_updateHRApprove" />
+    <FunctionImportMapping FunctionImportName="pd_updateHRComment" FunctionName="HRMXModel.Store.pd_updateHRComment" />
+    <FunctionImportMapping FunctionImportName="pd_updateHRStatusOTRequest" FunctionName="HRMXModel.Store.pd_updateHRStatusOTRequest" />
+    <FunctionImportMapping FunctionImportName="pd_updateLoanPaid" FunctionName="HRMXModel.Store.pd_updateLoanPaid" />
+    <FunctionImportMapping FunctionImportName="pd_updateManagerID" FunctionName="HRMXModel.Store.pd_updateManagerID" />
+    <FunctionImportMapping FunctionImportName="pd_updateManagerIDTbl_OTRequest" FunctionName="HRMXModel.Store.pd_updateManagerIDTbl_OTRequest" />
+    <FunctionImportMapping FunctionImportName="pd_updateManagerOT" FunctionName="HRMXModel.Store.pd_updateManagerOT" />
+    <FunctionImportMapping FunctionImportName="pd_updatePassword" FunctionName="HRMXModel.Store.pd_updatePassword" />
+    <FunctionImportMapping FunctionImportName="pd_updatePaymentCostLoan" FunctionName="HRMXModel.Store.pd_updatePaymentCostLoan" />
+    <FunctionImportMapping FunctionImportName="pd_updateProcessOTRequest" FunctionName="HRMXModel.Store.pd_updateProcessOTRequest" />
+    <FunctionImportMapping FunctionImportName="pd_updateStandardTax" FunctionName="HRMXModel.Store.pd_updateStandardTax" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_AbsentCategory" FunctionName="HRMXModel.Store.pd_updateTbl_AbsentCategory" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_AddnewAbsent" FunctionName="HRMXModel.Store.pd_updateTbl_AddnewAbsent" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_AddnewabsentHR" FunctionName="HRMXModel.Store.pd_updateTbl_AddnewabsentHR" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Banking" FunctionName="HRMXModel.Store.pd_updateTbl_Banking" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Department" FunctionName="HRMXModel.Store.pd_updateTbl_Department" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Education" FunctionName="HRMXModel.Store.pd_updateTbl_Education" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Emp_LeaveTotaluse" FunctionName="HRMXModel.Store.pd_updateTbl_Emp_LeaveTotaluse" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_EmpEducation" FunctionName="HRMXModel.Store.pd_updateTbl_EmpEducation" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Employee_Tab1" FunctionName="HRMXModel.Store.pd_updateTbl_Employee_Tab1" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_GroupPermission" FunctionName="HRMXModel.Store.pd_updateTbl_GroupPermission" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_IncomeDeduction" FunctionName="HRMXModel.Store.pd_updateTbl_IncomeDeduction" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Insurance" FunctionName="HRMXModel.Store.pd_updateTbl_Insurance" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Nationality" FunctionName="HRMXModel.Store.pd_updateTbl_Nationality" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_OTCategory" FunctionName="HRMXModel.Store.pd_updateTbl_OTCategory" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_payrollapprove" FunctionName="HRMXModel.Store.pd_updateTbl_payrollapprove" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_PayrollFinallyDetailsCalculated" FunctionName="HRMXModel.Store.pd_updateTbl_PayrollFinallyDetailsCalculated" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_PayrollFinallyTestingCalculated" FunctionName="HRMXModel.Store.pd_updateTbl_PayrollFinallyTestingCalculated" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_PayrollTestingCalculated" FunctionName="HRMXModel.Store.pd_updateTbl_PayrollTestingCalculated" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_PayrollTestingDetailsCalculated" FunctionName="HRMXModel.Store.pd_updateTbl_PayrollTestingDetailsCalculated" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_RectypeOT" FunctionName="HRMXModel.Store.pd_updateTbl_RectypeOT" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_RectypeOTDetails" FunctionName="HRMXModel.Store.pd_updateTbl_RectypeOTDetails" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Relationship" FunctionName="HRMXModel.Store.pd_updateTbl_Relationship" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_requestOTFinished" FunctionName="HRMXModel.Store.pd_updateTbl_requestOTFinished" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_SystemSetting" FunctionName="HRMXModel.Store.pd_updateTbl_SystemSetting" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Tax" FunctionName="HRMXModel.Store.pd_updateTbl_Tax" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Title" FunctionName="HRMXModel.Store.pd_updateTbl_Title" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Userlogin" FunctionName="HRMXModel.Store.pd_updateTbl_Userlogin" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_UserloginX" FunctionName="HRMXModel.Store.pd_updateTbl_UserloginX" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_WorkStatus" FunctionName="HRMXModel.Store.pd_updateTbl_WorkStatus" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_WorkUnit" FunctionName="HRMXModel.Store.pd_updateTbl_WorkUnit" />
+    <FunctionImportMapping FunctionImportName="pd_updateTblEmpLeave" FunctionName="HRMXModel.Store.pd_updateTblEmpLeave" />
+    <FunctionImportMapping FunctionImportName="pd_updteTbl_Employee_InfoData" FunctionName="HRMXModel.Store.pd_updteTbl_Employee_InfoData" />
+    <FunctionImportMapping FunctionImportName="pd_uploadImgTbl_Insuranceusing" FunctionName="HRMXModel.Store.pd_uploadImgTbl_Insuranceusing" />
+    <FunctionImportMapping FunctionImportName="pd_uploadLoanImg" FunctionName="HRMXModel.Store.pd_uploadLoanImg" />
+    <FunctionImportMapping FunctionImportName="pd_valueSalary" FunctionName="HRMXModel.Store.pd_valueSalary" />
+    <FunctionImportMapping FunctionImportName="pd_WebClient_RosterAbsent" FunctionName="HRMXModel.Store.pd_WebClient_RosterAbsent">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_WebClient_RosterAbsent_Result">
+          <ScalarProperty Name="WeekDay" ColumnName="WeekDay" />
+          <ScalarProperty Name="ShowDate" ColumnName="ShowDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="updatePayrollmoneyLoan" FunctionName="HRMXModel.Store.updatePayrollmoneyLoan" />
+    <FunctionImportMapping FunctionImportName="p_myrequestLeave_TA" FunctionName="HRMXModel.Store.p_myrequestLeave_TA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.p_myrequestLeave_TA_Result">
+          <ScalarProperty Name="requestID" ColumnName="requestID" />
+          <ScalarProperty Name="requestNo" ColumnName="requestNo" />
+          <ScalarProperty Name="requestType" ColumnName="requestType" />
+          <ScalarProperty Name="requestName_la" ColumnName="requestName_la" />
+          <ScalarProperty Name="requestName_en" ColumnName="requestName_en" />
+          <ScalarProperty Name="requestFor" ColumnName="requestFor" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="mgrFname_l" ColumnName="mgrFname_l" />
+          <ScalarProperty Name="mgrLname_l" ColumnName="mgrLname_l" />
+          <ScalarProperty Name="mgrFname_E" ColumnName="mgrFname_E" />
+          <ScalarProperty Name="mgrLname_E" ColumnName="mgrLname_E" />
+          <ScalarProperty Name="date_request" ColumnName="date_request" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="p_reject_leave_TA" FunctionName="HRMXModel.Store.p_reject_leave_TA" />
+    <FunctionImportMapping FunctionImportName="p_noti" FunctionName="HRMXModel.Store.p_noti" />
+    <FunctionImportMapping FunctionImportName="p_approveLeave_TA" FunctionName="HRMXModel.Store.p_approveLeave_TA" />
+    <FunctionImportMapping FunctionImportName="pd_approveLeaveAddNewAbsentbyID" FunctionName="HRMXModel.Store.pd_approveLeaveAddNewAbsentbyID" />
+    <FunctionImportMapping FunctionImportName="pd_updateManagerIDbyAddnewabsentID" FunctionName="HRMXModel.Store.pd_updateManagerIDbyAddnewabsentID" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_AddnewabsentHRbyID" FunctionName="HRMXModel.Store.pd_updateTbl_AddnewabsentHRbyID" />
+    <FunctionImportMapping FunctionImportName="pd_updateTblRequest_LVfinished" FunctionName="HRMXModel.Store.pd_updateTblRequest_LVfinished" />
+    <FunctionImportMapping FunctionImportName="p_cancelMyrequest_TA" FunctionName="HRMXModel.Store.p_cancelMyrequest_TA" />
+    <FunctionImportMapping FunctionImportName="pd_rejectLeaveBackground" FunctionName="HRMXModel.Store.pd_rejectLeaveBackground" />
+    <FunctionImportMapping FunctionImportName="pd_displayDelegationAccept" FunctionName="HRMXModel.Store.pd_displayDelegationAccept">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.pd_displayDelegationAccept_Result">
+          <ScalarProperty Name="dlid" ColumnName="dlid" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="titlename" ColumnName="titlename" />
+          <ScalarProperty Name="departname" ColumnName="departname" />
+          <ScalarProperty Name="cmname" ColumnName="cmname" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="reasons" ColumnName="reasons" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pd_rejectOTBackground" FunctionName="HRMXModel.Store.pd_rejectOTBackground" />
+    <FunctionImportMapping FunctionImportName="pd_updateAcceptDelegation" FunctionName="HRMXModel.Store.pd_updateAcceptDelegation" />
+    <FunctionImportMapping FunctionImportName="pd_updateHRreject" FunctionName="HRMXModel.Store.pd_updateHRreject" />
+    <FunctionImportMapping FunctionImportName="pd_updateTbl_Delegation" FunctionName="HRMXModel.Store.pd_updateTbl_Delegation" />
+    <FunctionImportMapping FunctionImportName="p_AllowOTRequest_TA" FunctionName="HRMXModel.Store.p_AllowOTRequest_TA" />
+    <FunctionImportMapping FunctionImportName="p_ApproveOT_TA" FunctionName="HRMXModel.Store.p_ApproveOT_TA" />
+    <FunctionImportMapping FunctionImportName="p_CancelOT_TA" FunctionName="HRMXModel.Store.p_CancelOT_TA" />
+    <FunctionImportMapping FunctionImportName="p_RejectOT_TA" FunctionName="HRMXModel.Store.p_RejectOT_TA" />
+    <FunctionImportMapping FunctionImportName="p_RequestOT_TA" FunctionName="HRMXModel.Store.p_RequestOT_TA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HRMXModel.p_RequestOT_TA_Result">
+          <ScalarProperty Name="TypeOT" ColumnName="TypeOT" />
+          <ScalarProperty Name="TimeShift" ColumnName="TimeShift" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tb_checkInOut">
+      <EntityTypeMapping TypeName="HRMXModel.tb_checkInOut">
+        <MappingFragment StoreEntitySet="tb_checkInOut">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="checkInOut" ColumnName="checkInOut" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="checkTime" ColumnName="checkTime" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="chechID" ColumnName="chechID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_incomDeduct">
+      <EntityTypeMapping TypeName="HRMXModel.tb_incomDeduct">
+        <MappingFragment StoreEntitySet="tb_incomDeduct">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="typeID" ColumnName="typeID" />
+          <ScalarProperty Name="incomDeductText" ColumnName="incomDeductText" />
+          <ScalarProperty Name="incomDeductID" ColumnName="incomDeductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_incomType">
+      <EntityTypeMapping TypeName="HRMXModel.tb_incomType">
+        <MappingFragment StoreEntitySet="tb_incomType">
+          <ScalarProperty Name="typeText" ColumnName="typeText" />
+          <ScalarProperty Name="typeID" ColumnName="typeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_lang">
+      <EntityTypeMapping TypeName="HRMXModel.tb_lang">
+        <MappingFragment StoreEntitySet="tb_lang">
+          <ScalarProperty Name="langName" ColumnName="langName" />
+          <ScalarProperty Name="langID" ColumnName="langID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_news">
+      <EntityTypeMapping TypeName="HRMXModel.tb_news">
+        <MappingFragment StoreEntitySet="tb_news">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="exp_date" ColumnName="exp_date" />
+          <ScalarProperty Name="pubish_date" ColumnName="pubish_date" />
+          <ScalarProperty Name="attachec_file" ColumnName="attachec_file" />
+          <ScalarProperty Name="newsContrent" ColumnName="newsContrent" />
+          <ScalarProperty Name="newsTitle" ColumnName="newsTitle" />
+          <ScalarProperty Name="newsID" ColumnName="newsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_noti">
+      <EntityTypeMapping TypeName="HRMXModel.tb_noti">
+        <MappingFragment StoreEntitySet="tb_noti">
+          <ScalarProperty Name="OldValues" ColumnName="OldValues" />
+          <ScalarProperty Name="userView" ColumnName="userView" />
+          <ScalarProperty Name="CountItem" ColumnName="CountItem" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="notiID" ColumnName="notiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_NotificationSetting">
+      <EntityTypeMapping TypeName="HRMXModel.tb_NotificationSetting">
+        <MappingFragment StoreEntitySet="tb_NotificationSetting">
+          <ScalarProperty Name="sendSMS" ColumnName="sendSMS" />
+          <ScalarProperty Name="sendNotiAlert" ColumnName="sendNotiAlert" />
+          <ScalarProperty Name="sendEmail" ColumnName="sendEmail" />
+          <ScalarProperty Name="notitSettingID" ColumnName="notitSettingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_publicHoliday">
+      <EntityTypeMapping TypeName="HRMXModel.tb_publicHoliday">
+        <MappingFragment StoreEntitySet="tb_publicHoliday">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="publicHoliday" ColumnName="publicHoliday" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_salary">
+      <EntityTypeMapping TypeName="HRMXModel.tb_salary">
+        <MappingFragment StoreEntitySet="tb_salary">
+          <ScalarProperty Name="date_date" ColumnName="date_date" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="payment" ColumnName="payment" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="salaryDate" ColumnName="salaryDate" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="salaryNo" ColumnName="salaryNo" />
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_salaryDetail">
+      <EntityTypeMapping TypeName="HRMXModel.tb_salaryDetail">
+        <MappingFragment StoreEntitySet="tb_salaryDetail">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+          <ScalarProperty Name="taxValues" ColumnName="taxValues" />
+          <ScalarProperty Name="incomDeductValues" ColumnName="incomDeductValues" />
+          <ScalarProperty Name="incomDeductID" ColumnName="incomDeductID" />
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+          <ScalarProperty Name="emp_incomID" ColumnName="emp_incomID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_tasks">
+      <EntityTypeMapping TypeName="HRMXModel.tb_tasks">
+        <MappingFragment StoreEntitySet="tb_tasks">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_com" ColumnName="status_com" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="attachec_file" ColumnName="attachec_file" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="taskDetail" ColumnName="taskDetail" />
+          <ScalarProperty Name="taskName" ColumnName="taskName" />
+          <ScalarProperty Name="taskID" ColumnName="taskID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Absent_Category">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Absent_Category">
+        <MappingFragment StoreEntitySet="tbl_Absent_Category">
+          <ScalarProperty Name="AbsentName_2" ColumnName="AbsentName_2" />
+          <ScalarProperty Name="AbsentSource" ColumnName="AbsentSource" />
+          <ScalarProperty Name="AbsentName" ColumnName="AbsentName" />
+          <ScalarProperty Name="CAbsentID" ColumnName="CAbsentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AddNewAbsent">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_AddNewAbsent">
+        <MappingFragment StoreEntitySet="tbl_AddNewAbsent">
+          <ScalarProperty Name="log_date" ColumnName="log_date" />
+          <ScalarProperty Name="leaveFor" ColumnName="leaveFor" />
+          <ScalarProperty Name="RequestFinished" ColumnName="RequestFinished" />
+          <ScalarProperty Name="HRCalDate" ColumnName="HRCalDate" />
+          <ScalarProperty Name="HRCal" ColumnName="HRCal" />
+          <ScalarProperty Name="approvefinished" ColumnName="approvefinished" />
+          <ScalarProperty Name="saveby" ColumnName="saveby" />
+          <ScalarProperty Name="actionnow" ColumnName="actionnow" />
+          <ScalarProperty Name="LevelMGSign" ColumnName="LevelMGSign" />
+          <ScalarProperty Name="Checkin" ColumnName="Checkin" />
+          <ScalarProperty Name="EmpKeyin" ColumnName="EmpKeyin" />
+          <ScalarProperty Name="REID" ColumnName="REID" />
+          <ScalarProperty Name="ToEmpid" ColumnName="ToEmpid" />
+          <ScalarProperty Name="ApproveHR" ColumnName="ApproveHR" />
+          <ScalarProperty Name="ApproveMGRID" ColumnName="ApproveMGRID" />
+          <ScalarProperty Name="HR_Date" ColumnName="HR_Date" />
+          <ScalarProperty Name="HR_allow" ColumnName="HR_allow" />
+          <ScalarProperty Name="Mgr_date" ColumnName="Mgr_date" />
+          <ScalarProperty Name="Mgr_allow" ColumnName="Mgr_allow" />
+          <ScalarProperty Name="AbsentDescription" ColumnName="AbsentDescription" />
+          <ScalarProperty Name="Absent_title" ColumnName="Absent_title" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="CAbsentID" ColumnName="CAbsentID" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="AddAbsentID" ColumnName="AddAbsentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AddNewAbsentImage">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_AddNewAbsentImage">
+        <MappingFragment StoreEntitySet="tbl_AddNewAbsentImage">
+          <ScalarProperty Name="pathimg" ColumnName="pathimg" />
+          <ScalarProperty Name="uploaded" ColumnName="uploaded" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="AnDate" ColumnName="AnDate" />
+          <ScalarProperty Name="reno" ColumnName="reno" />
+          <ScalarProperty Name="Reid" ColumnName="Reid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="ANIID" ColumnName="ANIID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Approval">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Approval">
+        <MappingFragment StoreEntitySet="tbl_Approval">
+          <ScalarProperty Name="approved" ColumnName="approved" />
+          <ScalarProperty Name="approvedescription" ColumnName="approvedescription" />
+          <ScalarProperty Name="approvedate" ColumnName="approvedate" />
+          <ScalarProperty Name="approveby" ColumnName="approveby" />
+          <ScalarProperty Name="Reid" ColumnName="Reid" />
+          <ScalarProperty Name="ApproveID" ColumnName="ApproveID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ApprovePayroll">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_ApprovePayroll">
+        <MappingFragment StoreEntitySet="tbl_ApprovePayroll">
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="levelsapprove" ColumnName="levelsapprove" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="APLID" ColumnName="APLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Banking">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Banking">
+        <MappingFragment StoreEntitySet="tbl_Banking">
+          <ScalarProperty Name="BankUsing" ColumnName="BankUsing" />
+          <ScalarProperty Name="BankInfo" ColumnName="BankInfo" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BANKID" ColumnName="BANKID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CheckQuestion">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_CheckQuestion">
+        <MappingFragment StoreEntitySet="tbl_CheckQuestion">
+          <ScalarProperty Name="CheckQ" ColumnName="CheckQ" />
+          <ScalarProperty Name="CheckQuestion" ColumnName="CheckQuestion" />
+          <ScalarProperty Name="CQID" ColumnName="CQID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Company">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Company">
+        <MappingFragment StoreEntitySet="tbl_Company">
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="Cmstatus" ColumnName="Cmstatus" />
+          <ScalarProperty Name="CMimg" ColumnName="CMimg" />
+          <ScalarProperty Name="Cmfacebook" ColumnName="Cmfacebook" />
+          <ScalarProperty Name="CmWebsite" ColumnName="CmWebsite" />
+          <ScalarProperty Name="Cmfax" ColumnName="Cmfax" />
+          <ScalarProperty Name="Cmphone2" ColumnName="Cmphone2" />
+          <ScalarProperty Name="Cmphone1" ColumnName="Cmphone1" />
+          <ScalarProperty Name="Parent" ColumnName="Parent" />
+          <ScalarProperty Name="CMName" ColumnName="CMName" />
+          <ScalarProperty Name="CMID" ColumnName="CMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Delegation">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Delegation">
+        <MappingFragment StoreEntitySet="tbl_Delegation">
+          <ScalarProperty Name="data_add" ColumnName="data_add" />
+          <ScalarProperty Name="Acceptdate" ColumnName="Acceptdate" />
+          <ScalarProperty Name="WaitingUser" ColumnName="WaitingUser" />
+          <ScalarProperty Name="DelegationDelete" ColumnName="DelegationDelete" />
+          <ScalarProperty Name="DelegationUsing" ColumnName="DelegationUsing" />
+          <ScalarProperty Name="Enddate" ColumnName="Enddate" />
+          <ScalarProperty Name="Startdate" ColumnName="Startdate" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="ToEmployee" ColumnName="ToEmployee" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="DLID" ColumnName="DLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Department">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Department">
+        <MappingFragment StoreEntitySet="tbl_Department">
+          <ScalarProperty Name="DepartInfo" ColumnName="DepartInfo" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="CMID" ColumnName="CMID" />
+          <ScalarProperty Name="Departname" ColumnName="Departname" />
+          <ScalarProperty Name="DEPID" ColumnName="DEPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DriverCard">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_DriverCard">
+        <MappingFragment StoreEntitySet="tbl_DriverCard">
+          <ScalarProperty Name="DriverCard" ColumnName="DriverCard" />
+          <ScalarProperty Name="DCID" ColumnName="DCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Education">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Education">
+        <MappingFragment StoreEntitySet="tbl_Education">
+          <ScalarProperty Name="EducationInfo" ColumnName="EducationInfo" />
+          <ScalarProperty Name="Education" ColumnName="Education" />
+          <ScalarProperty Name="EDID" ColumnName="EDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpAbsentDetails">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpAbsentDetails">
+        <MappingFragment StoreEntitySet="tbl_EmpAbsentDetails">
+          <ScalarProperty Name="QtyUsingHour" ColumnName="QtyUsingHour" />
+          <ScalarProperty Name="QtyUsingDay" ColumnName="QtyUsingDay" />
+          <ScalarProperty Name="QtyHour" ColumnName="QtyHour" />
+          <ScalarProperty Name="QtyDay" ColumnName="QtyDay" />
+          <ScalarProperty Name="Cabsentid" ColumnName="Cabsentid" />
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+          <ScalarProperty Name="EADID" ColumnName="EADID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpBanking">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpBanking">
+        <MappingFragment StoreEntitySet="tbl_EmpBanking">
+          <ScalarProperty Name="PaySalary" ColumnName="PaySalary" />
+          <ScalarProperty Name="BankCard" ColumnName="BankCard" />
+          <ScalarProperty Name="Bankid" ColumnName="Bankid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="EBID" ColumnName="EBID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpEducation">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpEducation">
+        <MappingFragment StoreEntitySet="tbl_EmpEducation">
+          <ScalarProperty Name="educationinfo" ColumnName="educationinfo" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="edid" ColumnName="edid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="EEID" ColumnName="EEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpLeave">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpLeave">
+        <MappingFragment StoreEntitySet="tbl_EmpLeave">
+          <ScalarProperty Name="Total_use" ColumnName="Total_use" />
+          <ScalarProperty Name="Amount_Hour" ColumnName="Amount_Hour" />
+          <ScalarProperty Name="Amount_Day" ColumnName="Amount_Day" />
+          <ScalarProperty Name="CabsentID" ColumnName="CabsentID" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="ELID" ColumnName="ELID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Employee">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Employee">
+        <MappingFragment StoreEntitySet="tbl_Employee">
+          <ScalarProperty Name="pathimg" ColumnName="pathimg" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="empBorn" ColumnName="empBorn" />
+          <ScalarProperty Name="suppervisor" ColumnName="suppervisor" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="standardTax" ColumnName="standardTax" />
+          <ScalarProperty Name="empWeight" ColumnName="empWeight" />
+          <ScalarProperty Name="heigh" ColumnName="heigh" />
+          <ScalarProperty Name="groupblood" ColumnName="groupblood" />
+          <ScalarProperty Name="IDcard" ColumnName="IDcard" />
+          <ScalarProperty Name="Passportno" ColumnName="Passportno" />
+          <ScalarProperty Name="consult" ColumnName="consult" />
+          <ScalarProperty Name="emp_office" ColumnName="emp_office" />
+          <ScalarProperty Name="Cal_payroll" ColumnName="Cal_payroll" />
+          <ScalarProperty Name="intypenumber" ColumnName="intypenumber" />
+          <ScalarProperty Name="intypeid" ColumnName="intypeid" />
+          <ScalarProperty Name="emp_photo" ColumnName="emp_photo" />
+          <ScalarProperty Name="emp_idcard" ColumnName="emp_idcard" />
+          <ScalarProperty Name="emp_fbook" ColumnName="emp_fbook" />
+          <ScalarProperty Name="emp_phone2" ColumnName="emp_phone2" />
+          <ScalarProperty Name="emp_phone1" ColumnName="emp_phone1" />
+          <ScalarProperty Name="ESID" ColumnName="ESID" />
+          <ScalarProperty Name="titleid" ColumnName="titleid" />
+          <ScalarProperty Name="wuid" ColumnName="wuid" />
+          <ScalarProperty Name="wtsid" ColumnName="wtsid" />
+          <ScalarProperty Name="relid" ColumnName="relid" />
+          <ScalarProperty Name="natid" ColumnName="natid" />
+          <ScalarProperty Name="etid" ColumnName="etid" />
+          <ScalarProperty Name="depid" ColumnName="depid" />
+          <ScalarProperty Name="Genid" ColumnName="Genid" />
+          <ScalarProperty Name="Emp_enddate" ColumnName="Emp_enddate" />
+          <ScalarProperty Name="Emp_startdate" ColumnName="Emp_startdate" />
+          <ScalarProperty Name="Emp_DOB" ColumnName="Emp_DOB" />
+          <ScalarProperty Name="Surname_L2" ColumnName="Surname_L2" />
+          <ScalarProperty Name="F_name_l2" ColumnName="F_name_l2" />
+          <ScalarProperty Name="Surname_L1" ColumnName="Surname_L1" />
+          <ScalarProperty Name="F_name_l1" ColumnName="F_name_l1" />
+          <ScalarProperty Name="User_email" ColumnName="User_email" />
+          <ScalarProperty Name="Emp_nbr" ColumnName="Emp_nbr" />
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpRelationship">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpRelationship">
+        <MappingFragment StoreEntitySet="tbl_EmpRelationship">
+          <ScalarProperty Name="RAddress" ColumnName="RAddress" />
+          <ScalarProperty Name="RWorking" ColumnName="RWorking" />
+          <ScalarProperty Name="Remail" ColumnName="Remail" />
+          <ScalarProperty Name="Rmobile2" ColumnName="Rmobile2" />
+          <ScalarProperty Name="Rmobile1" ColumnName="Rmobile1" />
+          <ScalarProperty Name="Rname" ColumnName="Rname" />
+          <ScalarProperty Name="RLID" ColumnName="RLID" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="ERID" ColumnName="ERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpSalary">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpSalary">
+        <MappingFragment StoreEntitySet="tbl_EmpSalary">
+          <ScalarProperty Name="sddid" ColumnName="sddid" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="EmpIncome" ColumnName="EmpIncome" />
+          <ScalarProperty Name="INDID" ColumnName="INDID" />
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+          <ScalarProperty Name="EMPSID" ColumnName="EMPSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpStatus">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpStatus">
+        <MappingFragment StoreEntitySet="tbl_EmpStatus">
+          <ScalarProperty Name="EmpStatus" ColumnName="EmpStatus" />
+          <ScalarProperty Name="ESID" ColumnName="ESID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmpTax">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_EmpTax">
+        <MappingFragment StoreEntitySet="tbl_EmpTax">
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Taxid" ColumnName="Taxid" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="ETaxid" ColumnName="ETaxid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Ethnic">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Ethnic">
+        <MappingFragment StoreEntitySet="tbl_Ethnic">
+          <ScalarProperty Name="Ethnic" ColumnName="Ethnic" />
+          <ScalarProperty Name="ETID" ColumnName="ETID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Gender">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Gender">
+        <MappingFragment StoreEntitySet="tbl_Gender">
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="GENID" ColumnName="GENID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GroupPermission">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_GroupPermission">
+        <MappingFragment StoreEntitySet="tbl_GroupPermission">
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="GWrite" ColumnName="GWrite" />
+          <ScalarProperty Name="GRead" ColumnName="GRead" />
+          <ScalarProperty Name="GRUID" ColumnName="GRUID" />
+          <ScalarProperty Name="PMID" ColumnName="PMID" />
+          <ScalarProperty Name="GPID" ColumnName="GPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GroupUser">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_GroupUser">
+        <MappingFragment StoreEntitySet="tbl_GroupUser">
+          <ScalarProperty Name="GroupStatus" ColumnName="GroupStatus" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GRUID" ColumnName="GRUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_IncomeDeduction">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_IncomeDeduction">
+        <MappingFragment StoreEntitySet="tbl_IncomeDeduction">
+          <ScalarProperty Name="Deduction" ColumnName="Deduction" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="In_Deduction" ColumnName="In_Deduction" />
+          <ScalarProperty Name="INDID" ColumnName="INDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Insurance_Type">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Insurance_Type">
+        <MappingFragment StoreEntitySet="tbl_Insurance_Type">
+          <ScalarProperty Name="MaxMoney" ColumnName="MaxMoney" />
+          <ScalarProperty Name="ComPercent" ColumnName="ComPercent" />
+          <ScalarProperty Name="EmpUsing" ColumnName="EmpUsing" />
+          <ScalarProperty Name="InPercent" ColumnName="InPercent" />
+          <ScalarProperty Name="Insurance" ColumnName="Insurance" />
+          <ScalarProperty Name="INTYPEID" ColumnName="INTYPEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InsuranceUsing">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_InsuranceUsing">
+        <MappingFragment StoreEntitySet="tbl_InsuranceUsing">
+          <ScalarProperty Name="createby" ColumnName="createby" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="imgfile" ColumnName="imgfile" />
+          <ScalarProperty Name="Diagnose" ColumnName="Diagnose" />
+          <ScalarProperty Name="AmountMoney" ColumnName="AmountMoney" />
+          <ScalarProperty Name="DateMoney" ColumnName="DateMoney" />
+          <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+          <ScalarProperty Name="LocationContract" ColumnName="LocationContract" />
+          <ScalarProperty Name="LocationUsing" ColumnName="LocationUsing" />
+          <ScalarProperty Name="DateUsing" ColumnName="DateUsing" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="INUID" ColumnName="INUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Loan">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Loan">
+        <MappingFragment StoreEntitySet="tbl_Loan">
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Paybymonthly" ColumnName="Paybymonthly" />
+          <ScalarProperty Name="LoanPayment" ColumnName="LoanPayment" />
+          <ScalarProperty Name="AverageCal" ColumnName="AverageCal" />
+          <ScalarProperty Name="DQty" ColumnName="DQty" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="createby" ColumnName="createby" />
+          <ScalarProperty Name="LoanPDF" ColumnName="LoanPDF" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="LoanEnd" ColumnName="LoanEnd" />
+          <ScalarProperty Name="LoanStart" ColumnName="LoanStart" />
+          <ScalarProperty Name="LoanPercent" ColumnName="LoanPercent" />
+          <ScalarProperty Name="AmountLoan" ColumnName="AmountLoan" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="Loanid" ColumnName="Loanid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_LoanDetails">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_LoanDetails">
+        <MappingFragment StoreEntitySet="tbl_LoanDetails">
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="monthlypaid" ColumnName="monthlypaid" />
+          <ScalarProperty Name="PaidStatus" ColumnName="PaidStatus" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+          <ScalarProperty Name="PaymentCost" ColumnName="PaymentCost" />
+          <ScalarProperty Name="LDPercent" ColumnName="LDPercent" />
+          <ScalarProperty Name="Loanstart" ColumnName="Loanstart" />
+          <ScalarProperty Name="PayingDate" ColumnName="PayingDate" />
+          <ScalarProperty Name="Loanid" ColumnName="Loanid" />
+          <ScalarProperty Name="LDID" ColumnName="LDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Nationality">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Nationality">
+        <MappingFragment StoreEntitySet="tbl_Nationality">
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="NationName" ColumnName="NationName" />
+          <ScalarProperty Name="NATID" ColumnName="NATID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OTCalculate">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_OTCalculate">
+        <MappingFragment StoreEntitySet="tbl_OTCalculate">
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="createby" ColumnName="createby" />
+          <ScalarProperty Name="HRfinished" ColumnName="HRfinished" />
+          <ScalarProperty Name="Latemoney" ColumnName="Latemoney" />
+          <ScalarProperty Name="Qtyhour" ColumnName="Qtyhour" />
+          <ScalarProperty Name="OTEnd" ColumnName="OTEnd" />
+          <ScalarProperty Name="OTStart" ColumnName="OTStart" />
+          <ScalarProperty Name="OTCID" ColumnName="OTCID" />
+          <ScalarProperty Name="OTRID" ColumnName="OTRID" />
+          <ScalarProperty Name="OTCLID" ColumnName="OTCLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OTCategory">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_OTCategory">
+        <MappingFragment StoreEntitySet="tbl_OTCategory">
+          <ScalarProperty Name="OTValue" ColumnName="OTValue" />
+          <ScalarProperty Name="OTName" ColumnName="OTName" />
+          <ScalarProperty Name="OTCID" ColumnName="OTCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OTRequest">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_OTRequest">
+        <MappingFragment StoreEntitySet="tbl_OTRequest">
+          <ScalarProperty Name="HRid" ColumnName="HRid" />
+          <ScalarProperty Name="HRrejectinfo" ColumnName="HRrejectinfo" />
+          <ScalarProperty Name="HRrejectDate" ColumnName="HRrejectDate" />
+          <ScalarProperty Name="HRreject" ColumnName="HRreject" />
+          <ScalarProperty Name="OTprocess" ColumnName="OTprocess" />
+          <ScalarProperty Name="qtyhour" ColumnName="qtyhour" />
+          <ScalarProperty Name="sysendtime" ColumnName="sysendtime" />
+          <ScalarProperty Name="systarttime" ColumnName="systarttime" />
+          <ScalarProperty Name="FinishedApprove" ColumnName="FinishedApprove" />
+          <ScalarProperty Name="MgrApprove" ColumnName="MgrApprove" />
+          <ScalarProperty Name="saveby" ColumnName="saveby" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="empkeyin" ColumnName="empkeyin" />
+          <ScalarProperty Name="TimeSave" ColumnName="TimeSave" />
+          <ScalarProperty Name="HRStatus" ColumnName="HRStatus" />
+          <ScalarProperty Name="OTStatus" ColumnName="OTStatus" />
+          <ScalarProperty Name="OTDescription" ColumnName="OTDescription" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="enddtime" ColumnName="enddtime" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="otstart" ColumnName="otstart" />
+          <ScalarProperty Name="reid" ColumnName="reid" />
+          <ScalarProperty Name="otcid" ColumnName="otcid" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="OTRID" ColumnName="OTRID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PayrollApprove">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_PayrollApprove">
+        <MappingFragment StoreEntitySet="tbl_PayrollApprove">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="hightempid" ColumnName="hightempid" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="payrollenddate" ColumnName="payrollenddate" />
+          <ScalarProperty Name="payrollstartdate" ColumnName="payrollstartdate" />
+          <ScalarProperty Name="PAPID" ColumnName="PAPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PayrollFinaldetails">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_PayrollFinaldetails">
+        <MappingFragment StoreEntitySet="tbl_PayrollFinaldetails">
+          <ScalarProperty Name="finished" ColumnName="finished" />
+          <ScalarProperty Name="rec_type" ColumnName="rec_type" />
+          <ScalarProperty Name="totalmoney" ColumnName="totalmoney" />
+          <ScalarProperty Name="percenttax" ColumnName="percenttax" />
+          <ScalarProperty Name="Enddatepayroll" ColumnName="Enddatepayroll" />
+          <ScalarProperty Name="Startdatepayroll" ColumnName="Startdatepayroll" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="PFLTDID" ColumnName="PFLTDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PayrollFinally">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_PayrollFinally">
+        <MappingFragment StoreEntitySet="tbl_PayrollFinally">
+          <ScalarProperty Name="loanid" ColumnName="loanid" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="caltax" ColumnName="caltax" />
+          <ScalarProperty Name="calculated" ColumnName="calculated" />
+          <ScalarProperty Name="rec_type" ColumnName="rec_type" />
+          <ScalarProperty Name="payrollmoney" ColumnName="payrollmoney" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="PayrollName" ColumnName="PayrollName" />
+          <ScalarProperty Name="enddatepayroll" ColumnName="enddatepayroll" />
+          <ScalarProperty Name="startdatepayroll" ColumnName="startdatepayroll" />
+          <ScalarProperty Name="workstatus" ColumnName="workstatus" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="languages" ColumnName="languages" />
+          <ScalarProperty Name="nationname" ColumnName="nationname" />
+          <ScalarProperty Name="ethnic" ColumnName="ethnic" />
+          <ScalarProperty Name="departname" ColumnName="departname" />
+          <ScalarProperty Name="unitname" ColumnName="unitname" />
+          <ScalarProperty Name="titlename" ColumnName="titlename" />
+          <ScalarProperty Name="surname_l2" ColumnName="surname_l2" />
+          <ScalarProperty Name="f_name_l2" ColumnName="f_name_l2" />
+          <ScalarProperty Name="surname_l1" ColumnName="surname_l1" />
+          <ScalarProperty Name="f_name_l1" ColumnName="f_name_l1" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="PFLTID" ColumnName="PFLTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PayrollSucess">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_PayrollSucess">
+        <MappingFragment StoreEntitySet="tbl_PayrollSucess">
+          <ScalarProperty Name="SucessDate" ColumnName="SucessDate" />
+          <ScalarProperty Name="enddatepayroll" ColumnName="enddatepayroll" />
+          <ScalarProperty Name="startdatepayroll" ColumnName="startdatepayroll" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="PSID" ColumnName="PSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PayrollTesting">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_PayrollTesting">
+        <MappingFragment StoreEntitySet="tbl_PayrollTesting">
+          <ScalarProperty Name="loanid" ColumnName="loanid" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="caltax" ColumnName="caltax" />
+          <ScalarProperty Name="calculated" ColumnName="calculated" />
+          <ScalarProperty Name="rec_type" ColumnName="rec_type" />
+          <ScalarProperty Name="payrollmoney" ColumnName="payrollmoney" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="PayrollName" ColumnName="PayrollName" />
+          <ScalarProperty Name="enddatepayroll" ColumnName="enddatepayroll" />
+          <ScalarProperty Name="startdatepayroll" ColumnName="startdatepayroll" />
+          <ScalarProperty Name="workstatus" ColumnName="workstatus" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="languages" ColumnName="languages" />
+          <ScalarProperty Name="nationname" ColumnName="nationname" />
+          <ScalarProperty Name="ethnic" ColumnName="ethnic" />
+          <ScalarProperty Name="departname" ColumnName="departname" />
+          <ScalarProperty Name="unitname" ColumnName="unitname" />
+          <ScalarProperty Name="titlename" ColumnName="titlename" />
+          <ScalarProperty Name="surname_l2" ColumnName="surname_l2" />
+          <ScalarProperty Name="f_name_l2" ColumnName="f_name_l2" />
+          <ScalarProperty Name="surname_l1" ColumnName="surname_l1" />
+          <ScalarProperty Name="f_name_l1" ColumnName="f_name_l1" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="PLTID" ColumnName="PLTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Payrolltestingdetails">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Payrolltestingdetails">
+        <MappingFragment StoreEntitySet="tbl_Payrolltestingdetails">
+          <ScalarProperty Name="finished" ColumnName="finished" />
+          <ScalarProperty Name="rec_type" ColumnName="rec_type" />
+          <ScalarProperty Name="totalmoney" ColumnName="totalmoney" />
+          <ScalarProperty Name="percenttax" ColumnName="percenttax" />
+          <ScalarProperty Name="Enddatepayroll" ColumnName="Enddatepayroll" />
+          <ScalarProperty Name="Startdatepayroll" ColumnName="Startdatepayroll" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="PLTDID" ColumnName="PLTDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Permission">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Permission">
+        <MappingFragment StoreEntitySet="tbl_Permission">
+          <ScalarProperty Name="PStatus" ColumnName="PStatus" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="Labels" ColumnName="Labels" />
+          <ScalarProperty Name="PMID" ColumnName="PMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RectypeOT">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_RectypeOT">
+        <MappingFragment StoreEntitySet="tbl_RectypeOT">
+          <ScalarProperty Name="RTStatus" ColumnName="RTStatus" />
+          <ScalarProperty Name="RTOTName" ColumnName="RTOTName" />
+          <ScalarProperty Name="RTOTID" ColumnName="RTOTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RectypeOTDetails">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_RectypeOTDetails">
+        <MappingFragment StoreEntitySet="tbl_RectypeOTDetails">
+          <ScalarProperty Name="minusHour" ColumnName="minusHour" />
+          <ScalarProperty Name="MDay" ColumnName="MDay" />
+          <ScalarProperty Name="OTCID" ColumnName="OTCID" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Endtime" ColumnName="Endtime" />
+          <ScalarProperty Name="Starttime" ColumnName="Starttime" />
+          <ScalarProperty Name="RTOTID" ColumnName="RTOTID" />
+          <ScalarProperty Name="RTOTDTID" ColumnName="RTOTDTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Relationship">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Relationship">
+        <MappingFragment StoreEntitySet="tbl_Relationship">
+          <ScalarProperty Name="relationshipinfo" ColumnName="relationshipinfo" />
+          <ScalarProperty Name="relationship" ColumnName="relationship" />
+          <ScalarProperty Name="RLID" ColumnName="RLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Religion">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Religion">
+        <MappingFragment StoreEntitySet="tbl_Religion">
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="RELID" ColumnName="RELID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Request">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Request">
+        <MappingFragment StoreEntitySet="tbl_Request">
+          <ScalarProperty Name="LVFinished" ColumnName="LVFinished" />
+          <ScalarProperty Name="OTValue" ColumnName="OTValue" />
+          <ScalarProperty Name="OTCID" ColumnName="OTCID" />
+          <ScalarProperty Name="CountApprove" ColumnName="CountApprove" />
+          <ScalarProperty Name="RecType" ColumnName="RecType" />
+          <ScalarProperty Name="attachfile" ColumnName="attachfile" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Send_mail" ColumnName="Send_mail" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Re_no" ColumnName="Re_no" />
+          <ScalarProperty Name="REID" ColumnName="REID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SalaryDevide">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_SalaryDevide">
+        <MappingFragment StoreEntitySet="tbl_SalaryDevide">
+          <ScalarProperty Name="Devide_value" ColumnName="Devide_value" />
+          <ScalarProperty Name="DevideName" ColumnName="DevideName" />
+          <ScalarProperty Name="SDDID" ColumnName="SDDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_System_Setting">
+      <EntityTypeMapping TypeName="HRMXModel.Tbl_System_Setting">
+        <MappingFragment StoreEntitySet="Tbl_System_Setting">
+          <ScalarProperty Name="System_values" ColumnName="System_values" />
+          <ScalarProperty Name="System_Name" ColumnName="System_Name" />
+          <ScalarProperty Name="Tbl_System_ID" ColumnName="Tbl_System_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SystemProfile">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_SystemProfile">
+        <MappingFragment StoreEntitySet="tbl_SystemProfile">
+          <ScalarProperty Name="Com_Image" ColumnName="Com_Image" />
+          <ScalarProperty Name="Used" ColumnName="Used" />
+          <ScalarProperty Name="Com_address" ColumnName="Com_address" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="phone_2" ColumnName="phone_2" />
+          <ScalarProperty Name="phone_1" ColumnName="phone_1" />
+          <ScalarProperty Name="Com_names_L2" ColumnName="Com_names_L2" />
+          <ScalarProperty Name="Com_names_L1" ColumnName="Com_names_L1" />
+          <ScalarProperty Name="COPID" ColumnName="COPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Tax">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Tax">
+        <MappingFragment StoreEntitySet="tbl_Tax">
+          <ScalarProperty Name="TaxSelft" ColumnName="TaxSelft" />
+          <ScalarProperty Name="TaxDefault" ColumnName="TaxDefault" />
+          <ScalarProperty Name="TaxEnd" ColumnName="TaxEnd" />
+          <ScalarProperty Name="TaxStart" ColumnName="TaxStart" />
+          <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+          <ScalarProperty Name="TaxValue" ColumnName="TaxValue" />
+          <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Title">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_Title">
+        <MappingFragment StoreEntitySet="tbl_Title">
+          <ScalarProperty Name="LevelSign" ColumnName="LevelSign" />
+          <ScalarProperty Name="TitleInfo" ColumnName="TitleInfo" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="TitleID" ColumnName="TitleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_User_Sent_Email">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_User_Sent_Email">
+        <MappingFragment StoreEntitySet="tbl_User_Sent_Email">
+          <ScalarProperty Name="stmp_host" ColumnName="stmp_host" />
+          <ScalarProperty Name="auth_true" ColumnName="auth_true" />
+          <ScalarProperty Name="stmp_auth" ColumnName="stmp_auth" />
+          <ScalarProperty Name="port_number" ColumnName="port_number" />
+          <ScalarProperty Name="smtp_port" ColumnName="smtp_port" />
+          <ScalarProperty Name="Enable_True" ColumnName="Enable_True" />
+          <ScalarProperty Name="Start_Enable" ColumnName="Start_Enable" />
+          <ScalarProperty Name="host" ColumnName="host" />
+          <ScalarProperty Name="E_check" ColumnName="E_check" />
+          <ScalarProperty Name="E_Pas" ColumnName="E_Pas" />
+          <ScalarProperty Name="E_mail" ColumnName="E_mail" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_UserLogin">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_UserLogin">
+        <MappingFragment StoreEntitySet="tbl_UserLogin">
+          <ScalarProperty Name="webTokenKey" ColumnName="webTokenKey" />
+          <ScalarProperty Name="sendNoti" ColumnName="sendNoti" />
+          <ScalarProperty Name="Device_token" ColumnName="Device_token" />
+          <ScalarProperty Name="oldpassword" ColumnName="oldpassword" />
+          <ScalarProperty Name="Tokenkey" ColumnName="Tokenkey" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="GRUID" ColumnName="GRUID" />
+          <ScalarProperty Name="HR_Admin" ColumnName="HR_Admin" />
+          <ScalarProperty Name="UNew" ColumnName="UNew" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="UStatus" ColumnName="UStatus" />
+          <ScalarProperty Name="UPassword" ColumnName="UPassword" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="ULID" ColumnName="ULID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkStatus">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_WorkStatus">
+        <MappingFragment StoreEntitySet="tbl_WorkStatus">
+          <ScalarProperty Name="workinfo" ColumnName="workinfo" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="WorkStatus" ColumnName="WorkStatus" />
+          <ScalarProperty Name="WTSID" ColumnName="WTSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkUnit">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_WorkUnit">
+        <MappingFragment StoreEntitySet="tbl_WorkUnit">
+          <ScalarProperty Name="UnitInfo" ColumnName="UnitInfo" />
+          <ScalarProperty Name="Unitname" ColumnName="Unitname" />
+          <ScalarProperty Name="WUID" ColumnName="WUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_app_permission">
+      <EntityTypeMapping TypeName="HRMXModel.tb_app_permission">
+        <MappingFragment StoreEntitySet="tb_app_permission">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="app_permissionName" ColumnName="app_permissionName" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_app_role">
+      <EntityTypeMapping TypeName="HRMXModel.tb_app_role">
+        <MappingFragment StoreEntitySet="tb_app_role">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_role_permission">
+      <EntityTypeMapping TypeName="HRMXModel.tb_role_permission">
+        <MappingFragment StoreEntitySet="tb_role_permission">
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="app_action" ColumnName="app_action" />
+          <ScalarProperty Name="app_edit" ColumnName="app_edit" />
+          <ScalarProperty Name="app_add" ColumnName="app_add" />
+          <ScalarProperty Name="app_view" ColumnName="app_view" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OTDate">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_OTDate">
+        <MappingFragment StoreEntitySet="tbl_OTDate">
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="OTYear" ColumnName="OTYear" />
+          <ScalarProperty Name="OTDate" ColumnName="OTDate" />
+          <ScalarProperty Name="OTDID" ColumnName="OTDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OTDateDetails">
+      <EntityTypeMapping TypeName="HRMXModel.tbl_OTDateDetails">
+        <MappingFragment StoreEntitySet="tbl_OTDateDetails">
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="RTOTID" ColumnName="RTOTID" />
+          <ScalarProperty Name="OTDID" ColumnName="OTDID" />
+          <ScalarProperty Name="OTDDID" ColumnName="OTDDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="api_leaveType">
+      <EntityTypeMapping TypeName="HRMXModel.api_leaveType">
+        <MappingFragment StoreEntitySet="api_leaveType">
+          <ScalarProperty Name="AbsentSource" ColumnName="AbsentSource" />
+          <ScalarProperty Name="AbsentName" ColumnName="AbsentName" />
+          <ScalarProperty Name="CAbsentID" ColumnName="CAbsentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_app_permission">
+      <EntityTypeMapping TypeName="HRMXModel.v_app_permission">
+        <MappingFragment StoreEntitySet="v_app_permission">
+          <ScalarProperty Name="CountItem" ColumnName="CountItem" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="app_action" ColumnName="app_action" />
+          <ScalarProperty Name="app_edit" ColumnName="app_edit" />
+          <ScalarProperty Name="app_add" ColumnName="app_add" />
+          <ScalarProperty Name="app_view" ColumnName="app_view" />
+          <ScalarProperty Name="app_permissionName" ColumnName="app_permissionName" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_approved">
+      <EntityTypeMapping TypeName="HRMXModel.v_approved">
+        <MappingFragment StoreEntitySet="v_approved">
+          <ScalarProperty Name="Re_no" ColumnName="Re_no" />
+          <ScalarProperty Name="requestType" ColumnName="requestType" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="Surname_L2" ColumnName="Surname_L2" />
+          <ScalarProperty Name="F_name_l2" ColumnName="F_name_l2" />
+          <ScalarProperty Name="Surname_L1" ColumnName="Surname_L1" />
+          <ScalarProperty Name="F_name_l1" ColumnName="F_name_l1" />
+          <ScalarProperty Name="approved" ColumnName="approved" />
+          <ScalarProperty Name="approvedescription" ColumnName="approvedescription" />
+          <ScalarProperty Name="approvedate" ColumnName="approvedate" />
+          <ScalarProperty Name="approveby" ColumnName="approveby" />
+          <ScalarProperty Name="Reid" ColumnName="Reid" />
+          <ScalarProperty Name="ApproveID" ColumnName="ApproveID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_delegates">
+      <EntityTypeMapping TypeName="HRMXModel.v_delegates">
+        <MappingFragment StoreEntitySet="v_delegates">
+          <ScalarProperty Name="Acceptdate" ColumnName="Acceptdate" />
+          <ScalarProperty Name="data_add" ColumnName="data_add" />
+          <ScalarProperty Name="DelegationDelete" ColumnName="DelegationDelete" />
+          <ScalarProperty Name="DelegationUsing" ColumnName="DelegationUsing" />
+          <ScalarProperty Name="Enddate" ColumnName="Enddate" />
+          <ScalarProperty Name="Startdate" ColumnName="Startdate" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="tL2" ColumnName="tL2" />
+          <ScalarProperty Name="tF2" ColumnName="tF2" />
+          <ScalarProperty Name="tL1" ColumnName="tL1" />
+          <ScalarProperty Name="tF1" ColumnName="tF1" />
+          <ScalarProperty Name="tEmail" ColumnName="tEmail" />
+          <ScalarProperty Name="ToEmployee" ColumnName="ToEmployee" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="cL2" ColumnName="cL2" />
+          <ScalarProperty Name="cF2" ColumnName="cF2" />
+          <ScalarProperty Name="cL1" ColumnName="cL1" />
+          <ScalarProperty Name="cF1" ColumnName="cF1" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="DLID" ColumnName="DLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_emp_request">
+      <EntityTypeMapping TypeName="HRMXModel.v_emp_request">
+        <MappingFragment StoreEntitySet="v_emp_request">
+          <ScalarProperty Name="emp_phone2" ColumnName="emp_phone2" />
+          <ScalarProperty Name="emp_phone1" ColumnName="emp_phone1" />
+          <ScalarProperty Name="HR_allow" ColumnName="HR_allow" />
+          <ScalarProperty Name="respone_l2" ColumnName="respone_l2" />
+          <ScalarProperty Name="respone_f2" ColumnName="respone_f2" />
+          <ScalarProperty Name="respone_l1" ColumnName="respone_l1" />
+          <ScalarProperty Name="respone_f1" ColumnName="respone_f1" />
+          <ScalarProperty Name="ToEmpid" ColumnName="ToEmpid" />
+          <ScalarProperty Name="ApproveHR" ColumnName="ApproveHR" />
+          <ScalarProperty Name="approvefinished" ColumnName="approvefinished" />
+          <ScalarProperty Name="Mgr_allow" ColumnName="Mgr_allow" />
+          <ScalarProperty Name="REID" ColumnName="REID" />
+          <ScalarProperty Name="AddAbsentID" ColumnName="AddAbsentID" />
+          <ScalarProperty Name="log_date" ColumnName="log_date" />
+          <ScalarProperty Name="leaveFor" ColumnName="leaveFor" />
+          <ScalarProperty Name="mgrLname_E" ColumnName="mgrLname_E" />
+          <ScalarProperty Name="mgrFname_E" ColumnName="mgrFname_E" />
+          <ScalarProperty Name="mgrLname_l" ColumnName="mgrLname_l" />
+          <ScalarProperty Name="mgrFname_l" ColumnName="mgrFname_l" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="ApproveMGRID" ColumnName="ApproveMGRID" />
+          <ScalarProperty Name="AbsentDescription" ColumnName="AbsentDescription" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Surname_L2" ColumnName="Surname_L2" />
+          <ScalarProperty Name="F_name_l2" ColumnName="F_name_l2" />
+          <ScalarProperty Name="Surname_L1" ColumnName="Surname_L1" />
+          <ScalarProperty Name="F_name_l1" ColumnName="F_name_l1" />
+          <ScalarProperty Name="Emp_nbr" ColumnName="Emp_nbr" />
+          <ScalarProperty Name="AbsentName_2" ColumnName="AbsentName_2" />
+          <ScalarProperty Name="AbsentName" ColumnName="AbsentName" />
+          <ScalarProperty Name="Re_no" ColumnName="Re_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_insurance">
+      <EntityTypeMapping TypeName="HRMXModel.v_insurance">
+        <MappingFragment StoreEntitySet="v_insurance">
+          <ScalarProperty Name="AmountMoney" ColumnName="AmountMoney" />
+          <ScalarProperty Name="limit_bl" ColumnName="limit_bl" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_load">
+      <EntityTypeMapping TypeName="HRMXModel.v_load">
+        <MappingFragment StoreEntitySet="v_load">
+          <ScalarProperty Name="loadMonth" ColumnName="loadMonth" />
+          <ScalarProperty Name="totalBalance" ColumnName="totalBalance" />
+          <ScalarProperty Name="sumPay" ColumnName="sumPay" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Paybymonthly" ColumnName="Paybymonthly" />
+          <ScalarProperty Name="LoanPayment" ColumnName="LoanPayment" />
+          <ScalarProperty Name="AverageCal" ColumnName="AverageCal" />
+          <ScalarProperty Name="DQty" ColumnName="DQty" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="createby" ColumnName="createby" />
+          <ScalarProperty Name="LoanPDF" ColumnName="LoanPDF" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="LoanEnd" ColumnName="LoanEnd" />
+          <ScalarProperty Name="LoanStart" ColumnName="LoanStart" />
+          <ScalarProperty Name="LoanPercent" ColumnName="LoanPercent" />
+          <ScalarProperty Name="AmountLoan" ColumnName="AmountLoan" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="Loanid" ColumnName="Loanid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_myRequest">
+      <EntityTypeMapping TypeName="HRMXModel.v_myRequest">
+        <MappingFragment StoreEntitySet="v_myRequest">
+          <ScalarProperty Name="emp_phone1" ColumnName="emp_phone1" />
+          <ScalarProperty Name="HR_allow_text" ColumnName="HR_allow_text" />
+          <ScalarProperty Name="respone_l2" ColumnName="respone_l2" />
+          <ScalarProperty Name="respone_f2" ColumnName="respone_f2" />
+          <ScalarProperty Name="respone_l1" ColumnName="respone_l1" />
+          <ScalarProperty Name="respone_f1" ColumnName="respone_f1" />
+          <ScalarProperty Name="ApproveHR" ColumnName="ApproveHR" />
+          <ScalarProperty Name="requestNote" ColumnName="requestNote" />
+          <ScalarProperty Name="statusLeave" ColumnName="statusLeave" />
+          <ScalarProperty Name="approvefinished" ColumnName="approvefinished" />
+          <ScalarProperty Name="Mgr_allow_text" ColumnName="Mgr_allow_text" />
+          <ScalarProperty Name="REID" ColumnName="REID" />
+          <ScalarProperty Name="ApproveMGRID" ColumnName="ApproveMGRID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="date_request" ColumnName="date_request" />
+          <ScalarProperty Name="mgrLname_E" ColumnName="mgrLname_E" />
+          <ScalarProperty Name="mgrFname_E" ColumnName="mgrFname_E" />
+          <ScalarProperty Name="mgrLname_l" ColumnName="mgrLname_l" />
+          <ScalarProperty Name="mgrFname_l" ColumnName="mgrFname_l" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="requestFor" ColumnName="requestFor" />
+          <ScalarProperty Name="requestName_en" ColumnName="requestName_en" />
+          <ScalarProperty Name="requestName_la" ColumnName="requestName_la" />
+          <ScalarProperty Name="requestType" ColumnName="requestType" />
+          <ScalarProperty Name="requestNo" ColumnName="requestNo" />
+          <ScalarProperty Name="requestID" ColumnName="requestID" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_noti">
+      <EntityTypeMapping TypeName="HRMXModel.v_noti">
+        <MappingFragment StoreEntitySet="v_noti">
+          <ScalarProperty Name="OldValues" ColumnName="OldValues" />
+          <ScalarProperty Name="userView" ColumnName="userView" />
+          <ScalarProperty Name="CountItem" ColumnName="CountItem" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="notiID" ColumnName="notiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_publicHoliday">
+      <EntityTypeMapping TypeName="HRMXModel.v_publicHoliday">
+        <MappingFragment StoreEntitySet="v_publicHoliday">
+          <ScalarProperty Name="MonthHolidayText" ColumnName="MonthHolidayText" />
+          <ScalarProperty Name="YearHoliday" ColumnName="YearHoliday" />
+          <ScalarProperty Name="MonthHoliday" ColumnName="MonthHoliday" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="publicHoliday" ColumnName="publicHoliday" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_request_all">
+      <EntityTypeMapping TypeName="HRMXModel.v_request_all">
+        <MappingFragment StoreEntitySet="v_request_all">
+          <ScalarProperty Name="emp_photo" ColumnName="emp_photo" />
+          <ScalarProperty Name="emp_phone1" ColumnName="emp_phone1" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="empsl2" ColumnName="empsl2" />
+          <ScalarProperty Name="empfl2" ColumnName="empfl2" />
+          <ScalarProperty Name="empsl1" ColumnName="empsl1" />
+          <ScalarProperty Name="empfl1" ColumnName="empfl1" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="Surname_L2" ColumnName="Surname_L2" />
+          <ScalarProperty Name="F_name_l2" ColumnName="F_name_l2" />
+          <ScalarProperty Name="Surname_L1" ColumnName="Surname_L1" />
+          <ScalarProperty Name="F_name_l1" ColumnName="F_name_l1" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="requestType" ColumnName="requestType" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="attachfile" ColumnName="attachfile" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Send_mail" ColumnName="Send_mail" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Re_no" ColumnName="Re_no" />
+          <ScalarProperty Name="REID" ColumnName="REID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_salary">
+      <EntityTypeMapping TypeName="HRMXModel.v_salary">
+        <MappingFragment StoreEntitySet="v_salary">
+          <ScalarProperty Name="salaryYear" ColumnName="salaryYear" />
+          <ScalarProperty Name="salaryMonth" ColumnName="salaryMonth" />
+          <ScalarProperty Name="date_date" ColumnName="date_date" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="payment" ColumnName="payment" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="salaryDate" ColumnName="salaryDate" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="salaryNo" ColumnName="salaryNo" />
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_tasks">
+      <EntityTypeMapping TypeName="HRMXModel.v_tasks">
+        <MappingFragment StoreEntitySet="v_tasks">
+          <ScalarProperty Name="attachec_file" ColumnName="attachec_file" />
+          <ScalarProperty Name="status_com" ColumnName="status_com" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="OwnfullName_l2" ColumnName="OwnfullName_l2" />
+          <ScalarProperty Name="OwnfullName_L1" ColumnName="OwnfullName_L1" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="AssignfullName_l2" ColumnName="AssignfullName_l2" />
+          <ScalarProperty Name="AssignfullName_l1" ColumnName="AssignfullName_l1" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="taskDetail" ColumnName="taskDetail" />
+          <ScalarProperty Name="taskName" ColumnName="taskName" />
+          <ScalarProperty Name="taskID" ColumnName="taskID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_users">
+      <EntityTypeMapping TypeName="HRMXModel.v_users">
+        <MappingFragment StoreEntitySet="v_users">
+          <ScalarProperty Name="emp_photo" ColumnName="emp_photo" />
+          <ScalarProperty Name="Cmphone2" ColumnName="Cmphone2" />
+          <ScalarProperty Name="CMName" ColumnName="CMName" />
+          <ScalarProperty Name="CMID" ColumnName="CMID" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="titleid" ColumnName="titleid" />
+          <ScalarProperty Name="Departname" ColumnName="Departname" />
+          <ScalarProperty Name="depid" ColumnName="depid" />
+          <ScalarProperty Name="emp_phone1" ColumnName="emp_phone1" />
+          <ScalarProperty Name="Emp_nbr" ColumnName="Emp_nbr" />
+          <ScalarProperty Name="Emp_startdate" ColumnName="Emp_startdate" />
+          <ScalarProperty Name="F_name_l2" ColumnName="F_name_l2" />
+          <ScalarProperty Name="F_name_l1" ColumnName="F_name_l1" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="UNew" ColumnName="UNew" />
+          <ScalarProperty Name="UPassword" ColumnName="UPassword" />
+          <ScalarProperty Name="User_email" ColumnName="User_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vm_EmployeeDetails_All">
+      <EntityTypeMapping TypeName="HRMXModel.vm_EmployeeDetails_All">
+        <MappingFragment StoreEntitySet="vm_EmployeeDetails_All">
+          <ScalarProperty Name="Emp_enddate" ColumnName="Emp_enddate" />
+          <ScalarProperty Name="Genid" ColumnName="Genid" />
+          <ScalarProperty Name="Emp_startdate" ColumnName="Emp_startdate" />
+          <ScalarProperty Name="IDcard" ColumnName="IDcard" />
+          <ScalarProperty Name="intypenumber" ColumnName="intypenumber" />
+          <ScalarProperty Name="DEPID" ColumnName="DEPID" />
+          <ScalarProperty Name="CMName" ColumnName="CMName" />
+          <ScalarProperty Name="CMID" ColumnName="CMID" />
+          <ScalarProperty Name="User_email" ColumnName="User_email" />
+          <ScalarProperty Name="Cal_payroll" ColumnName="Cal_payroll" />
+          <ScalarProperty Name="emp_office" ColumnName="emp_office" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="empBorn" ColumnName="empBorn" />
+          <ScalarProperty Name="suppervisor" ColumnName="suppervisor" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="standardTax" ColumnName="standardTax" />
+          <ScalarProperty Name="empWeight" ColumnName="empWeight" />
+          <ScalarProperty Name="heigh" ColumnName="heigh" />
+          <ScalarProperty Name="groupblood" ColumnName="groupblood" />
+          <ScalarProperty Name="Passportno" ColumnName="Passportno" />
+          <ScalarProperty Name="consult" ColumnName="consult" />
+          <ScalarProperty Name="emp_photo" ColumnName="emp_photo" />
+          <ScalarProperty Name="emp_idcard" ColumnName="emp_idcard" />
+          <ScalarProperty Name="emp_fbook" ColumnName="emp_fbook" />
+          <ScalarProperty Name="emp_phone2" ColumnName="emp_phone2" />
+          <ScalarProperty Name="emp_phone1" ColumnName="emp_phone1" />
+          <ScalarProperty Name="Emp_DOB" ColumnName="Emp_DOB" />
+          <ScalarProperty Name="MaxMoney" ColumnName="MaxMoney" />
+          <ScalarProperty Name="ComPercent" ColumnName="ComPercent" />
+          <ScalarProperty Name="Inpercent" ColumnName="Inpercent" />
+          <ScalarProperty Name="insurance" ColumnName="insurance" />
+          <ScalarProperty Name="Unitname" ColumnName="Unitname" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="WorkStatus" ColumnName="WorkStatus" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="NationName" ColumnName="NationName" />
+          <ScalarProperty Name="Ethnic" ColumnName="Ethnic" />
+          <ScalarProperty Name="Departname" ColumnName="Departname" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="Surname_L2" ColumnName="Surname_L2" />
+          <ScalarProperty Name="F_name_l2" ColumnName="F_name_l2" />
+          <ScalarProperty Name="Surname_L1" ColumnName="Surname_L1" />
+          <ScalarProperty Name="F_name_l1" ColumnName="F_name_l1" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="Emp_nbr" ColumnName="Emp_nbr" />
+          <ScalarProperty Name="intypeid" ColumnName="intypeid" />
+          <ScalarProperty Name="ESID" ColumnName="ESID" />
+          <ScalarProperty Name="wuid" ColumnName="wuid" />
+          <ScalarProperty Name="wtsid" ColumnName="wtsid" />
+          <ScalarProperty Name="relid" ColumnName="relid" />
+          <ScalarProperty Name="natid" ColumnName="natid" />
+          <ScalarProperty Name="etid" ColumnName="etid" />
+          <ScalarProperty Name="titleid" ColumnName="titleid" />
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vm_EmployeeDetails_CalPayroll">
+      <EntityTypeMapping TypeName="HRMXModel.vm_EmployeeDetails_CalPayroll">
+        <MappingFragment StoreEntitySet="vm_EmployeeDetails_CalPayroll">
+          <ScalarProperty Name="Emp_enddate" ColumnName="Emp_enddate" />
+          <ScalarProperty Name="Genid" ColumnName="Genid" />
+          <ScalarProperty Name="Emp_startdate" ColumnName="Emp_startdate" />
+          <ScalarProperty Name="IDcard" ColumnName="IDcard" />
+          <ScalarProperty Name="intypenumber" ColumnName="intypenumber" />
+          <ScalarProperty Name="DEPID" ColumnName="DEPID" />
+          <ScalarProperty Name="CMName" ColumnName="CMName" />
+          <ScalarProperty Name="CMID" ColumnName="CMID" />
+          <ScalarProperty Name="User_email" ColumnName="User_email" />
+          <ScalarProperty Name="Cal_payroll" ColumnName="Cal_payroll" />
+          <ScalarProperty Name="emp_office" ColumnName="emp_office" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="empBorn" ColumnName="empBorn" />
+          <ScalarProperty Name="suppervisor" ColumnName="suppervisor" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="standardTax" ColumnName="standardTax" />
+          <ScalarProperty Name="empWeight" ColumnName="empWeight" />
+          <ScalarProperty Name="heigh" ColumnName="heigh" />
+          <ScalarProperty Name="groupblood" ColumnName="groupblood" />
+          <ScalarProperty Name="Passportno" ColumnName="Passportno" />
+          <ScalarProperty Name="consult" ColumnName="consult" />
+          <ScalarProperty Name="emp_photo" ColumnName="emp_photo" />
+          <ScalarProperty Name="emp_idcard" ColumnName="emp_idcard" />
+          <ScalarProperty Name="emp_fbook" ColumnName="emp_fbook" />
+          <ScalarProperty Name="emp_phone2" ColumnName="emp_phone2" />
+          <ScalarProperty Name="emp_phone1" ColumnName="emp_phone1" />
+          <ScalarProperty Name="Emp_DOB" ColumnName="Emp_DOB" />
+          <ScalarProperty Name="MaxMoney" ColumnName="MaxMoney" />
+          <ScalarProperty Name="ComPercent" ColumnName="ComPercent" />
+          <ScalarProperty Name="Inpercent" ColumnName="Inpercent" />
+          <ScalarProperty Name="insurance" ColumnName="insurance" />
+          <ScalarProperty Name="Unitname" ColumnName="Unitname" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="WorkStatus" ColumnName="WorkStatus" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="NationName" ColumnName="NationName" />
+          <ScalarProperty Name="Ethnic" ColumnName="Ethnic" />
+          <ScalarProperty Name="Departname" ColumnName="Departname" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="Surname_L2" ColumnName="Surname_L2" />
+          <ScalarProperty Name="F_name_l2" ColumnName="F_name_l2" />
+          <ScalarProperty Name="Surname_L1" ColumnName="Surname_L1" />
+          <ScalarProperty Name="F_name_l1" ColumnName="F_name_l1" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="Emp_nbr" ColumnName="Emp_nbr" />
+          <ScalarProperty Name="intypeid" ColumnName="intypeid" />
+          <ScalarProperty Name="ESID" ColumnName="ESID" />
+          <ScalarProperty Name="wuid" ColumnName="wuid" />
+          <ScalarProperty Name="wtsid" ColumnName="wtsid" />
+          <ScalarProperty Name="relid" ColumnName="relid" />
+          <ScalarProperty Name="natid" ColumnName="natid" />
+          <ScalarProperty Name="etid" ColumnName="etid" />
+          <ScalarProperty Name="titleid" ColumnName="titleid" />
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vm_OTCalculateForm">
+      <EntityTypeMapping TypeName="HRMXModel.vm_OTCalculateForm">
+        <MappingFragment StoreEntitySet="vm_OTCalculateForm">
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="re_no" ColumnName="re_no" />
+          <ScalarProperty Name="sumtotal" ColumnName="sumtotal" />
+          <ScalarProperty Name="latemoney" ColumnName="latemoney" />
+          <ScalarProperty Name="qtyhour" ColumnName="qtyhour" />
+          <ScalarProperty Name="enddtime" ColumnName="enddtime" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="formatotstart" ColumnName="formatotstart" />
+          <ScalarProperty Name="otname" ColumnName="otname" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="laoname" ColumnName="laoname" />
+          <ScalarProperty Name="HRfinished" ColumnName="HRfinished" />
+          <ScalarProperty Name="CMName" ColumnName="CMName" />
+          <ScalarProperty Name="cmid" ColumnName="cmid" />
+          <ScalarProperty Name="otstart" ColumnName="otstart" />
+          <ScalarProperty Name="emp_nbr" ColumnName="emp_nbr" />
+          <ScalarProperty Name="otclid" ColumnName="otclid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

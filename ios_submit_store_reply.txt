@@ -1,0 +1,5 @@
+1. Yes, this app is restricted to users who are part of company.
+2. Yes, this app designed for group of Lao world company.
+3. No features for general public.
+4. Users get account from admin panel.
+5. No, this app is free

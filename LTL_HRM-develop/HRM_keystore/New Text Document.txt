@@ -1,0 +1,4 @@
+storePassword=tkgrouphrm
+keyPassword=tkgrouphrm
+keyAlias=upload
+storeFile=C:/Users/poonam/upload-keystore.jks

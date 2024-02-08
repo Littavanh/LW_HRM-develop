@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\D\LTL_HRM-develop\hrm_lw_api\HRMS.API\192.168.100.28\C:\inetpub\wwwroot\hrmlw</_PublishTargetUrl>
+    <History>False|2023-08-04T09:13:34.0051481Z;</History>
+  </PropertyGroup>
+</Project>

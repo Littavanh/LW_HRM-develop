@@ -1,0 +1,1 @@
+enum AddRequestType { LEAVE, OT }

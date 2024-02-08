@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D550BDC-7945-4F1C-A0CB-54B8FF6F3CA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRMS.Data</RootNamespace>
+    <AssemblyName>HRMS.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="db_HRMS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_HRMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_HRMS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_HRMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_HRMS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="log_evaluate.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_displayLeaveBalanceAll_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_displayLeaveDashboard_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_displayMobileLeaveBalanceDashboard_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_displayNotiapprove1_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_displayNotiapprove_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_leavebalanceyear_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_sumcheckleaveall1_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pd_sumcheckleaveall_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="p_approve_salary_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_get_manager_1_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_get_manager_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_iBankbySum_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_InsertLeaveRequest_BAK_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_Payslip1_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_Payslip2_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_Payslip_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_reportLeaveSummaryAllEmployee_new_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_reportLeaveSummaryAllEmployee_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_reportLeaveSummary_new_ta_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_reportLeaveSummary_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_reportOTdetails_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_select_emp_unit_dept_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="p_s_uploadFiger_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_commentquestionpartbyDirector.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_commentUpdateIncome.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_employeeHeaderquestion.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_P_employeeLevel_GroupLevels.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_P_GroupLevels.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_grouppermission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_grouppermissionLoginbyLevels.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_headerquestion.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_HeaderquestionEmployeeComments.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_headerquestionEmployeeScoreSummary.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_HeaderquestionGrouplevel.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_listquestionemp.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_listquestionempdetails.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_permission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_questionpart.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_questlistdetails.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_reportperformancereview.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_score.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_typequestion.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_p_UserAdmin.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_P_Userlevels.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_additionalDeduction.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_additionalPay.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_advpay.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_adv_bonus.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_allowanceType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_approvalSetting.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_appType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_app_permission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_app_role.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_app_role_permission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_bank.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_bonus_book.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_bonus_summary.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_checkInOut.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_company.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_costCenter.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_deductionType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_deduct_loan.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_deduct_sldrt.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_delagate.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_delegate_request.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_department.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_deptGroup.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_district.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_educationType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_email_send.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empAllowance.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empBankAccount.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empDeduction.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empEducation.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empFamily.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empGroup.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empIncome.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empInfo.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empLevel.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_employees.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empSalary.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empSSO.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_empType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_emp_approve.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_emp_question.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ethnic.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_evaluate_emp.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_evaluate_reject.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_fhf.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_fstatus.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_gender.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_getHistoryLeave.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_groupCostCenter.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_incentive.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_incomType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_lang.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_languages.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leaveApprove.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leaveRequest.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leaveRequestDetail.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leaverequestdetailx.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leaveSetting.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leaveTranType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leaveType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_leave_approve_group.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_loan.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_loanApprove.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_loanDetail.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_log.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_menu.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_month.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nationality.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_news.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_next_noti.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_noti.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_noti_send.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_noti_status.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_otApprove.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_otRequest.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_otRequestDetail.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_otType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ot_setting.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_pass_history.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_payFHF.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_paymentRecord.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_paymentRecordApprove.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_pension_summary.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_permission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_positionTitle.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_process_status.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_province.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_pr_approve.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_publicHoliday.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_race.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_religion.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_report_list.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_request_upload.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_role.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_role_permission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_rpt_evaluate_d.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_rpt_evaluate_h.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_salary_approve.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_salary_list.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_secure_setting.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_setting_doc.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_severance.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_shift.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_shiftWorking.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_sldrt.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_SLDRT_loan.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_SLDRT_loanApprove.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_SLDRT_loanDetail.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_spouse.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_SPRetirement.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_sso.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ssoType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_status.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_summary_bonus.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_summary_pension.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_tasks.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_taxs.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_TaxType.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_threshing.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_unit.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_upload_bonus.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_users.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_workingDay.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_workingStatus.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_checkworkday.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_emp.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_empMgr.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_fhf.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_loan.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_log_command.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_notiMenu.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_pass.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_ppp.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_reset_pass.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_rpt1006.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_rpt1011.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_rpt1012.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_salary_month.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_shiftWorkingDay.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_sum_working.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_tax.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_viewSumLeave.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmp_view_upload.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_1.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_EmployeeDetailsWorkStatus.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_EmployeeDetailsWorkStatus_1.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_EmployeeDetails_All.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_commentquestionpartbyDirector.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_displayHeaderquestionGrouplevelbyEmployeee.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_displayUserOnlyHR.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_employeeheaderquestion.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_employeelevel_grouplevels.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_employee_in_HeaderquestionGroupLevels.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_grouppermissionloginbylevels.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_headerquestionemployeecomments.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_headerquestionemployeefinishedgroup.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_headerquestionemployeescoresummary.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_headerquestiongrouplevel.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_listemployeeinHeaderquestion.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_listquestionbyemployee.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_listquestionbyemployeegenerate.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_listquestionempdetails.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_listquestionempdetailsbyowner.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_quesitondetailslistemployeeall.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_questionlistdetails.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_questionlistdetailsUpdate.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_questionlistheaderquestionUpdate.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vm_p_questionpart.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_advBonus.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_approved.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_app_noti.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_app_permission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_DashbordSumOT.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_dateSalaryLastMonth.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_dept_unit_employee.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_email_noti.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empdept.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empDob.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empIncome.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empInfo.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empleaverequestall.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empleaverequestallbymgrid.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_employeeLeavedetails.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_employeeleave_thisyear.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_employess.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_employess2.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empOT.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empOT_request.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_empPaymentRecord.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_emp_leave.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_emp_ot.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_emp_question_by_group.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_evaluate_header.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_evaluate_header_1.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_evaluate_header_2.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_evaluate_header_3.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_fingerCheck.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_iBankName.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_leaveBalace.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_leaveNotApproved.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_leaverequest.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_leaverequestalldetails.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_leaverequestalldetails_2.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_loan.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_Log.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_mgr_emp.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_mobile_paymentrecord.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_myRequest.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_noti.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_paymentReccordDetail.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_paymentRecord.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_paymentYearmonth.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_publicHoliday.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_p_headerquestion.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_p_headerquestion_1.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_reportOTDetailsbyEmp.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_request_all.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_rpt1013_only2person.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_salary_list.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_selEmpHeader.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_SLDRT_loan.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_sumEmpLeave.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_sumEmpLeaveName.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_terminate.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_unit.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_upload_finger.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_users.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_user_permission.cs">
+      <DependentUpon>db_HRMS.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="db_HRMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>db_HRMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="db_HRMS.edmx.diagram">
+      <DependentUpon>db_HRMS.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db_HRMS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db_HRMS.edmx</DependentUpon>
+      <LastGenOutput>db_HRMS.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="db_HRMS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db_HRMS.edmx</DependentUpon>
+      <LastGenOutput>db_HRMS.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

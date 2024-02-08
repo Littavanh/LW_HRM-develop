@@ -1,0 +1,809 @@
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\csc.exe
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\vbc.exe
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\08.Project\API\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\08.Project\API\HRMS\HRMS.API\bin\HRMS.API.dll.config
+D:\08.Project\API\HRMS\HRMS.API\bin\HRMS.API.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\HRMS.API.pdb
+D:\08.Project\API\HRMS\HRMS.API\bin\Antlr3.Runtime.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\EntityFramework.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\HRMS.Data.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Newtonsoft.Json.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\Owin.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Helpers.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Http.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Mvc.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Optimization.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Razor.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.WebPages.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\WebGrease.dll
+D:\08.Project\API\HRMS\HRMS.API\bin\HRMS.Data.pdb
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Newtonsoft.Json.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Helpers.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Http.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Mvc.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Optimization.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Razor.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.WebPages.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\08.Project\API\HRMS\HRMS.API\bin\EntityFramework.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\08.Project\API\HRMS\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\08.Project\API\HRMS\HRMS.API\obj\Release\HRMS.API.csprojResolveAssemblyReference.cache
+D:\08.Project\API\HRMS\HRMS.API\obj\Release\HRMS.API.dll
+D:\08.Project\API\HRMS\HRMS.API\obj\Release\HRMS.API.pdb
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\csc.exe
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\vbc.exe
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\HRMS.API.dll.config
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\HRMS.API.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\HRMS.API.pdb
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Antlr3.Runtime.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\EntityFramework.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\HRMS.Data.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Newtonsoft.Json.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Owin.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Helpers.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Http.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Mvc.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Optimization.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Razor.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.WebPages.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\WebGrease.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\HRMS.Data.pdb
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Newtonsoft.Json.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Helpers.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Http.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Mvc.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Optimization.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Razor.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.WebPages.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\EntityFramework.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\08.Project\API\LTL\HRMS\HRMS.API\obj\Release\HRMS.API.csprojResolveAssemblyReference.cache
+D:\08.Project\API\LTL\HRMS\HRMS.API\obj\Release\HRMS.API.dll
+D:\08.Project\API\LTL\HRMS\HRMS.API\obj\Release\HRMS.API.pdb
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\csc.exe
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\vbc.exe
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\HRMS.API.dll.config
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\HRMS.API.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\HRMS.API.pdb
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Antlr3.Runtime.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\EntityFramework.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\HRMS.Data.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Newtonsoft.Json.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Owin.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Helpers.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Http.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Mvc.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Optimization.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Razor.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.WebPages.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\WebGrease.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\HRMS.Data.pdb
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Newtonsoft.Json.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Helpers.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Http.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Mvc.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Optimization.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Razor.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.WebPages.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\EntityFramework.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\obj\Release\HRMS.API.csprojResolveAssemblyReference.cache
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\obj\Release\HRMS.API.dll
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\obj\Release\HRMS.API.pdb
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\csc.exe
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\vbc.exe
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\HRMS.API.dll.config
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\HRMS.API.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\HRMS.API.pdb
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Antlr3.Runtime.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\EntityFramework.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\HRMS.Data.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Newtonsoft.Json.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Owin.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Helpers.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Http.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Mvc.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Optimization.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Razor.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.WebPages.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\WebGrease.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\HRMS.Data.pdb
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\HRMS.Data.dll.config
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Newtonsoft.Json.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Helpers.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Http.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Mvc.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Optimization.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Razor.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.WebPages.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\EntityFramework.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\obj\Release\HRMS.API.csprojAssemblyReference.cache
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\obj\Release\HRMS.API.csproj.CoreCompileInputs.cache
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\obj\Release\HRMS.API.csproj.CopyComplete
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\obj\Release\HRMS.API.dll
+D:\TKGroup\Projects\SVN\HRMS\HRMS.API\obj\Release\HRMS.API.pdb
+D:\08.Project\P2P\ASP\HRMS\HRMS.API\obj\Release\HRMS.API.csproj.ResolveComReference.cache
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\csc.exe
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\vbc.exe
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\HRMS.API.dll.config
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\HRMS.API.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\HRMS.API.pdb
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Antlr3.Runtime.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\EntityFramework.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\HRMS.Data.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Newtonsoft.Json.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Owin.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Helpers.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Http.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Mvc.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Optimization.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Razor.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.WebPages.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\WebGrease.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\HRMS.Data.pdb
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\HRMS.Data.dll.config
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Newtonsoft.Json.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Helpers.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Http.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Mvc.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Optimization.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Razor.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.WebPages.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\EntityFramework.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\Project\HRM LTL\HRMS\HRMS.API\obj\Release\HRMS.API.csproj.AssemblyReference.cache
+D:\Project\HRM LTL\HRMS\HRMS.API\obj\Release\HRMS.API.csproj.ResolveComReference.cache
+D:\Project\HRM LTL\HRMS\HRMS.API\obj\Release\HRMS.API.csproj.CoreCompileInputs.cache
+D:\Project\HRM LTL\HRMS\HRMS.API\obj\Release\HRMS.API.csproj.CopyComplete
+D:\Project\HRM LTL\HRMS\HRMS.API\obj\Release\HRMS.API.dll
+D:\Project\HRM LTL\HRMS\HRMS.API\obj\Release\HRMS.API.pdb
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\csc.exe
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\vbc.exe
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.dll.config
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.pdb
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Antlr3.Runtime.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.Data.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Newtonsoft.Json.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Owin.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Helpers.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Mvc.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Optimization.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Razor.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\WebGrease.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.Data.pdb
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.Data.dll.config
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Newtonsoft.Json.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Helpers.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Mvc.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Optimization.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Razor.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.AssemblyReference.cache
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.ResolveComReference.cache
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.CoreCompileInputs.cache
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.CopyComplete
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.dll
+D:\JSP\HRMmyTK\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.pdb
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\csc.exe
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\vbc.exe
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.dll.config
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.pdb
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Antlr3.Runtime.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.Data.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Newtonsoft.Json.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Owin.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Helpers.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Mvc.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Optimization.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Razor.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\WebGrease.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.Data.pdb
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Newtonsoft.Json.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Helpers.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Mvc.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Optimization.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Razor.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csprojResolveAssemblyReference.cache
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.ResolveComReference.cache
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.dll
+D:\08.Project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.pdb
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\csc.exe
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\vbc.exe
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.dll.config
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.API.pdb
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Antlr3.Runtime.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.Data.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Newtonsoft.Json.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Owin.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Helpers.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Mvc.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Optimization.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Razor.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\WebGrease.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\HRMS.Data.pdb
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Newtonsoft.Json.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Helpers.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Mvc.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Optimization.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Razor.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csprojResolveAssemblyReference.cache
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.ResolveComReference.cache
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.dll
+D:\project\HRM\SoureCode\laotobacco\ltl_api\HRM_api\HRMS.API\obj\Release\HRMS.API.pdb
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\csc.exe
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\vbc.exe
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\HRMS.API.dll.config
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\HRMS.API.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\HRMS.API.pdb
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Antlr3.Runtime.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\EntityFramework.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\HRMS.Data.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Newtonsoft.Json.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Owin.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Helpers.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Http.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Mvc.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Optimization.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Razor.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.WebPages.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\WebGrease.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\HRMS.Data.pdb
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\HRMS.Data.dll.config
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Newtonsoft.Json.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Helpers.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Http.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Mvc.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Optimization.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Razor.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.WebPages.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\EntityFramework.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.AssemblyReference.cache
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.ResolveComReference.cache
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.CoreCompileInputs.cache
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.CopyComplete
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\obj\Release\HRMS.API.dll
+D:\JSP\HRMmyTK\api_HRMLW\HRM_api\HRMS.API\obj\Release\HRMS.API.pdb
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\csc.exe
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\System.Collections.Immutable.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\vbc.exe
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\roslyn\VBCSCompiler.exe.config
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\HRMS.API.dll.config
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\HRMS.API.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\HRMS.API.pdb
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Antlr3.Runtime.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\EntityFramework.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\HRMS.Data.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Web.Infrastructure.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Newtonsoft.Json.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Owin.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Helpers.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Http.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Mvc.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Optimization.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Razor.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.WebPages.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\WebGrease.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\HRMS.Data.pdb
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Newtonsoft.Json.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Net.Http.Formatting.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Helpers.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Http.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Http.WebHost.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Mvc.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Optimization.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Razor.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.WebPages.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.WebPages.Deployment.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.WebPages.Razor.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Antlr3.Runtime.pdb
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\EntityFramework.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\EntityFramework.SqlServer.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.Twitter.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\bin\System.Web.Http.Owin.xml
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\obj\Release\HRMS.API.csprojResolveAssemblyReference.cache
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\obj\Release\HRMS.API.csproj.ResolveComReference.cache
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\obj\Release\HRMS.API.dll
+D:\project\tk\khamthit\HRM_LW_Api\HRM_api\HRMS.API\obj\Release\HRMS.API.pdb

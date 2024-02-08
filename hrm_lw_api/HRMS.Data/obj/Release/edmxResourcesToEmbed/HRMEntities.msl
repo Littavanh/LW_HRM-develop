@@ -1,0 +1,2814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_hrmsModelStoreContainer" CdmEntityContainer="db_hrmsEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="db_hrmsModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_additionalDeduction">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_additionalDeduction">
+        <MappingFragment StoreEntitySet="tb_additionalDeduction">
+          <ScalarProperty Name="addDeducID" ColumnName="addDeducID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="addDeducName" ColumnName="addDeducName" />
+          <ScalarProperty Name="deductMonth" ColumnName="deductMonth" />
+          <ScalarProperty Name="deductYear" ColumnName="deductYear" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="addDeducMonth" ColumnName="addDeducMonth" />
+          <ScalarProperty Name="totaladdDeduc" ColumnName="totaladdDeduc" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_additionalPay">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_additionalPay">
+        <MappingFragment StoreEntitySet="tb_additionalPay">
+          <ScalarProperty Name="addPayID" ColumnName="addPayID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="payMonth" ColumnName="payMonth" />
+          <ScalarProperty Name="payYear" ColumnName="payYear" />
+          <ScalarProperty Name="addPayName" ColumnName="addPayName" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="payDate" ColumnName="payDate" />
+          <ScalarProperty Name="totaladdPay" ColumnName="totaladdPay" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_adv_bonus">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_adv_bonus">
+        <MappingFragment StoreEntitySet="tb_adv_bonus">
+          <ScalarProperty Name="adv_bonusID" ColumnName="adv_bonusID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="bonusMonth" ColumnName="bonusMonth" />
+          <ScalarProperty Name="bounusYear" ColumnName="bounusYear" />
+          <ScalarProperty Name="bonusDate" ColumnName="bonusDate" />
+          <ScalarProperty Name="bonusAmount" ColumnName="bonusAmount" />
+          <ScalarProperty Name="bonusPercent" ColumnName="bonusPercent" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_advpay">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_advpay">
+        <MappingFragment StoreEntitySet="tb_advpay">
+          <ScalarProperty Name="advPayID" ColumnName="advPayID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="advpayMonth" ColumnName="advpayMonth" />
+          <ScalarProperty Name="advpayYear" ColumnName="advpayYear" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="advpayDate" ColumnName="advpayDate" />
+          <ScalarProperty Name="advPay" ColumnName="advPay" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_allowanceType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_allowanceType">
+        <MappingFragment StoreEntitySet="tb_allowanceType">
+          <ScalarProperty Name="allowanceTypeID" ColumnName="allowanceTypeID" />
+          <ScalarProperty Name="allowanceTypeCode" ColumnName="allowanceTypeCode" />
+          <ScalarProperty Name="allowanceTypeName1" ColumnName="allowanceTypeName1" />
+          <ScalarProperty Name="allowanceTypeName2" ColumnName="allowanceTypeName2" />
+          <ScalarProperty Name="taxsCal" ColumnName="taxsCal" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_app_permission">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_app_permission">
+        <MappingFragment StoreEntitySet="tb_app_permission">
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="app_permissionName" ColumnName="app_permissionName" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_app_role">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_app_role">
+        <MappingFragment StoreEntitySet="tb_app_role">
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_app_role_permission">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_app_role_permission">
+        <MappingFragment StoreEntitySet="tb_app_role_permission">
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="app_view" ColumnName="app_view" />
+          <ScalarProperty Name="app_add" ColumnName="app_add" />
+          <ScalarProperty Name="app_edit" ColumnName="app_edit" />
+          <ScalarProperty Name="app_del" ColumnName="app_del" />
+          <ScalarProperty Name="app_action" ColumnName="app_action" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_approvalSetting">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_approvalSetting">
+        <MappingFragment StoreEntitySet="tb_approvalSetting">
+          <ScalarProperty Name="approveID" ColumnName="approveID" />
+          <ScalarProperty Name="appLevel" ColumnName="appLevel" />
+          <ScalarProperty Name="approveTypeID" ColumnName="approveTypeID" />
+          <ScalarProperty Name="approveDept" ColumnName="approveDept" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_appType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_appType">
+        <MappingFragment StoreEntitySet="tb_appType">
+          <ScalarProperty Name="approveTypeID" ColumnName="approveTypeID" />
+          <ScalarProperty Name="approveTypeText" ColumnName="approveTypeText" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_bank">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_bank">
+        <MappingFragment StoreEntitySet="tb_bank">
+          <ScalarProperty Name="bankID" ColumnName="bankID" />
+          <ScalarProperty Name="BankShortName" ColumnName="BankShortName" />
+          <ScalarProperty Name="BankLongName" ColumnName="BankLongName" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_bonus_summary">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_bonus_summary">
+        <MappingFragment StoreEntitySet="tb_bonus_summary">
+          <ScalarProperty Name="bonusAccureID" ColumnName="bonusAccureID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="sec" ColumnName="sec" />
+          <ScalarProperty Name="groupName" ColumnName="groupName" />
+          <ScalarProperty Name="bonusMonth" ColumnName="bonusMonth" />
+          <ScalarProperty Name="bonusYear" ColumnName="bonusYear" />
+          <ScalarProperty Name="YTD" ColumnName="YTD" />
+          <ScalarProperty Name="basicSalary" ColumnName="basicSalary" />
+          <ScalarProperty Name="LTL_LengthOfService" ColumnName="LTL_LengthOfService" />
+          <ScalarProperty Name="bonus_LTL" ColumnName="bonus_LTL" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_company">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_company">
+        <MappingFragment StoreEntitySet="tb_company">
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="companyCode" ColumnName="companyCode" />
+          <ScalarProperty Name="companyName1" ColumnName="companyName1" />
+          <ScalarProperty Name="companyName2" ColumnName="companyName2" />
+          <ScalarProperty Name="companyPhone" ColumnName="companyPhone" />
+          <ScalarProperty Name="companyFax" ColumnName="companyFax" />
+          <ScalarProperty Name="companyWebsite" ColumnName="companyWebsite" />
+          <ScalarProperty Name="companyFaebook" ColumnName="companyFaebook" />
+          <ScalarProperty Name="companyLogo" ColumnName="companyLogo" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_costCenter">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_costCenter">
+        <MappingFragment StoreEntitySet="tb_costCenter">
+          <ScalarProperty Name="costCenterID" ColumnName="costCenterID" />
+          <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+          <ScalarProperty Name="costCenterCode" ColumnName="costCenterCode" />
+          <ScalarProperty Name="costCenterText" ColumnName="costCenterText" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_deductionType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_deductionType">
+        <MappingFragment StoreEntitySet="tb_deductionType">
+          <ScalarProperty Name="deductionTypeID" ColumnName="deductionTypeID" />
+          <ScalarProperty Name="deductionTypeCode" ColumnName="deductionTypeCode" />
+          <ScalarProperty Name="deductionTypeName1" ColumnName="deductionTypeName1" />
+          <ScalarProperty Name="deductionTypeName2" ColumnName="deductionTypeName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_delagate">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_delagate">
+        <MappingFragment StoreEntitySet="tb_delagate">
+          <ScalarProperty Name="delegateID" ColumnName="delegateID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="delegateEmpID" ColumnName="delegateEmpID" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="strDate" ColumnName="strDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="reCallDate" ColumnName="reCallDate" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="delegateNote" ColumnName="delegateNote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_department">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_department">
+        <MappingFragment StoreEntitySet="tb_department">
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_district">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_district">
+        <MappingFragment StoreEntitySet="tb_district">
+          <ScalarProperty Name="district_id" ColumnName="district_id" />
+          <ScalarProperty Name="Pro_ID" ColumnName="Pro_ID" />
+          <ScalarProperty Name="districtName1" ColumnName="districtName1" />
+          <ScalarProperty Name="districtName2" ColumnName="districtName2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_educationType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_educationType">
+        <MappingFragment StoreEntitySet="tb_educationType">
+          <ScalarProperty Name="educationTypeID" ColumnName="educationTypeID" />
+          <ScalarProperty Name="educationTypeCode" ColumnName="educationTypeCode" />
+          <ScalarProperty Name="educationTypeName1" ColumnName="educationTypeName1" />
+          <ScalarProperty Name="educationTypeName2" ColumnName="educationTypeName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_email_send">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_email_send">
+        <MappingFragment StoreEntitySet="tb_email_send">
+          <ScalarProperty Name="emailID" ColumnName="emailID" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="email_address" ColumnName="email_address" />
+          <ScalarProperty Name="email_subject" ColumnName="email_subject" />
+          <ScalarProperty Name="emil_body" ColumnName="emil_body" />
+          <ScalarProperty Name="sendFrom" ColumnName="sendFrom" />
+          <ScalarProperty Name="date_send" ColumnName="date_send" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empAllowance">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empAllowance">
+        <MappingFragment StoreEntitySet="tb_empAllowance">
+          <ScalarProperty Name="empAllowanceID" ColumnName="empAllowanceID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="allowanceTypeID" ColumnName="allowanceTypeID" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empBankAccount">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empBankAccount">
+        <MappingFragment StoreEntitySet="tb_empBankAccount">
+          <ScalarProperty Name="empBankAccountID" ColumnName="empBankAccountID" />
+          <ScalarProperty Name="bankID" ColumnName="bankID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="bankAccountName" ColumnName="bankAccountName" />
+          <ScalarProperty Name="bankAccountNo" ColumnName="bankAccountNo" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empDeduction">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empDeduction">
+        <MappingFragment StoreEntitySet="tb_empDeduction">
+          <ScalarProperty Name="empDeduction" ColumnName="empDeduction" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="deductionTypeID" ColumnName="deductionTypeID" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="taxsCal" ColumnName="taxsCal" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empEducation">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empEducation">
+        <MappingFragment StoreEntitySet="tb_empEducation">
+          <ScalarProperty Name="empEducationID" ColumnName="empEducationID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="educationTypeID" ColumnName="educationTypeID" />
+          <ScalarProperty Name="educationLevelText" ColumnName="educationLevelText" />
+          <ScalarProperty Name="schoolName" ColumnName="schoolName" />
+          <ScalarProperty Name="levelReceive" ColumnName="levelReceive" />
+          <ScalarProperty Name="acdamyYear" ColumnName="acdamyYear" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empFamily">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empFamily">
+        <MappingFragment StoreEntitySet="tb_empFamily">
+          <ScalarProperty Name="empFamilyID" ColumnName="empFamilyID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empFamilyRelationships" ColumnName="empFamilyRelationships" />
+          <ScalarProperty Name="empFamilyFullName" ColumnName="empFamilyFullName" />
+          <ScalarProperty Name="empFamilyJob" ColumnName="empFamilyJob" />
+          <ScalarProperty Name="empFamilyJobAddr" ColumnName="empFamilyJobAddr" />
+          <ScalarProperty Name="empFamilyAddr" ColumnName="empFamilyAddr" />
+          <ScalarProperty Name="empFamilyTel" ColumnName="empFamilyTel" />
+          <ScalarProperty Name="empFamilyEmail" ColumnName="empFamilyEmail" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empGroup">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empGroup">
+        <MappingFragment StoreEntitySet="tb_empGroup">
+          <ScalarProperty Name="empGroupID" ColumnName="empGroupID" />
+          <ScalarProperty Name="empGroupCode" ColumnName="empGroupCode" />
+          <ScalarProperty Name="empGroupName1" ColumnName="empGroupName1" />
+          <ScalarProperty Name="empGroupName2" ColumnName="empGroupName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empIncome">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empIncome">
+        <MappingFragment StoreEntitySet="tb_empIncome">
+          <ScalarProperty Name="empIncome" ColumnName="empIncome" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="incomTypeID" ColumnName="incomTypeID" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empInfo">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empInfo">
+        <MappingFragment StoreEntitySet="tb_empInfo">
+          <ScalarProperty Name="empInfoID" ColumnName="empInfoID" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="empLevelID" ColumnName="empLevelID" />
+          <ScalarProperty Name="hireDay" ColumnName="hireDay" />
+          <ScalarProperty Name="empGroupID" ColumnName="empGroupID" />
+          <ScalarProperty Name="shiftWorkingID" ColumnName="shiftWorkingID" />
+          <ScalarProperty Name="costCenterID" ColumnName="costCenterID" />
+          <ScalarProperty Name="assignmentLocation" ColumnName="assignmentLocation" />
+          <ScalarProperty Name="currentAddress" ColumnName="currentAddress" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="workingStatusID" ColumnName="workingStatusID" />
+          <ScalarProperty Name="empTypeID" ColumnName="empTypeID" />
+          <ScalarProperty Name="TaxTypeID" ColumnName="TaxTypeID" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="actingDate" ColumnName="actingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empLevel">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empLevel">
+        <MappingFragment StoreEntitySet="tb_empLevel">
+          <ScalarProperty Name="empLevelID" ColumnName="empLevelID" />
+          <ScalarProperty Name="empLevelCode" ColumnName="empLevelCode" />
+          <ScalarProperty Name="empLevelName1" ColumnName="empLevelName1" />
+          <ScalarProperty Name="empLevelName2" ColumnName="empLevelName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_employees">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_employees">
+        <MappingFragment StoreEntitySet="tb_employees">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empDayID" ColumnName="empDayID" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="nickName1" ColumnName="nickName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="nickName2" ColumnName="nickName2" />
+          <ScalarProperty Name="genderID" ColumnName="genderID" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="fstatusID" ColumnName="fstatusID" />
+          <ScalarProperty Name="nationalityID" ColumnName="nationalityID" />
+          <ScalarProperty Name="ethnicID" ColumnName="ethnicID" />
+          <ScalarProperty Name="religionID" ColumnName="religionID" />
+          <ScalarProperty Name="IDCrad" ColumnName="IDCrad" />
+          <ScalarProperty Name="passport" ColumnName="passport" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="district_id1" ColumnName="district_id1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="district_id2" ColumnName="district_id2" />
+          <ScalarProperty Name="empMobile" ColumnName="empMobile" />
+          <ScalarProperty Name="empEmail" ColumnName="empEmail" />
+          <ScalarProperty Name="empPhoto" ColumnName="empPhoto" />
+          <ScalarProperty Name="paymentPercent" ColumnName="paymentPercent" />
+          <ScalarProperty Name="spName" ColumnName="spName" />
+          <ScalarProperty Name="spMobile" ColumnName="spMobile" />
+          <ScalarProperty Name="spEmail" ColumnName="spEmail" />
+          <ScalarProperty Name="spAddress" ColumnName="spAddress" />
+          <ScalarProperty Name="spJob" ColumnName="spJob" />
+          <ScalarProperty Name="spJobAddress" ColumnName="spJobAddress" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empSalary">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empSalary">
+        <MappingFragment StoreEntitySet="tb_empSalary">
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="paymentPercent" ColumnName="paymentPercent" />
+          <ScalarProperty Name="empBankAccountID" ColumnName="empBankAccountID" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empSSO">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empSSO">
+        <MappingFragment StoreEntitySet="tb_empSSO">
+          <ScalarProperty Name="empSSOID" ColumnName="empSSOID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="ssoID" ColumnName="ssoID" />
+          <ScalarProperty Name="SSOValue" ColumnName="SSOValue" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_empType">
+        <MappingFragment StoreEntitySet="tb_empType">
+          <ScalarProperty Name="empTypeID" ColumnName="empTypeID" />
+          <ScalarProperty Name="empTypeCode" ColumnName="empTypeCode" />
+          <ScalarProperty Name="empTypeText" ColumnName="empTypeText" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ethnic">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_ethnic">
+        <MappingFragment StoreEntitySet="tb_ethnic">
+          <ScalarProperty Name="ethnicID" ColumnName="ethnicID" />
+          <ScalarProperty Name="ethnicName1" ColumnName="ethnicName1" />
+          <ScalarProperty Name="ethnicName2" ColumnName="ethnicName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_fhf">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_fhf">
+        <MappingFragment StoreEntitySet="tb_fhf">
+          <ScalarProperty Name="fhfID" ColumnName="fhfID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_fstatus">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_fstatus">
+        <MappingFragment StoreEntitySet="tb_fstatus">
+          <ScalarProperty Name="fstatusID" ColumnName="fstatusID" />
+          <ScalarProperty Name="fstatusText" ColumnName="fstatusText" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_gender">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_gender">
+        <MappingFragment StoreEntitySet="tb_gender">
+          <ScalarProperty Name="genderID" ColumnName="genderID" />
+          <ScalarProperty Name="genderText" ColumnName="genderText" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_incentive">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_incentive">
+        <MappingFragment StoreEntitySet="tb_incentive">
+          <ScalarProperty Name="incentiveID" ColumnName="incentiveID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="incentiveMonth" ColumnName="incentiveMonth" />
+          <ScalarProperty Name="incentiveYear" ColumnName="incentiveYear" />
+          <ScalarProperty Name="proName" ColumnName="proName" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="incentiveday" ColumnName="incentiveday" />
+          <ScalarProperty Name="totalIncentive" ColumnName="totalIncentive" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_incomType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_incomType">
+        <MappingFragment StoreEntitySet="tb_incomType">
+          <ScalarProperty Name="incomTypeID" ColumnName="incomTypeID" />
+          <ScalarProperty Name="incomTypeCode" ColumnName="incomTypeCode" />
+          <ScalarProperty Name="incomTypeName1" ColumnName="incomTypeName1" />
+          <ScalarProperty Name="incomTypeName2" ColumnName="incomTypeName2" />
+          <ScalarProperty Name="taxsCal" ColumnName="taxsCal" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_languages">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_languages">
+        <MappingFragment StoreEntitySet="tb_languages">
+          <ScalarProperty Name="langID" ColumnName="langID" />
+          <ScalarProperty Name="langShort" ColumnName="langShort" />
+          <ScalarProperty Name="langName" ColumnName="langName" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_leaveApprove">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_leaveApprove">
+        <MappingFragment StoreEntitySet="tb_leaveApprove">
+          <ScalarProperty Name="leaveApproveID" ColumnName="leaveApproveID" />
+          <ScalarProperty Name="leaveApproveNo" ColumnName="leaveApproveNo" />
+          <ScalarProperty Name="leaveRequestID" ColumnName="leaveRequestID" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_leaveRequest">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_leaveRequest">
+        <MappingFragment StoreEntitySet="tb_leaveRequest">
+          <ScalarProperty Name="leaveRequestID" ColumnName="leaveRequestID" />
+          <ScalarProperty Name="leaveRequestNo" ColumnName="leaveRequestNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+          <ScalarProperty Name="leaveDay" ColumnName="leaveDay" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="returnDate" ColumnName="returnDate" />
+          <ScalarProperty Name="amountDay" ColumnName="amountDay" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="delegateEmpID" ColumnName="delegateEmpID" />
+          <ScalarProperty Name="fileAttached" ColumnName="fileAttached" />
+          <ScalarProperty Name="managerID" ColumnName="managerID" />
+          <ScalarProperty Name="transactionType" ColumnName="transactionType" />
+          <ScalarProperty Name="expDate" ColumnName="expDate" />
+          <ScalarProperty Name="referAdd" ColumnName="referAdd" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_leaveRequestDetail">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_leaveRequestDetail">
+        <MappingFragment StoreEntitySet="tb_leaveRequestDetail">
+          <ScalarProperty Name="leaveRequestDetailID" ColumnName="leaveRequestDetailID" />
+          <ScalarProperty Name="leaveRequestID" ColumnName="leaveRequestID" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="amountDay" ColumnName="amountDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_leaveSetting">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_leaveSetting">
+        <MappingFragment StoreEntitySet="tb_leaveSetting">
+          <ScalarProperty Name="leaveSettingID" ColumnName="leaveSettingID" />
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+          <ScalarProperty Name="empGroupID" ColumnName="empGroupID" />
+          <ScalarProperty Name="amountDay" ColumnName="amountDay" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_leaveTranType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_leaveTranType">
+        <MappingFragment StoreEntitySet="tb_leaveTranType">
+          <ScalarProperty Name="transactionType" ColumnName="transactionType" />
+          <ScalarProperty Name="transactionTypeText" ColumnName="transactionTypeText" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_leaveType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_leaveType">
+        <MappingFragment StoreEntitySet="tb_leaveType">
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+          <ScalarProperty Name="leaveTypeCode" ColumnName="leaveTypeCode" />
+          <ScalarProperty Name="leaveTypeName1" ColumnName="leaveTypeName1" />
+          <ScalarProperty Name="leaveTypeName2" ColumnName="leaveTypeName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_loan">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_loan">
+        <MappingFragment StoreEntitySet="tb_loan">
+          <ScalarProperty Name="loanID" ColumnName="loanID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="amountLoan" ColumnName="amountLoan" />
+          <ScalarProperty Name="loanMonth" ColumnName="loanMonth" />
+          <ScalarProperty Name="requestDate" ColumnName="requestDate" />
+          <ScalarProperty Name="approveDate" ColumnName="approveDate" />
+          <ScalarProperty Name="loanPercent" ColumnName="loanPercent" />
+          <ScalarProperty Name="totalLoan" ColumnName="totalLoan" />
+          <ScalarProperty Name="loanStart" ColumnName="loanStart" />
+          <ScalarProperty Name="loanEnd" ColumnName="loanEnd" />
+          <ScalarProperty Name="LoanReason" ColumnName="LoanReason" />
+          <ScalarProperty Name="loanFile" ColumnName="loanFile" />
+          <ScalarProperty Name="payMonth" ColumnName="payMonth" />
+          <ScalarProperty Name="paidStatus" ColumnName="paidStatus" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_loanApprove">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_loanApprove">
+        <MappingFragment StoreEntitySet="tb_loanApprove">
+          <ScalarProperty Name="loanApproveID" ColumnName="loanApproveID" />
+          <ScalarProperty Name="loanApproveNo" ColumnName="loanApproveNo" />
+          <ScalarProperty Name="loanID" ColumnName="loanID" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_loanDetail">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_loanDetail">
+        <MappingFragment StoreEntitySet="tb_loanDetail">
+          <ScalarProperty Name="loanDetailID" ColumnName="loanDetailID" />
+          <ScalarProperty Name="loanID" ColumnName="loanID" />
+          <ScalarProperty Name="monthBL" ColumnName="monthBL" />
+          <ScalarProperty Name="acc_balance" ColumnName="acc_balance" />
+          <ScalarProperty Name="monthlyPay" ColumnName="monthlyPay" />
+          <ScalarProperty Name="loan_incen" ColumnName="loan_incen" />
+          <ScalarProperty Name="pay_amount" ColumnName="pay_amount" />
+          <ScalarProperty Name="totalBL" ColumnName="totalBL" />
+          <ScalarProperty Name="paidStatus" ColumnName="paidStatus" />
+          <ScalarProperty Name="payDate" ColumnName="payDate" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_menu">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_menu">
+        <MappingFragment StoreEntitySet="tb_menu">
+          <ScalarProperty Name="menuID" ColumnName="menuID" />
+          <ScalarProperty Name="menuNo" ColumnName="menuNo" />
+          <ScalarProperty Name="langID" ColumnName="langID" />
+          <ScalarProperty Name="menuText" ColumnName="menuText" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_month">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_month">
+        <MappingFragment StoreEntitySet="tb_month">
+          <ScalarProperty Name="monthid" ColumnName="monthid" />
+          <ScalarProperty Name="monthname1" ColumnName="monthname1" />
+          <ScalarProperty Name="monthname2" ColumnName="monthname2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_nationality">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_nationality">
+        <MappingFragment StoreEntitySet="tb_nationality">
+          <ScalarProperty Name="nationalityID" ColumnName="nationalityID" />
+          <ScalarProperty Name="nationalityCode" ColumnName="nationalityCode" />
+          <ScalarProperty Name="nationalityText" ColumnName="nationalityText" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_noti">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_noti">
+        <MappingFragment StoreEntitySet="tb_noti">
+          <ScalarProperty Name="notiID" ColumnName="notiID" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="CountItem" ColumnName="CountItem" />
+          <ScalarProperty Name="userView" ColumnName="userView" />
+          <ScalarProperty Name="OldValues" ColumnName="OldValues" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_noti_send">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_noti_send">
+        <MappingFragment StoreEntitySet="tb_noti_send">
+          <ScalarProperty Name="notiID" ColumnName="notiID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="Device_token" ColumnName="Device_token" />
+          <ScalarProperty Name="noti_sound" ColumnName="noti_sound" />
+          <ScalarProperty Name="Noti_title" ColumnName="Noti_title" />
+          <ScalarProperty Name="Noti_body" ColumnName="Noti_body" />
+          <ScalarProperty Name="Noti_link" ColumnName="Noti_link" />
+          <ScalarProperty Name="noti_click_ation" ColumnName="noti_click_ation" />
+          <ScalarProperty Name="noti_status" ColumnName="noti_status" />
+          <ScalarProperty Name="noti_screen" ColumnName="noti_screen" />
+          <ScalarProperty Name="noti_message" ColumnName="noti_message" />
+          <ScalarProperty Name="noti_ids" ColumnName="noti_ids" />
+          <ScalarProperty Name="sendFrom" ColumnName="sendFrom" />
+          <ScalarProperty Name="date_send" ColumnName="date_send" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_noti_status">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_noti_status">
+        <MappingFragment StoreEntitySet="tb_noti_status">
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ot_setting">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_ot_setting">
+        <MappingFragment StoreEntitySet="tb_ot_setting">
+          <ScalarProperty Name="otSettingID" ColumnName="otSettingID" />
+          <ScalarProperty Name="rateCode" ColumnName="rateCode" />
+          <ScalarProperty Name="otSettingType" ColumnName="otSettingType" />
+          <ScalarProperty Name="startTime" ColumnName="startTime" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="minusHour" ColumnName="minusHour" />
+          <ScalarProperty Name="otSettingValues" ColumnName="otSettingValues" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_otApprove">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_otApprove">
+        <MappingFragment StoreEntitySet="tb_otApprove">
+          <ScalarProperty Name="otApproveID" ColumnName="otApproveID" />
+          <ScalarProperty Name="otApproveNo" ColumnName="otApproveNo" />
+          <ScalarProperty Name="otRequestID" ColumnName="otRequestID" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_otRequest">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_otRequest">
+        <MappingFragment StoreEntitySet="tb_otRequest">
+          <ScalarProperty Name="otRequestID" ColumnName="otRequestID" />
+          <ScalarProperty Name="otRequestNo" ColumnName="otRequestNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="otTypeID" ColumnName="otTypeID" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="otStartTime" ColumnName="otStartTime" />
+          <ScalarProperty Name="otEndTime" ColumnName="otEndTime" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="fileAttached" ColumnName="fileAttached" />
+          <ScalarProperty Name="managerID" ColumnName="managerID" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_otRequestDetail">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_otRequestDetail">
+        <MappingFragment StoreEntitySet="tb_otRequestDetail">
+          <ScalarProperty Name="otRequestDetailID" ColumnName="otRequestDetailID" />
+          <ScalarProperty Name="otRequestID" ColumnName="otRequestID" />
+          <ScalarProperty Name="otSettingID" ColumnName="otSettingID" />
+          <ScalarProperty Name="startTime" ColumnName="startTime" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="qtyHour" ColumnName="qtyHour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_otType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_otType">
+        <MappingFragment StoreEntitySet="tb_otType">
+          <ScalarProperty Name="otTypeID" ColumnName="otTypeID" />
+          <ScalarProperty Name="otTypeText" ColumnName="otTypeText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pass_history">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_pass_history">
+        <MappingFragment StoreEntitySet="tb_pass_history">
+          <ScalarProperty Name="passID" ColumnName="passID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_payFHF">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_payFHF">
+        <MappingFragment StoreEntitySet="tb_payFHF">
+          <ScalarProperty Name="payfhfID" ColumnName="payfhfID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="fhfMonth" ColumnName="fhfMonth" />
+          <ScalarProperty Name="fhfYear" ColumnName="fhfYear" />
+          <ScalarProperty Name="deductAmount" ColumnName="deductAmount" />
+          <ScalarProperty Name="payAmount" ColumnName="payAmount" />
+          <ScalarProperty Name="datePay" ColumnName="datePay" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_paymentRecord">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_paymentRecord">
+        <MappingFragment StoreEntitySet="tb_paymentRecord">
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+          <ScalarProperty Name="monthCal" ColumnName="monthCal" />
+          <ScalarProperty Name="YearCal" ColumnName="YearCal" />
+          <ScalarProperty Name="MYCal" ColumnName="MYCal" />
+          <ScalarProperty Name="costCenterCode" ColumnName="costCenterCode" />
+          <ScalarProperty Name="costCenterText" ColumnName="costCenterText" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empDayID" ColumnName="empDayID" />
+          <ScalarProperty Name="empName1" ColumnName="empName1" />
+          <ScalarProperty Name="empName2" ColumnName="empName2" />
+          <ScalarProperty Name="empType" ColumnName="empType" />
+          <ScalarProperty Name="oldSalary" ColumnName="oldSalary" />
+          <ScalarProperty Name="incrementSalary" ColumnName="incrementSalary" />
+          <ScalarProperty Name="SetWorkingDay" ColumnName="SetWorkingDay" />
+          <ScalarProperty Name="EmpWorkingDay" ColumnName="EmpWorkingDay" />
+          <ScalarProperty Name="shiftWD1" ColumnName="shiftWD1" />
+          <ScalarProperty Name="shiftWD2" ColumnName="shiftWD2" />
+          <ScalarProperty Name="shiftWD3" ColumnName="shiftWD3" />
+          <ScalarProperty Name="otshift1" ColumnName="otshift1" />
+          <ScalarProperty Name="otshift2" ColumnName="otshift2" />
+          <ScalarProperty Name="otshift3" ColumnName="otshift3" />
+          <ScalarProperty Name="OTRate1" ColumnName="OTRate1" />
+          <ScalarProperty Name="OTRate2" ColumnName="OTRate2" />
+          <ScalarProperty Name="OTRate3" ColumnName="OTRate3" />
+          <ScalarProperty Name="OTRate4" ColumnName="OTRate4" />
+          <ScalarProperty Name="OTRate5" ColumnName="OTRate5" />
+          <ScalarProperty Name="sumOT" ColumnName="sumOT" />
+          <ScalarProperty Name="publicHoliday" ColumnName="publicHoliday" />
+          <ScalarProperty Name="strDate" ColumnName="strDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="leaveDay" ColumnName="leaveDay" />
+          <ScalarProperty Name="EmpDayOff" ColumnName="EmpDayOff" />
+          <ScalarProperty Name="basicSalary" ColumnName="basicSalary" />
+          <ScalarProperty Name="shiftIncome1" ColumnName="shiftIncome1" />
+          <ScalarProperty Name="shiftIncome2" ColumnName="shiftIncome2" />
+          <ScalarProperty Name="shiftIncome3" ColumnName="shiftIncome3" />
+          <ScalarProperty Name="shiftIncome" ColumnName="shiftIncome" />
+          <ScalarProperty Name="overtimeIncome1" ColumnName="overtimeIncome1" />
+          <ScalarProperty Name="overtimeIncome2" ColumnName="overtimeIncome2" />
+          <ScalarProperty Name="overtimeIncome3" ColumnName="overtimeIncome3" />
+          <ScalarProperty Name="overtimeIncome4" ColumnName="overtimeIncome4" />
+          <ScalarProperty Name="overtimeIncome5" ColumnName="overtimeIncome5" />
+          <ScalarProperty Name="overtimeIncome" ColumnName="overtimeIncome" />
+          <ScalarProperty Name="threshingIncom" ColumnName="threshingIncom" />
+          <ScalarProperty Name="additionalPay" ColumnName="additionalPay" />
+          <ScalarProperty Name="additionalDeduct" ColumnName="additionalDeduct" />
+          <ScalarProperty Name="deductDayOff" ColumnName="deductDayOff" />
+          <ScalarProperty Name="allowance_phone" ColumnName="allowance_phone" />
+          <ScalarProperty Name="allowance_fuel" ColumnName="allowance_fuel" />
+          <ScalarProperty Name="allowance_housing" ColumnName="allowance_housing" />
+          <ScalarProperty Name="allowance_car" ColumnName="allowance_car" />
+          <ScalarProperty Name="allowance" ColumnName="allowance" />
+          <ScalarProperty Name="grossSalaryBenefits" ColumnName="grossSalaryBenefits" />
+          <ScalarProperty Name="advanceBonus" ColumnName="advanceBonus" />
+          <ScalarProperty Name="grossIncome" ColumnName="grossIncome" />
+          <ScalarProperty Name="deductEmpSSO" ColumnName="deductEmpSSO" />
+          <ScalarProperty Name="tax_b1" ColumnName="tax_b1" />
+          <ScalarProperty Name="tax_b2" ColumnName="tax_b2" />
+          <ScalarProperty Name="tax_b3" ColumnName="tax_b3" />
+          <ScalarProperty Name="tax_b4" ColumnName="tax_b4" />
+          <ScalarProperty Name="tax_b5" ColumnName="tax_b5" />
+          <ScalarProperty Name="tax_b6" ColumnName="tax_b6" />
+          <ScalarProperty Name="tax_extra" ColumnName="tax_extra" />
+          <ScalarProperty Name="deductTaxs" ColumnName="deductTaxs" />
+          <ScalarProperty Name="netIncome" ColumnName="netIncome" />
+          <ScalarProperty Name="deductLoan" ColumnName="deductLoan" />
+          <ScalarProperty Name="deductFHF" ColumnName="deductFHF" />
+          <ScalarProperty Name="deduct_SLDRT_fun" ColumnName="deduct_SLDRT_fun" />
+          <ScalarProperty Name="deductOther" ColumnName="deductOther" />
+          <ScalarProperty Name="canteenNET" ColumnName="canteenNET" />
+          <ScalarProperty Name="OtherAllowanNET" ColumnName="OtherAllowanNET" />
+          <ScalarProperty Name="severanceBook" ColumnName="severanceBook" />
+          <ScalarProperty Name="NetToPay" ColumnName="NetToPay" />
+          <ScalarProperty Name="employerSSO" ColumnName="employerSSO" />
+          <ScalarProperty Name="grossLastMonth" ColumnName="grossLastMonth" />
+          <ScalarProperty Name="grossVariance" ColumnName="grossVariance" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="bankName" ColumnName="bankName" />
+          <ScalarProperty Name="bankAccountName" ColumnName="bankAccountName" />
+          <ScalarProperty Name="bankAccountNo" ColumnName="bankAccountNo" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="staffName" ColumnName="staffName" />
+          <ScalarProperty Name="monthCycle" ColumnName="monthCycle" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_paymentRecordApprove">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_paymentRecordApprove">
+        <MappingFragment StoreEntitySet="tb_paymentRecordApprove">
+          <ScalarProperty Name="ApproveID" ColumnName="ApproveID" />
+          <ScalarProperty Name="ApproveNo" ColumnName="ApproveNo" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pension_summary">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_pension_summary">
+        <MappingFragment StoreEntitySet="tb_pension_summary">
+          <ScalarProperty Name="pensionAccureID" ColumnName="pensionAccureID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="sec" ColumnName="sec" />
+          <ScalarProperty Name="groupName" ColumnName="groupName" />
+          <ScalarProperty Name="pensionMonth" ColumnName="pensionMonth" />
+          <ScalarProperty Name="pensionYear" ColumnName="pensionYear" />
+          <ScalarProperty Name="YTD" ColumnName="YTD" />
+          <ScalarProperty Name="basicSalary" ColumnName="basicSalary" />
+          <ScalarProperty Name="LTL_LengthOfService" ColumnName="LTL_LengthOfService" />
+          <ScalarProperty Name="provision_LTC" ColumnName="provision_LTC" />
+          <ScalarProperty Name="provision_LTL" ColumnName="provision_LTL" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_permission">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_permission">
+        <MappingFragment StoreEntitySet="tb_permission">
+          <ScalarProperty Name="permissionID" ColumnName="permissionID" />
+          <ScalarProperty Name="langID" ColumnName="langID" />
+          <ScalarProperty Name="permissionName" ColumnName="permissionName" />
+          <ScalarProperty Name="staus_id" ColumnName="staus_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_process_status">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_process_status">
+        <MappingFragment StoreEntitySet="tb_process_status">
+          <ScalarProperty Name="processID" ColumnName="processID" />
+          <ScalarProperty Name="processText" ColumnName="processText" />
+          <ScalarProperty Name="processStatusID" ColumnName="processStatusID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="date_end" ColumnName="date_end" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_province">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_province">
+        <MappingFragment StoreEntitySet="tb_province">
+          <ScalarProperty Name="Pro_ID" ColumnName="Pro_ID" />
+          <ScalarProperty Name="ProName2" ColumnName="ProName2" />
+          <ScalarProperty Name="proName1" ColumnName="proName1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_publicHoliday">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_publicHoliday">
+        <MappingFragment StoreEntitySet="tb_publicHoliday">
+          <ScalarProperty Name="publicHolidayID" ColumnName="publicHolidayID" />
+          <ScalarProperty Name="publicHoliday" ColumnName="publicHoliday" />
+          <ScalarProperty Name="publicHolidayName1" ColumnName="publicHolidayName1" />
+          <ScalarProperty Name="publicHolidayName2" ColumnName="publicHolidayName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_race">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_race">
+        <MappingFragment StoreEntitySet="tb_race">
+          <ScalarProperty Name="raceID" ColumnName="raceID" />
+          <ScalarProperty Name="raceCode" ColumnName="raceCode" />
+          <ScalarProperty Name="raceName1" ColumnName="raceName1" />
+          <ScalarProperty Name="raceName2" ColumnName="raceName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_religion">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_religion">
+        <MappingFragment StoreEntitySet="tb_religion">
+          <ScalarProperty Name="religionID" ColumnName="religionID" />
+          <ScalarProperty Name="religionText" ColumnName="religionText" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_report_list">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_report_list">
+        <MappingFragment StoreEntitySet="tb_report_list">
+          <ScalarProperty Name="reportID" ColumnName="reportID" />
+          <ScalarProperty Name="reportCode" ColumnName="reportCode" />
+          <ScalarProperty Name="reportName" ColumnName="reportName" />
+          <ScalarProperty Name="reportTypeID" ColumnName="reportTypeID" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_role">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_role">
+        <MappingFragment StoreEntitySet="tb_role">
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+          <ScalarProperty Name="roleNo" ColumnName="roleNo" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+          <ScalarProperty Name="langID" ColumnName="langID" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_role_permission">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_role_permission">
+        <MappingFragment StoreEntitySet="tb_role_permission">
+          <ScalarProperty Name="role_per" ColumnName="role_per" />
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+          <ScalarProperty Name="permissionID" ColumnName="permissionID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_salary_list">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_salary_list">
+        <MappingFragment StoreEntitySet="tb_salary_list">
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="salaryDate" ColumnName="salaryDate" />
+          <ScalarProperty Name="salaryMonth" ColumnName="salaryMonth" />
+          <ScalarProperty Name="salaryYear" ColumnName="salaryYear" />
+          <ScalarProperty Name="generateDate" ColumnName="generateDate" />
+          <ScalarProperty Name="ownerID" ColumnName="ownerID" />
+          <ScalarProperty Name="ApproveDate" ColumnName="ApproveDate" />
+          <ScalarProperty Name="mgrID" ColumnName="mgrID" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="fingerUpload" ColumnName="fingerUpload" />
+          <ScalarProperty Name="approveFinger" ColumnName="approveFinger" />
+          <ScalarProperty Name="leaveDay" ColumnName="leaveDay" />
+          <ScalarProperty Name="oth" ColumnName="oth" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_secure_setting">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_secure_setting">
+        <MappingFragment StoreEntitySet="tb_secure_setting">
+          <ScalarProperty Name="psID" ColumnName="psID" />
+          <ScalarProperty Name="password_length" ColumnName="password_length" />
+          <ScalarProperty Name="pass_complex" ColumnName="pass_complex" />
+          <ScalarProperty Name="pass_hit" ColumnName="pass_hit" />
+          <ScalarProperty Name="pass_expDay" ColumnName="pass_expDay" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_setting_doc">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_setting_doc">
+        <MappingFragment StoreEntitySet="tb_setting_doc">
+          <ScalarProperty Name="createID" ColumnName="createID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_severance">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_severance">
+        <MappingFragment StoreEntitySet="tb_severance">
+          <ScalarProperty Name="severanceID" ColumnName="severanceID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="severanceDate" ColumnName="severanceDate" />
+          <ScalarProperty Name="severanceAmount" ColumnName="severanceAmount" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_shift">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_shift">
+        <MappingFragment StoreEntitySet="tb_shift">
+          <ScalarProperty Name="shiftID" ColumnName="shiftID" />
+          <ScalarProperty Name="shiftNo" ColumnName="shiftNo" />
+          <ScalarProperty Name="shiftPercent" ColumnName="shiftPercent" />
+          <ScalarProperty Name="LastDay" ColumnName="LastDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_shiftWorking">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_shiftWorking">
+        <MappingFragment StoreEntitySet="tb_shiftWorking">
+          <ScalarProperty Name="shiftWorkingID" ColumnName="shiftWorkingID" />
+          <ScalarProperty Name="shiftName" ColumnName="shiftName" />
+          <ScalarProperty Name="mo" ColumnName="mo" />
+          <ScalarProperty Name="mo_timeIn" ColumnName="mo_timeIn" />
+          <ScalarProperty Name="mo_timeOut" ColumnName="mo_timeOut" />
+          <ScalarProperty Name="tu" ColumnName="tu" />
+          <ScalarProperty Name="tu_timeIn" ColumnName="tu_timeIn" />
+          <ScalarProperty Name="tu_timeOut" ColumnName="tu_timeOut" />
+          <ScalarProperty Name="we" ColumnName="we" />
+          <ScalarProperty Name="we_timeIn" ColumnName="we_timeIn" />
+          <ScalarProperty Name="we_timeOut" ColumnName="we_timeOut" />
+          <ScalarProperty Name="th" ColumnName="th" />
+          <ScalarProperty Name="th_timeIn" ColumnName="th_timeIn" />
+          <ScalarProperty Name="th_timeOut" ColumnName="th_timeOut" />
+          <ScalarProperty Name="fr" ColumnName="fr" />
+          <ScalarProperty Name="fr_timeIn" ColumnName="fr_timeIn" />
+          <ScalarProperty Name="fr_timeOut" ColumnName="fr_timeOut" />
+          <ScalarProperty Name="sa" ColumnName="sa" />
+          <ScalarProperty Name="sa_timeIn" ColumnName="sa_timeIn" />
+          <ScalarProperty Name="sa_timeOut" ColumnName="sa_timeOut" />
+          <ScalarProperty Name="su" ColumnName="su" />
+          <ScalarProperty Name="su_timeIn" ColumnName="su_timeIn" />
+          <ScalarProperty Name="su_timeOut" ColumnName="su_timeOut" />
+          <ScalarProperty Name="dayAverage" ColumnName="dayAverage" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="strDay" ColumnName="strDay" />
+          <ScalarProperty Name="endDay" ColumnName="endDay" />
+          <ScalarProperty Name="othour" ColumnName="othour" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_SLDRT_loan">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_SLDRT_loan">
+        <MappingFragment StoreEntitySet="tb_SLDRT_loan">
+          <ScalarProperty Name="SLDRT_loanID" ColumnName="SLDRT_loanID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="amountLoan" ColumnName="amountLoan" />
+          <ScalarProperty Name="loanMonth" ColumnName="loanMonth" />
+          <ScalarProperty Name="requestDate" ColumnName="requestDate" />
+          <ScalarProperty Name="approveDate" ColumnName="approveDate" />
+          <ScalarProperty Name="loanPercent" ColumnName="loanPercent" />
+          <ScalarProperty Name="totalLoan" ColumnName="totalLoan" />
+          <ScalarProperty Name="loanStart" ColumnName="loanStart" />
+          <ScalarProperty Name="loanEnd" ColumnName="loanEnd" />
+          <ScalarProperty Name="LoanReason" ColumnName="LoanReason" />
+          <ScalarProperty Name="loanFile" ColumnName="loanFile" />
+          <ScalarProperty Name="payMonth" ColumnName="payMonth" />
+          <ScalarProperty Name="paidStatus" ColumnName="paidStatus" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_SLDRT_loanApprove">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_SLDRT_loanApprove">
+        <MappingFragment StoreEntitySet="tb_SLDRT_loanApprove">
+          <ScalarProperty Name="ApproveID" ColumnName="ApproveID" />
+          <ScalarProperty Name="ApproveNo" ColumnName="ApproveNo" />
+          <ScalarProperty Name="SLDRT_loanID" ColumnName="SLDRT_loanID" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_SLDRT_loanDetail">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_SLDRT_loanDetail">
+        <MappingFragment StoreEntitySet="tb_SLDRT_loanDetail">
+          <ScalarProperty Name="SLDRT_loanDetailID" ColumnName="SLDRT_loanDetailID" />
+          <ScalarProperty Name="SLDRT_loanID" ColumnName="SLDRT_loanID" />
+          <ScalarProperty Name="monthBL" ColumnName="monthBL" />
+          <ScalarProperty Name="acc_balance" ColumnName="acc_balance" />
+          <ScalarProperty Name="monthlyPay" ColumnName="monthlyPay" />
+          <ScalarProperty Name="loan_incen" ColumnName="loan_incen" />
+          <ScalarProperty Name="pay_amount" ColumnName="pay_amount" />
+          <ScalarProperty Name="totalBL" ColumnName="totalBL" />
+          <ScalarProperty Name="paidStatus" ColumnName="paidStatus" />
+          <ScalarProperty Name="payDate" ColumnName="payDate" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_spouse">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_spouse">
+        <MappingFragment StoreEntitySet="tb_spouse">
+          <ScalarProperty Name="spouseID" ColumnName="spouseID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="sName" ColumnName="sName" />
+          <ScalarProperty Name="sMobile" ColumnName="sMobile" />
+          <ScalarProperty Name="sEmail" ColumnName="sEmail" />
+          <ScalarProperty Name="sAddress" ColumnName="sAddress" />
+          <ScalarProperty Name="sJob" ColumnName="sJob" />
+          <ScalarProperty Name="jobAddress" ColumnName="jobAddress" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_SPRetirement">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_SPRetirement">
+        <MappingFragment StoreEntitySet="tb_SPRetirement">
+          <ScalarProperty Name="sprgID" ColumnName="sprgID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="ltc_balance" ColumnName="ltc_balance" />
+          <ScalarProperty Name="acc_balance" ColumnName="acc_balance" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="totalBalance" ColumnName="totalBalance" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_sso">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_sso">
+        <MappingFragment StoreEntitySet="tb_sso">
+          <ScalarProperty Name="ssoID" ColumnName="ssoID" />
+          <ScalarProperty Name="ssoTypeID" ColumnName="ssoTypeID" />
+          <ScalarProperty Name="minBase" ColumnName="minBase" />
+          <ScalarProperty Name="maxBase" ColumnName="maxBase" />
+          <ScalarProperty Name="employeeRate" ColumnName="employeeRate" />
+          <ScalarProperty Name="employerRate" ColumnName="employerRate" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ssoType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_ssoType">
+        <MappingFragment StoreEntitySet="tb_ssoType">
+          <ScalarProperty Name="ssoTypeID" ColumnName="ssoTypeID" />
+          <ScalarProperty Name="ssoName" ColumnName="ssoName" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_status">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_status">
+        <MappingFragment StoreEntitySet="tb_status">
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="status_text" ColumnName="status_text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_taxs">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_taxs">
+        <MappingFragment StoreEntitySet="tb_taxs">
+          <ScalarProperty Name="taxsID" ColumnName="taxsID" />
+          <ScalarProperty Name="minBase" ColumnName="minBase" />
+          <ScalarProperty Name="maxBase" ColumnName="maxBase" />
+          <ScalarProperty Name="taxsRate" ColumnName="taxsRate" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_TaxType">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_TaxType">
+        <MappingFragment StoreEntitySet="tb_TaxType">
+          <ScalarProperty Name="TaxTypeID" ColumnName="TaxTypeID" />
+          <ScalarProperty Name="TaxTypeText" ColumnName="TaxTypeText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_threshing">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_threshing">
+        <MappingFragment StoreEntitySet="tb_threshing">
+          <ScalarProperty Name="threshingID" ColumnName="threshingID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="threshingName" ColumnName="threshingName" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="threshingMonth" ColumnName="threshingMonth" />
+          <ScalarProperty Name="totalthreshing" ColumnName="totalthreshing" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_unit">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_unit">
+        <MappingFragment StoreEntitySet="tb_unit">
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_upload_bonus">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_upload_bonus">
+        <MappingFragment StoreEntitySet="tb_upload_bonus">
+          <ScalarProperty Name="bonusID" ColumnName="bonusID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="bonusMonth" ColumnName="bonusMonth" />
+          <ScalarProperty Name="bounusYear" ColumnName="bounusYear" />
+          <ScalarProperty Name="bonusDate" ColumnName="bonusDate" />
+          <ScalarProperty Name="bonusAmount" ColumnName="bonusAmount" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_users">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_users">
+        <MappingFragment StoreEntitySet="tb_users">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+          <ScalarProperty Name="appTokenKey" ColumnName="appTokenKey" />
+          <ScalarProperty Name="webTokenKey" ColumnName="webTokenKey" />
+          <ScalarProperty Name="Device_token" ColumnName="Device_token" />
+          <ScalarProperty Name="sendNoti" ColumnName="sendNoti" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="strDate" ColumnName="strDate" />
+          <ScalarProperty Name="expDate" ColumnName="expDate" />
+          <ScalarProperty Name="expSession" ColumnName="expSession" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_workingDay">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_workingDay">
+        <MappingFragment StoreEntitySet="tb_workingDay">
+          <ScalarProperty Name="workdayID" ColumnName="workdayID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="workday" ColumnName="workday" />
+          <ScalarProperty Name="workmonth" ColumnName="workmonth" />
+          <ScalarProperty Name="workyear" ColumnName="workyear" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="wdName" ColumnName="wdName" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="shift1_timeIn" ColumnName="shift1_timeIn" />
+          <ScalarProperty Name="shift1_timOut" ColumnName="shift1_timOut" />
+          <ScalarProperty Name="shift1_wd" ColumnName="shift1_wd" />
+          <ScalarProperty Name="shift2_timeIn" ColumnName="shift2_timeIn" />
+          <ScalarProperty Name="shift2_timOut" ColumnName="shift2_timOut" />
+          <ScalarProperty Name="shift2_wd" ColumnName="shift2_wd" />
+          <ScalarProperty Name="shift3_timeIn" ColumnName="shift3_timeIn" />
+          <ScalarProperty Name="shift3_timOut" ColumnName="shift3_timOut" />
+          <ScalarProperty Name="shift3_wd" ColumnName="shift3_wd" />
+          <ScalarProperty Name="total_wd" ColumnName="total_wd" />
+          <ScalarProperty Name="total_wh" ColumnName="total_wh" />
+          <ScalarProperty Name="total_oth" ColumnName="total_oth" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="GetDayW" ColumnName="GetDayW" />
+          <ScalarProperty Name="shiftstartDay" ColumnName="shiftstartDay" />
+          <ScalarProperty Name="shiftendDay" ColumnName="shiftendDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_workingStatus">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_workingStatus">
+        <MappingFragment StoreEntitySet="tb_workingStatus">
+          <ScalarProperty Name="workingStatusID" ColumnName="workingStatusID" />
+          <ScalarProperty Name="workingStatusText" ColumnName="workingStatusText" />
+          <ScalarProperty Name="salaryCal" ColumnName="salaryCal" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_checkworkday">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_checkworkday">
+        <MappingFragment StoreEntitySet="tmp_checkworkday">
+          <ScalarProperty Name="tmp_id" ColumnName="tmp_id" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullNameLA" ColumnName="fullNameLA" />
+          <ScalarProperty Name="fullNameEN" ColumnName="fullNameEN" />
+          <ScalarProperty Name="workDay" ColumnName="workDay" />
+          <ScalarProperty Name="workMonth" ColumnName="workMonth" />
+          <ScalarProperty Name="workYear" ColumnName="workYear" />
+          <ScalarProperty Name="shift1_n" ColumnName="shift1_n" />
+          <ScalarProperty Name="shift1_ot" ColumnName="shift1_ot" />
+          <ScalarProperty Name="shift1_wd_total" ColumnName="shift1_wd_total" />
+          <ScalarProperty Name="shift1_ot_total" ColumnName="shift1_ot_total" />
+          <ScalarProperty Name="shift2_n" ColumnName="shift2_n" />
+          <ScalarProperty Name="shift2_ot" ColumnName="shift2_ot" />
+          <ScalarProperty Name="shift2_wd_sun" ColumnName="shift2_wd_sun" />
+          <ScalarProperty Name="shift2_ot_sun" ColumnName="shift2_ot_sun" />
+          <ScalarProperty Name="shift2_wd_total" ColumnName="shift2_wd_total" />
+          <ScalarProperty Name="shift2_ot_total" ColumnName="shift2_ot_total" />
+          <ScalarProperty Name="total_wd" ColumnName="total_wd" />
+          <ScalarProperty Name="total_ot" ColumnName="total_ot" />
+          <ScalarProperty Name="leave1" ColumnName="leave1" />
+          <ScalarProperty Name="leave2" ColumnName="leave2" />
+          <ScalarProperty Name="leave3" ColumnName="leave3" />
+          <ScalarProperty Name="leave4" ColumnName="leave4" />
+          <ScalarProperty Name="sys_leave" ColumnName="sys_leave" />
+          <ScalarProperty Name="sys_OTh" ColumnName="sys_OTh" />
+          <ScalarProperty Name="sys_OTh1" ColumnName="sys_OTh1" />
+          <ScalarProperty Name="sys_OTh2" ColumnName="sys_OTh2" />
+          <ScalarProperty Name="sys_OTh3" ColumnName="sys_OTh3" />
+          <ScalarProperty Name="sys_OTh4" ColumnName="sys_OTh4" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="dayoff" ColumnName="dayoff" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="mrgID" ColumnName="mrgID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_emp">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_emp">
+        <MappingFragment StoreEntitySet="tmp_emp">
+          <ScalarProperty Name="tmpID" ColumnName="tmpID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="ipaddress" ColumnName="ipaddress" />
+          <ScalarProperty Name="cal" ColumnName="cal" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_empMgr">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_empMgr">
+        <MappingFragment StoreEntitySet="tmp_empMgr">
+          <ScalarProperty Name="tmp_id" ColumnName="tmp_id" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empFullName" ColumnName="empFullName" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_fhf">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_fhf">
+        <MappingFragment StoreEntitySet="tmp_fhf">
+          <ScalarProperty Name="tmp_fhfID" ColumnName="tmp_fhfID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_loan">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_loan">
+        <MappingFragment StoreEntitySet="tmp_loan">
+          <ScalarProperty Name="tmp_loanID" ColumnName="tmp_loanID" />
+          <ScalarProperty Name="loanID" ColumnName="loanID" />
+          <ScalarProperty Name="amountLoan" ColumnName="amountLoan" />
+          <ScalarProperty Name="cals" ColumnName="cals" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_pass">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_pass">
+        <MappingFragment StoreEntitySet="tmp_pass">
+          <ScalarProperty Name="tmpID" ColumnName="tmpID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_shiftWorkingDay">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_shiftWorkingDay">
+        <MappingFragment StoreEntitySet="tmp_shiftWorkingDay">
+          <ScalarProperty Name="tmp_id" ColumnName="tmp_id" />
+          <ScalarProperty Name="shiftWorkingID" ColumnName="shiftWorkingID" />
+          <ScalarProperty Name="sumWorkingDay" ColumnName="sumWorkingDay" />
+          <ScalarProperty Name="publicHoliday" ColumnName="publicHoliday" />
+          <ScalarProperty Name="ipaddress" ColumnName="ipaddress" />
+          <ScalarProperty Name="cal" ColumnName="cal" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_tax">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_tax">
+        <MappingFragment StoreEntitySet="tmp_tax">
+          <ScalarProperty Name="tmp_taxID" ColumnName="tmp_taxID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="tax_b1" ColumnName="tax_b1" />
+          <ScalarProperty Name="tax_b2" ColumnName="tax_b2" />
+          <ScalarProperty Name="tax_b3" ColumnName="tax_b3" />
+          <ScalarProperty Name="tax_b4" ColumnName="tax_b4" />
+          <ScalarProperty Name="tax_b5" ColumnName="tax_b5" />
+          <ScalarProperty Name="tax_b6" ColumnName="tax_b6" />
+          <ScalarProperty Name="tax_ex" ColumnName="tax_ex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_checkInOut">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_checkInOut">
+        <MappingFragment StoreEntitySet="tb_checkInOut">
+          <ScalarProperty Name="chechID" ColumnName="chechID" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="checkTime" ColumnName="checkTime" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="checkInOut" ColumnName="checkInOut" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_lang">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_lang">
+        <MappingFragment StoreEntitySet="tb_lang">
+          <ScalarProperty Name="langID" ColumnName="langID" />
+          <ScalarProperty Name="langName" ColumnName="langName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_news">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_news">
+        <MappingFragment StoreEntitySet="tb_news">
+          <ScalarProperty Name="newsID" ColumnName="newsID" />
+          <ScalarProperty Name="newsTitle" ColumnName="newsTitle" />
+          <ScalarProperty Name="newsContrent" ColumnName="newsContrent" />
+          <ScalarProperty Name="attachec_file" ColumnName="attachec_file" />
+          <ScalarProperty Name="pubish_date" ColumnName="pubish_date" />
+          <ScalarProperty Name="exp_date" ColumnName="exp_date" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_next_noti">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_next_noti">
+        <MappingFragment StoreEntitySet="tb_next_noti">
+          <ScalarProperty Name="notiID" ColumnName="notiID" />
+          <ScalarProperty Name="requestID" ColumnName="requestID" />
+          <ScalarProperty Name="nextNoti" ColumnName="nextNoti" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_tasks">
+      <EntityTypeMapping TypeName="db_hrmsModel.tb_tasks">
+        <MappingFragment StoreEntitySet="tb_tasks">
+          <ScalarProperty Name="taskID" ColumnName="taskID" />
+          <ScalarProperty Name="taskName" ColumnName="taskName" />
+          <ScalarProperty Name="taskDetail" ColumnName="taskDetail" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="attachec_file" ColumnName="attachec_file" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="status_com" ColumnName="status_com" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmp_log_command">
+      <EntityTypeMapping TypeName="db_hrmsModel.tmp_log_command">
+        <MappingFragment StoreEntitySet="tmp_log_command">
+          <ScalarProperty Name="tmp_ID" ColumnName="tmp_ID" />
+          <ScalarProperty Name="commandLog" ColumnName="commandLog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_app_noti">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_app_noti">
+        <MappingFragment StoreEntitySet="v_app_noti">
+          <ScalarProperty Name="notiID" ColumnName="notiID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="Device_token" ColumnName="Device_token" />
+          <ScalarProperty Name="noti_sound" ColumnName="noti_sound" />
+          <ScalarProperty Name="Noti_title" ColumnName="Noti_title" />
+          <ScalarProperty Name="Noti_body" ColumnName="Noti_body" />
+          <ScalarProperty Name="Noti_link" ColumnName="Noti_link" />
+          <ScalarProperty Name="noti_click_ation" ColumnName="noti_click_ation" />
+          <ScalarProperty Name="noti_status" ColumnName="noti_status" />
+          <ScalarProperty Name="noti_screen" ColumnName="noti_screen" />
+          <ScalarProperty Name="noti_message" ColumnName="noti_message" />
+          <ScalarProperty Name="noti_ids" ColumnName="noti_ids" />
+          <ScalarProperty Name="sendFrom" ColumnName="sendFrom" />
+          <ScalarProperty Name="date_send" ColumnName="date_send" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_app_permission">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_app_permission">
+        <MappingFragment StoreEntitySet="v_app_permission">
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="app_permissionName" ColumnName="app_permissionName" />
+          <ScalarProperty Name="app_view" ColumnName="app_view" />
+          <ScalarProperty Name="app_add" ColumnName="app_add" />
+          <ScalarProperty Name="app_edit" ColumnName="app_edit" />
+          <ScalarProperty Name="app_action" ColumnName="app_action" />
+          <ScalarProperty Name="CountItem" ColumnName="CountItem" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="app_del" ColumnName="app_del" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_approved">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_approved">
+        <MappingFragment StoreEntitySet="v_approved">
+          <ScalarProperty Name="leaveApproveID" ColumnName="leaveApproveID" />
+          <ScalarProperty Name="leaveApproveNo" ColumnName="leaveApproveNo" />
+          <ScalarProperty Name="leaveRequestID" ColumnName="leaveRequestID" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="leaveType" ColumnName="leaveType" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="leaveRequestNo" ColumnName="leaveRequestNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_dept_unit_employee">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_dept_unit_employee">
+        <MappingFragment StoreEntitySet="v_dept_unit_employee">
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="nickName1" ColumnName="nickName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="nickName2" ColumnName="nickName2" />
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_email_noti">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_email_noti">
+        <MappingFragment StoreEntitySet="v_email_noti">
+          <ScalarProperty Name="emailID" ColumnName="emailID" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="email_address" ColumnName="email_address" />
+          <ScalarProperty Name="email_subject" ColumnName="email_subject" />
+          <ScalarProperty Name="emil_body" ColumnName="emil_body" />
+          <ScalarProperty Name="sendFrom" ColumnName="sendFrom" />
+          <ScalarProperty Name="date_send" ColumnName="date_send" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_emp_leave">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_emp_leave">
+        <MappingFragment StoreEntitySet="v_emp_leave">
+          <ScalarProperty Name="leaveRequestID" ColumnName="leaveRequestID" />
+          <ScalarProperty Name="leaveRequestNo" ColumnName="leaveRequestNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+          <ScalarProperty Name="leaveDay" ColumnName="leaveDay" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="amountDay" ColumnName="amountDay" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_emp_ot">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_emp_ot">
+        <MappingFragment StoreEntitySet="v_emp_ot">
+          <ScalarProperty Name="otRequestID" ColumnName="otRequestID" />
+          <ScalarProperty Name="otRequestNo" ColumnName="otRequestNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="otTypeID" ColumnName="otTypeID" />
+          <ScalarProperty Name="otTypeText" ColumnName="otTypeText" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="otStartTime" ColumnName="otStartTime" />
+          <ScalarProperty Name="otEndTime" ColumnName="otEndTime" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="fileAttached" ColumnName="fileAttached" />
+          <ScalarProperty Name="managerID" ColumnName="managerID" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="otSettingID" ColumnName="otSettingID" />
+          <ScalarProperty Name="startTime" ColumnName="startTime" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="qtyHour" ColumnName="qtyHour" />
+          <ScalarProperty Name="minusHour" ColumnName="minusHour" />
+          <ScalarProperty Name="otSettingValues" ColumnName="otSettingValues" />
+          <ScalarProperty Name="payment" ColumnName="payment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_empDob">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_empDob">
+        <MappingFragment StoreEntitySet="v_empDob">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empEmail" ColumnName="empEmail" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="genderText" ColumnName="genderText" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="companyname1" ColumnName="companyname1" />
+          <ScalarProperty Name="companyname2" ColumnName="companyname2" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="ages" ColumnName="ages" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_empIncome">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_empIncome">
+        <MappingFragment StoreEntitySet="v_empIncome">
+          <ScalarProperty Name="empIncome" ColumnName="empIncome" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="incomTypeID" ColumnName="incomTypeID" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_empInfo">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_empInfo">
+        <MappingFragment StoreEntitySet="v_empInfo">
+          <ScalarProperty Name="empInfoID" ColumnName="empInfoID" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="empLevelID" ColumnName="empLevelID" />
+          <ScalarProperty Name="hireDay" ColumnName="hireDay" />
+          <ScalarProperty Name="empGroupID" ColumnName="empGroupID" />
+          <ScalarProperty Name="shiftWorkingID" ColumnName="shiftWorkingID" />
+          <ScalarProperty Name="assignmentLocation" ColumnName="assignmentLocation" />
+          <ScalarProperty Name="currentAddress" ColumnName="currentAddress" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="costCenterID" ColumnName="costCenterID" />
+          <ScalarProperty Name="costCenterCode" ColumnName="costCenterCode" />
+          <ScalarProperty Name="costCenterText" ColumnName="costCenterText" />
+          <ScalarProperty Name="workingStatusID" ColumnName="workingStatusID" />
+          <ScalarProperty Name="empTypeID" ColumnName="empTypeID" />
+          <ScalarProperty Name="TaxTypeID" ColumnName="TaxTypeID" />
+          <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+          <ScalarProperty Name="actingDate" ColumnName="actingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_employeeLeavedetails">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_employeeLeavedetails">
+        <MappingFragment StoreEntitySet="v_employeeLeavedetails">
+          <ScalarProperty Name="leaveRequestNo" ColumnName="leaveRequestNo" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="leavestartdate" ColumnName="leavestartdate" />
+          <ScalarProperty Name="leaveenddate" ColumnName="leaveenddate" />
+          <ScalarProperty Name="returndate" ColumnName="returndate" />
+          <ScalarProperty Name="leaveDay" ColumnName="leaveDay" />
+          <ScalarProperty Name="leaveTypeName1" ColumnName="leaveTypeName1" />
+          <ScalarProperty Name="leaveTypeName2" ColumnName="leaveTypeName2" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="n_startdate" ColumnName="n_startdate" />
+          <ScalarProperty Name="n_enddate" ColumnName="n_enddate" />
+          <ScalarProperty Name="n_returndate" ColumnName="n_returndate" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="textstatus" ColumnName="textstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_employess">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_employess">
+        <MappingFragment StoreEntitySet="v_employess">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="nickName1" ColumnName="nickName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="nickName2" ColumnName="nickName2" />
+          <ScalarProperty Name="genderID" ColumnName="genderID" />
+          <ScalarProperty Name="genderText" ColumnName="genderText" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="fstatusID" ColumnName="fstatusID" />
+          <ScalarProperty Name="fstatusText" ColumnName="fstatusText" />
+          <ScalarProperty Name="nationalityID" ColumnName="nationalityID" />
+          <ScalarProperty Name="nationalityText" ColumnName="nationalityText" />
+          <ScalarProperty Name="ethnicID" ColumnName="ethnicID" />
+          <ScalarProperty Name="ethnicName1" ColumnName="ethnicName1" />
+          <ScalarProperty Name="ethnicName2" ColumnName="ethnicName2" />
+          <ScalarProperty Name="IDCrad" ColumnName="IDCrad" />
+          <ScalarProperty Name="passport" ColumnName="passport" />
+          <ScalarProperty Name="empMobile" ColumnName="empMobile" />
+          <ScalarProperty Name="empEmail" ColumnName="empEmail" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="assignmentLocation" ColumnName="assignmentLocation" />
+          <ScalarProperty Name="currentAddress" ColumnName="currentAddress" />
+          <ScalarProperty Name="costCenterID" ColumnName="costCenterID" />
+          <ScalarProperty Name="costCenterCode" ColumnName="costCenterCode" />
+          <ScalarProperty Name="costCenterText" ColumnName="costCenterText" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="empLevelID" ColumnName="empLevelID" />
+          <ScalarProperty Name="hireDay" ColumnName="hireDay" />
+          <ScalarProperty Name="empGroupID" ColumnName="empGroupID" />
+          <ScalarProperty Name="shiftWorkingID" ColumnName="shiftWorkingID" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="religionID" ColumnName="religionID" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="district_id1" ColumnName="district_id1" />
+          <ScalarProperty Name="Pro_ID" ColumnName="Pro_ID" />
+          <ScalarProperty Name="empPhoto" ColumnName="empPhoto" />
+          <ScalarProperty Name="paymentPercent" ColumnName="paymentPercent" />
+          <ScalarProperty Name="spName" ColumnName="spName" />
+          <ScalarProperty Name="spMobile" ColumnName="spMobile" />
+          <ScalarProperty Name="spEmail" ColumnName="spEmail" />
+          <ScalarProperty Name="spAddress" ColumnName="spAddress" />
+          <ScalarProperty Name="spJob" ColumnName="spJob" />
+          <ScalarProperty Name="spJobAddress" ColumnName="spJobAddress" />
+          <ScalarProperty Name="workingStatusID" ColumnName="workingStatusID" />
+          <ScalarProperty Name="empTypeID" ColumnName="empTypeID" />
+          <ScalarProperty Name="empInfoID" ColumnName="empInfoID" />
+          <ScalarProperty Name="TaxTypeID" ColumnName="TaxTypeID" />
+          <ScalarProperty Name="actingDate" ColumnName="actingDate" />
+          <ScalarProperty Name="companyCode" ColumnName="companyCode" />
+          <ScalarProperty Name="companyName1" ColumnName="companyName1" />
+          <ScalarProperty Name="companyName2" ColumnName="companyName2" />
+          <ScalarProperty Name="empDayID" ColumnName="empDayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_empOT">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_empOT">
+        <MappingFragment StoreEntitySet="v_empOT">
+          <ScalarProperty Name="otRequestID" ColumnName="otRequestID" />
+          <ScalarProperty Name="otRequestNo" ColumnName="otRequestNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="otTypeID" ColumnName="otTypeID" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="otStartTime" ColumnName="otStartTime" />
+          <ScalarProperty Name="otEndTime" ColumnName="otEndTime" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="fileAttached" ColumnName="fileAttached" />
+          <ScalarProperty Name="managerID" ColumnName="managerID" />
+          <ScalarProperty Name="otTypeText" ColumnName="otTypeText" />
+          <ScalarProperty Name="otSettingID" ColumnName="otSettingID" />
+          <ScalarProperty Name="startTime" ColumnName="startTime" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="rateCode" ColumnName="rateCode" />
+          <ScalarProperty Name="otSettingType" ColumnName="otSettingType" />
+          <ScalarProperty Name="ots_startTime" ColumnName="ots_startTime" />
+          <ScalarProperty Name="ots_endTime" ColumnName="ots_endTime" />
+          <ScalarProperty Name="minusHour" ColumnName="minusHour" />
+          <ScalarProperty Name="otSettingValues" ColumnName="otSettingValues" />
+          <ScalarProperty Name="qtyHour" ColumnName="qtyHour" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_empPaymentRecord">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_empPaymentRecord">
+        <MappingFragment StoreEntitySet="v_empPaymentRecord">
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="empEmail" ColumnName="empEmail" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="monthCal" ColumnName="monthCal" />
+          <ScalarProperty Name="YearCal" ColumnName="YearCal" />
+          <ScalarProperty Name="EmpWorkingDay" ColumnName="EmpWorkingDay" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="strDate" ColumnName="strDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="nStrDate" ColumnName="nStrDate" />
+          <ScalarProperty Name="nEnddate" ColumnName="nEnddate" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="endDateYM" ColumnName="endDateYM" />
+          <ScalarProperty Name="deductTaxs" ColumnName="deductTaxs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_fingerCheck">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_fingerCheck">
+        <MappingFragment StoreEntitySet="v_fingerCheck">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="shift1_wd" ColumnName="shift1_wd" />
+          <ScalarProperty Name="shift2_wd" ColumnName="shift2_wd" />
+          <ScalarProperty Name="shift3_wd" ColumnName="shift3_wd" />
+          <ScalarProperty Name="total_wd" ColumnName="total_wd" />
+          <ScalarProperty Name="total_oth" ColumnName="total_oth" />
+          <ScalarProperty Name="mgrid" ColumnName="mgrid" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="status_text" ColumnName="status_text" />
+          <ScalarProperty Name="shift2_wd_sun" ColumnName="shift2_wd_sun" />
+          <ScalarProperty Name="hift2_oth_sun" ColumnName="hift2_oth_sun" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_leaveBalace">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_leaveBalace">
+        <MappingFragment StoreEntitySet="v_leaveBalace">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empGroupID" ColumnName="empGroupID" />
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+          <ScalarProperty Name="amountDay" ColumnName="amountDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_loan">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_loan">
+        <MappingFragment StoreEntitySet="v_loan">
+          <ScalarProperty Name="loanID" ColumnName="loanID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="amountLoan" ColumnName="amountLoan" />
+          <ScalarProperty Name="loanMonth" ColumnName="loanMonth" />
+          <ScalarProperty Name="loanPercent" ColumnName="loanPercent" />
+          <ScalarProperty Name="loanStart" ColumnName="loanStart" />
+          <ScalarProperty Name="loanEnd" ColumnName="loanEnd" />
+          <ScalarProperty Name="LoanReason" ColumnName="LoanReason" />
+          <ScalarProperty Name="monthBL" ColumnName="monthBL" />
+          <ScalarProperty Name="acc_balance" ColumnName="acc_balance" />
+          <ScalarProperty Name="monthlyPay" ColumnName="monthlyPay" />
+          <ScalarProperty Name="loan_incen" ColumnName="loan_incen" />
+          <ScalarProperty Name="pay_amount" ColumnName="pay_amount" />
+          <ScalarProperty Name="paidStatus" ColumnName="paidStatus" />
+          <ScalarProperty Name="payDate" ColumnName="payDate" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="loanDetailID" ColumnName="loanDetailID" />
+          <ScalarProperty Name="payLoadStatus" ColumnName="payLoadStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_myRequest">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_myRequest">
+        <MappingFragment StoreEntitySet="v_myRequest">
+          <ScalarProperty Name="leaveRequestID" ColumnName="leaveRequestID" />
+          <ScalarProperty Name="leaveRequestNo" ColumnName="leaveRequestNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="requestType" ColumnName="requestType" />
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+          <ScalarProperty Name="leaveTypeCode" ColumnName="leaveTypeCode" />
+          <ScalarProperty Name="leaveTypeName1" ColumnName="leaveTypeName1" />
+          <ScalarProperty Name="leaveTypeName2" ColumnName="leaveTypeName2" />
+          <ScalarProperty Name="leaveDay" ColumnName="leaveDay" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="returnDate" ColumnName="returnDate" />
+          <ScalarProperty Name="amountDay" ColumnName="amountDay" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="mgrempTitleName" ColumnName="mgrempTitleName" />
+          <ScalarProperty Name="mgrfirstName1" ColumnName="mgrfirstName1" />
+          <ScalarProperty Name="mgrlastName1" ColumnName="mgrlastName1" />
+          <ScalarProperty Name="mgrfirstName2" ColumnName="mgrfirstName2" />
+          <ScalarProperty Name="mgrlastName2" ColumnName="mgrlastName2" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="managerID" ColumnName="managerID" />
+          <ScalarProperty Name="delegateEmpID" ColumnName="delegateEmpID" />
+          <ScalarProperty Name="respempTitleName" ColumnName="respempTitleName" />
+          <ScalarProperty Name="respfirstName1" ColumnName="respfirstName1" />
+          <ScalarProperty Name="resplastName1" ColumnName="resplastName1" />
+          <ScalarProperty Name="respfirstName2" ColumnName="respfirstName2" />
+          <ScalarProperty Name="resplastName2" ColumnName="resplastName2" />
+          <ScalarProperty Name="fileAttached" ColumnName="fileAttached" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="status_text" ColumnName="status_text" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="userAddempTitleName" ColumnName="userAddempTitleName" />
+          <ScalarProperty Name="userAddfirstName1" ColumnName="userAddfirstName1" />
+          <ScalarProperty Name="userAddlastName1" ColumnName="userAddlastName1" />
+          <ScalarProperty Name="userAddfirstName2" ColumnName="userAddfirstName2" />
+          <ScalarProperty Name="userAddlastName2" ColumnName="userAddlastName2" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_noti">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_noti">
+        <MappingFragment StoreEntitySet="v_noti">
+          <ScalarProperty Name="notiID" ColumnName="notiID" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="CountItem" ColumnName="CountItem" />
+          <ScalarProperty Name="userView" ColumnName="userView" />
+          <ScalarProperty Name="OldValues" ColumnName="OldValues" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_paymentReccordDetail">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_paymentReccordDetail">
+        <MappingFragment StoreEntitySet="v_paymentReccordDetail">
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="costCenterCode" ColumnName="costCenterCode" />
+          <ScalarProperty Name="costCenterText" ColumnName="costCenterText" />
+          <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="grossSalaryBenefits" ColumnName="grossSalaryBenefits" />
+          <ScalarProperty Name="advanceBonus" ColumnName="advanceBonus" />
+          <ScalarProperty Name="deductEmpSSO" ColumnName="deductEmpSSO" />
+          <ScalarProperty Name="deductTaxs" ColumnName="deductTaxs" />
+          <ScalarProperty Name="grossIncome" ColumnName="grossIncome" />
+          <ScalarProperty Name="deductFHFdeductOther" ColumnName="deductFHFdeductOther" />
+          <ScalarProperty Name="deduct_SLDRT_fun" ColumnName="deduct_SLDRT_fun" />
+          <ScalarProperty Name="canteenNET" ColumnName="canteenNET" />
+          <ScalarProperty Name="severanceBook" ColumnName="severanceBook" />
+          <ScalarProperty Name="NetToPay" ColumnName="NetToPay" />
+          <ScalarProperty Name="employerSSO" ColumnName="employerSSO" />
+          <ScalarProperty Name="NetToPaymaster" ColumnName="NetToPaymaster" />
+          <ScalarProperty Name="Variance" ColumnName="Variance" />
+          <ScalarProperty Name="monthCal" ColumnName="monthCal" />
+          <ScalarProperty Name="YearCal" ColumnName="YearCal" />
+          <ScalarProperty Name="bankName" ColumnName="bankName" />
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_paymentRecord">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_paymentRecord">
+        <MappingFragment StoreEntitySet="v_paymentRecord">
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="costCenterCode" ColumnName="costCenterCode" />
+          <ScalarProperty Name="costCenterText" ColumnName="costCenterText" />
+          <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="grossSalaryBenefits" ColumnName="grossSalaryBenefits" />
+          <ScalarProperty Name="advanceBonus" ColumnName="advanceBonus" />
+          <ScalarProperty Name="deductEmpSSO" ColumnName="deductEmpSSO" />
+          <ScalarProperty Name="deductTaxs" ColumnName="deductTaxs" />
+          <ScalarProperty Name="grossIncome" ColumnName="grossIncome" />
+          <ScalarProperty Name="deductFHFdeductOther" ColumnName="deductFHFdeductOther" />
+          <ScalarProperty Name="deduct_SLDRT_fun" ColumnName="deduct_SLDRT_fun" />
+          <ScalarProperty Name="canteenNET" ColumnName="canteenNET" />
+          <ScalarProperty Name="severanceBook" ColumnName="severanceBook" />
+          <ScalarProperty Name="NetToPay" ColumnName="NetToPay" />
+          <ScalarProperty Name="employerSSO" ColumnName="employerSSO" />
+          <ScalarProperty Name="NetToPaymaster" ColumnName="NetToPaymaster" />
+          <ScalarProperty Name="Variance" ColumnName="Variance" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="monthCal" ColumnName="monthCal" />
+          <ScalarProperty Name="YearCal" ColumnName="YearCal" />
+          <ScalarProperty Name="bankName" ColumnName="bankName" />
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_paymentYearmonth">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_paymentYearmonth">
+        <MappingFragment StoreEntitySet="v_paymentYearmonth">
+          <ScalarProperty Name="strDate" ColumnName="strDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="yearmonth" ColumnName="yearmonth" />
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_publicHoliday">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_publicHoliday">
+        <MappingFragment StoreEntitySet="v_publicHoliday">
+          <ScalarProperty Name="publicHolidayID" ColumnName="publicHolidayID" />
+          <ScalarProperty Name="publicHoliday" ColumnName="publicHoliday" />
+          <ScalarProperty Name="publicHolidayName1" ColumnName="publicHolidayName1" />
+          <ScalarProperty Name="publicHolidayName2" ColumnName="publicHolidayName2" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="MonthHoliday" ColumnName="MonthHoliday" />
+          <ScalarProperty Name="YearHoliday" ColumnName="YearHoliday" />
+          <ScalarProperty Name="MonthHolidayText" ColumnName="MonthHolidayText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_reportOTDetailsbyEmp">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_reportOTDetailsbyEmp">
+        <MappingFragment StoreEntitySet="v_reportOTDetailsbyEmp">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="otRequestID" ColumnName="otRequestID" />
+          <ScalarProperty Name="otRequestNo" ColumnName="otRequestNo" />
+          <ScalarProperty Name="otSettingType" ColumnName="otSettingType" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="stdatenoformat" ColumnName="stdatenoformat" />
+          <ScalarProperty Name="startTime" ColumnName="startTime" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="qtyHour" ColumnName="qtyHour" />
+          <ScalarProperty Name="otSettingValues" ColumnName="otSettingValues" />
+          <ScalarProperty Name="rateCode" ColumnName="rateCode" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="otTypeText" ColumnName="otTypeText" />
+          <ScalarProperty Name="createdatetime" ColumnName="createdatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_request_all">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_request_all">
+        <MappingFragment StoreEntitySet="v_request_all">
+          <ScalarProperty Name="leaveRequestID" ColumnName="leaveRequestID" />
+          <ScalarProperty Name="leaveRequestNo" ColumnName="leaveRequestNo" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="delegateEmpID" ColumnName="delegateEmpID" />
+          <ScalarProperty Name="fileAttached" ColumnName="fileAttached" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="status_text" ColumnName="status_text" />
+          <ScalarProperty Name="empPhoto" ColumnName="empPhoto" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="requestType" ColumnName="requestType" />
+          <ScalarProperty Name="empMobile" ColumnName="empMobile" />
+          <ScalarProperty Name="empEmail" ColumnName="empEmail" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="managerID" ColumnName="managerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_salary_list">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_salary_list">
+        <MappingFragment StoreEntitySet="v_salary_list">
+          <ScalarProperty Name="salaryID" ColumnName="salaryID" />
+          <ScalarProperty Name="salaryDate" ColumnName="salaryDate" />
+          <ScalarProperty Name="salaryMonth" ColumnName="salaryMonth" />
+          <ScalarProperty Name="salaryYear" ColumnName="salaryYear" />
+          <ScalarProperty Name="generateDate" ColumnName="generateDate" />
+          <ScalarProperty Name="ownerID" ColumnName="ownerID" />
+          <ScalarProperty Name="ApproveDate" ColumnName="ApproveDate" />
+          <ScalarProperty Name="mgrID" ColumnName="mgrID" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="fingerUpload" ColumnName="fingerUpload" />
+          <ScalarProperty Name="approveFinger" ColumnName="approveFinger" />
+          <ScalarProperty Name="leaveDay" ColumnName="leaveDay" />
+          <ScalarProperty Name="oth" ColumnName="oth" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="mgrF1" ColumnName="mgrF1" />
+          <ScalarProperty Name="mgrL1" ColumnName="mgrL1" />
+          <ScalarProperty Name="mgrF2" ColumnName="mgrF2" />
+          <ScalarProperty Name="mgrL2" ColumnName="mgrL2" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_SLDRT_loan">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_SLDRT_loan">
+        <MappingFragment StoreEntitySet="v_SLDRT_loan">
+          <ScalarProperty Name="SLDRT_loanID" ColumnName="SLDRT_loanID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="amountLoan" ColumnName="amountLoan" />
+          <ScalarProperty Name="loanMonth" ColumnName="loanMonth" />
+          <ScalarProperty Name="loanPercent" ColumnName="loanPercent" />
+          <ScalarProperty Name="loanStart" ColumnName="loanStart" />
+          <ScalarProperty Name="loanEnd" ColumnName="loanEnd" />
+          <ScalarProperty Name="LoanReason" ColumnName="LoanReason" />
+          <ScalarProperty Name="monthBL" ColumnName="monthBL" />
+          <ScalarProperty Name="acc_balance" ColumnName="acc_balance" />
+          <ScalarProperty Name="monthlyPay" ColumnName="monthlyPay" />
+          <ScalarProperty Name="loan_incen" ColumnName="loan_incen" />
+          <ScalarProperty Name="pay_amount" ColumnName="pay_amount" />
+          <ScalarProperty Name="paidStatus" ColumnName="paidStatus" />
+          <ScalarProperty Name="payDate" ColumnName="payDate" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="SLDRT_loanDetailID" ColumnName="SLDRT_loanDetailID" />
+          <ScalarProperty Name="payLoadStatus" ColumnName="payLoadStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_sumEmpLeave">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_sumEmpLeave">
+        <MappingFragment StoreEntitySet="v_sumEmpLeave">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="sumDayUse" ColumnName="sumDayUse" />
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_sumEmpLeaveName">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_sumEmpLeaveName">
+        <MappingFragment StoreEntitySet="v_sumEmpLeaveName">
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empGroupID" ColumnName="empGroupID" />
+          <ScalarProperty Name="amountDay" ColumnName="amountDay" />
+          <ScalarProperty Name="leaveTypeID" ColumnName="leaveTypeID" />
+          <ScalarProperty Name="leaveTypeCode" ColumnName="leaveTypeCode" />
+          <ScalarProperty Name="leaveTypeName1" ColumnName="leaveTypeName1" />
+          <ScalarProperty Name="leaveTypeName2" ColumnName="leaveTypeName2" />
+          <ScalarProperty Name="sumDayUse" ColumnName="sumDayUse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_unit">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_unit">
+        <MappingFragment StoreEntitySet="v_unit">
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="p1" ColumnName="p1" />
+          <ScalarProperty Name="p2" ColumnName="p2" />
+          <ScalarProperty Name="pcode" ColumnName="pcode" />
+          <ScalarProperty Name="status_ID" ColumnName="status_ID" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_upload_finger">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_upload_finger">
+        <MappingFragment StoreEntitySet="v_upload_finger">
+          <ScalarProperty Name="workdayID" ColumnName="workdayID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="workday" ColumnName="workday" />
+          <ScalarProperty Name="workmonth" ColumnName="workmonth" />
+          <ScalarProperty Name="workyear" ColumnName="workyear" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="wdName" ColumnName="wdName" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="shift1_timeIn" ColumnName="shift1_timeIn" />
+          <ScalarProperty Name="shift1_timOut" ColumnName="shift1_timOut" />
+          <ScalarProperty Name="shift1_wd" ColumnName="shift1_wd" />
+          <ScalarProperty Name="shift2_timeIn" ColumnName="shift2_timeIn" />
+          <ScalarProperty Name="shift2_timOut" ColumnName="shift2_timOut" />
+          <ScalarProperty Name="shift2_wd" ColumnName="shift2_wd" />
+          <ScalarProperty Name="shift3_timeIn" ColumnName="shift3_timeIn" />
+          <ScalarProperty Name="shift3_timOut" ColumnName="shift3_timOut" />
+          <ScalarProperty Name="shift3_wd" ColumnName="shift3_wd" />
+          <ScalarProperty Name="total_wd" ColumnName="total_wd" />
+          <ScalarProperty Name="total_wh" ColumnName="total_wh" />
+          <ScalarProperty Name="total_oth" ColumnName="total_oth" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="GetDayW" ColumnName="GetDayW" />
+          <ScalarProperty Name="shiftstartDay" ColumnName="shiftstartDay" />
+          <ScalarProperty Name="shiftendDay" ColumnName="shiftendDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_user_permission">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_user_permission">
+        <MappingFragment StoreEntitySet="v_user_permission">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="appTokenKey" ColumnName="appTokenKey" />
+          <ScalarProperty Name="webTokenKey" ColumnName="webTokenKey" />
+          <ScalarProperty Name="Device_token" ColumnName="Device_token" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="app_permissionId" ColumnName="app_permissionId" />
+          <ScalarProperty Name="app_view" ColumnName="app_view" />
+          <ScalarProperty Name="app_add" ColumnName="app_add" />
+          <ScalarProperty Name="app_edit" ColumnName="app_edit" />
+          <ScalarProperty Name="app_action" ColumnName="app_action" />
+          <ScalarProperty Name="app_del" ColumnName="app_del" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_users">
+      <EntityTypeMapping TypeName="db_hrmsModel.v_users">
+        <MappingFragment StoreEntitySet="v_users">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="expDate" ColumnName="expDate" />
+          <ScalarProperty Name="firstName1" ColumnName="firstName1" />
+          <ScalarProperty Name="lastName1" ColumnName="lastName1" />
+          <ScalarProperty Name="nickName1" ColumnName="nickName1" />
+          <ScalarProperty Name="firstName2" ColumnName="firstName2" />
+          <ScalarProperty Name="lastName2" ColumnName="lastName2" />
+          <ScalarProperty Name="nickName2" ColumnName="nickName2" />
+          <ScalarProperty Name="genderText" ColumnName="genderText" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+          <ScalarProperty Name="appTokenKey" ColumnName="appTokenKey" />
+          <ScalarProperty Name="webTokenKey" ColumnName="webTokenKey" />
+          <ScalarProperty Name="Device_token" ColumnName="Device_token" />
+          <ScalarProperty Name="sendNoti" ColumnName="sendNoti" />
+          <ScalarProperty Name="empEmail" ColumnName="empEmail" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitName2" ColumnName="unitName2" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="companyCode" ColumnName="companyCode" />
+          <ScalarProperty Name="companyName1" ColumnName="companyName1" />
+          <ScalarProperty Name="companyName2" ColumnName="companyName2" />
+          <ScalarProperty Name="companyPhone" ColumnName="companyPhone" />
+          <ScalarProperty Name="companyFax" ColumnName="companyFax" />
+          <ScalarProperty Name="companyWebsite" ColumnName="companyWebsite" />
+          <ScalarProperty Name="companyFaebook" ColumnName="companyFaebook" />
+          <ScalarProperty Name="empMobile" ColumnName="empMobile" />
+          <ScalarProperty Name="empPhoto" ColumnName="empPhoto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="p_approve_finger" FunctionName="db_hrmsModel.Store.p_approve_finger" />
+    <FunctionImportMapping FunctionImportName="p_ApproveRequest" FunctionName="db_hrmsModel.Store.p_ApproveRequest" />
+    <FunctionImportMapping FunctionImportName="P_clear_workingday" FunctionName="db_hrmsModel.Store.P_clear_workingday" />
+    <FunctionImportMapping FunctionImportName="p_i_additionalDeduction" FunctionName="db_hrmsModel.Store.p_i_additionalDeduction" />
+    <FunctionImportMapping FunctionImportName="p_i_additionalPay" FunctionName="db_hrmsModel.Store.p_i_additionalPay" />
+    <FunctionImportMapping FunctionImportName="p_i_advPay" FunctionName="db_hrmsModel.Store.p_i_advPay" />
+    <FunctionImportMapping FunctionImportName="p_i_checkworkday" FunctionName="db_hrmsModel.Store.p_i_checkworkday" />
+    <FunctionImportMapping FunctionImportName="p_i_fhfPay" FunctionName="db_hrmsModel.Store.p_i_fhfPay" />
+    <FunctionImportMapping FunctionImportName="p_i_finger" FunctionName="db_hrmsModel.Store.p_i_finger" />
+    <FunctionImportMapping FunctionImportName="p_i_incentive" FunctionName="db_hrmsModel.Store.p_i_incentive" />
+    <FunctionImportMapping FunctionImportName="p_i_shiftwork" FunctionName="db_hrmsModel.Store.p_i_shiftwork" />
+    <FunctionImportMapping FunctionImportName="p_i_uploadBonus" FunctionName="db_hrmsModel.Store.p_i_uploadBonus" />
+    <FunctionImportMapping FunctionImportName="p_InsertLeaveRequest" FunctionName="db_hrmsModel.Store.p_InsertLeaveRequest" />
+    <FunctionImportMapping FunctionImportName="p_InsertRequestOT" FunctionName="db_hrmsModel.Store.p_InsertRequestOT" />
+    <FunctionImportMapping FunctionImportName="p_InsertRequestOTMobile" FunctionName="db_hrmsModel.Store.p_InsertRequestOTMobile" />
+    <FunctionImportMapping FunctionImportName="p_iu_loan" FunctionName="db_hrmsModel.Store.p_iu_loan" />
+    <FunctionImportMapping FunctionImportName="p_iu_sldrtloan" FunctionName="db_hrmsModel.Store.p_iu_sldrtloan" />
+    <FunctionImportMapping FunctionImportName="p_new_upload" FunctionName="db_hrmsModel.Store.p_new_upload" />
+    <FunctionImportMapping FunctionImportName="p_noti" FunctionName="db_hrmsModel.Store.p_noti" />
+    <FunctionImportMapping FunctionImportName="p_payment_Cal_TA" FunctionName="db_hrmsModel.Store.p_payment_Cal_TA" />
+    <FunctionImportMapping FunctionImportName="p_payment_Cal_TA_old" FunctionName="db_hrmsModel.Store.p_payment_Cal_TA_old" />
+    <FunctionImportMapping FunctionImportName="p_Payslip" FunctionName="db_hrmsModel.Store.p_Payslip">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="db_hrmsModel.p_Payslip_Result">
+          <ScalarProperty Name="SalaryID" ColumnName="SalaryID" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empTitleName" ColumnName="empTitleName" />
+          <ScalarProperty Name="empEmail" ColumnName="empEmail" />
+          <ScalarProperty Name="firstname1" ColumnName="firstname1" />
+          <ScalarProperty Name="lastname1" ColumnName="lastname1" />
+          <ScalarProperty Name="firstname2" ColumnName="firstname2" />
+          <ScalarProperty Name="lastname2" ColumnName="lastname2" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="deptName2" ColumnName="deptName2" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="unitname2" ColumnName="unitname2" />
+          <ScalarProperty Name="monthCal" ColumnName="monthCal" />
+          <ScalarProperty Name="yearCal" ColumnName="yearCal" />
+          <ScalarProperty Name="empworkingDay" ColumnName="empworkingDay" />
+          <ScalarProperty Name="empPosition" ColumnName="empPosition" />
+          <ScalarProperty Name="empTypeText" ColumnName="empTypeText" />
+          <ScalarProperty Name="basicSalary" ColumnName="basicSalary" />
+          <ScalarProperty Name="strDate" ColumnName="strDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="nStrDate" ColumnName="nStrDate" />
+          <ScalarProperty Name="nEnddate" ColumnName="nEnddate" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="workingmonth" ColumnName="workingmonth" />
+          <ScalarProperty Name="costCenterCode" ColumnName="costCenterCode" />
+          <ScalarProperty Name="costcentertext" ColumnName="costcentertext" />
+          <ScalarProperty Name="shiftincomeA" ColumnName="shiftincomeA" />
+          <ScalarProperty Name="shiftincomeB" ColumnName="shiftincomeB" />
+          <ScalarProperty Name="shiftincomeC" ColumnName="shiftincomeC" />
+          <ScalarProperty Name="OT1" ColumnName="OT1" />
+          <ScalarProperty Name="OT2" ColumnName="OT2" />
+          <ScalarProperty Name="OT3" ColumnName="OT3" />
+          <ScalarProperty Name="OT4" ColumnName="OT4" />
+          <ScalarProperty Name="OT5" ColumnName="OT5" />
+          <ScalarProperty Name="SumOT" ColumnName="SumOT" />
+          <ScalarProperty Name="leavedays" ColumnName="leavedays" />
+          <ScalarProperty Name="qyears" ColumnName="qyears" />
+          <ScalarProperty Name="sickleavedays" ColumnName="sickleavedays" />
+          <ScalarProperty Name="allowance_phone" ColumnName="allowance_phone" />
+          <ScalarProperty Name="allowance_fuel" ColumnName="allowance_fuel" />
+          <ScalarProperty Name="allowance_housing" ColumnName="allowance_housing" />
+          <ScalarProperty Name="allowance_car" ColumnName="allowance_car" />
+          <ScalarProperty Name="totalAllowance" ColumnName="totalAllowance" />
+          <ScalarProperty Name="TotalTaxpaid" ColumnName="TotalTaxpaid" />
+          <ScalarProperty Name="EmployeeSSO" ColumnName="EmployeeSSO" />
+          <ScalarProperty Name="deductFHF" ColumnName="deductFHF" />
+          <ScalarProperty Name="SLDRTFund" ColumnName="SLDRTFund" />
+          <ScalarProperty Name="severanceBook" ColumnName="severanceBook" />
+          <ScalarProperty Name="grossVariance" ColumnName="grossVariance" />
+          <ScalarProperty Name="Advancebonus" ColumnName="Advancebonus" />
+          <ScalarProperty Name="OtherAllowance" ColumnName="OtherAllowance" />
+          <ScalarProperty Name="NetToPay" ColumnName="NetToPay" />
+          <ScalarProperty Name="annualeavetotal" ColumnName="annualeavetotal" />
+          <ScalarProperty Name="annualeaveused" ColumnName="annualeaveused" />
+          <ScalarProperty Name="annualeavebalance" ColumnName="annualeavebalance" />
+          <ScalarProperty Name="empDayID" ColumnName="empDayID" />
+          <ScalarProperty Name="empType" ColumnName="empType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="p_reportOTdetails" FunctionName="db_hrmsModel.Store.p_reportOTdetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="db_hrmsModel.p_reportOTdetails_Result">
+          <ScalarProperty Name="empid" ColumnName="empid" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="emptitlename" ColumnName="emptitlename" />
+          <ScalarProperty Name="firstname1" ColumnName="firstname1" />
+          <ScalarProperty Name="lastname1" ColumnName="lastname1" />
+          <ScalarProperty Name="firstname2" ColumnName="firstname2" />
+          <ScalarProperty Name="lastname2" ColumnName="lastname2" />
+          <ScalarProperty Name="unitname1" ColumnName="unitname1" />
+          <ScalarProperty Name="unitname2" ColumnName="unitname2" />
+          <ScalarProperty Name="deptname1" ColumnName="deptname1" />
+          <ScalarProperty Name="deptname2" ColumnName="deptname2" />
+          <ScalarProperty Name="companyname1" ColumnName="companyname1" />
+          <ScalarProperty Name="companyname2" ColumnName="companyname2" />
+          <ScalarProperty Name="normal150" ColumnName="normal150" />
+          <ScalarProperty Name="normal200" ColumnName="normal200" />
+          <ScalarProperty Name="p250" ColumnName="p250" />
+          <ScalarProperty Name="p300" ColumnName="p300" />
+          <ScalarProperty Name="p350" ColumnName="p350" />
+          <ScalarProperty Name="ot150" ColumnName="ot150" />
+          <ScalarProperty Name="ot200" ColumnName="ot200" />
+          <ScalarProperty Name="ot250" ColumnName="ot250" />
+          <ScalarProperty Name="ot300" ColumnName="ot300" />
+          <ScalarProperty Name="ot3001" ColumnName="ot3001" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="p_RequestLeave_TA" FunctionName="db_hrmsModel.Store.p_RequestLeave_TA" />
+    <FunctionImportMapping FunctionImportName="p_RequestOT_TA" FunctionName="db_hrmsModel.Store.p_RequestOT_TA" />
+    <FunctionImportMapping FunctionImportName="p_s_emp_mgr" FunctionName="db_hrmsModel.Store.p_s_emp_mgr" />
+    <FunctionImportMapping FunctionImportName="p_s_uploadFiger" FunctionName="db_hrmsModel.Store.p_s_uploadFiger">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="db_hrmsModel.p_s_uploadFiger_Result">
+          <ScalarProperty Name="workdayID" ColumnName="workdayID" />
+          <ScalarProperty Name="transactionNo" ColumnName="transactionNo" />
+          <ScalarProperty Name="workday" ColumnName="workday" />
+          <ScalarProperty Name="workmonth" ColumnName="workmonth" />
+          <ScalarProperty Name="workyear" ColumnName="workyear" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="wdName" ColumnName="wdName" />
+          <ScalarProperty Name="statusText" ColumnName="statusText" />
+          <ScalarProperty Name="shift1_timeIn" ColumnName="shift1_timeIn" />
+          <ScalarProperty Name="shift1_timOut" ColumnName="shift1_timOut" />
+          <ScalarProperty Name="shift1_wd" ColumnName="shift1_wd" />
+          <ScalarProperty Name="shift2_timeIn" ColumnName="shift2_timeIn" />
+          <ScalarProperty Name="shift2_timOut" ColumnName="shift2_timOut" />
+          <ScalarProperty Name="shift2_wd" ColumnName="shift2_wd" />
+          <ScalarProperty Name="shift3_timeIn" ColumnName="shift3_timeIn" />
+          <ScalarProperty Name="shift3_timOut" ColumnName="shift3_timOut" />
+          <ScalarProperty Name="shift3_wd" ColumnName="shift3_wd" />
+          <ScalarProperty Name="total_wd" ColumnName="total_wd" />
+          <ScalarProperty Name="total_wh" ColumnName="total_wh" />
+          <ScalarProperty Name="total_oth" ColumnName="total_oth" />
+          <ScalarProperty Name="noted" ColumnName="noted" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="user_add" ColumnName="user_add" />
+          <ScalarProperty Name="date_add" ColumnName="date_add" />
+          <ScalarProperty Name="GetDayW" ColumnName="GetDayW" />
+          <ScalarProperty Name="shiftstartDay" ColumnName="shiftstartDay" />
+          <ScalarProperty Name="shiftendDay" ColumnName="shiftendDay" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="p_save_upload" FunctionName="db_hrmsModel.Store.p_save_upload" />
+    <FunctionImportMapping FunctionImportName="p_select_emp_unit_dept" FunctionName="db_hrmsModel.Store.p_select_emp_unit_dept">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="db_hrmsModel.p_select_emp_unit_dept_Result">
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="deptCode" ColumnName="deptCode" />
+          <ScalarProperty Name="deptName1" ColumnName="deptName1" />
+          <ScalarProperty Name="unitName1" ColumnName="unitName1" />
+          <ScalarProperty Name="empID" ColumnName="empID" />
+          <ScalarProperty Name="empNo" ColumnName="empNo" />
+          <ScalarProperty Name="empLao" ColumnName="empLao" />
+          <ScalarProperty Name="empEng" ColumnName="empEng" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="p_test" FunctionName="db_hrmsModel.Store.p_test" />
+    <FunctionImportMapping FunctionImportName="p_tmp_pass" FunctionName="db_hrmsModel.Store.p_tmp_pass" />
+    <FunctionImportMapping FunctionImportName="p_updateEMPINFO" FunctionName="db_hrmsModel.Store.p_updateEMPINFO" />
+    <FunctionImportMapping FunctionImportName="p_UpdateLeaveRequest" FunctionName="db_hrmsModel.Store.p_UpdateLeaveRequest" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="db_hrmsModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="db_hrmsModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="db_hrmsModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="db_hrmsModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="db_hrmsModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="db_hrmsModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="db_hrmsModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="db_hrmsModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="db_hrmsModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

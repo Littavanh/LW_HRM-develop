@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HRMS.API",
+    "\\HRMS.API\\Controllers",
+    "\\HRMS.API\\Models",
+    "\\HRMS.Data"
+  ],
+  "SelectedNode": "\\HRMS.API\\Controllers\\ValuesController.cs",
+  "PreviewInSolutionExplorer": false
+}

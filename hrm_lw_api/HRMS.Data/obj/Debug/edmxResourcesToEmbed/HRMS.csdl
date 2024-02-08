@@ -1,0 +1,2976 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HRMXModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="HRMXEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="p_RequestLeave_TA">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="cabsentid" Mode="In" Type="Int32" />
+      <Parameter Name="qty" Mode="In" Type="Double" />
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="returndate" Mode="In" Type="DateTime" />
+      <Parameter Name="absentDescription" Mode="In" Type="String" />
+      <Parameter Name="toempid" Mode="In" Type="Int32" />
+      <Parameter Name="leaveFor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_actionLogin" ReturnType="Collection(HRMXModel.pd_actionLogin_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+      <Parameter Name="labels" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_approveLeaveAddNewAbsent">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="mgr_allow" Mode="In" Type="Boolean" />
+      <Parameter Name="mgr_date" Mode="In" Type="DateTime" />
+      <Parameter Name="approvefinished" Mode="In" Type="Boolean" />
+      <Parameter Name="hr_allow" Mode="In" Type="Boolean" />
+      <Parameter Name="approvehr" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_approveLeaveRequest">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="comments" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_checkEmpBalancebeforeRequestLeave" ReturnType="Collection(Double)">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="cabsentid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_checkEmpTaxbyStandard" ReturnType="Collection(HRMXModel.pd_checkEmpTaxbyStandard_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_countLevelSignApprove" ReturnType="Collection(String)" />
+    <FunctionImport Name="pd_countTbl_approvePayroll" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pd_countTbl_payrollapprove" ReturnType="Collection(Int32)">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_dateAdd" ReturnType="Collection(DateTime)">
+      <Parameter Name="month" Mode="In" Type="Int32" />
+      <Parameter Name="dates" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_dateDiff" ReturnType="Collection(Int32)">
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="enddate" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteApproalOTRequest">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteEmpTax">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteEtaxID">
+      <Parameter Name="etaxid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteGroupPermissionFirst">
+      <Parameter Name="pmid" Mode="In" Type="Int32" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteGroupUser">
+      <Parameter Name="Groupstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteOTRequestAll">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deletePayRollTestingAll">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deletePayRollTestingbyPLTID">
+      <Parameter Name="pltid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deletePayRollTestingDetailsAll">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_ApprovePayroll">
+      <Parameter Name="aplid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_Delegation">
+      <Parameter Name="dlid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_EmpBanking">
+      <Parameter Name="ebid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_empEducation">
+      <Parameter Name="eeid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_empLeave">
+      <Parameter Name="elid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_empleavebyELID">
+      <Parameter Name="elid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_EmpSalary">
+      <Parameter Name="empsid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_OTCalculate">
+      <Parameter Name="otclid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_payrollapprove">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_PayrolltestingPLTID">
+      <Parameter Name="PLTID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_RequestLeavebyID">
+      <Parameter Name="addabsentid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTbl_RequestOT">
+      <Parameter Name="otrid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_deleteTblEMPRelationship">
+      <Parameter Name="erid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayAddNewAbsentbyEMPID" ReturnType="Collection(HRMXModel.pd_displayAddNewAbsentbyEMPID_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayBackgroundSumLeaveEMP" ReturnType="Collection(Double)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+      <Parameter Name="stdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayBackgroundSumLeaveHR" ReturnType="Collection(Double)">
+      <Parameter Name="stdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayEmpBanking" ReturnType="Collection(HRMXModel.pd_displayEmpBanking_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayEmployeeRelationshipProfile" ReturnType="Collection(HRMXModel.pd_displayEmployeeRelationshipProfile_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayIncomebyEmployee" ReturnType="Collection(Double)">
+      <Parameter Name="Emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayLeaveDetailBoard" ReturnType="Collection(HRMXModel.pd_displayLeaveDetailBoard_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayLeavePaymoneyPayroll" ReturnType="Collection(HRMXModel.pd_displayLeavePaymoneyPayroll_Result)">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayLoanDetailsbyLoanid" ReturnType="Collection(HRMXModel.pd_displayLoanDetailsbyLoanid_Result)">
+      <Parameter Name="loanid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayManager" ReturnType="Collection(Int32)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayOTCalculate" ReturnType="Collection(HRMXModel.pd_displayOTCalculate_Result)">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayPayrollTestingSPC" ReturnType="Collection(HRMXModel.pd_displayPayrollTestingSPC_Result)">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayPermission" ReturnType="Collection(HRMXModel.pd_displayPermission_Result)" />
+    <FunctionImport Name="pd_displaySelectEmployee" ReturnType="Collection(HRMXModel.pd_displaySelectEmployee_Result)" />
+    <FunctionImport Name="pd_displaySumPayrollmoneybyDate" ReturnType="Collection(Double)">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displaySumPayrollTax" ReturnType="Collection(Double)">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayTax" ReturnType="Collection(HRMXModel.pd_displayTax_Result)" />
+    <FunctionImport Name="pd_displayTaxbyEmployee" ReturnType="Collection(Double)">
+      <Parameter Name="Emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayTbl_AbsentCategory" ReturnType="Collection(HRMXModel.pd_displayTbl_AbsentCategory_Result)" />
+    <FunctionImport Name="pd_displayTbl_Banking" ReturnType="Collection(HRMXModel.pd_displayTbl_Banking_Result)" />
+    <FunctionImport Name="pd_displayTbl_Company" ReturnType="Collection(HRMXModel.pd_displayTbl_Company_Result)" />
+    <FunctionImport Name="pd_displayTbl_Delegation" ReturnType="Collection(HRMXModel.pd_displayTbl_Delegation_Result)" />
+    <FunctionImport Name="pd_displayTbl_DelegationEMPID" ReturnType="Collection(HRMXModel.pd_displayTbl_DelegationEMPID_Result)">
+      <Parameter Name="createby" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayTbl_Education" ReturnType="Collection(HRMXModel.pd_displayTbl_Education_Result)" />
+    <FunctionImport Name="pd_displayTbl_EmpBankingByEMPID" ReturnType="Collection(HRMXModel.pd_displayTbl_EmpBankingByEMPID_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayTbl_empeducation" ReturnType="Collection(HRMXModel.pd_displayTbl_empeducation_Result)">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayTbl_empleave" ReturnType="Collection(HRMXModel.pd_displayTbl_empleave_Result)">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayTbl_EmployeeTabData" ReturnType="Collection(HRMXModel.pd_displayTbl_EmployeeTabData_Result)" />
+    <FunctionImport Name="pd_displayTbl_GroupUser" ReturnType="Collection(HRMXModel.pd_displayTbl_GroupUser_Result)" />
+    <FunctionImport Name="pd_displayTbl_IncomeDeduction" ReturnType="Collection(HRMXModel.pd_displayTbl_IncomeDeduction_Result)" />
+    <FunctionImport Name="pd_displayTbl_Insurance_Type" ReturnType="Collection(HRMXModel.pd_displayTbl_Insurance_Type_Result)" />
+    <FunctionImport Name="pd_displayTbl_LoanEmployee" ReturnType="Collection(HRMXModel.pd_displayTbl_LoanEmployee_Result)" />
+    <FunctionImport Name="pd_displayTbl_Nationality" ReturnType="Collection(HRMXModel.pd_displayTbl_Nationality_Result)" />
+    <FunctionImport Name="pd_displayTbl_OTCategory" ReturnType="Collection(HRMXModel.pd_displayTbl_OTCategory_Result)" />
+    <FunctionImport Name="pd_displayTbl_RectypeOT" ReturnType="Collection(HRMXModel.pd_displayTbl_RectypeOT_Result)" />
+    <FunctionImport Name="pd_displayTbl_RectypeOTDetails" ReturnType="Collection(HRMXModel.pd_displayTbl_RectypeOTDetails_Result)" />
+    <FunctionImport Name="pd_displayTbl_Relationship" ReturnType="Collection(HRMXModel.pd_displayTbl_Relationship_Result)" />
+    <FunctionImport Name="pd_displayTbl_SalaryDevide" ReturnType="Collection(HRMXModel.pd_displayTbl_SalaryDevide_Result)" />
+    <FunctionImport Name="pd_displayTbl_systemsetting" ReturnType="Collection(HRMXModel.pd_displayTbl_systemsetting_Result)" />
+    <FunctionImport Name="pd_displayTbl_title" ReturnType="Collection(HRMXModel.pd_displayTbl_title_Result)" />
+    <FunctionImport Name="pd_displayTbl_WorkStatus" ReturnType="Collection(HRMXModel.pd_displayTbl_WorkStatus_Result)" />
+    <FunctionImport Name="pd_displayTbl_WorkUnit" ReturnType="Collection(HRMXModel.pd_displayTbl_WorkUnit_Result)" />
+    <FunctionImport Name="pd_displayTblDepartment" ReturnType="Collection(HRMXModel.pd_displayTblDepartment_Result)" />
+    <FunctionImport Name="pd_displayTblEmpRelationshipByEMPID" ReturnType="Collection(HRMXModel.pd_displayTblEmpRelationshipByEMPID_Result)">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayUser" ReturnType="Collection(HRMXModel.pd_displayUser_Result)" />
+    <FunctionImport Name="pd_insertGroupUser">
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+      <Parameter Name="groupname" Mode="In" Type="String" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+      <Parameter Name="groupstatus" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_AbsentCategory">
+      <Parameter Name="cabsentid" Mode="In" Type="Int32" />
+      <Parameter Name="Absentname" Mode="In" Type="String" />
+      <Parameter Name="absentsource" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_AddAbsentImage">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="img" Mode="In" Type="Binary" />
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="path" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Approval">
+      <Parameter Name="approveid" Mode="In" Type="Int32" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="approveby" Mode="In" Type="Int32" />
+      <Parameter Name="approvedescription" Mode="In" Type="String" />
+      <Parameter Name="approved" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_ApprovePayroll">
+      <Parameter Name="aplid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="levelsapprove" Mode="In" Type="Int32" />
+      <Parameter Name="createby" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Banking">
+      <Parameter Name="bankid" Mode="In" Type="Int32" />
+      <Parameter Name="bankname" Mode="In" Type="String" />
+      <Parameter Name="bankinfo" Mode="In" Type="String" />
+      <Parameter Name="bankusing" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_CompanyNoImage">
+      <Parameter Name="cmid" Mode="In" Type="Int32" />
+      <Parameter Name="cmname" Mode="In" Type="String" />
+      <Parameter Name="parent" Mode="In" Type="Int32" />
+      <Parameter Name="cmphone1" Mode="In" Type="String" />
+      <Parameter Name="cmphone2" Mode="In" Type="String" />
+      <Parameter Name="cmfax" Mode="In" Type="String" />
+      <Parameter Name="cmwebsite" Mode="In" Type="String" />
+      <Parameter Name="cmfacebook" Mode="In" Type="String" />
+      <Parameter Name="cmstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Delegation">
+      <Parameter Name="dlid" Mode="In" Type="Int32" />
+      <Parameter Name="createby" Mode="In" Type="Int32" />
+      <Parameter Name="toemployee" Mode="In" Type="Int32" />
+      <Parameter Name="title" Mode="In" Type="String" />
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="delegationusing" Mode="In" Type="Boolean" />
+      <Parameter Name="delegationdelete" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Department">
+      <Parameter Name="depid" Mode="In" Type="Int32" />
+      <Parameter Name="departname" Mode="In" Type="String" />
+      <Parameter Name="cmid" Mode="In" Type="Int32" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="departinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Education">
+      <Parameter Name="edid" Mode="In" Type="Int32" />
+      <Parameter Name="education" Mode="In" Type="String" />
+      <Parameter Name="educationinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_EmpBanking">
+      <Parameter Name="ebid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="bankind" Mode="In" Type="Int32" />
+      <Parameter Name="bankcard" Mode="In" Type="String" />
+      <Parameter Name="paysalary" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_EmpEducation">
+      <Parameter Name="eeid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="edid" Mode="In" Type="Int32" />
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="educationinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_EmpLeave">
+      <Parameter Name="elid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="cabsentid" Mode="In" Type="Int32" />
+      <Parameter Name="amount_day" Mode="In" Type="Double" />
+      <Parameter Name="amount_hour" Mode="In" Type="Double" />
+      <Parameter Name="total_use" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_employee_Tab1">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="emp_nbr" Mode="In" Type="String" />
+      <Parameter Name="user_email" Mode="In" Type="String" />
+      <Parameter Name="f_name_l1" Mode="In" Type="String" />
+      <Parameter Name="surname_l1" Mode="In" Type="String" />
+      <Parameter Name="f_name_l2" Mode="In" Type="String" />
+      <Parameter Name="surname_l2" Mode="In" Type="String" />
+      <Parameter Name="emp_dob" Mode="In" Type="DateTime" />
+      <Parameter Name="genid" Mode="In" Type="Int32" />
+      <Parameter Name="esid" Mode="In" Type="Int32" />
+      <Parameter Name="cal_payroll" Mode="In" Type="Boolean" />
+      <Parameter Name="consult" Mode="In" Type="Boolean" />
+      <Parameter Name="depid" Mode="In" Type="Int32" />
+      <Parameter Name="wuid" Mode="In" Type="Int32" />
+      <Parameter Name="titleid" Mode="In" Type="Int32" />
+      <Parameter Name="natid" Mode="In" Type="Int32" />
+      <Parameter Name="relid" Mode="In" Type="Int32" />
+      <Parameter Name="etid" Mode="In" Type="Int32" />
+      <Parameter Name="wtsid" Mode="In" Type="Int32" />
+      <Parameter Name="mgrid" Mode="In" Type="Int32" />
+      <Parameter Name="suppervisor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_EmpSalary">
+      <Parameter Name="empsid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="indid" Mode="In" Type="Int32" />
+      <Parameter Name="empincome" Mode="In" Type="Double" />
+      <Parameter Name="tax" Mode="In" Type="Boolean" />
+      <Parameter Name="income" Mode="In" Type="Boolean" />
+      <Parameter Name="sddid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_EMPTax">
+      <Parameter Name="etaxid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="taxid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_GroupPermission">
+      <Parameter Name="gpid" Mode="In" Type="Int32" />
+      <Parameter Name="pmid" Mode="In" Type="Int32" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+      <Parameter Name="gread" Mode="In" Type="Boolean" />
+      <Parameter Name="gwrite" Mode="In" Type="Boolean" />
+      <Parameter Name="createby" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_IncomeDeduction">
+      <Parameter Name="indid" Mode="In" Type="Int32" />
+      <Parameter Name="in_deduction" Mode="In" Type="String" />
+      <Parameter Name="info" Mode="In" Type="String" />
+      <Parameter Name="deduction" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Insurance">
+      <Parameter Name="intypeid" Mode="In" Type="Int32" />
+      <Parameter Name="insurance" Mode="In" Type="String" />
+      <Parameter Name="inpercent" Mode="In" Type="Double" />
+      <Parameter Name="empusing" Mode="In" Type="Boolean" />
+      <Parameter Name="compercent" Mode="In" Type="Double" />
+      <Parameter Name="maxmoney" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_InsuranceUsing">
+      <Parameter Name="inuid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="dateusing" Mode="In" Type="DateTime" />
+      <Parameter Name="locationusing" Mode="In" Type="String" />
+      <Parameter Name="locationcontract" Mode="In" Type="String" />
+      <Parameter Name="datesent" Mode="In" Type="DateTime" />
+      <Parameter Name="datemoney" Mode="In" Type="DateTime" />
+      <Parameter Name="amountmoney" Mode="In" Type="Double" />
+      <Parameter Name="diagnose" Mode="In" Type="String" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Loan">
+      <Parameter Name="loanid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="amountloan" Mode="In" Type="Double" />
+      <Parameter Name="loanpercent" Mode="In" Type="Double" />
+      <Parameter Name="loanstart" Mode="In" Type="DateTime" />
+      <Parameter Name="loanend" Mode="In" Type="DateTime" />
+      <Parameter Name="reason" Mode="In" Type="String" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+      <Parameter Name="dqty" Mode="In" Type="Double" />
+      <Parameter Name="averagecal" Mode="In" Type="Boolean" />
+      <Parameter Name="LoanPayment" Mode="In" Type="Double" />
+      <Parameter Name="paybymonthly" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Loandetails">
+      <Parameter Name="ldid" Mode="In" Type="Int32" />
+      <Parameter Name="loanid" Mode="In" Type="Int32" />
+      <Parameter Name="payingdate" Mode="In" Type="DateTime" />
+      <Parameter Name="loanstart" Mode="In" Type="Double" />
+      <Parameter Name="ldpercent" Mode="In" Type="Double" />
+      <Parameter Name="paymentcost" Mode="In" Type="Double" />
+      <Parameter Name="payment" Mode="In" Type="Double" />
+      <Parameter Name="balance" Mode="In" Type="Double" />
+      <Parameter Name="paidstatus" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Nationality">
+      <Parameter Name="natid" Mode="In" Type="Int32" />
+      <Parameter Name="nationname" Mode="In" Type="String" />
+      <Parameter Name="languages" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_OTCalculate">
+      <Parameter Name="otclid" Mode="In" Type="Int32" />
+      <Parameter Name="otrid" Mode="In" Type="Int32" />
+      <Parameter Name="otcid" Mode="In" Type="Int32" />
+      <Parameter Name="qtyhour" Mode="In" Type="Double" />
+      <Parameter Name="latemoney" Mode="In" Type="Double" />
+      <Parameter Name="hrfinished" Mode="In" Type="Boolean" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_OTCategory">
+      <Parameter Name="otcid" Mode="In" Type="Int32" />
+      <Parameter Name="otname" Mode="In" Type="String" />
+      <Parameter Name="otvalue" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_payrollapprove">
+      <Parameter Name="papid" Mode="In" Type="Int32" />
+      <Parameter Name="payrollstartdate" Mode="In" Type="DateTime" />
+      <Parameter Name="payrollenddate" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="hightempid" Mode="In" Type="Int32" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_PayrollFinally">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_PayrollFinallyDetails">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_payrollsucess">
+      <Parameter Name="psid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="startdatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="enddatepayroll" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_PayrollTesting">
+      <Parameter Name="pltid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="user_email" Mode="In" Type="String" />
+      <Parameter Name="emp_nbr" Mode="In" Type="String" />
+      <Parameter Name="laoname" Mode="In" Type="String" />
+      <Parameter Name="englishname" Mode="In" Type="String" />
+      <Parameter Name="f_name_l1" Mode="In" Type="String" />
+      <Parameter Name="surname_l1" Mode="In" Type="String" />
+      <Parameter Name="f_name_l2" Mode="In" Type="String" />
+      <Parameter Name="surname_l2" Mode="In" Type="String" />
+      <Parameter Name="titlename" Mode="In" Type="String" />
+      <Parameter Name="unitname" Mode="In" Type="String" />
+      <Parameter Name="departname" Mode="In" Type="String" />
+      <Parameter Name="ethnic" Mode="In" Type="String" />
+      <Parameter Name="nationname" Mode="In" Type="String" />
+      <Parameter Name="languages" Mode="In" Type="String" />
+      <Parameter Name="religion" Mode="In" Type="String" />
+      <Parameter Name="workstatus" Mode="In" Type="String" />
+      <Parameter Name="startdatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="enddatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="payrollname" Mode="In" Type="String" />
+      <Parameter Name="qty" Mode="In" Type="Double" />
+      <Parameter Name="payrollmoney" Mode="In" Type="String" />
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="calculated" Mode="In" Type="Boolean" />
+      <Parameter Name="caltax" Mode="In" Type="Boolean" />
+      <Parameter Name="loanid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_PayrollTestingDeduction">
+      <Parameter Name="pltid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="user_email" Mode="In" Type="String" />
+      <Parameter Name="emp_nbr" Mode="In" Type="String" />
+      <Parameter Name="laoname" Mode="In" Type="String" />
+      <Parameter Name="englishname" Mode="In" Type="String" />
+      <Parameter Name="f_name_l1" Mode="In" Type="String" />
+      <Parameter Name="surname_l1" Mode="In" Type="String" />
+      <Parameter Name="f_name_l2" Mode="In" Type="String" />
+      <Parameter Name="surname_l2" Mode="In" Type="String" />
+      <Parameter Name="titlename" Mode="In" Type="String" />
+      <Parameter Name="unitname" Mode="In" Type="String" />
+      <Parameter Name="departname" Mode="In" Type="String" />
+      <Parameter Name="ethnic" Mode="In" Type="String" />
+      <Parameter Name="nationname" Mode="In" Type="String" />
+      <Parameter Name="languages" Mode="In" Type="String" />
+      <Parameter Name="religion" Mode="In" Type="String" />
+      <Parameter Name="workstatus" Mode="In" Type="String" />
+      <Parameter Name="startdatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="enddatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="payrollname" Mode="In" Type="String" />
+      <Parameter Name="qty" Mode="In" Type="Double" />
+      <Parameter Name="payrollmoney" Mode="In" Type="String" />
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="calculated" Mode="In" Type="Boolean" />
+      <Parameter Name="caltax" Mode="In" Type="Boolean" />
+      <Parameter Name="descriptions" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Payrolltestingdetails">
+      <Parameter Name="pltdid" Mode="In" Type="Int32" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+      <Parameter Name="startdatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="enddatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="percenttax" Mode="In" Type="Double" />
+      <Parameter Name="totalmoney" Mode="In" Type="Double" />
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="finished" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_RectypeOT">
+      <Parameter Name="rtotid" Mode="In" Type="Int32" />
+      <Parameter Name="rtotname" Mode="In" Type="String" />
+      <Parameter Name="rtstatus" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_RectypeOTDetails">
+      <Parameter Name="rtotdtid" Mode="In" Type="Int32" />
+      <Parameter Name="rtotid" Mode="In" Type="Int32" />
+      <Parameter Name="starttime" Mode="In" Type="String" />
+      <Parameter Name="endtime" Mode="In" Type="String" />
+      <Parameter Name="info" Mode="In" Type="String" />
+      <Parameter Name="otcid" Mode="In" Type="Int32" />
+      <Parameter Name="days" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Relationship">
+      <Parameter Name="rlid" Mode="In" Type="Int32" />
+      <Parameter Name="relationship" Mode="In" Type="String" />
+      <Parameter Name="relationshipinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_request">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="re_no" Mode="In" Type="String" />
+      <Parameter Name="createby" Mode="In" Type="Int32" />
+      <Parameter Name="rectype" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_RequestLeave">
+      <Parameter Name="addabsentid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="cabsentid" Mode="In" Type="Int32" />
+      <Parameter Name="qty" Mode="In" Type="Double" />
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="returndate" Mode="In" Type="DateTime" />
+      <Parameter Name="absentDescription" Mode="In" Type="String" />
+      <Parameter Name="mgrallow" Mode="In" Type="Boolean" />
+      <Parameter Name="hrallow" Mode="In" Type="Boolean" />
+      <Parameter Name="approvemgrid" Mode="In" Type="Int32" />
+      <Parameter Name="toempid" Mode="In" Type="Int32" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="empkeyin" Mode="In" Type="Int32" />
+      <Parameter Name="checkin" Mode="In" Type="Boolean" />
+      <Parameter Name="levelmgsign" Mode="In" Type="Int32" />
+      <Parameter Name="saveby" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_RequestOT">
+      <Parameter Name="otrid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="otstart" Mode="In" Type="DateTime" />
+      <Parameter Name="starttime" Mode="In" Type="String" />
+      <Parameter Name="endtime" Mode="In" Type="String" />
+      <Parameter Name="title" Mode="In" Type="String" />
+      <Parameter Name="otdescription" Mode="In" Type="String" />
+      <Parameter Name="otstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="hrstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="empkeyin" Mode="In" Type="Int32" />
+      <Parameter Name="mgrid" Mode="In" Type="Int32" />
+      <Parameter Name="saveby" Mode="In" Type="Int32" />
+      <Parameter Name="otcid" Mode="In" Type="Int32" />
+      <Parameter Name="systarttime" Mode="In" Type="String" />
+      <Parameter Name="sysendtime" Mode="In" Type="String" />
+      <Parameter Name="qtyhour" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_RequestOTApproveForm">
+      <Parameter Name="otrid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="otstart" Mode="In" Type="DateTime" />
+      <Parameter Name="starttime" Mode="In" Type="String" />
+      <Parameter Name="endtime" Mode="In" Type="String" />
+      <Parameter Name="title" Mode="In" Type="String" />
+      <Parameter Name="otdescription" Mode="In" Type="String" />
+      <Parameter Name="otstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="hrstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="empkeyin" Mode="In" Type="Int32" />
+      <Parameter Name="mgrid" Mode="In" Type="Int32" />
+      <Parameter Name="saveby" Mode="In" Type="Int32" />
+      <Parameter Name="otcid" Mode="In" Type="Int32" />
+      <Parameter Name="systarttime" Mode="In" Type="String" />
+      <Parameter Name="sysendtime" Mode="In" Type="String" />
+      <Parameter Name="qtyhour" Mode="In" Type="Double" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_SalaryDevide">
+      <Parameter Name="sddid" Mode="In" Type="Int32" />
+      <Parameter Name="devidename" Mode="In" Type="String" />
+      <Parameter Name="devide_value" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Tax">
+      <Parameter Name="taxid" Mode="In" Type="Int32" />
+      <Parameter Name="taxvalue" Mode="In" Type="String" />
+      <Parameter Name="taxpercent" Mode="In" Type="Double" />
+      <Parameter Name="taxstart" Mode="In" Type="Double" />
+      <Parameter Name="taxend" Mode="In" Type="Double" />
+      <Parameter Name="taxdefault" Mode="In" Type="Boolean" />
+      <Parameter Name="taxselft" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_Title">
+      <Parameter Name="titleid" Mode="In" Type="Int32" />
+      <Parameter Name="titlename" Mode="In" Type="String" />
+      <Parameter Name="titleinfo" Mode="In" Type="String" />
+      <Parameter Name="titlesign" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_userlogin">
+      <Parameter Name="ulid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="upassword" Mode="In" Type="String" />
+      <Parameter Name="ustatus" Mode="In" Type="Boolean" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+      <Parameter Name="unew" Mode="In" Type="Boolean" />
+      <Parameter Name="hr_admin" Mode="In" Type="Boolean" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTbl_WorkStatus">
+      <Parameter Name="wtsid" Mode="In" Type="Int32" />
+      <Parameter Name="workstatus" Mode="In" Type="String" />
+      <Parameter Name="workhours" Mode="In" Type="Double" />
+      <Parameter Name="workinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_insertTblEMPRelationship">
+      <Parameter Name="erid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="rlid" Mode="In" Type="Int32" />
+      <Parameter Name="rname" Mode="In" Type="String" />
+      <Parameter Name="rmobile1" Mode="In" Type="String" />
+      <Parameter Name="rmobile2" Mode="In" Type="String" />
+      <Parameter Name="remail" Mode="In" Type="String" />
+      <Parameter Name="Rworking" Mode="In" Type="String" />
+      <Parameter Name="Raddress" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_isnertTbl_WorkUnit">
+      <Parameter Name="wuid" Mode="In" Type="Int32" />
+      <Parameter Name="unitname" Mode="In" Type="String" />
+      <Parameter Name="unitinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_ReportHR_EmployeeRequestLeave" ReturnType="Collection(HRMXModel.pd_ReportHR_EmployeeRequestLeave_Result)" />
+    <FunctionImport Name="pd_reportPayRollFinallyDetailsImport" ReturnType="Collection(Double)">
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="enddate" Mode="In" Type="String" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_reportPayRollFinallyDetailsImportAddIncomesAll" ReturnType="Collection(Double)">
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="enddate" Mode="In" Type="String" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_reportPayRollTestingDetailsImport" ReturnType="Collection(Double)">
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="enddate" Mode="In" Type="String" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_reportPayRollTestingDetailsImportAddIncomesAll" ReturnType="Collection(Double)">
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="enddate" Mode="In" Type="String" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_reportSumPayRollFinallyDetailsImport" ReturnType="Collection(Double)">
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="enddate" Mode="In" Type="String" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_reportSumPayRollTestingDetailsImport" ReturnType="Collection(Double)">
+      <Parameter Name="rec_type" Mode="In" Type="String" />
+      <Parameter Name="startdate" Mode="In" Type="String" />
+      <Parameter Name="enddate" Mode="In" Type="String" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_resetPassword">
+      <Parameter Name="upassword" Mode="In" Type="String" />
+      <Parameter Name="unew" Mode="In" Type="Boolean" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchCabsentID" ReturnType="Collection(Int32)">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTax" ReturnType="Collection(HRMXModel.pd_searchTax_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_AbsentCategory" ReturnType="Collection(HRMXModel.pd_searchTbl_AbsentCategory_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Banking" ReturnType="Collection(HRMXModel.pd_searchTbl_Banking_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Company" ReturnType="Collection(HRMXModel.pd_searchTbl_Company_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Delegation" ReturnType="Collection(HRMXModel.pd_searchTbl_Delegation_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_DelegationEMPID" ReturnType="Collection(HRMXModel.pd_searchTbl_DelegationEMPID_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+      <Parameter Name="createby" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Department" ReturnType="Collection(HRMXModel.pd_searchTbl_Department_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Education" ReturnType="Collection(HRMXModel.pd_searchTbl_Education_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_EmployeeTabData" ReturnType="Collection(HRMXModel.pd_searchTbl_EmployeeTabData_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_GroupUser" ReturnType="Collection(HRMXModel.pd_searchTbl_GroupUser_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_IncomeDeduction" ReturnType="Collection(HRMXModel.pd_searchTbl_IncomeDeduction_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Insurance_Type" ReturnType="Collection(HRMXModel.pd_searchTbl_Insurance_Type_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_LoanEmployee" ReturnType="Collection(HRMXModel.pd_searchTbl_LoanEmployee_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Nationality" ReturnType="Collection(HRMXModel.pd_searchTbl_Nationality_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_OTCategory" ReturnType="Collection(HRMXModel.pd_searchTbl_OTCategory_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_RectypeOT" ReturnType="Collection(HRMXModel.pd_searchTbl_RectypeOT_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_RectypeOTDetails" ReturnType="Collection(HRMXModel.pd_searchTbl_RectypeOTDetails_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Relationship" ReturnType="Collection(HRMXModel.pd_searchTbl_Relationship_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_SalaryDevide" ReturnType="Collection(HRMXModel.pd_searchTbl_SalaryDevide_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_Title" ReturnType="Collection(HRMXModel.pd_searchTbl_Title_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_WorkStatus" ReturnType="Collection(HRMXModel.pd_searchTbl_WorkStatus_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchTbl_WorkUnit" ReturnType="Collection(HRMXModel.pd_searchTbl_WorkUnit_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_searchUser" ReturnType="Collection(HRMXModel.pd_searchUser_Result)">
+      <Parameter Name="search" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_selectgroupusername" ReturnType="Collection(String)">
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_selectPMID" ReturnType="Collection(HRMXModel.pd_selectPMID_Result)">
+      <Parameter Name="pmid" Mode="In" Type="Int32" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_showUserLoginHRAdmin" ReturnType="Collection(Boolean)">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_udpateTbl_CheckQuestion">
+      <Parameter Name="cqid" Mode="In" Type="Int32" />
+      <Parameter Name="checkq" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_udpateTbl_CompanyNoImage">
+      <Parameter Name="cmname" Mode="In" Type="String" />
+      <Parameter Name="parent" Mode="In" Type="Int32" />
+      <Parameter Name="cmphone1" Mode="In" Type="String" />
+      <Parameter Name="cmphone2" Mode="In" Type="String" />
+      <Parameter Name="cmfax" Mode="In" Type="String" />
+      <Parameter Name="cmwebsite" Mode="In" Type="String" />
+      <Parameter Name="cmfacebook" Mode="In" Type="String" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+      <Parameter Name="cmid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_udpateTbl_SalaryDevide">
+      <Parameter Name="devidename" Mode="In" Type="String" />
+      <Parameter Name="devide_value" Mode="In" Type="Double" />
+      <Parameter Name="sddid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateBalanceLoan">
+      <Parameter Name="balance" Mode="In" Type="Double" />
+      <Parameter Name="paidstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="ldid" Mode="In" Type="Int32" />
+      <Parameter Name="monthlypaid" Mode="In" Type="String" />
+      <Parameter Name="debit" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateFinishedOTCalculate">
+      <Parameter Name="otrid" Mode="In" Type="Int32" />
+      <Parameter Name="hrfinished" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateGroupUser">
+      <Parameter Name="groupname" Mode="In" Type="String" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateHRApprove">
+      <Parameter Name="Reid" Mode="In" Type="Int32" />
+      <Parameter Name="approveHR" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateHRComment">
+      <Parameter Name="Reid" Mode="In" Type="Int32" />
+      <Parameter Name="comments" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateHRStatusOTRequest">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateLoanPaid">
+      <Parameter Name="loanid" Mode="In" Type="Int32" />
+      <Parameter Name="paid" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateManagerID">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="approvemgrid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateManagerIDTbl_OTRequest">
+      <Parameter Name="mgrid" Mode="In" Type="Int32" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateManagerOT">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="mgrapprove" Mode="In" Type="Boolean" />
+      <Parameter Name="mgrid" Mode="In" Type="Int32" />
+      <Parameter Name="finishedapprove" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updatePassword">
+      <Parameter Name="upassword" Mode="In" Type="String" />
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updatePaymentCostLoan">
+      <Parameter Name="paymentcost" Mode="In" Type="Double" />
+      <Parameter Name="ldid" Mode="In" Type="Int32" />
+      <Parameter Name="payment" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateProcessOTRequest">
+      <Parameter Name="otprocess" Mode="In" Type="Boolean" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateStandardTax">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+      <Parameter Name="standardTax" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_AbsentCategory">
+      <Parameter Name="Absentname" Mode="In" Type="String" />
+      <Parameter Name="absentsource" Mode="In" Type="String" />
+      <Parameter Name="cabsentid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_AddnewAbsent">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="checkin" Mode="In" Type="Boolean" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="actionnow" Mode="In" Type="DateTime" />
+      <Parameter Name="requestFinished" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_AddnewabsentHR">
+      <Parameter Name="approveHR" Mode="In" Type="Boolean" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Banking">
+      <Parameter Name="bankname" Mode="In" Type="String" />
+      <Parameter Name="bankinfo" Mode="In" Type="String" />
+      <Parameter Name="bankusing" Mode="In" Type="Boolean" />
+      <Parameter Name="bankid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Department">
+      <Parameter Name="departname" Mode="In" Type="String" />
+      <Parameter Name="cmid" Mode="In" Type="Int32" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="departinfo" Mode="In" Type="String" />
+      <Parameter Name="depid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Education">
+      <Parameter Name="education" Mode="In" Type="String" />
+      <Parameter Name="educationinfo" Mode="In" Type="String" />
+      <Parameter Name="edid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Emp_LeaveTotaluse">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="cabsentID" Mode="In" Type="Int32" />
+      <Parameter Name="total_use" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_EmpEducation">
+      <Parameter Name="edid" Mode="In" Type="Int32" />
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="educationinfo" Mode="In" Type="String" />
+      <Parameter Name="eeid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Employee_Tab1">
+      <Parameter Name="emp_nbr" Mode="In" Type="String" />
+      <Parameter Name="user_email" Mode="In" Type="String" />
+      <Parameter Name="f_name_l1" Mode="In" Type="String" />
+      <Parameter Name="surname_l1" Mode="In" Type="String" />
+      <Parameter Name="f_name_l2" Mode="In" Type="String" />
+      <Parameter Name="surname_l2" Mode="In" Type="String" />
+      <Parameter Name="emp_dob" Mode="In" Type="DateTime" />
+      <Parameter Name="genid" Mode="In" Type="Int32" />
+      <Parameter Name="esid" Mode="In" Type="Int32" />
+      <Parameter Name="cal_payroll" Mode="In" Type="Boolean" />
+      <Parameter Name="consult" Mode="In" Type="Boolean" />
+      <Parameter Name="depid" Mode="In" Type="Int32" />
+      <Parameter Name="wuid" Mode="In" Type="Int32" />
+      <Parameter Name="titleid" Mode="In" Type="Int32" />
+      <Parameter Name="natid" Mode="In" Type="Int32" />
+      <Parameter Name="relid" Mode="In" Type="Int32" />
+      <Parameter Name="etid" Mode="In" Type="Int32" />
+      <Parameter Name="wtsid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_GroupPermission">
+      <Parameter Name="pmid" Mode="In" Type="Int32" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+      <Parameter Name="gread" Mode="In" Type="Boolean" />
+      <Parameter Name="gwrite" Mode="In" Type="Boolean" />
+      <Parameter Name="createby" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_IncomeDeduction">
+      <Parameter Name="in_deduction" Mode="In" Type="String" />
+      <Parameter Name="info" Mode="In" Type="String" />
+      <Parameter Name="deduction" Mode="In" Type="Boolean" />
+      <Parameter Name="indid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Insurance">
+      <Parameter Name="insurance" Mode="In" Type="String" />
+      <Parameter Name="inpercent" Mode="In" Type="Double" />
+      <Parameter Name="empusing" Mode="In" Type="Boolean" />
+      <Parameter Name="compercent" Mode="In" Type="Double" />
+      <Parameter Name="maxmoney" Mode="In" Type="Double" />
+      <Parameter Name="intypeid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Nationality">
+      <Parameter Name="nationname" Mode="In" Type="String" />
+      <Parameter Name="languages" Mode="In" Type="String" />
+      <Parameter Name="natid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_OTCategory">
+      <Parameter Name="otname" Mode="In" Type="String" />
+      <Parameter Name="otvalue" Mode="In" Type="Double" />
+      <Parameter Name="otcid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_payrollapprove">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_PayrollFinallyDetailsCalculated">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="finished" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_PayrollFinallyTestingCalculated">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="calculated" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_PayrollTestingCalculated">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="calculated" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_PayrollTestingDetailsCalculated">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="finished" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_RectypeOT">
+      <Parameter Name="rtotname" Mode="In" Type="String" />
+      <Parameter Name="rtstatus" Mode="In" Type="Boolean" />
+      <Parameter Name="rtotid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_RectypeOTDetails">
+      <Parameter Name="rtotid" Mode="In" Type="Int32" />
+      <Parameter Name="starttime" Mode="In" Type="String" />
+      <Parameter Name="endtime" Mode="In" Type="String" />
+      <Parameter Name="info" Mode="In" Type="String" />
+      <Parameter Name="otcid" Mode="In" Type="Int32" />
+      <Parameter Name="rtotdtid" Mode="In" Type="Int32" />
+      <Parameter Name="days" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Relationship">
+      <Parameter Name="relationship" Mode="In" Type="String" />
+      <Parameter Name="relationshipinfo" Mode="In" Type="String" />
+      <Parameter Name="rlid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_requestOTFinished">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="saveby" Mode="In" Type="Int32" />
+      <Parameter Name="timesave" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_SystemSetting">
+      <Parameter Name="systemid" Mode="In" Type="Int32" />
+      <Parameter Name="system_values" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Tax">
+      <Parameter Name="taxvalue" Mode="In" Type="String" />
+      <Parameter Name="taxpercent" Mode="In" Type="Double" />
+      <Parameter Name="taxstart" Mode="In" Type="Double" />
+      <Parameter Name="taxend" Mode="In" Type="Double" />
+      <Parameter Name="taxdefault" Mode="In" Type="Boolean" />
+      <Parameter Name="taxid" Mode="In" Type="Int32" />
+      <Parameter Name="taxselft" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Title">
+      <Parameter Name="titlename" Mode="In" Type="String" />
+      <Parameter Name="titleinfo" Mode="In" Type="String" />
+      <Parameter Name="titlesign" Mode="In" Type="Int32" />
+      <Parameter Name="titleid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Userlogin">
+      <Parameter Name="upassword" Mode="In" Type="String" />
+      <Parameter Name="ustatus" Mode="In" Type="Boolean" />
+      <Parameter Name="createby" Mode="In" Type="String" />
+      <Parameter Name="unew" Mode="In" Type="Boolean" />
+      <Parameter Name="hr_admin" Mode="In" Type="Boolean" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_UserloginX">
+      <Parameter Name="hr_admin" Mode="In" Type="Boolean" />
+      <Parameter Name="gruid" Mode="In" Type="Int32" />
+      <Parameter Name="ustatus" Mode="In" Type="Boolean" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_WorkStatus">
+      <Parameter Name="workstatus" Mode="In" Type="String" />
+      <Parameter Name="workhours" Mode="In" Type="Double" />
+      <Parameter Name="workinfo" Mode="In" Type="String" />
+      <Parameter Name="wtsid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_WorkUnit">
+      <Parameter Name="unitname" Mode="In" Type="String" />
+      <Parameter Name="unitinfo" Mode="In" Type="String" />
+      <Parameter Name="wuid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTblEmpLeave">
+      <Parameter Name="empid" Mode="In" Type="Int32" />
+      <Parameter Name="cabsentid" Mode="In" Type="Int32" />
+      <Parameter Name="qty" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updteTbl_Employee_InfoData">
+      <Parameter Name="mgrid" Mode="In" Type="Int32" />
+      <Parameter Name="suppervisor" Mode="In" Type="Int32" />
+      <Parameter Name="emp_fbook" Mode="In" Type="String" />
+      <Parameter Name="emp_phone1" Mode="In" Type="String" />
+      <Parameter Name="emp_phone2" Mode="In" Type="String" />
+      <Parameter Name="emp_idcard" Mode="In" Type="String" />
+      <Parameter Name="empBorn" Mode="In" Type="String" />
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_uploadImgTbl_Insuranceusing">
+      <Parameter Name="imgfile" Mode="In" Type="Binary" />
+      <Parameter Name="inuid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_uploadLoanImg">
+      <Parameter Name="loanpdf" Mode="In" Type="Binary" />
+      <Parameter Name="loanid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_valueSalary" ReturnType="Collection(Double)">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_WebClient_RosterAbsent" ReturnType="Collection(HRMXModel.pd_WebClient_RosterAbsent_Result)">
+      <Parameter Name="dtStartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="dtEndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="updatePayrollmoneyLoan">
+      <Parameter Name="payrollmoney" Mode="In" Type="Double" />
+      <Parameter Name="startdatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="enddatepayroll" Mode="In" Type="DateTime" />
+      <Parameter Name="payrollname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="p_myrequestLeave_TA" ReturnType="Collection(HRMXModel.p_myrequestLeave_TA_Result)">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="p_reject_leave_TA">
+      <Parameter Name="requestID" Mode="In" Type="Int32" />
+      <Parameter Name="approveby" Mode="In" Type="Int32" />
+      <Parameter Name="approvedescription" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="p_noti">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="p_approveLeave_TA">
+      <Parameter Name="requestID" Mode="In" Type="Int32" />
+      <Parameter Name="comments" Mode="In" Type="String" />
+      <Parameter Name="approveby" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_approveLeaveAddNewAbsentbyID">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="mgr_allow" Mode="In" Type="Boolean" />
+      <Parameter Name="mgr_date" Mode="In" Type="DateTime" />
+      <Parameter Name="approvefinished" Mode="In" Type="Boolean" />
+      <Parameter Name="hr_allow" Mode="In" Type="Boolean" />
+      <Parameter Name="approvehr" Mode="In" Type="Int32" />
+      <Parameter Name="addabsentid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateManagerIDbyAddnewabsentID">
+      <Parameter Name="addnewabsentid" Mode="In" Type="Int32" />
+      <Parameter Name="approvemgrid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_AddnewabsentHRbyID">
+      <Parameter Name="approveHR" Mode="In" Type="Boolean" />
+      <Parameter Name="addnewabsentid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTblRequest_LVfinished">
+      <Parameter Name="lvfinished" Mode="In" Type="String" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="p_cancelMyrequest_TA">
+      <Parameter Name="requestID" Mode="In" Type="Int32" />
+      <Parameter Name="cancelby" Mode="In" Type="Int32" />
+      <Parameter Name="reason" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pd_rejectLeaveBackground">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_displayDelegationAccept" ReturnType="Collection(HRMXModel.pd_displayDelegationAccept_Result)">
+      <Parameter Name="Toemployee" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_rejectOTBackground">
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateAcceptDelegation">
+      <Parameter Name="Delegationusing" Mode="In" Type="Boolean" />
+      <Parameter Name="waitinguser" Mode="In" Type="Boolean" />
+      <Parameter Name="dlid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateHRreject">
+      <Parameter Name="HRrejectinfo" Mode="In" Type="String" />
+      <Parameter Name="reid" Mode="In" Type="Int32" />
+      <Parameter Name="hrid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pd_updateTbl_Delegation">
+      <Parameter Name="startdate" Mode="In" Type="DateTime" />
+      <Parameter Name="enddate" Mode="In" Type="DateTime" />
+      <Parameter Name="title" Mode="In" Type="String" />
+      <Parameter Name="dlid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="p_AllowOTRequest_TA">
+      <Parameter Name="req_id" Mode="In" Type="Int32" />
+      <Parameter Name="approveby" Mode="In" Type="Int32" />
+      <Parameter Name="approvedescription" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="p_ApproveOT_TA">
+      <Parameter Name="req_id" Mode="In" Type="Int32" />
+      <Parameter Name="approveby" Mode="In" Type="Int32" />
+      <Parameter Name="approvedescription" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="p_CancelOT_TA">
+      <Parameter Name="req_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="p_RejectOT_TA">
+      <Parameter Name="req_id" Mode="In" Type="Int32" />
+      <Parameter Name="mgrid" Mode="In" Type="Int32" />
+      <Parameter Name="approvedescription" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="p_RequestOT_TA" ReturnType="Collection(HRMXModel.p_RequestOT_TA_Result)">
+      <Parameter Name="emp_id" Mode="In" Type="Int32" />
+      <Parameter Name="dateOT" Mode="In" Type="DateTime" />
+      <Parameter Name="strTime" Mode="In" Type="Time" />
+      <Parameter Name="endTime" Mode="In" Type="Time" />
+      <Parameter Name="otTitle" Mode="In" Type="String" />
+      <Parameter Name="otDescription" Mode="In" Type="String" />
+      <Parameter Name="userAdd" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="tb_allowanceType" EntityType="HRMXModel.tb_allowanceType" />
+    <EntitySet Name="tb_app_permission" EntityType="HRMXModel.tb_app_permission" />
+    <EntitySet Name="tb_app_role" EntityType="HRMXModel.tb_app_role" />
+    <EntitySet Name="tb_app_role_permission" EntityType="HRMXModel.tb_app_role_permission" />
+    <EntitySet Name="tb_bank" EntityType="HRMXModel.tb_bank" />
+    <EntitySet Name="tb_company" EntityType="HRMXModel.tb_company" />
+    <EntitySet Name="tb_deductionType" EntityType="HRMXModel.tb_deductionType" />
+    <EntitySet Name="tb_department" EntityType="HRMXModel.tb_department" />
+    <EntitySet Name="tb_district" EntityType="HRMXModel.tb_district" />
+    <EntitySet Name="tb_educationType" EntityType="HRMXModel.tb_educationType" />
+    <EntitySet Name="tb_empAllowance" EntityType="HRMXModel.tb_empAllowance" />
+    <EntitySet Name="tb_empBankAccount" EntityType="HRMXModel.tb_empBankAccount" />
+    <EntitySet Name="tb_empDeduction" EntityType="HRMXModel.tb_empDeduction" />
+    <EntitySet Name="tb_empEducation" EntityType="HRMXModel.tb_empEducation" />
+    <EntitySet Name="tb_empFamily" EntityType="HRMXModel.tb_empFamily" />
+    <EntitySet Name="tb_empGroup" EntityType="HRMXModel.tb_empGroup" />
+    <EntitySet Name="tb_empIncome" EntityType="HRMXModel.tb_empIncome" />
+    <EntitySet Name="tb_empInfo" EntityType="HRMXModel.tb_empInfo" />
+    <EntitySet Name="tb_empLevel" EntityType="HRMXModel.tb_empLevel" />
+    <EntitySet Name="tb_empployees" EntityType="HRMXModel.tb_empployees" />
+    <EntitySet Name="tb_fstatus" EntityType="HRMXModel.tb_fstatus" />
+    <EntitySet Name="tb_gender" EntityType="HRMXModel.tb_gender" />
+    <EntitySet Name="tb_incomType" EntityType="HRMXModel.tb_incomType" />
+    <EntitySet Name="tb_languages" EntityType="HRMXModel.tb_languages" />
+    <EntitySet Name="tb_leaveSetting" EntityType="HRMXModel.tb_leaveSetting" />
+    <EntitySet Name="tb_leaveType" EntityType="HRMXModel.tb_leaveType" />
+    <EntitySet Name="tb_menu" EntityType="HRMXModel.tb_menu" />
+    <EntitySet Name="tb_nationality" EntityType="HRMXModel.tb_nationality" />
+    <EntitySet Name="tb_permission" EntityType="HRMXModel.tb_permission" />
+    <EntitySet Name="tb_province" EntityType="HRMXModel.tb_province" />
+    <EntitySet Name="tb_publicHoliday" EntityType="HRMXModel.tb_publicHoliday" />
+    <EntitySet Name="tb_race" EntityType="HRMXModel.tb_race" />
+    <EntitySet Name="tb_religion" EntityType="HRMXModel.tb_religion" />
+    <EntitySet Name="tb_role" EntityType="HRMXModel.tb_role" />
+    <EntitySet Name="tb_role_permission" EntityType="HRMXModel.tb_role_permission" />
+    <EntitySet Name="tb_spouse" EntityType="HRMXModel.tb_spouse" />
+    <EntitySet Name="tb_sso" EntityType="HRMXModel.tb_sso" />
+    <EntitySet Name="tb_ssoType" EntityType="HRMXModel.tb_ssoType" />
+    <EntitySet Name="tb_taxs" EntityType="HRMXModel.tb_taxs" />
+    <EntitySet Name="tb_unit" EntityType="HRMXModel.tb_unit" />
+    <EntitySet Name="tb_user_role" EntityType="HRMXModel.tb_user_role" />
+    <EntitySet Name="tb_users" EntityType="HRMXModel.tb_users" />
+    <EntitySet Name="tb_checkInOut" EntityType="HRMXModel.tb_checkInOut" />
+    <EntitySet Name="tb_lang" EntityType="HRMXModel.tb_lang" />
+    <EntitySet Name="tb_news" EntityType="HRMXModel.tb_news" />
+    <EntitySet Name="tb_noti" EntityType="HRMXModel.tb_noti" />
+    <EntitySet Name="tb_tasks" EntityType="HRMXModel.tb_tasks" />
+    <EntitySet Name="v_users" EntityType="HRMXModel.v_users" />
+    <AssociationSet Name="FK_tb_empAllowance_tb_allowanceType" Association="HRMXModel.FK_tb_empAllowance_tb_allowanceType">
+      <End Role="tb_allowanceType" EntitySet="tb_allowanceType" />
+      <End Role="tb_empAllowance" EntitySet="tb_empAllowance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_app_role_permission_tb_app_permission" Association="HRMXModel.FK_tb_app_role_permission_tb_app_permission">
+      <End Role="tb_app_permission" EntitySet="tb_app_permission" />
+      <End Role="tb_app_role_permission" EntitySet="tb_app_role_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_app_role_permission_tb_app_role" Association="HRMXModel.FK_tb_app_role_permission_tb_app_role">
+      <End Role="tb_app_role" EntitySet="tb_app_role" />
+      <End Role="tb_app_role_permission" EntitySet="tb_app_role_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_users_tb_app_role" Association="HRMXModel.FK_tb_users_tb_app_role">
+      <End Role="tb_app_role" EntitySet="tb_app_role" />
+      <End Role="tb_users" EntitySet="tb_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empBankAccount_tb_bank" Association="HRMXModel.FK_tb_empBankAccount_tb_bank">
+      <End Role="tb_bank" EntitySet="tb_bank" />
+      <End Role="tb_empBankAccount" EntitySet="tb_empBankAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_department_tb_company" Association="HRMXModel.FK_tb_department_tb_company">
+      <End Role="tb_company" EntitySet="tb_company" />
+      <End Role="tb_department" EntitySet="tb_department" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empDeduction_tb_deductionType" Association="HRMXModel.FK_tb_empDeduction_tb_deductionType">
+      <End Role="tb_deductionType" EntitySet="tb_deductionType" />
+      <End Role="tb_empDeduction" EntitySet="tb_empDeduction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_unit_tb_department" Association="HRMXModel.FK_tb_unit_tb_department">
+      <End Role="tb_department" EntitySet="tb_department" />
+      <End Role="tb_unit" EntitySet="tb_unit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_district_tb_province" Association="HRMXModel.FK_tb_district_tb_province">
+      <End Role="tb_province" EntitySet="tb_province" />
+      <End Role="tb_district" EntitySet="tb_district" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_district" Association="HRMXModel.FK_tb_empployees_tb_district">
+      <End Role="tb_district" EntitySet="tb_district" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empEducation_tb_educationType" Association="HRMXModel.FK_tb_empEducation_tb_educationType">
+      <End Role="tb_educationType" EntitySet="tb_educationType" />
+      <End Role="tb_empEducation" EntitySet="tb_empEducation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empAllowance_tb_empployees" Association="HRMXModel.FK_tb_empAllowance_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empAllowance" EntitySet="tb_empAllowance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empBankAccount_tb_empployees" Association="HRMXModel.FK_tb_empBankAccount_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empBankAccount" EntitySet="tb_empBankAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empDeduction_tb_empployees" Association="HRMXModel.FK_tb_empDeduction_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empDeduction" EntitySet="tb_empDeduction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empEducation_tb_empployees" Association="HRMXModel.FK_tb_empEducation_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empEducation" EntitySet="tb_empEducation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empFamily_tb_empployees" Association="HRMXModel.FK_tb_empFamily_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empFamily" EntitySet="tb_empFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_empGroup" Association="HRMXModel.FK_tb_empInfo_tb_empGroup">
+      <End Role="tb_empGroup" EntitySet="tb_empGroup" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_leaveSetting_tb_empGroup" Association="HRMXModel.FK_tb_leaveSetting_tb_empGroup">
+      <End Role="tb_empGroup" EntitySet="tb_empGroup" />
+      <End Role="tb_leaveSetting" EntitySet="tb_leaveSetting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empIncome_tb_empployees" Association="HRMXModel.FK_tb_empIncome_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empIncome" EntitySet="tb_empIncome" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empIncome_tb_incomType" Association="HRMXModel.FK_tb_empIncome_tb_incomType">
+      <End Role="tb_incomType" EntitySet="tb_incomType" />
+      <End Role="tb_empIncome" EntitySet="tb_empIncome" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_empLevel" Association="HRMXModel.FK_tb_empInfo_tb_empLevel">
+      <End Role="tb_empLevel" EntitySet="tb_empLevel" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_empployees" Association="HRMXModel.FK_tb_empInfo_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empInfo_tb_unit" Association="HRMXModel.FK_tb_empInfo_tb_unit">
+      <End Role="tb_unit" EntitySet="tb_unit" />
+      <End Role="tb_empInfo" EntitySet="tb_empInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_fstatus" Association="HRMXModel.FK_tb_empployees_tb_fstatus">
+      <End Role="tb_fstatus" EntitySet="tb_fstatus" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_gender" Association="HRMXModel.FK_tb_empployees_tb_gender">
+      <End Role="tb_gender" EntitySet="tb_gender" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_nationality" Association="HRMXModel.FK_tb_empployees_tb_nationality">
+      <End Role="tb_nationality" EntitySet="tb_nationality" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_race" Association="HRMXModel.FK_tb_empployees_tb_race">
+      <End Role="tb_race" EntitySet="tb_race" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_empployees_tb_religion" Association="HRMXModel.FK_tb_empployees_tb_religion">
+      <End Role="tb_religion" EntitySet="tb_religion" />
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_spouse_tb_empployees" Association="HRMXModel.FK_tb_spouse_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_spouse" EntitySet="tb_spouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_users_tb_empployees" Association="HRMXModel.FK_tb_users_tb_empployees">
+      <End Role="tb_empployees" EntitySet="tb_empployees" />
+      <End Role="tb_users" EntitySet="tb_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_leaveSetting_tb_leaveType" Association="HRMXModel.FK_tb_leaveSetting_tb_leaveType">
+      <End Role="tb_leaveType" EntitySet="tb_leaveType" />
+      <End Role="tb_leaveSetting" EntitySet="tb_leaveSetting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_leaveType_tb_leaveType" Association="HRMXModel.FK_tb_leaveType_tb_leaveType">
+      <End Role="tb_leaveType" EntitySet="tb_leaveType" />
+      <End Role="tb_leaveType1" EntitySet="tb_leaveType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_sso_tb_ssoType" Association="HRMXModel.FK_tb_sso_tb_ssoType">
+      <End Role="tb_ssoType" EntitySet="tb_ssoType" />
+      <End Role="tb_sso" EntitySet="tb_sso" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="pd_actionLogin_Result">
+    <Property Type="Int32" Name="Emp_id" Nullable="true" />
+    <Property Type="String" Name="groupname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="labels" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="permissionname" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="gread" Nullable="true" />
+    <Property Type="Boolean" Name="gwrite" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_checkEmpTaxbyStandard_Result">
+    <Property Type="Double" Name="taxpercent" Nullable="true" />
+    <Property Type="Double" Name="taxstart" Nullable="true" />
+    <Property Type="Double" Name="taxend" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayAddNewAbsentbyEMPID_Result">
+    <Property Type="Int32" Name="addabsentid" Nullable="false" />
+    <Property Type="String" Name="absentname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="stdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="enddate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="returndate" Nullable="true" MaxLength="4000" />
+    <Property Type="DateTime" Name="startdate" Nullable="true" />
+    <Property Type="DateTime" Name="enddate1" Nullable="true" />
+    <Property Type="DateTime" Name="returndate1" Nullable="true" />
+    <Property Type="Double" Name="qty" Nullable="true" />
+    <Property Type="Double" Name="qtydays" Nullable="true" />
+    <Property Type="String" Name="absent_title" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="absentdescription" Nullable="true" />
+    <Property Type="String" Name="mgr_allow" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="hr_approve" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="re_no" Nullable="false" />
+    <Property Type="String" Name="user_email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="laoname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="engname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="empPhone1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="empPhone2" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="pd_displayEmpBanking_Result">
+    <Property Type="String" Name="bankname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="bankcard" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="pd_displayEmployeeRelationshipProfile_Result">
+    <Property Type="String" Name="rname" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="rmobile1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="rmobile2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="remail" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="rworking" Nullable="true" />
+    <Property Type="String" Name="rworking1" Nullable="true" />
+    <Property Type="String" Name="relationship" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="pd_displayLeaveDetailBoard_Result">
+    <Property Type="String" Name="Absentname" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="amountday" Nullable="false" />
+    <Property Type="Double" Name="sumtotal" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="pd_displayLeavePaymoneyPayroll_Result">
+    <Property Type="Int32" Name="CAbsentID" Nullable="true" />
+    <Property Type="String" Name="Absent_title" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="qty" Nullable="true" />
+    <Property Type="String" Name="AbsentDescription" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayLoanDetailsbyLoanid_Result">
+    <Property Type="Int32" Name="ldid" Nullable="false" />
+    <Property Type="String" Name="payingdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="loanstart" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="payment" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="paymentcost" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="balance" Nullable="true" MaxLength="4000" />
+    <Property Type="Boolean" Name="paidstatus" Nullable="true" />
+    <Property Type="Double" Name="paymentx" Nullable="true" />
+    <Property Type="Double" Name="paymentcostx" Nullable="true" />
+    <Property Type="Double" Name="balancex" Nullable="true" />
+    <Property Type="Double" Name="loanstartx" Nullable="true" />
+    <Property Type="Double" Name="debit" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayOTCalculate_Result">
+    <Property Type="String" Name="re_no" Nullable="false" />
+    <Property Type="String" Name="comments" Nullable="true" />
+    <Property Type="String" Name="startdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="starttime" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="enddtime" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="pd_displayPayrollTestingSPC_Result">
+    <Property Type="Int32" Name="PLTID" Nullable="false" />
+    <Property Type="String" Name="payrollname" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="payrollmoney" Nullable="true" MaxLength="4000" />
+    <Property Type="Boolean" Name="caltax" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayPermission_Result">
+    <Property Type="Int32" Name="pmid" Nullable="false" />
+    <Property Type="String" Name="labels" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="permissionname" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="checked" Nullable="false" MaxLength="5" />
+  </ComplexType>
+  <ComplexType Name="pd_displaySelectEmployee_Result">
+    <Property Type="Int32" Name="emp_id" Nullable="false" />
+    <Property Type="String" Name="laoname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="englishname" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTax_Result">
+    <Property Type="Int32" Name="taxid" Nullable="false" />
+    <Property Type="String" Name="taxvalue" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="Taxpercent" Nullable="true" />
+    <Property Type="String" Name="taxstart" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="taxend" Nullable="true" MaxLength="4000" />
+    <Property Type="Boolean" Name="taxdefault" Nullable="true" />
+    <Property Type="Boolean" Name="TaxSelft" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_AbsentCategory_Result">
+    <Property Type="Int32" Name="cabsentid" Nullable="false" />
+    <Property Type="String" Name="absentname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Absentsource" Nullable="true" MaxLength="80" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_Banking_Result">
+    <Property Type="Int32" Name="bankid" Nullable="false" />
+    <Property Type="String" Name="bankname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="bankinfo" Nullable="true" MaxLength="255" />
+    <Property Type="Boolean" Name="bankusing" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_Company_Result">
+    <Property Type="Int32" Name="cmid" Nullable="false" />
+    <Property Type="Int32" Name="parentid" Nullable="false" />
+    <Property Type="String" Name="company" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="parent" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="cmphone1" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="cmphone2" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="cmfax" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="cmwebsite" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="cmfacebook" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="cmstatus" Nullable="false" />
+    <Property Type="Binary" Name="CMimg" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_Delegation_Result">
+    <Property Type="Int32" Name="dlid" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="true" />
+    <Property Type="Int32" Name="Createby" Nullable="true" />
+    <Property Type="Int32" Name="ToEmployee" Nullable="true" />
+    <Property Type="String" Name="startdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="enddate" Nullable="true" MaxLength="4000" />
+    <Property Type="DateTime" Name="stdate" Nullable="true" />
+    <Property Type="DateTime" Name="enDate" Nullable="true" />
+    <Property Type="String" Name="CreatebyName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="Toemployeenames" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_DelegationEMPID_Result">
+    <Property Type="Int32" Name="dlid" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="true" />
+    <Property Type="Int32" Name="Createby" Nullable="true" />
+    <Property Type="Int32" Name="ToEmployee" Nullable="true" />
+    <Property Type="String" Name="startdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="enddate" Nullable="true" MaxLength="4000" />
+    <Property Type="DateTime" Name="stdate" Nullable="true" />
+    <Property Type="DateTime" Name="enDate" Nullable="true" />
+    <Property Type="String" Name="CreatebyName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="Toemployeenames" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_Education_Result">
+    <Property Type="Int32" Name="edid" Nullable="false" />
+    <Property Type="String" Name="education" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="educationinfo" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_EmpBankingByEMPID_Result">
+    <Property Type="Int32" Name="ebid" Nullable="false" />
+    <Property Type="Int32" Name="bankid" Nullable="true" />
+    <Property Type="Int32" Name="emp_id" Nullable="true" />
+    <Property Type="String" Name="bankcard" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="paysalary" Nullable="true" />
+    <Property Type="String" Name="bankname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="bankinfo" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_empeducation_Result">
+    <Property Type="Int32" Name="eeid" Nullable="false" />
+    <Property Type="String" Name="Education" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="startdate" Nullable="true" />
+    <Property Type="DateTime" Name="enddate" Nullable="true" />
+    <Property Type="String" Name="xstart" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="xend" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="educationinfo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_empleave_Result">
+    <Property Type="Int32" Name="elid" Nullable="false" />
+    <Property Type="String" Name="absentname" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="amount_day" Nullable="true" />
+    <Property Type="Double" Name="amount_hour" Nullable="true" />
+    <Property Type="Double" Name="total_use" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_EmployeeTabData_Result">
+    <Property Type="Int32" Name="emp_id" Nullable="false" />
+    <Property Type="String" Name="emp_nbr" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="laoname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="englishname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="titlename" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="departname" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_GroupUser_Result">
+    <Property Type="Int32" Name="gruid" Nullable="false" />
+    <Property Type="String" Name="groupname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="User_email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="createdate" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_IncomeDeduction_Result">
+    <Property Type="Int32" Name="indid" Nullable="false" />
+    <Property Type="String" Name="in_deduction" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="info" Nullable="true" />
+    <Property Type="Boolean" Name="deduction" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_Insurance_Type_Result">
+    <Property Type="Int32" Name="intypeid" Nullable="false" />
+    <Property Type="String" Name="insurance" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="inpercent" Nullable="true" />
+    <Property Type="Double" Name="compercent" Nullable="true" />
+    <Property Type="String" Name="maxmoney" Nullable="true" MaxLength="4000" />
+    <Property Type="Boolean" Name="empUsing" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_LoanEmployee_Result">
+    <Property Type="Int32" Name="loanid" Nullable="false" />
+    <Property Type="Int32" Name="emp_id" Nullable="true" />
+    <Property Type="String" Name="emp_nbr" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="laoname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="Engname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="AmountLoan" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="loanpayment" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="paymonthly" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_Nationality_Result">
+    <Property Type="Int32" Name="natid" Nullable="false" />
+    <Property Type="String" Name="NationName" Nullable="false" MaxLength="80" />
+    <Property Type="String" Name="languages" Nullable="true" MaxLength="80" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_OTCategory_Result">
+    <Property Type="Int32" Name="otcid" Nullable="false" />
+    <Property Type="String" Name="otname" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="otvalue" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_RectypeOT_Result">
+    <Property Type="Int32" Name="rtotid" Nullable="false" />
+    <Property Type="String" Name="rtotname" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="RTStatus" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_RectypeOTDetails_Result">
+    <Property Type="Int32" Name="rtotdtid" Nullable="false" />
+    <Property Type="String" Name="rtotname" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="otname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="starttime" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="endtime" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="info" Nullable="true" />
+    <Property Type="String" Name="Mday" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_Relationship_Result">
+    <Property Type="Int32" Name="rlid" Nullable="false" />
+    <Property Type="String" Name="relationship" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="relationshipinfo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_SalaryDevide_Result">
+    <Property Type="Int32" Name="sddid" Nullable="false" />
+    <Property Type="String" Name="devidename" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="devide_value" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_systemsetting_Result">
+    <Property Type="Int32" Name="tbl_system_id" Nullable="false" />
+    <Property Type="String" Name="system_name" Nullable="false" MaxLength="180" />
+    <Property Type="String" Name="system_values" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_title_Result">
+    <Property Type="Int32" Name="titleid" Nullable="false" />
+    <Property Type="String" Name="titlename" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="titleinfo" Nullable="false" />
+    <Property Type="Int32" Name="levelsign" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_WorkStatus_Result">
+    <Property Type="Int32" Name="wtsid" Nullable="false" />
+    <Property Type="String" Name="workstatus" Nullable="false" MaxLength="150" />
+    <Property Type="Double" Name="workhours" Nullable="true" />
+    <Property Type="String" Name="workinfo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTbl_WorkUnit_Result">
+    <Property Type="Int32" Name="wuid" Nullable="false" />
+    <Property Type="String" Name="unitname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UnitInfo" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTblDepartment_Result">
+    <Property Type="Int32" Name="depid" Nullable="false" />
+    <Property Type="Int32" Name="cmid" Nullable="true" />
+    <Property Type="String" Name="departname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="cmname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="phone" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="departinfo" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="pd_displayTblEmpRelationshipByEMPID_Result">
+    <Property Type="Int32" Name="erid" Nullable="false" />
+    <Property Type="Int32" Name="emp_id" Nullable="true" />
+    <Property Type="Int32" Name="rLid" Nullable="true" />
+    <Property Type="String" Name="rname" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="rmobile1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="rmobile2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="remail" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="rworking" Nullable="true" />
+    <Property Type="String" Name="raddress" Nullable="true" />
+    <Property Type="String" Name="relationship" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="pd_displayUser_Result">
+    <Property Type="String" Name="user_email" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="gruid" Nullable="false" />
+    <Property Type="String" Name="createdate" Nullable="false" MaxLength="4000" />
+    <Property Type="Boolean" Name="unew" Nullable="false" />
+    <Property Type="Boolean" Name="hr_admin" Nullable="false" />
+    <Property Type="Boolean" Name="ustatus" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="pd_ReportHR_EmployeeRequestLeave_Result">
+    <Property Type="Int32" Name="addabsentID" Nullable="false" />
+    <Property Type="Int32" Name="reid" Nullable="true" />
+    <Property Type="String" Name="re_no" Nullable="false" />
+    <Property Type="String" Name="Absentname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="emp_nbr" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="f_name_l1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="surname_l1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="f_name_l2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="surname_l2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="qty" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="startdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="enddate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="returndate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="absent_title" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="absentdescription" Nullable="true" />
+    <Property Type="String" Name="comments" Nullable="true" />
+    <Property Type="String" Name="approveNameL1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="approveNameL2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="approvesurnamel1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="approvesurnamel2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="comnamel1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="comnamel2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="comphone1" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="comphone2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="comfax" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="comaddress" Nullable="true" MaxLength="255" />
+    <Property Type="Binary" Name="comimg" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTax_Result">
+    <Property Type="Int32" Name="taxid" Nullable="false" />
+    <Property Type="String" Name="taxvalue" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="Taxpercent" Nullable="true" />
+    <Property Type="String" Name="taxstart" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="taxend" Nullable="true" MaxLength="4000" />
+    <Property Type="Boolean" Name="taxdefault" Nullable="true" />
+    <Property Type="Boolean" Name="TaxSelft" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_AbsentCategory_Result">
+    <Property Type="Int32" Name="cabsentid" Nullable="false" />
+    <Property Type="String" Name="absentname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Absentsource" Nullable="true" MaxLength="80" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Banking_Result">
+    <Property Type="Int32" Name="bankid" Nullable="false" />
+    <Property Type="String" Name="bankname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="bankinfo" Nullable="true" MaxLength="255" />
+    <Property Type="Boolean" Name="bankusing" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Company_Result">
+    <Property Type="Int32" Name="cmid" Nullable="false" />
+    <Property Type="Int32" Name="parentid" Nullable="false" />
+    <Property Type="String" Name="company" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="parent" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="cmphone1" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="cmphone2" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="cmfax" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="cmwebsite" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="cmfacebook" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="cmstatus" Nullable="false" />
+    <Property Type="Binary" Name="CMimg" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Delegation_Result">
+    <Property Type="Int32" Name="dlid" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="true" />
+    <Property Type="Int32" Name="Createby" Nullable="true" />
+    <Property Type="Int32" Name="ToEmployee" Nullable="true" />
+    <Property Type="String" Name="startdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="enddate" Nullable="true" MaxLength="4000" />
+    <Property Type="DateTime" Name="stdate" Nullable="true" />
+    <Property Type="DateTime" Name="enDate" Nullable="true" />
+    <Property Type="String" Name="CreatebyName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="Toemployeenames" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_DelegationEMPID_Result">
+    <Property Type="Int32" Name="dlid" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="true" />
+    <Property Type="Int32" Name="Createby" Nullable="true" />
+    <Property Type="Int32" Name="ToEmployee" Nullable="true" />
+    <Property Type="String" Name="startdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="enddate" Nullable="true" MaxLength="4000" />
+    <Property Type="DateTime" Name="stdate" Nullable="true" />
+    <Property Type="DateTime" Name="enDate" Nullable="true" />
+    <Property Type="String" Name="CreatebyName" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="Toemployeenames" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Department_Result">
+    <Property Type="Int32" Name="depid" Nullable="false" />
+    <Property Type="Int32" Name="cmid" Nullable="true" />
+    <Property Type="String" Name="departname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="cmname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="phone" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="departinfo" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Education_Result">
+    <Property Type="Int32" Name="edid" Nullable="false" />
+    <Property Type="String" Name="education" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="educationinfo" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_EmployeeTabData_Result">
+    <Property Type="Int32" Name="emp_id" Nullable="false" />
+    <Property Type="String" Name="emp_nbr" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="laoname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="englishname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="titlename" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="departname" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_GroupUser_Result">
+    <Property Type="Int32" Name="gruid" Nullable="false" />
+    <Property Type="String" Name="groupname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="User_email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="createdate" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_IncomeDeduction_Result">
+    <Property Type="Int32" Name="indid" Nullable="false" />
+    <Property Type="String" Name="in_deduction" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="info" Nullable="true" />
+    <Property Type="Boolean" Name="deduction" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Insurance_Type_Result">
+    <Property Type="Int32" Name="intypeid" Nullable="false" />
+    <Property Type="String" Name="insurance" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="inpercent" Nullable="true" />
+    <Property Type="Double" Name="compercent" Nullable="true" />
+    <Property Type="String" Name="maxmoney" Nullable="true" MaxLength="4000" />
+    <Property Type="Boolean" Name="empUsing" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_LoanEmployee_Result">
+    <Property Type="Int32" Name="loanid" Nullable="false" />
+    <Property Type="Int32" Name="emp_id" Nullable="true" />
+    <Property Type="String" Name="emp_nbr" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="laoname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="Engname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="AmountLoan" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="loanpayment" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="paymonthly" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Nationality_Result">
+    <Property Type="Int32" Name="natid" Nullable="false" />
+    <Property Type="String" Name="NationName" Nullable="false" MaxLength="80" />
+    <Property Type="String" Name="languages" Nullable="true" MaxLength="80" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_OTCategory_Result">
+    <Property Type="Int32" Name="otcid" Nullable="false" />
+    <Property Type="String" Name="otname" Nullable="false" MaxLength="100" />
+    <Property Type="Double" Name="otvalue" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_RectypeOT_Result">
+    <Property Type="Int32" Name="rtotid" Nullable="false" />
+    <Property Type="String" Name="rtotname" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="RTStatus" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_RectypeOTDetails_Result">
+    <Property Type="Int32" Name="rtotdtid" Nullable="false" />
+    <Property Type="String" Name="rtotname" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="otname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="starttime" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="endtime" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="info" Nullable="true" />
+    <Property Type="String" Name="Mday" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Relationship_Result">
+    <Property Type="Int32" Name="rlid" Nullable="false" />
+    <Property Type="String" Name="relationship" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="relationshipinfo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_SalaryDevide_Result">
+    <Property Type="Int32" Name="sddid" Nullable="false" />
+    <Property Type="String" Name="devidename" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="devide_value" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_Title_Result">
+    <Property Type="Int32" Name="titleid" Nullable="false" />
+    <Property Type="String" Name="titlename" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="titleinfo" Nullable="true" />
+    <Property Type="Int32" Name="levelsign" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_WorkStatus_Result">
+    <Property Type="Int32" Name="wtsid" Nullable="false" />
+    <Property Type="String" Name="workstatus" Nullable="false" MaxLength="150" />
+    <Property Type="Double" Name="workhours" Nullable="true" />
+    <Property Type="String" Name="workinfo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchTbl_WorkUnit_Result">
+    <Property Type="Int32" Name="wuid" Nullable="false" />
+    <Property Type="String" Name="unitname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UnitInfo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_searchUser_Result">
+    <Property Type="String" Name="user_email" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="gruid" Nullable="false" />
+    <Property Type="String" Name="createdate" Nullable="false" MaxLength="4000" />
+    <Property Type="Boolean" Name="unew" Nullable="false" />
+    <Property Type="Boolean" Name="hr_admin" Nullable="false" />
+    <Property Type="Boolean" Name="ustatus" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="pd_selectPMID_Result">
+    <Property Type="Boolean" Name="gread" Nullable="true" />
+    <Property Type="Boolean" Name="gwrite" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pd_WebClient_RosterAbsent_Result">
+    <Property Type="String" Name="WeekDay" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="ShowDate" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <ComplexType Name="p_myrequestLeave_TA_Result">
+    <Property Type="Int32" Name="requestID" Nullable="false" />
+    <Property Type="String" Name="requestNo" Nullable="false" />
+    <Property Type="String" Name="requestType" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="requestName_la" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="requestName_en" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="requestFor" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="StartDate" Nullable="true" />
+    <Property Type="DateTime" Name="EndDate" Nullable="true" />
+    <Property Type="DateTime" Name="ReturnDate" Nullable="true" />
+    <Property Type="String" Name="mgrFname_l" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mgrLname_l" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mgrFname_E" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mgrLname_E" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="date_request" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="pd_displayDelegationAccept_Result">
+    <Property Type="Int32" Name="dlid" Nullable="false" />
+    <Property Type="String" Name="emp_nbr" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="user_email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="laoname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="englishname" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="titlename" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="departname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="cmname" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="startdate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="enddate" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="reasons" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="p_RequestOT_TA_Result">
+    <Property Type="String" Name="TypeOT" Nullable="false" MaxLength="7" />
+    <Property Type="Int32" Name="TimeShift" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="tb_allowanceType">
+    <Key>
+      <PropertyRef Name="allowanceTypeID" />
+    </Key>
+    <Property Name="allowanceTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="allowanceTypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="allowanceTypeName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="allowanceTypeName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empAllowance" Relationship="HRMXModel.FK_tb_empAllowance_tb_allowanceType" FromRole="tb_allowanceType" ToRole="tb_empAllowance" />
+  </EntityType>
+  <EntityType Name="tb_app_permission">
+    <Key>
+      <PropertyRef Name="app_permissionId" />
+    </Key>
+    <Property Name="app_permissionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="app_permissionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_app_role_permission" Relationship="HRMXModel.FK_tb_app_role_permission_tb_app_permission" FromRole="tb_app_permission" ToRole="tb_app_role_permission" />
+  </EntityType>
+  <EntityType Name="tb_app_role">
+    <Key>
+      <PropertyRef Name="roleId" />
+    </Key>
+    <Property Name="roleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="roleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_app_role_permission" Relationship="HRMXModel.FK_tb_app_role_permission_tb_app_role" FromRole="tb_app_role" ToRole="tb_app_role_permission" />
+    <NavigationProperty Name="tb_users" Relationship="HRMXModel.FK_tb_users_tb_app_role" FromRole="tb_app_role" ToRole="tb_users" />
+  </EntityType>
+  <EntityType Name="tb_app_role_permission">
+    <Key>
+      <PropertyRef Name="appId" />
+    </Key>
+    <Property Name="appId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="roleId" Type="Int32" />
+    <Property Name="app_permissionId" Type="Int32" />
+    <Property Name="app_view" Type="Int32" />
+    <Property Name="app_add" Type="Int32" />
+    <Property Name="app_edit" Type="Int32" />
+    <Property Name="app_action" Type="Int32" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_app_permission" Relationship="HRMXModel.FK_tb_app_role_permission_tb_app_permission" FromRole="tb_app_role_permission" ToRole="tb_app_permission" />
+    <NavigationProperty Name="tb_app_role" Relationship="HRMXModel.FK_tb_app_role_permission_tb_app_role" FromRole="tb_app_role_permission" ToRole="tb_app_role" />
+  </EntityType>
+  <EntityType Name="tb_bank">
+    <Key>
+      <PropertyRef Name="bankID" />
+    </Key>
+    <Property Name="bankID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BankShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BankLongName" Type="Double" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empBankAccount" Relationship="HRMXModel.FK_tb_empBankAccount_tb_bank" FromRole="tb_bank" ToRole="tb_empBankAccount" />
+  </EntityType>
+  <EntityType Name="tb_company">
+    <Key>
+      <PropertyRef Name="companyID" />
+    </Key>
+    <Property Name="companyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="companyName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="companyName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_department" Relationship="HRMXModel.FK_tb_department_tb_company" FromRole="tb_company" ToRole="tb_department" />
+  </EntityType>
+  <EntityType Name="tb_deductionType">
+    <Key>
+      <PropertyRef Name="deductionTypeID" />
+    </Key>
+    <Property Name="deductionTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="deductionTypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deductionTypeName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deductionTypeName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empDeduction" Relationship="HRMXModel.FK_tb_empDeduction_tb_deductionType" FromRole="tb_deductionType" ToRole="tb_empDeduction" />
+  </EntityType>
+  <EntityType Name="tb_department">
+    <Key>
+      <PropertyRef Name="deptID" />
+    </Key>
+    <Property Name="deptID" Type="Int32" Nullable="false" />
+    <Property Name="companyID" Type="Int32" />
+    <Property Name="deptCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deptName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deptName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_company" Relationship="HRMXModel.FK_tb_department_tb_company" FromRole="tb_department" ToRole="tb_company" />
+    <NavigationProperty Name="tb_unit" Relationship="HRMXModel.FK_tb_unit_tb_department" FromRole="tb_department" ToRole="tb_unit" />
+  </EntityType>
+  <EntityType Name="tb_district">
+    <Key>
+      <PropertyRef Name="district_id" />
+    </Key>
+    <Property Name="district_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Pro_ID" Type="Int32" />
+    <Property Name="district_name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_province" Relationship="HRMXModel.FK_tb_district_tb_province" FromRole="tb_district" ToRole="tb_province" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empployees_tb_district" FromRole="tb_district" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_educationType">
+    <Key>
+      <PropertyRef Name="educationTypeID" />
+    </Key>
+    <Property Name="educationTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="educationTypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="educationTypeName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="educationTypeName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empEducation" Relationship="HRMXModel.FK_tb_empEducation_tb_educationType" FromRole="tb_educationType" ToRole="tb_empEducation" />
+  </EntityType>
+  <EntityType Name="tb_empAllowance">
+    <Key>
+      <PropertyRef Name="empAllowanceID" />
+    </Key>
+    <Property Name="empAllowanceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="allowanceTypeID" Type="Int32" Nullable="false" />
+    <Property Name="amount" Type="Double" />
+    <Property Name="taxsCal" Type="Boolean" />
+    <Property Name="remark" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_allowanceType" Relationship="HRMXModel.FK_tb_empAllowance_tb_allowanceType" FromRole="tb_empAllowance" ToRole="tb_allowanceType" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empAllowance_tb_empployees" FromRole="tb_empAllowance" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_empBankAccount">
+    <Key>
+      <PropertyRef Name="empBankAccountID" />
+    </Key>
+    <Property Name="empBankAccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bankID" Type="Int32" Nullable="false" />
+    <Property Name="empID" Type="Int32" Nullable="false" />
+    <Property Name="bankAccountName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="bankAccountNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_bank" Relationship="HRMXModel.FK_tb_empBankAccount_tb_bank" FromRole="tb_empBankAccount" ToRole="tb_bank" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empBankAccount_tb_empployees" FromRole="tb_empBankAccount" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_empDeduction">
+    <Key>
+      <PropertyRef Name="empDeduction" />
+    </Key>
+    <Property Name="empDeduction" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="deductionTypeID" Type="Int32" Nullable="false" />
+    <Property Name="amount" Type="Double" />
+    <Property Name="taxsCal" Type="Boolean" />
+    <Property Name="remark" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_deductionType" Relationship="HRMXModel.FK_tb_empDeduction_tb_deductionType" FromRole="tb_empDeduction" ToRole="tb_deductionType" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empDeduction_tb_empployees" FromRole="tb_empDeduction" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_empEducation">
+    <Key>
+      <PropertyRef Name="empEducationID" />
+    </Key>
+    <Property Name="empEducationID" Type="Int32" Nullable="false" />
+    <Property Name="empID" Type="Int32" Nullable="false" />
+    <Property Name="educationTypeID" Type="Int32" Nullable="false" />
+    <Property Name="schoolName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="levelReceive" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="acdamyYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_educationType" Relationship="HRMXModel.FK_tb_empEducation_tb_educationType" FromRole="tb_empEducation" ToRole="tb_educationType" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empEducation_tb_empployees" FromRole="tb_empEducation" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_empFamily">
+    <Key>
+      <PropertyRef Name="empFamilyID" />
+    </Key>
+    <Property Name="empFamilyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="empFamilyRelationships" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empFamilyFullName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="empFamilyJob" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empFamilyJobAddr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empFamilyAddr" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="empFamilyTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empFamilyEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empFamily_tb_empployees" FromRole="tb_empFamily" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_empGroup">
+    <Key>
+      <PropertyRef Name="empGroupID" />
+    </Key>
+    <Property Name="empGroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empGroupCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empGroupName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empGroupName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empInfo" Relationship="HRMXModel.FK_tb_empInfo_tb_empGroup" FromRole="tb_empGroup" ToRole="tb_empInfo" />
+    <NavigationProperty Name="tb_leaveSetting" Relationship="HRMXModel.FK_tb_leaveSetting_tb_empGroup" FromRole="tb_empGroup" ToRole="tb_leaveSetting" />
+  </EntityType>
+  <EntityType Name="tb_empIncome">
+    <Key>
+      <PropertyRef Name="empIncome" />
+    </Key>
+    <Property Name="empIncome" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="incomTypeID" Type="Int32" Nullable="false" />
+    <Property Name="amount" Type="Double" />
+    <Property Name="taxsCal" Type="Boolean" />
+    <Property Name="remark" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empIncome_tb_empployees" FromRole="tb_empIncome" ToRole="tb_empployees" />
+    <NavigationProperty Name="tb_incomType" Relationship="HRMXModel.FK_tb_empIncome_tb_incomType" FromRole="tb_empIncome" ToRole="tb_incomType" />
+  </EntityType>
+  <EntityType Name="tb_empInfo">
+    <Key>
+      <PropertyRef Name="empInfoID" />
+    </Key>
+    <Property Name="empInfoID" Type="Int32" Nullable="false" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="unitID" Type="Int32" />
+    <Property Name="empLevelID" Type="Int32" />
+    <Property Name="hireDay" Type="DateTime" Precision="0" />
+    <Property Name="empGroupID" Type="Int32" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empGroup" Relationship="HRMXModel.FK_tb_empInfo_tb_empGroup" FromRole="tb_empInfo" ToRole="tb_empGroup" />
+    <NavigationProperty Name="tb_empLevel" Relationship="HRMXModel.FK_tb_empInfo_tb_empLevel" FromRole="tb_empInfo" ToRole="tb_empLevel" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empInfo_tb_empployees" FromRole="tb_empInfo" ToRole="tb_empployees" />
+    <NavigationProperty Name="tb_unit" Relationship="HRMXModel.FK_tb_empInfo_tb_unit" FromRole="tb_empInfo" ToRole="tb_unit" />
+  </EntityType>
+  <EntityType Name="tb_empLevel">
+    <Key>
+      <PropertyRef Name="empLevelID" />
+    </Key>
+    <Property Name="empLevelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empLevelCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empLevelName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empLevelName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empInfo" Relationship="HRMXModel.FK_tb_empInfo_tb_empLevel" FromRole="tb_empLevel" ToRole="tb_empInfo" />
+  </EntityType>
+  <EntityType Name="tb_empployees">
+    <Key>
+      <PropertyRef Name="empID" />
+    </Key>
+    <Property Name="empID" Type="Int32" Nullable="false" />
+    <Property Name="firstName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nickName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="firstName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nickName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="genderID" Type="Int32" />
+    <Property Name="dob" Type="DateTime" Precision="0" />
+    <Property Name="fstatusID" Type="Int32" />
+    <Property Name="nationalityID" Type="Int32" />
+    <Property Name="raceID" Type="Int32" />
+    <Property Name="religionID" Type="Int32" />
+    <Property Name="IDCrad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="passport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="district_id1" Type="Int32" />
+    <Property Name="address2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="district_id2" Type="Int32" />
+    <Property Name="empMobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="empEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_district" Relationship="HRMXModel.FK_tb_empployees_tb_district" FromRole="tb_empployees" ToRole="tb_district" />
+    <NavigationProperty Name="tb_empAllowance" Relationship="HRMXModel.FK_tb_empAllowance_tb_empployees" FromRole="tb_empployees" ToRole="tb_empAllowance" />
+    <NavigationProperty Name="tb_empBankAccount" Relationship="HRMXModel.FK_tb_empBankAccount_tb_empployees" FromRole="tb_empployees" ToRole="tb_empBankAccount" />
+    <NavigationProperty Name="tb_empDeduction" Relationship="HRMXModel.FK_tb_empDeduction_tb_empployees" FromRole="tb_empployees" ToRole="tb_empDeduction" />
+    <NavigationProperty Name="tb_empEducation" Relationship="HRMXModel.FK_tb_empEducation_tb_empployees" FromRole="tb_empployees" ToRole="tb_empEducation" />
+    <NavigationProperty Name="tb_empFamily" Relationship="HRMXModel.FK_tb_empFamily_tb_empployees" FromRole="tb_empployees" ToRole="tb_empFamily" />
+    <NavigationProperty Name="tb_empIncome" Relationship="HRMXModel.FK_tb_empIncome_tb_empployees" FromRole="tb_empployees" ToRole="tb_empIncome" />
+    <NavigationProperty Name="tb_empInfo" Relationship="HRMXModel.FK_tb_empInfo_tb_empployees" FromRole="tb_empployees" ToRole="tb_empInfo" />
+    <NavigationProperty Name="tb_fstatus" Relationship="HRMXModel.FK_tb_empployees_tb_fstatus" FromRole="tb_empployees" ToRole="tb_fstatus" />
+    <NavigationProperty Name="tb_gender" Relationship="HRMXModel.FK_tb_empployees_tb_gender" FromRole="tb_empployees" ToRole="tb_gender" />
+    <NavigationProperty Name="tb_nationality" Relationship="HRMXModel.FK_tb_empployees_tb_nationality" FromRole="tb_empployees" ToRole="tb_nationality" />
+    <NavigationProperty Name="tb_race" Relationship="HRMXModel.FK_tb_empployees_tb_race" FromRole="tb_empployees" ToRole="tb_race" />
+    <NavigationProperty Name="tb_religion" Relationship="HRMXModel.FK_tb_empployees_tb_religion" FromRole="tb_empployees" ToRole="tb_religion" />
+    <NavigationProperty Name="tb_spouse" Relationship="HRMXModel.FK_tb_spouse_tb_empployees" FromRole="tb_empployees" ToRole="tb_spouse" />
+    <NavigationProperty Name="tb_users" Relationship="HRMXModel.FK_tb_users_tb_empployees" FromRole="tb_empployees" ToRole="tb_users" />
+  </EntityType>
+  <EntityType Name="tb_fstatus">
+    <Key>
+      <PropertyRef Name="fstatusID" />
+    </Key>
+    <Property Name="fstatusID" Type="Int32" Nullable="false" />
+    <Property Name="fstatusName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fstatusName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empployees_tb_fstatus" FromRole="tb_fstatus" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_gender">
+    <Key>
+      <PropertyRef Name="genderID" />
+    </Key>
+    <Property Name="genderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="langID" Type="Int32" />
+    <Property Name="genderText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empployees_tb_gender" FromRole="tb_gender" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_incomType">
+    <Key>
+      <PropertyRef Name="incomTypeID" />
+    </Key>
+    <Property Name="incomTypeID" Type="Int32" Nullable="false" />
+    <Property Name="incomTypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="incomTypeName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="incomTypeName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empIncome" Relationship="HRMXModel.FK_tb_empIncome_tb_incomType" FromRole="tb_incomType" ToRole="tb_empIncome" />
+  </EntityType>
+  <EntityType Name="tb_languages">
+    <Key>
+      <PropertyRef Name="langID" />
+    </Key>
+    <Property Name="langID" Type="Int32" Nullable="false" />
+    <Property Name="langShort" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="langName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_leaveSetting">
+    <Key>
+      <PropertyRef Name="leaveSettingID" />
+    </Key>
+    <Property Name="leaveSettingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="leaveTypeID" Type="Int32" Nullable="false" />
+    <Property Name="empGroupID" Type="Int32" Nullable="false" />
+    <Property Name="amountDay" Type="Int32" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empGroup" Relationship="HRMXModel.FK_tb_leaveSetting_tb_empGroup" FromRole="tb_leaveSetting" ToRole="tb_empGroup" />
+    <NavigationProperty Name="tb_leaveType" Relationship="HRMXModel.FK_tb_leaveSetting_tb_leaveType" FromRole="tb_leaveSetting" ToRole="tb_leaveType" />
+  </EntityType>
+  <EntityType Name="tb_leaveType">
+    <Key>
+      <PropertyRef Name="leaveTypeID" />
+    </Key>
+    <Property Name="leaveTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="leaveTypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="leaveTypeName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="leaveTypeName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_leaveSetting" Relationship="HRMXModel.FK_tb_leaveSetting_tb_leaveType" FromRole="tb_leaveType" ToRole="tb_leaveSetting" />
+    <NavigationProperty Name="tb_leaveType1" Relationship="HRMXModel.FK_tb_leaveType_tb_leaveType" FromRole="tb_leaveType" ToRole="tb_leaveType1" />
+    <NavigationProperty Name="tb_leaveType2" Relationship="HRMXModel.FK_tb_leaveType_tb_leaveType" FromRole="tb_leaveType1" ToRole="tb_leaveType" />
+  </EntityType>
+  <EntityType Name="tb_menu">
+    <Key>
+      <PropertyRef Name="menuID" />
+      <PropertyRef Name="menuNo" />
+    </Key>
+    <Property Name="menuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="menuNo" Type="Int32" Nullable="false" />
+    <Property Name="langID" Type="Int32" />
+    <Property Name="menuText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_nationality">
+    <Key>
+      <PropertyRef Name="nationalityID" />
+    </Key>
+    <Property Name="nationalityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nationalityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nationalityName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nationalityName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empployees_tb_nationality" FromRole="tb_nationality" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_permission">
+    <Key>
+      <PropertyRef Name="permissionID" />
+    </Key>
+    <Property Name="permissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="langID" Type="Int32" />
+    <Property Name="permissionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="staus_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_province">
+    <Key>
+      <PropertyRef Name="Pro_ID" />
+    </Key>
+    <Property Name="Pro_ID" Type="Int32" Nullable="false" />
+    <Property Name="Pronamenen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pronameln" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_district" Relationship="HRMXModel.FK_tb_district_tb_province" FromRole="tb_province" ToRole="tb_district" />
+  </EntityType>
+  <EntityType Name="tb_publicHoliday">
+    <Key>
+      <PropertyRef Name="publicHolidayID" />
+    </Key>
+    <Property Name="publicHolidayID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="publicHoliday" Type="DateTime" Precision="0" />
+    <Property Name="publicHolidayName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="publicHolidayName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_race">
+    <Key>
+      <PropertyRef Name="raceID" />
+    </Key>
+    <Property Name="raceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="raceCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="raceName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="raceName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empployees_tb_race" FromRole="tb_race" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_religion">
+    <Key>
+      <PropertyRef Name="religionID" />
+    </Key>
+    <Property Name="religionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="religionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="religionName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="religionName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_empployees_tb_religion" FromRole="tb_religion" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_role">
+    <Key>
+      <PropertyRef Name="roleID" />
+      <PropertyRef Name="roleNo" />
+    </Key>
+    <Property Name="roleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="roleNo" Type="Int32" Nullable="false" />
+    <Property Name="roleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="langID" Type="Int32" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_role_permission">
+    <Key>
+      <PropertyRef Name="role_per" />
+    </Key>
+    <Property Name="role_per" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="roleID" Type="Int32" />
+    <Property Name="permissionID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_spouse">
+    <Key>
+      <PropertyRef Name="spouseID" />
+    </Key>
+    <Property Name="spouseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="sName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sMobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sJob" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="jobAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_spouse_tb_empployees" FromRole="tb_spouse" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_sso">
+    <Key>
+      <PropertyRef Name="ssoID" />
+    </Key>
+    <Property Name="ssoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ssoTypeID" Type="Int32" />
+    <Property Name="minBase" Type="Double" />
+    <Property Name="maxBase" Type="Double" />
+    <Property Name="employeeRate" Type="Double" />
+    <Property Name="employerRate" Type="Double" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_ssoType" Relationship="HRMXModel.FK_tb_sso_tb_ssoType" FromRole="tb_sso" ToRole="tb_ssoType" />
+  </EntityType>
+  <EntityType Name="tb_ssoType">
+    <Key>
+      <PropertyRef Name="ssoTypeID" />
+    </Key>
+    <Property Name="ssoTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ssoName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_sso" Relationship="HRMXModel.FK_tb_sso_tb_ssoType" FromRole="tb_ssoType" ToRole="tb_sso" />
+  </EntityType>
+  <EntityType Name="tb_taxs">
+    <Key>
+      <PropertyRef Name="taxsID" />
+    </Key>
+    <Property Name="taxsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="minBase" Type="Double" />
+    <Property Name="maxBase" Type="Double" />
+    <Property Name="taxsRate" Type="Double" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_unit">
+    <Key>
+      <PropertyRef Name="unitID" />
+    </Key>
+    <Property Name="unitID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="deptID" Type="Int32" Nullable="false" />
+    <Property Name="parentID" Type="Int32" />
+    <Property Name="unitName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unitName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_ID" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_department" Relationship="HRMXModel.FK_tb_unit_tb_department" FromRole="tb_unit" ToRole="tb_department" />
+    <NavigationProperty Name="tb_empInfo" Relationship="HRMXModel.FK_tb_empInfo_tb_unit" FromRole="tb_unit" ToRole="tb_empInfo" />
+  </EntityType>
+  <EntityType Name="tb_user_role">
+    <Key>
+      <PropertyRef Name="user_per" />
+    </Key>
+    <Property Name="user_per" Type="Int32" Nullable="false" />
+    <Property Name="userID" Type="Int32" />
+    <Property Name="roleID" Type="Int32" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_users">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pwd" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="roleID" Type="Int32" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="expDate" Type="DateTime" Precision="3" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_app_role" Relationship="HRMXModel.FK_tb_users_tb_app_role" FromRole="tb_users" ToRole="tb_app_role" />
+    <NavigationProperty Name="tb_empployees" Relationship="HRMXModel.FK_tb_users_tb_empployees" FromRole="tb_users" ToRole="tb_empployees" />
+  </EntityType>
+  <EntityType Name="tb_checkInOut">
+    <Key>
+      <PropertyRef Name="chechID" />
+    </Key>
+    <Property Name="chechID" Type="Int32" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="checkTime" Type="DateTime" Precision="3" />
+    <Property Name="longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="checkInOut" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_lang">
+    <Key>
+      <PropertyRef Name="langID" />
+    </Key>
+    <Property Name="langID" Type="Int32" Nullable="false" />
+    <Property Name="langName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tb_news">
+    <Key>
+      <PropertyRef Name="newsID" />
+    </Key>
+    <Property Name="newsID" Type="Int32" Nullable="false" />
+    <Property Name="newsTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="newsContrent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="attachec_file" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="pubish_date" Type="DateTime" Precision="3" />
+    <Property Name="exp_date" Type="DateTime" Precision="3" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tb_noti">
+    <Key>
+      <PropertyRef Name="notiID" />
+    </Key>
+    <Property Name="notiID" Type="Int32" Nullable="false" />
+    <Property Name="Emp_id" Type="Int32" />
+    <Property Name="app_permissionId" Type="Int32" />
+    <Property Name="CountItem" Type="Int32" />
+    <Property Name="userView" Type="Int32" />
+    <Property Name="OldValues" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tb_tasks">
+    <Key>
+      <PropertyRef Name="taskID" />
+    </Key>
+    <Property Name="taskID" Type="Int32" Nullable="false" />
+    <Property Name="taskName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="taskDetail" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="emp_id" Type="Int32" />
+    <Property Name="attachec_file" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="status_com" Type="Boolean" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="v_users">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pwd" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="empID" Type="Int32" />
+    <Property Name="roleID" Type="Int32" />
+    <Property Name="status_id" Type="Int32" />
+    <Property Name="expDate" Type="DateTime" Precision="3" />
+    <Property Name="user_add" Type="Int32" />
+    <Property Name="date_add" Type="DateTime" Precision="3" />
+    <Property Name="firstName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastName1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="firstName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="genderNo" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_tb_empAllowance_tb_allowanceType">
+    <End Type="HRMXModel.tb_allowanceType" Role="tb_allowanceType" Multiplicity="1" />
+    <End Type="HRMXModel.tb_empAllowance" Role="tb_empAllowance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_allowanceType">
+        <PropertyRef Name="allowanceTypeID" />
+      </Principal>
+      <Dependent Role="tb_empAllowance">
+        <PropertyRef Name="allowanceTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_app_role_permission_tb_app_permission">
+    <End Type="HRMXModel.tb_app_permission" Role="tb_app_permission" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_app_role_permission" Role="tb_app_role_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_app_permission">
+        <PropertyRef Name="app_permissionId" />
+      </Principal>
+      <Dependent Role="tb_app_role_permission">
+        <PropertyRef Name="app_permissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_app_role_permission_tb_app_role">
+    <End Type="HRMXModel.tb_app_role" Role="tb_app_role" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_app_role_permission" Role="tb_app_role_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_app_role">
+        <PropertyRef Name="roleId" />
+      </Principal>
+      <Dependent Role="tb_app_role_permission">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_users_tb_app_role">
+    <End Type="HRMXModel.tb_app_role" Role="tb_app_role" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_users" Role="tb_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_app_role">
+        <PropertyRef Name="roleId" />
+      </Principal>
+      <Dependent Role="tb_users">
+        <PropertyRef Name="roleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empBankAccount_tb_bank">
+    <End Type="HRMXModel.tb_bank" Role="tb_bank" Multiplicity="1" />
+    <End Type="HRMXModel.tb_empBankAccount" Role="tb_empBankAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_bank">
+        <PropertyRef Name="bankID" />
+      </Principal>
+      <Dependent Role="tb_empBankAccount">
+        <PropertyRef Name="bankID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_department_tb_company">
+    <End Type="HRMXModel.tb_company" Role="tb_company" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_department" Role="tb_department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_company">
+        <PropertyRef Name="companyID" />
+      </Principal>
+      <Dependent Role="tb_department">
+        <PropertyRef Name="companyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empDeduction_tb_deductionType">
+    <End Type="HRMXModel.tb_deductionType" Role="tb_deductionType" Multiplicity="1" />
+    <End Type="HRMXModel.tb_empDeduction" Role="tb_empDeduction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_deductionType">
+        <PropertyRef Name="deductionTypeID" />
+      </Principal>
+      <Dependent Role="tb_empDeduction">
+        <PropertyRef Name="deductionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_unit_tb_department">
+    <End Type="HRMXModel.tb_department" Role="tb_department" Multiplicity="1" />
+    <End Type="HRMXModel.tb_unit" Role="tb_unit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_department">
+        <PropertyRef Name="deptID" />
+      </Principal>
+      <Dependent Role="tb_unit">
+        <PropertyRef Name="deptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_district_tb_province">
+    <End Type="HRMXModel.tb_province" Role="tb_province" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_district" Role="tb_district" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_province">
+        <PropertyRef Name="Pro_ID" />
+      </Principal>
+      <Dependent Role="tb_district">
+        <PropertyRef Name="Pro_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_district">
+    <End Type="HRMXModel.tb_district" Role="tb_district" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_district">
+        <PropertyRef Name="district_id" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="district_id2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empEducation_tb_educationType">
+    <End Type="HRMXModel.tb_educationType" Role="tb_educationType" Multiplicity="1" />
+    <End Type="HRMXModel.tb_empEducation" Role="tb_empEducation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_educationType">
+        <PropertyRef Name="educationTypeID" />
+      </Principal>
+      <Dependent Role="tb_empEducation">
+        <PropertyRef Name="educationTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empAllowance_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empAllowance" Role="tb_empAllowance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empAllowance">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empBankAccount_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="1" />
+    <End Type="HRMXModel.tb_empBankAccount" Role="tb_empBankAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empBankAccount">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empDeduction_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empDeduction" Role="tb_empDeduction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empDeduction">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empEducation_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="1" />
+    <End Type="HRMXModel.tb_empEducation" Role="tb_empEducation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empEducation">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empFamily_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empFamily" Role="tb_empFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empFamily">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_empGroup">
+    <End Type="HRMXModel.tb_empGroup" Role="tb_empGroup" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empInfo" Role="tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empGroup">
+        <PropertyRef Name="empGroupID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="empGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_leaveSetting_tb_empGroup">
+    <End Type="HRMXModel.tb_empGroup" Role="tb_empGroup" Multiplicity="1" />
+    <End Type="HRMXModel.tb_leaveSetting" Role="tb_leaveSetting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empGroup">
+        <PropertyRef Name="empGroupID" />
+      </Principal>
+      <Dependent Role="tb_leaveSetting">
+        <PropertyRef Name="empGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empIncome_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empIncome" Role="tb_empIncome" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empIncome">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empIncome_tb_incomType">
+    <End Type="HRMXModel.tb_incomType" Role="tb_incomType" Multiplicity="1" />
+    <End Type="HRMXModel.tb_empIncome" Role="tb_empIncome" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_incomType">
+        <PropertyRef Name="incomTypeID" />
+      </Principal>
+      <Dependent Role="tb_empIncome">
+        <PropertyRef Name="incomTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_empLevel">
+    <End Type="HRMXModel.tb_empLevel" Role="tb_empLevel" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empInfo" Role="tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empLevel">
+        <PropertyRef Name="empLevelID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="empLevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empInfo" Role="tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empInfo_tb_unit">
+    <End Type="HRMXModel.tb_unit" Role="tb_unit" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empInfo" Role="tb_empInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_unit">
+        <PropertyRef Name="unitID" />
+      </Principal>
+      <Dependent Role="tb_empInfo">
+        <PropertyRef Name="unitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_fstatus">
+    <End Type="HRMXModel.tb_fstatus" Role="tb_fstatus" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_fstatus">
+        <PropertyRef Name="fstatusID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="fstatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_gender">
+    <End Type="HRMXModel.tb_gender" Role="tb_gender" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_gender">
+        <PropertyRef Name="genderID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="genderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_nationality">
+    <End Type="HRMXModel.tb_nationality" Role="tb_nationality" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_nationality">
+        <PropertyRef Name="nationalityID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="nationalityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_race">
+    <End Type="HRMXModel.tb_race" Role="tb_race" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_race">
+        <PropertyRef Name="raceID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="raceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_empployees_tb_religion">
+    <End Type="HRMXModel.tb_religion" Role="tb_religion" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_religion">
+        <PropertyRef Name="religionID" />
+      </Principal>
+      <Dependent Role="tb_empployees">
+        <PropertyRef Name="religionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_spouse_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_spouse" Role="tb_spouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_spouse">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_users_tb_empployees">
+    <End Type="HRMXModel.tb_empployees" Role="tb_empployees" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_users" Role="tb_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_empployees">
+        <PropertyRef Name="empID" />
+      </Principal>
+      <Dependent Role="tb_users">
+        <PropertyRef Name="empID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_leaveSetting_tb_leaveType">
+    <End Type="HRMXModel.tb_leaveType" Role="tb_leaveType" Multiplicity="1" />
+    <End Type="HRMXModel.tb_leaveSetting" Role="tb_leaveSetting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_leaveType">
+        <PropertyRef Name="leaveTypeID" />
+      </Principal>
+      <Dependent Role="tb_leaveSetting">
+        <PropertyRef Name="leaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_leaveType_tb_leaveType">
+    <End Type="HRMXModel.tb_leaveType" Role="tb_leaveType" Multiplicity="1" />
+    <End Type="HRMXModel.tb_leaveType" Role="tb_leaveType1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tb_leaveType">
+        <PropertyRef Name="leaveTypeID" />
+      </Principal>
+      <Dependent Role="tb_leaveType1">
+        <PropertyRef Name="leaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_sso_tb_ssoType">
+    <End Type="HRMXModel.tb_ssoType" Role="tb_ssoType" Multiplicity="0..1" />
+    <End Type="HRMXModel.tb_sso" Role="tb_sso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ssoType">
+        <PropertyRef Name="ssoTypeID" />
+      </Principal>
+      <Dependent Role="tb_sso">
+        <PropertyRef Name="ssoTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

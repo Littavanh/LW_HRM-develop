@@ -1,0 +1,1 @@
+enum RELOAD_DATA { WFH, NONE }
